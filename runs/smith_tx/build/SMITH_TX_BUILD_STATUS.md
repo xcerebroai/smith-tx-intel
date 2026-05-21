@@ -2,7 +2,9 @@
 
 County: Smith County, Texas (`smith_tx`) — FIPS 48423 — county seat Tyler
 Framework: recon/config generated under v5.3.0; Phase 1 verified under v5.3.1
-Delivery: **Phase 0 + Phase 1 — COMPLETE**, with a documented Phase 2 infrastructure blocker
+Status: **ON HOLD — pending browser-capable build infrastructure**
+Phases 0–1 are complete and carry over unchanged; the build resumes from Phase 2.
+This is a temporary infrastructure hold, not a final delivery.
 Status date: 2026-05-21
 
 ---
@@ -14,9 +16,10 @@ harness for Smith County, TX. Build Mode then halted at Phase 2 because the
 primary lead portal is a JavaScript single-page app that requires browser-grade
 automation this execution environment does not provide. The framework halted
 correctly per Build Mode Protocol §02.9 — it did not fabricate scraper output or
-a dashboard. Per operator decision (ESC-001, Option C), the run is closed as a
-Phase 0 + Phase 1 delivery; Build Mode Phases 2–8 are scheduled for provisioned
-infrastructure.
+a dashboard. Per operator decision (ESC-001), the Smith County build is **ON HOLD
+— pending browser-capable build infrastructure**. This is a temporary
+infrastructure hold, not a final delivery: Phases 0 and 1 are complete and carry
+over unchanged, and Build Mode resumes from Phase 2 on provisioned infrastructure.
 
 ---
 
@@ -130,7 +133,8 @@ county config, and the Phase 1 synthetic pass in this repo carry over unchanged.
 
 ## Session outcome
 
-Smith County, TX is delivered as a **Phase 0 + Phase 1 delivery** with a
-**documented Phase 2 infrastructure blocker (ESC-001)**. Build Mode does not
-auto-resume; it resumes from Phase 2 when re-entered on infrastructure with the
-tooling listed above.
+Smith County, TX is **ON HOLD — pending browser-capable build infrastructure**.
+This is a temporary infrastructure hold (ESC-001), not a final delivery. Phases 0
+and 1 are complete and carry over unchanged. Build Mode does not auto-resume; it
+resumes from Phase 2 when re-entered on infrastructure with Playwright + Chromium
++ scraping dependencies + GitHub auth, as listed above.
