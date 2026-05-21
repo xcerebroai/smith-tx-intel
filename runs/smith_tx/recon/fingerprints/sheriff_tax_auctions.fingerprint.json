@@ -1,0 +1,17 @@
+{
+  "source_id": "sheriff_tax_auctions",
+  "source_type": "sheriff_sales",
+  "portal_vendor": "RealAuction",
+  "portal_family": "RealAuction",
+  "rendering_type": "JAVASCRIPT_RENDERED",
+  "access_pattern": "WAF",
+  "api_discovery_status": "BLOCKED",
+  "captcha_status": "UNKNOWN",
+  "session_status": "COOKIE_REQUIRED",
+  "pagination_model": "UNKNOWN",
+  "record_detail_model": "DETAIL_PAGE",
+  "download_model": "PDF",
+  "source_priority": "P1",
+  "recommended_adapter": "scrapers/sheriff_tax_auctions.py",
+  "notes": "HTTP 403 to automated fetch; resolve with stealth browser / seeded session in Build Mode."
+}

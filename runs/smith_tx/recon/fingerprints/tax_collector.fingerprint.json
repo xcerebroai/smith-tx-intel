@@ -1,0 +1,17 @@
+{
+  "source_id": "tax_collector",
+  "source_type": "tax_delinquency",
+  "portal_vendor": "UNKNOWN",
+  "portal_family": "Custom county portal",
+  "rendering_type": "UNKNOWN",
+  "access_pattern": "WAF",
+  "api_discovery_status": "BLOCKED",
+  "captcha_status": "UNKNOWN",
+  "session_status": "UNKNOWN",
+  "pagination_model": "UNKNOWN",
+  "record_detail_model": "UNKNOWN",
+  "download_model": "UNKNOWN",
+  "source_priority": "P1",
+  "recommended_adapter": "scrapers/tax_collector.py",
+  "notes": "HTTP 403 to automated fetch; per-account lookup only, no public bulk delinquent roll."
+}

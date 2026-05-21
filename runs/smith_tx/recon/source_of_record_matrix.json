@@ -1,0 +1,940 @@
+{
+  "county_slug": "smith_tx",
+  "county_name": "Smith County",
+  "state": "TX",
+  "framework_version": "v5.3.0",
+  "generated_at": "2026-05-19T18:06:03Z",
+  "county_build_status": "READY_TO_BUILD",
+  "lead_types": [
+    {
+      "lead_type": "Foreclosure",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "TX non-judicial. Substitute-trustee sale notices are recorded with the County Clerk; searchable on publicsearch.us."
+    },
+    {
+      "lead_type": "Trustee Sale",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Recorded notice of trustee/substitute-trustee sale in County Clerk official records."
+    },
+    {
+      "lead_type": "Notice of Trustee Sale",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Recorded instrument type in County Clerk official records."
+    },
+    {
+      "lead_type": "Notice of Substitute Trustee Sale",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Dominant TX foreclosure-notice form; filed 21 days before the first-Tuesday sale; County Clerk records."
+    },
+    {
+      "lead_type": "Sheriff Sale",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Sheriff's Office"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "sheriff_tax_auctions",
+          "official_url": "https://smith.texas.sheriffsaleauctions.com/",
+          "authority_type": "Smith County Sheriff's Office / Tax Office",
+          "vendor_name": "RealAuction",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — RealAuction portal linked from Sheriff's Office and county .gov",
+            "lead_type_relevance": "PASS — tax-foreclosure and sheriff/execution sale listings",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot); human browser access is public",
+            "extractability": "UNKNOWN — listing fields not observable without browser/registration",
+            "refresh_provenance": "PASS — monthly (first-Tuesday) cadence documented"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "sale date"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Sheriff / Tax Foreclosure Auctions"
+        }
+      ],
+      "selected_source_id": "sheriff_tax_auctions",
+      "status": "SOURCE_FOUND_BLOCKED",
+      "coverage_notes": "RealAuction online platform; automated fetch returns 403 (anti-bot). Technical blocker; build-mode browser resolves."
+    },
+    {
+      "lead_type": "Tax Lien Foreclosure",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Tax Office",
+        "Sheriff's Office"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "sheriff_tax_auctions",
+          "official_url": "https://smith.texas.sheriffsaleauctions.com/",
+          "authority_type": "Smith County Sheriff's Office / Tax Office",
+          "vendor_name": "RealAuction",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — RealAuction portal linked from Sheriff's Office and county .gov",
+            "lead_type_relevance": "PASS — tax-foreclosure and sheriff/execution sale listings",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot); human browser access is public",
+            "extractability": "UNKNOWN — listing fields not observable without browser/registration",
+            "refresh_provenance": "PASS — monthly (first-Tuesday) cadence documented"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "sale date"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Sheriff / Tax Foreclosure Auctions"
+        },
+        {
+          "source_id": "tax_collector",
+          "official_url": "https://publictax.smith-county.com/search",
+          "authority_type": "Smith County Tax Assessor-Collector",
+          "vendor_name": "County-hosted property tax portal",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "PER_RECORD_ONLY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Tax Assessor-Collector, county subdomain",
+            "lead_type_relevance": "PARTIAL — tax balance/delinquency by account; no enumerable distress list",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot)",
+            "extractability": "PARTIAL — per-account lookup only; no public bulk delinquent roll",
+            "refresh_provenance": "PARTIAL — balances current; cannot enumerate distressed universe"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "parcel/account id",
+            "tax balance"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Tax Office — Property Tax Search"
+        }
+      ],
+      "selected_source_id": "sheriff_tax_auctions",
+      "status": "SOURCE_FOUND_BLOCKED",
+      "coverage_notes": "Delinquent-tax foreclosure suits sold via RealAuction since 2023; same anti-bot blocker."
+    },
+    {
+      "lead_type": "Tax Sale",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Tax Office",
+        "Sheriff's Office"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "sheriff_tax_auctions",
+          "official_url": "https://smith.texas.sheriffsaleauctions.com/",
+          "authority_type": "Smith County Sheriff's Office / Tax Office",
+          "vendor_name": "RealAuction",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — RealAuction portal linked from Sheriff's Office and county .gov",
+            "lead_type_relevance": "PASS — tax-foreclosure and sheriff/execution sale listings",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot); human browser access is public",
+            "extractability": "UNKNOWN — listing fields not observable without browser/registration",
+            "refresh_provenance": "PASS — monthly (first-Tuesday) cadence documented"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "sale date"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Sheriff / Tax Foreclosure Auctions"
+        }
+      ],
+      "selected_source_id": "sheriff_tax_auctions",
+      "status": "SOURCE_FOUND_BLOCKED",
+      "coverage_notes": "Monthly first-Tuesday tax sale, online via RealAuction; anti-bot blocker."
+    },
+    {
+      "lead_type": "Tax Sale Certificate",
+      "state_applicability": "NOT_APPLICABLE_IN_STATE",
+      "expected_authorities": [
+        "n/a"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "NOT_APPLICABLE_IN_STATE",
+      "coverage_notes": "Texas is a redeemable tax-DEED state; it does not issue tax-lien/sale certificates."
+    },
+    {
+      "lead_type": "Tax Delinquency",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Tax Office"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "tax_collector",
+          "official_url": "https://publictax.smith-county.com/search",
+          "authority_type": "Smith County Tax Assessor-Collector",
+          "vendor_name": "County-hosted property tax portal",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "PER_RECORD_ONLY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Tax Assessor-Collector, county subdomain",
+            "lead_type_relevance": "PARTIAL — tax balance/delinquency by account; no enumerable distress list",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot)",
+            "extractability": "PARTIAL — per-account lookup only; no public bulk delinquent roll",
+            "refresh_provenance": "PARTIAL — balances current; cannot enumerate distressed universe"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "parcel/account id",
+            "tax balance"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Tax Office — Property Tax Search"
+        },
+        {
+          "source_id": "sheriff_tax_auctions",
+          "official_url": "https://smith.texas.sheriffsaleauctions.com/",
+          "authority_type": "Smith County Sheriff's Office / Tax Office",
+          "vendor_name": "RealAuction",
+          "source_role": "BLOCKED_SOURCE",
+          "access_status": "BLOCKED",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — RealAuction portal linked from Sheriff's Office and county .gov",
+            "lead_type_relevance": "PASS — tax-foreclosure and sheriff/execution sale listings",
+            "access": "FAIL — automated fetch returns HTTP 403 (anti-bot); human browser access is public",
+            "extractability": "UNKNOWN — listing fields not observable without browser/registration",
+            "refresh_provenance": "PASS — monthly (first-Tuesday) cadence documented"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "sale date"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Sheriff / Tax Foreclosure Auctions"
+        }
+      ],
+      "selected_source_id": "tax_collector",
+      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
+      "coverage_notes": "publictax portal is per-account lookup only (no public bulk delinquent roll) and returns 403 to automated fetch."
+    },
+    {
+      "lead_type": "Lis Pendens",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Recorded lis pendens in County Clerk official records."
+    },
+    {
+      "lead_type": "Civil Judgment",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "District Clerk",
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "district_court",
+          "official_url": "https://portal.smith-county.com/Public/",
+          "authority_type": "Smith County District Clerk",
+          "vendor_name": "Tyler Odyssey Public Access Portal",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — District Clerk Odyssey portal on county subdomain, linked from county .gov",
+            "lead_type_relevance": "PASS — district civil, family/divorce, delinquent-tax suits, judgments",
+            "access": "PARTIAL — Odyssey Smart Search public; some case types/document images need registration",
+            "extractability": "PASS — party, case #, file date, case type from search results",
+            "refresh_provenance": "PASS — daily docket; case number is provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "party name",
+            "case number",
+            "filing date",
+            "case type"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County District Clerk — Court Record Inquiry"
+        },
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "district_court",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "District-court civil judgments via Odyssey; abstracts also recorded with the County Clerk."
+    },
+    {
+      "lead_type": "Abstract of Judgment",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Abstract of judgment is a recorded instrument in County Clerk records."
+    },
+    {
+      "lead_type": "Mechanic Lien",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Mechanic's & materialman's liens recorded with the County Clerk."
+    },
+    {
+      "lead_type": "Construction Lien",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Same TX instrument family as the mechanic's lien; County Clerk records."
+    },
+    {
+      "lead_type": "Federal Tax Lien",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "IRS notices of federal tax lien recorded with the County Clerk."
+    },
+    {
+      "lead_type": "State Tax Lien",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "State tax liens recorded with the County Clerk."
+    },
+    {
+      "lead_type": "Probate",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
+      "coverage_notes": "County Clerk is record-keeper for probate (constitutional county court). Recorded probate instruments are on publicsearch.us; live probate-docket coverage to be confirmed against the County Clerk probate index in Build Mode."
+    },
+    {
+      "lead_type": "Affidavit of Heirship",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Recorded affidavit of heirship in County Clerk official records."
+    },
+    {
+      "lead_type": "Executor Deed",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Executor's deed sub-type in County Clerk deed records."
+    },
+    {
+      "lead_type": "Administrator Deed",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Administrator's deed sub-type in County Clerk deed records."
+    },
+    {
+      "lead_type": "Code Lien",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "County Clerk",
+        "Municipalities"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "clerk_recordings",
+          "official_url": "https://smith.tx.publicsearch.us/",
+          "authority_type": "Smith County Clerk",
+          "vendor_name": "GovOS Cloud Search (publicsearch.us)",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — Smith County Clerk; linked from county .gov Official Public Records page",
+            "lead_type_relevance": "PASS — exposes deeds, liens, lis pendens, trustee-sale notices, judgments",
+            "access": "PASS — index + OCR full-text search free; no login; no CAPTCHA observed",
+            "extractability": "PASS — result rows expose grantor/grantee, doc type, doc #, recording date, legal",
+            "refresh_provenance": "PASS — recordings posted daily; instrument number is verifiable provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "property address / legal description",
+            "party name (grantor/grantee)",
+            "recording date",
+            "document/instrument number"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County Clerk — Official Public Records"
+        }
+      ],
+      "selected_source_id": "clerk_recordings",
+      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
+      "coverage_notes": "Municipal code liens are caught when abstracted/recorded with the County Clerk; live city code-enforcement rolls are per-municipality and out of scope for a county-wide build."
+    },
+    {
+      "lead_type": "Demolition",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Municipalities"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "SOURCE_NOT_FOUND",
+      "coverage_notes": "Demolition orders are municipal (City of Tyler etc.); no county-level source. Per-municipality, out of scope."
+    },
+    {
+      "lead_type": "Condemnation",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Municipalities"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "SOURCE_NOT_FOUND",
+      "coverage_notes": "Condemnation / unsafe-structure orders are municipal; no county-level source."
+    },
+    {
+      "lead_type": "Eviction",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "Justice of the Peace Courts"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "NEEDS_OPERATOR_REVIEW",
+      "coverage_notes": "TX evictions (forcible entry & detainer) are heard in JP courts; a Smith County JP public portal was not confirmed during recon. Operator review needed before classifying buildable."
+    },
+    {
+      "lead_type": "Divorce",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "District Clerk"
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "district_court",
+          "official_url": "https://portal.smith-county.com/Public/",
+          "authority_type": "Smith County District Clerk",
+          "vendor_name": "Tyler Odyssey Public Access Portal",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "SEARCH_ONLY_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS — District Clerk Odyssey portal on county subdomain, linked from county .gov",
+            "lead_type_relevance": "PASS — district civil, family/divorce, delinquent-tax suits, judgments",
+            "access": "PARTIAL — Odyssey Smart Search public; some case types/document images need registration",
+            "extractability": "PASS — party, case #, file date, case type from search results",
+            "refresh_provenance": "PASS — daily docket; case number is provenance"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "party name",
+            "case number",
+            "filing date",
+            "case type"
+          ],
+          "operator_verified": false,
+          "notes": "Smith County District Clerk — Court Record Inquiry"
+        }
+      ],
+      "selected_source_id": "district_court",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Divorce / family cases via the District Clerk Odyssey portal; some family detail may be access-restricted."
+    },
+    {
+      "lead_type": "Bankruptcy",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "U.S. Bankruptcy Court (E.D. Tex., Tyler Division)"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "SOURCE_FOUND_PAID",
+      "coverage_notes": "Federal jurisdiction; PACER is paywalled. Not a county source. Defer unless the operator funds PACER."
+    },
+    {
+      "lead_type": "Surplus",
+      "state_applicability": "APPLICABLE",
+      "expected_authorities": [
+        "District Clerk / County Treasurer"
+      ],
+      "candidate_sources": [],
+      "selected_source_id": "",
+      "status": "NEEDS_OPERATOR_REVIEW",
+      "coverage_notes": "Excess-proceeds (surplus funds) from foreclosure / tax sales are held by the county; a published Smith County excess-proceeds list was not confirmed during recon. Operator review needed."
+    }
+  ]
+}

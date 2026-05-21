@@ -1,0 +1,17 @@
+{
+  "source_id": "parcel_master",
+  "source_type": "parcel_master",
+  "portal_vendor": "True Automation",
+  "portal_family": "Texas CAD esearch",
+  "rendering_type": "STATIC_HTML",
+  "access_pattern": "STATIC_HTML",
+  "api_discovery_status": "NOT_FOUND",
+  "captcha_status": "NONE",
+  "session_status": "NO_SESSION_REQUIRED",
+  "pagination_model": "PAGE_NUMBER",
+  "record_detail_model": "DETAIL_PAGE",
+  "download_model": "BULK_FILE",
+  "source_priority": "P2",
+  "recommended_adapter": "scrapers/parcel_master.py",
+  "notes": "Open CAD property search; bulk appraisal/GIS data on the downloads page."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "clerk_recordings",
+  "source_type": "clerk_recordings",
+  "portal_vendor": "GovOS",
+  "portal_family": "GovOS Cloud Search (publicsearch.us)",
+  "rendering_type": "SPA",
+  "access_pattern": "SPA_WITH_API",
+  "api_discovery_status": "NOT_FOUND",
+  "captcha_status": "NONE",
+  "session_status": "NO_SESSION_REQUIRED",
+  "pagination_model": "OFFSET",
+  "record_detail_model": "DETAIL_PAGE",
+  "download_model": "PDF",
+  "source_priority": "P0",
+  "recommended_adapter": "scrapers/clerk_recordings.py",
+  "notes": "Free index + OCR full-text search; document images purchase-gated; SPA backed by an internal JSON API."
+}

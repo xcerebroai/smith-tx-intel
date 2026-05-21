@@ -1,0 +1,22 @@
+{
+  "gate_id": "REVIEW_GATE_1",
+  "reviewed_at": "2026-05-19T18:14:41Z",
+  "reviewer": "operator (infinitygauntletllc@gmail.com)",
+  "status": "APPROVED",
+  "decision": "proceed_full",
+  "notes": "Operator authorized a full Build Mode build of Smith County, TX. Build verdict READY_TO_BUILD accepted. Scope: Eviction IN SCOPE (Build Mode to discover the JP-court source); Surplus and Bankruptcy OUT OF SCOPE. RealAuction adapter to run anonymously. Operator's claim that Surplus/Bankruptcy are non-canonical was not adopted — both are §16.B canonical (#27, #26); see runs/smith_tx/operator_notes.md.",
+  "approved_artifacts": [
+    "config/counties/smith_tx.json",
+    "runs/smith_tx/recon/source_of_record_matrix.json",
+    "runs/smith_tx/recon/source_of_record_matrix.md",
+    "runs/smith_tx/recon/recon_summary.md",
+    "runs/smith_tx/recon/build_eligibility_report.md",
+    "runs/smith_tx/recon/source_coverage_map.md",
+    "runs/smith_tx/recon/fingerprints/clerk_recordings.fingerprint.json",
+    "runs/smith_tx/recon/fingerprints/district_court.fingerprint.json",
+    "runs/smith_tx/recon/fingerprints/sheriff_tax_auctions.fingerprint.json",
+    "runs/smith_tx/recon/fingerprints/tax_collector.fingerprint.json",
+    "runs/smith_tx/recon/fingerprints/parcel_master.fingerprint.json",
+    "runs/smith_tx/recon/fingerprints/gis_parcels.fingerprint.json"
+  ]
+}

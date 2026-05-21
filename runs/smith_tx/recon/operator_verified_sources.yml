@@ -1,0 +1,4 @@
+# Operator-verified sources — Smith County, TX (smith_tx)
+# Per §16.H / §01.25. Captures source links the operator surfaces that recon
+# missed. Empty: the operator surfaced no additional sources during this run.
+operator_verified_sources: []

@@ -1,0 +1,17 @@
+{
+  "source_id": "gis_parcels",
+  "source_type": "gis_parcels",
+  "portal_vendor": "Esri",
+  "portal_family": "ArcGIS REST",
+  "rendering_type": "API",
+  "access_pattern": "OPEN_API",
+  "api_discovery_status": "FOUND",
+  "captcha_status": "NONE",
+  "session_status": "NO_SESSION_REQUIRED",
+  "pagination_model": "OFFSET",
+  "record_detail_model": "INLINE",
+  "download_model": "BULK_FILE",
+  "source_priority": "P2",
+  "recommended_adapter": "scrapers/gis_parcels.py",
+  "notes": "ArcGIS REST feature services; standard query endpoints."
+}

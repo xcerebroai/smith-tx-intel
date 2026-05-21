@@ -1,0 +1,17 @@
+{
+  "source_id": "district_court",
+  "source_type": "court_civil",
+  "portal_vendor": "Tyler Technologies",
+  "portal_family": "Tyler Odyssey",
+  "rendering_type": "SPA",
+  "access_pattern": "SPA_WITH_API",
+  "api_discovery_status": "NOT_FOUND",
+  "captcha_status": "NONE",
+  "session_status": "COOKIE_REQUIRED",
+  "pagination_model": "PAGE_NUMBER",
+  "record_detail_model": "DETAIL_PAGE",
+  "download_model": "NONE",
+  "source_priority": "P1",
+  "recommended_adapter": "scrapers/district_court.py",
+  "notes": "Odyssey public access portal; Smart Search public; document images registration-gated."
+}
