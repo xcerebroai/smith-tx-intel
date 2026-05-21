@@ -1,386 +1,310 @@
 """
-Bexar County parcel-master adapter (BCAD).
+Smith County, TX — parcel-master ENRICHMENT adapter (Phase 2).
 
-Pulls the BCAD-style parcel records from the public ArcGIS layer at:
+Source: Smith County GIS "Tax Parcels" layer, an open public ArcGIS REST
+MapServer (no auth, no CAPTCHA, no session):
 
-    https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0
+    https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1
 
-This layer carries the full appraisal field set (Owner, mailing
-address, LandVal/ImprVal/TotVal, YrBlt, Exempts, PropUse, LglAcres,
-LglDesc). See `runs/bexar_tx/operator_notes.md#parcel_master` for the
-recon details that motivate the bulk-ArcGIS-pull access pattern over
-per-parcel Harris Govern lookups.
+141,692 parcels. Each carries ACCOUNT (Smith CAD appraisal account number),
+ParcelID/PIN, situs ADDRESS, POSTAL_CITY, ZIPCODE, owner OWN1/OWN2,
+Calc_Acre, YRBLT, SFLA, Type, subdivision/block/lot, ISD.
 
-Strategy
---------
-The full BCAD layer is ~700k records. Phase 4 only needs the parcels
-that intersect the foreclosure-notices set (288 addresses, ~12 unique
-ZIPs). The scraper:
+ENRICHMENT FOUNDATION ONLY. Per the §13 Lead Origination Contract, parcel
+data is ENRICHMENT — it decorates a lead that a primary event source has
+already originated; it NEVER originates a lead itself. This adapter emits
+parcel records for the matcher to join against. It produces zero signals
+and zero lead rows. The built-in `parcel_master` translator that consumes
+this output returns ([], parcels, {}) by contract.
 
-  1. Reads `data/raw/foreclosure_notices_map.jsonl` to derive the
-     target ZIP set + the unique (address, city, zip) tuples we need
-     to resolve.
-  2. For each ZIP in the target set, paginates the BCAD ArcGIS layer
-     with `WHERE Zip = '<zip>'` capturing every parcel in that ZIP.
-  3. Normalizes each feature into a framework parcel-master record
-     (situs_address normalized to single-space, owner_name as-is,
-     mailing fields collapsed from AddrLn1-3, value fields preserved,
-     exemption + property-class flags carried through).
-  4. Writes `data/raw/parcel_master.jsonl` (one line per BCAD parcel).
+Output: `data/raw/parcel_master.jsonl`, one JSON line per parcel in the
+framework-canonical wrapped raw-record shape (MASTER_PROMPT §4.32).
 
-Per-parcel matching against foreclosure addresses is the matcher's job
-(scaffold/pipeline/matcher.py) — this adapter only pulls the BCAD
-ground truth for the matcher to join against.
+Protocol handling (ArcGIS pagination, retries, error envelopes) is delegated
+to the county-agnostic framework helper `scaffold/scrapers/_arcgis_featureserver.py`.
+This module owns only the Smith-County-specific field normalization.
+
+Built for framework v5.3.1 — Smith County (smith_tx) Phase 2.
 """
 
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
-import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
-
-from scaffold.scrapers._arcgis_featureserver import (  # noqa: E402
-    ArcGISFeatureServer,
-)
-
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "scaffold" / "scrapers"))
+from _arcgis_featureserver import ArcGISFeatureServer, ArcGISServerError  # noqa: E402
 
 SOURCE_ID = "parcel_master"
 SERVICE_URL = (
-    "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer"
+    "https://www.smithcountymapsite.org/publicgis/rest/services"
+    "/Gallery/TaxParcelQuery/MapServer"
 )
-LAYER_ID = 0
-USER_AGENT = "xcerebro-bexar-parcel-master/0.1 (+private repo)"
+LAYER_ID = 1  # "Tax Parcels"
+USER_AGENT = "xcerebro-smith-tx-parcel-master/0.1 (+private county build)"
+FIXTURE_DIR = REPO_ROOT / "scrapers" / "fixtures" / SOURCE_ID
+OUT_PATH = REPO_ROOT / "data" / "raw" / "parcel_master.jsonl"
 
-_WHITESPACE = re.compile(r"\s+")
-
-
-def _now_iso() -> str:
-    return (
-        datetime.now(timezone.utc)
-        .isoformat(timespec="seconds")
-        .replace("+00:00", "Z")
-    )
+# parser_confidence floor below which the framework routes a record to the
+# review queue rather than trusting it (MASTER_PROMPT §3 / §4.32).
+REVIEW_CONFIDENCE = 80
 
 
-def normalize_address(s: str) -> str:
-    """Collapse multiple whitespace runs and strip trailing space.
+# --------------------------------------------------------------------------
+# Field normalization — Smith County ArcGIS attrs -> framework-canonical names
+# --------------------------------------------------------------------------
 
-    BCAD's `Situs` field uses double-spaces (e.g. `"3795  MOUNT OLIVE RD "`)
-    while the foreclosure map uses single-space (`"3795 MOUNT OLIVE RD"`).
-    The matcher needs a single canonical form."""
-    if not s:
+def _clean(value) -> str:
+    """Trim a string field; ArcGIS uses ' ' and '' for blanks."""
+    if value is None:
         return ""
-    return _WHITESPACE.sub(" ", s).strip().upper()
+    return " ".join(str(value).split()).strip()
 
 
-def _parcel_record(feature: dict) -> dict:
-    a = feature.get("attributes") or {}
-    situs_raw = a.get("Situs") or ""
-    addr1 = a.get("AddrLn1") or ""
-    addr2 = a.get("AddrLn2") or ""
-    addr3 = a.get("AddrLn3") or ""
-    # BCAD writes the literal string "NULL" instead of null in some
-    # AddrLn fields. Filter those out.
-    mailing_lines = [
-        x.strip() for x in (addr1, addr2, addr3)
-        if x and x.strip() and x.strip().upper() != "NULL"
-    ]
-
-    yrblt_raw = a.get("YrBlt") or ""
-    yrblt = None
-    if yrblt_raw and str(yrblt_raw).upper() != "NULL":
-        try:
-            yrblt = int(str(yrblt_raw).strip())
-        except (ValueError, TypeError):
-            yrblt = None
-
-    parcel_id = f"BCAD-{int(a['PropID']):08d}" if a.get("PropID") else None
-    situs_norm = normalize_address(situs_raw)
-
-    return {
-        "parcel_id": parcel_id,
-        "bcad_prop_id": int(a["PropID"]) if a.get("PropID") else None,
-        "situs_address": situs_norm,
-        "situs_address_raw": situs_raw,
-        "situs_city": (a.get("AddrCity") or "").strip(),
-        "situs_state": "TX",
-        "situs_zip": (a.get("Zip") or "").strip(),
-        "situs_zip4": (a.get("Zip4") or "").strip(),
-        "owner_name": (a.get("Owner") or "").strip(),
-        "owner_mailing_addr1": " ".join(mailing_lines) if mailing_lines else "",
-        "owner_mailing_city": (a.get("AddrCity") or "").strip(),
-        "owner_mailing_state": (a.get("AddrSt") or "").strip(),
-        "owner_mailing_zip": (a.get("Zip") or "").strip(),
-        "owner_mailing_country": (a.get("Country") or "").strip(),
-        "year_built": yrblt,
-        "land_value": float(a["LandVal"]) if a.get("LandVal") is not None else None,
-        "improvement_value": float(a["ImprVal"]) if a.get("ImprVal") is not None else None,
-        "assessed_value": float(a["TotVal"]) if a.get("TotVal") is not None else None,
-        "property_class": (a.get("PropUse") or "").strip(),
-        "state_class_code": (a.get("State_cd") or "").strip(),
-        "neighborhood": (a.get("Nbhd") or "").strip(),
-        "exemptions": (a.get("Exempts") or "").strip(),
-        "exempt_homestead": _has_exempt(a.get("Exempts"), "HS"),
-        "exempt_over_65": _has_exempt(a.get("Exempts"), "OV65"),
-        "exempt_disabled": _has_exempt(a.get("Exempts"), "DV") or _has_exempt(a.get("Exempts"), "DP"),
-        "legal_description": (a.get("LglDesc") or "").strip(),
-        "lgl_acres": float(a["LglAcres"]) if a.get("LglAcres") is not None else None,
-        "acres": float(a["Acres"]) if a.get("Acres") is not None else None,
-        "is_udi": (a.get("IS_UDI") or "").strip(),
-        "udi_parent": int(a["UDIPARNT"]) if a.get("UDIPARNT") is not None else None,
-        "roll": (a.get("Roll") or "").strip(),
-        # Fields we cannot resolve from this source — set to None so the
-        # framework knows they're missing rather than empty.
-        "last_sale_date": None,
-        "last_sale_price": None,
-        # Bookkeeping.
-        "_source_id": SOURCE_ID,
-        "_object_id": a.get("OBJECTID"),
-        "_fetched_at": _now_iso(),
-    }
+def _norm_address(value) -> str:
+    """Situs address, uppercased and single-spaced (canonical per §4.32)."""
+    return _clean(value).upper()
 
 
-def _has_exempt(exempt_str: str | None, token: str) -> bool:
-    if not exempt_str:
-        return False
-    return bool(re.search(rf"\b{re.escape(token)}\b", exempt_str, re.IGNORECASE))
+def _int_or_none(value):
+    try:
+        n = int(value)
+    except (TypeError, ValueError):
+        return None
+    return n
 
 
-def _addresses_from_foreclosures(path: Path) -> list:
-    """Read foreclosure raw records and return [(address, zip), ...] tuples."""
-    if not path.exists():
-        return []
-    out: list = []
-    seen: set = set()
-    with open(path, "r", encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                rec = json.loads(line)
-            except json.JSONDecodeError:
-                continue
-            payload = rec.get("raw_payload") or {}
-            addr = (payload.get("address") or "").strip().upper()
-            zip_code = (payload.get("zip") or "").strip()
-            if not addr or not zip_code:
-                continue
-            key = (addr, zip_code)
-            if key in seen:
-                continue
-            seen.add(key)
-            out.append({"address": addr, "zip": zip_code})
-    return out
+def _float_or_none(value):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
 
 
-def _house_number(address: str) -> str:
-    """Extract the leading integer-or-fraction from an address."""
-    m = re.match(r"\s*([0-9]+[A-Z]?(?:\s*-\s*[0-9]+[A-Z]?)?)", address.upper())
-    return m.group(1).replace(" ", "") if m else ""
+def _legal_description(attrs: dict) -> str:
+    """Compose a light legal description from subdivision / block / lot."""
+    parts = []
+    subd = _clean(attrs.get("SUBDNUM"))
+    block = _clean(attrs.get("BLOCK")) or _clean(attrs.get("BLOCK_1"))
+    lot = _clean(attrs.get("LOT")) or _clean(attrs.get("LOT_1"))
+    if subd:
+        parts.append(f"SUBD {subd}")
+    if block:
+        parts.append(f"BLK {block}")
+    if lot:
+        parts.append(f"LOT {lot}")
+    return " ".join(parts)
 
 
-def _street_root(address: str) -> str:
-    """Return the first significant street-name token (skip directionals)."""
-    tokens = address.upper().split()
-    if len(tokens) < 2:
-        return ""
-    rest = tokens[1:]
-    # Skip a single directional prefix if present.
-    if rest and rest[0] in {"N", "S", "E", "W", "NE", "NW", "SE", "SW"}:
-        rest = rest[1:]
-    return rest[0] if rest else ""
+def normalize_feature(feature: dict, fetched_at: str) -> dict:
+    """Convert one ArcGIS feature into a §4.32 wrapped raw record.
 
-
-_FIELD_LIST = (
-    "OBJECTID,PropID,Situs,Owner,AddrLn1,AddrLn2,AddrLn3,"
-    "AddrCity,AddrSt,Country,Zip,Zip4,LandVal,ImprVal,TotVal,"
-    "Nbhd,YrBlt,State_cd,LglAcres,Acres,Exempts,IS_UDI,UDIPARNT,"
-    "Roll,PropUse,LglDesc"
-)
-
-
-def fetch_for_zips(server: ArcGISFeatureServer, zips: Iterable[str],
-                    *, max_features_per_zip: int | None = None) -> Iterable[dict]:
-    """Yield BCAD parcel records for every parcel in the given ZIP set.
-
-    Bulk ZIP pull. Kept for completeness / future enrichment runs.
-    Phase 4 default path is fetch_for_addresses() which is much leaner.
+    Never fabricates. A feature missing the parcel identifier or situs
+    address is emitted with parser_confidence below the review floor so the
+    pipeline routes it to review rather than trusting it.
     """
-    for z in sorted(zips):
-        if not z:
-            continue
-        where = f"Zip = '{z}'"
-        for feat in server.iter_features(
-            layer_id=LAYER_ID,
-            where=where,
-            out_fields=_FIELD_LIST,
-            return_geometry=False,
-            max_features=max_features_per_zip,
-        ):
-            yield _parcel_record(feat)
+    attrs = (feature.get("attributes") or {}) if isinstance(feature, dict) else {}
+    oid = attrs.get("OBJECTID") or attrs.get("objectid") or attrs.get("FID")
 
+    account = _clean(attrs.get("ACCOUNT"))
+    address = _norm_address(attrs.get("ADDRESS"))
+    own1 = _clean(attrs.get("OWN1"))
+    own2 = _clean(attrs.get("OWN2"))
+    owner = own1 if not own2 else f"{own1} {own2}".strip()
 
-def fetch_for_addresses(server: ArcGISFeatureServer,
-                         addresses: list,
-                         *, batch_size: int = 20) -> Iterable[dict]:
-    """Targeted fetch: for each (address, zip) pair build a single ArcGIS
-    WHERE clause that limits to that ZIP and to addresses that look like
-    the foreclosure address (matched by house number + first street token).
+    # parser_confidence reflects whether the PARSER succeeded — not whether
+    # optional enrichment fields happen to be populated. A parcel with a
+    # valid ACCOUNT but no situs address (vacant land, right-of-way, county
+    # tract) is a sound enrichment record. Only a missing join key
+    # (parcel_id) makes the record unusable and routes it to review.
+    confidence = 95
+    missing = []
+    if not account:
+        missing.append("parcel_id")
+        confidence = 40
 
-    Multi-parcel addresses are returned as multiple features, which is
-    the matcher's responsibility to disambiguate.
-    """
-    # Group by ZIP so each ZIP-bound query batches addresses in that ZIP.
-    by_zip: dict = {}
-    for entry in addresses:
-        by_zip.setdefault(entry["zip"], []).append(entry["address"])
+    # Build raw_payload with framework-canonical field names. Only set keys
+    # that carry a real value — absent fields are omitted, not fabricated.
+    payload: dict = {}
+    if account:
+        payload["parcel_id"] = account
+    if address:
+        payload["address"] = address
+    if owner:
+        payload["owner_name"] = owner
+    city = _clean(attrs.get("POSTAL_CITY")).upper()
+    if city:
+        payload["city"] = city
+    zipcode = _int_or_none(attrs.get("ZIPCODE"))
+    if zipcode:
+        payload["zip"] = str(zipcode)
+    acres = _float_or_none(attrs.get("Calc_Acre"))
+    if acres is not None:
+        payload["acres"] = acres
+    yrblt = _int_or_none(attrs.get("YRBLT"))
+    if yrblt:  # 0 means "unknown" in this layer — omit rather than emit 0
+        payload["year_built"] = yrblt
+    prop_use = _clean(attrs.get("Type"))
+    if prop_use:
+        payload["property_use"] = prop_use
+    legal = _legal_description(attrs)
+    if legal:
+        payload["legal_description"] = legal
 
-    for zip_code in sorted(by_zip.keys()):
-        addrs = by_zip[zip_code]
-        # Build per-address LIKE clauses. Group into batches so we stay
-        # well under the ArcGIS WHERE length limit.
-        clauses: list = []
-        for addr in addrs:
-            num = _house_number(addr)
-            root = _street_root(addr)
-            if not num or not root:
-                # Fall back to full-address LIKE.
-                clauses.append(
-                    f"Situs LIKE '%{addr.replace(chr(39), chr(39)+chr(39))}%'"
-                )
-                continue
-            clauses.append(
-                f"(Situs LIKE '{num} %' AND Situs LIKE '%{root}%')"
-            )
+    # Smith-County-specific extras the canonical translator ignores but that
+    # are useful provenance for the matcher / operator review.
+    sfla = _int_or_none(attrs.get("SFLA"))
+    if sfla:
+        payload["building_sqft"] = sfla
+    gis_pid = _clean(attrs.get("ParcelID"))
+    if gis_pid:
+        payload["gis_parcel_id"] = gis_pid
+    pin = _clean(attrs.get("PIN"))
+    if pin:
+        payload["pin"] = pin
+    tax_year = _int_or_none(attrs.get("TAXYR"))
+    if tax_year:
+        payload["tax_year"] = tax_year
+    city_county = _clean(attrs.get("CITY_COUNTY"))
+    if city_county:
+        payload["city_county"] = city_county
+    isd = _clean(attrs.get("ISD"))
+    if isd:
+        payload["school_district"] = isd
 
-        for i in range(0, len(clauses), batch_size):
-            chunk = clauses[i:i + batch_size]
-            where = f"Zip = '{zip_code}' AND (" + " OR ".join(chunk) + ")"
-            for feat in server.iter_features(
-                layer_id=LAYER_ID,
-                where=where,
-                out_fields=_FIELD_LIST,
-                return_geometry=False,
-            ):
-                yield _parcel_record(feat)
-
-
-def run(*, output_path: Path | None = None,
-        mode: str = "targeted",
-        target_zips: Iterable[str] | None = None,
-        max_features_per_zip: int | None = None,
-        fetch_fn=None) -> dict:
-    output_path = output_path or REPO_ROOT / "data" / "raw" / "parcel_master.jsonl"
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    server = ArcGISFeatureServer(SERVICE_URL,
-                                  user_agent=USER_AGENT,
-                                  fetch_fn=fetch_fn)
-
-    stats = {
+    record_key = account or (f"OID{oid}" if oid is not None else "UNKNOWN")
+    record = {
+        "raw_record_id": f"smith_tx-{SOURCE_ID}-{record_key}",
         "source_id": SOURCE_ID,
-        "service_url": SERVICE_URL,
-        "mode": mode,
-        "output_path": str(output_path),
+        "source_url": f"{SERVICE_URL}/{LAYER_ID}/query?objectIds={oid}&f=json",
+        "source_fetched_at": fetched_at,
+        "parser_confidence": confidence,
+        "raw_payload": payload,
     }
-
-    if mode == "zip_bulk":
-        if target_zips is None:
-            target_zips = {
-                e["zip"]
-                for e in _addresses_from_foreclosures(
-                    REPO_ROOT / "data" / "raw" / "foreclosure_notices_map.jsonl"
-                )
-            }
-        if not target_zips:
-            stats["error"] = "no target ZIPs; specify --zip or run foreclosure scraper first"
-            return stats
-
-        tmp = output_path.with_suffix(".jsonl.tmp")
-        per_zip_counts: dict = {}
-        count = 0
-        with open(tmp, "w", encoding="utf-8") as fh:
-            for rec in fetch_for_zips(server, target_zips,
-                                       max_features_per_zip=max_features_per_zip):
-                fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
-                count += 1
-                z = rec.get("situs_zip") or ""
-                per_zip_counts[z] = per_zip_counts.get(z, 0) + 1
-        tmp.replace(output_path)
-        stats.update({
-            "zips_targeted": len(target_zips),
-            "zips_list": sorted(target_zips),
-            "records_pulled": count,
-            "records_per_zip": dict(sorted(per_zip_counts.items())),
-        })
-        return stats
-
-    # default = targeted address-aware pull
-    addrs = _addresses_from_foreclosures(
-        REPO_ROOT / "data" / "raw" / "foreclosure_notices_map.jsonl"
-    )
-    if not addrs:
-        stats["error"] = "no foreclosure addresses; run scrapers/foreclosure_notices_map.py first"
-        return stats
-
-    tmp = output_path.with_suffix(".jsonl.tmp")
-    count = 0
-    seen_parcel_ids: set = set()
-    with open(tmp, "w", encoding="utf-8") as fh:
-        for rec in fetch_for_addresses(server, addrs):
-            pid = rec.get("parcel_id")
-            if pid and pid in seen_parcel_ids:
-                continue
-            if pid:
-                seen_parcel_ids.add(pid)
-            fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
-            count += 1
-    tmp.replace(output_path)
-    stats.update({
-        "addresses_targeted": len(addrs),
-        "records_pulled": count,
-    })
-    return stats
+    if missing:
+        # Surfaced for the review queue; not a fabricated value.
+        record["parser_missing_fields"] = missing
+    return record
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Pull BCAD parcel-master records via the public ArcGIS "
-                    "layer at maps.bexar.org/.../Parcels/MapServer/0."
-    )
-    parser.add_argument("--out", default=None,
-                        help="Output JSONL path. Default: data/raw/parcel_master.jsonl")
-    parser.add_argument("--mode", choices=["targeted", "zip_bulk"],
-                        default="targeted",
-                        help="targeted: only pull parcels matching foreclosure "
-                             "addresses (default). zip_bulk: pull every parcel "
-                             "in the foreclosure ZIP set (heavier, but useful "
-                             "for downstream enrichment).")
-    parser.add_argument("--zip", action="append", default=None,
-                        help="Limit pull to specific ZIP(s). Repeat for "
-                             "multiple. zip_bulk mode only.")
-    parser.add_argument("--max-features-per-zip", type=int, default=None,
-                        help="Cap on records pulled per ZIP (testing).")
-    args = parser.parse_args()
+# --------------------------------------------------------------------------
+# Live pull
+# --------------------------------------------------------------------------
 
-    out = Path(args.out) if args.out else None
-    target_zips = set(args.zip) if args.zip else None
-    stats = run(output_path=out,
-                mode=args.mode,
-                target_zips=target_zips,
-                max_features_per_zip=args.max_features_per_zip)
-    print(json.dumps(stats, indent=2))
+def iter_records(server: ArcGISFeatureServer, *, where: str = "1=1",
+                 max_features: int | None = None):
+    """Yield normalized §4.32 records for the Tax Parcels layer."""
+    fetched_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for feature in server.iter_features(
+        layer_id=LAYER_ID, where=where, out_fields="*",
+        return_geometry=False, max_features=max_features,
+    ):
+        yield normalize_feature(feature, fetched_at)
+
+
+def run_live(where: str = "1=1", limit: int | None = None,
+             out_path: Path = OUT_PATH) -> int:
+    """Pull parcels from the live ArcGIS service into data/raw/parcel_master.jsonl."""
+    server = ArcGISFeatureServer(SERVICE_URL, user_agent=USER_AGENT)
+    try:
+        total = server.count_features(LAYER_ID, where=where)
+        print(f"  layer {LAYER_ID} feature count (where {where!r}): {total}",
+              flush=True)
+    except ArcGISServerError as exc:
+        print(f"ERROR: ArcGIS service unreachable: {exc}", file=sys.stderr)
+        return 4
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    written = 0
+    review = 0
+    try:
+        with out_path.open("w", encoding="utf-8") as fh:
+            for record in iter_records(server, where=where, max_features=limit):
+                fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+                fh.flush()
+                written += 1
+                if record["parser_confidence"] < REVIEW_CONFIDENCE:
+                    review += 1
+                if written % 500 == 0:
+                    print(f"  [{written}] parcels written", flush=True)
+    except ArcGISServerError as exc:
+        print(f"ERROR: ArcGIS error mid-pull: {exc}", file=sys.stderr)
+        return 4
+    print(f"Wrote {written} parcel records to {out_path.relative_to(REPO_ROOT)} "
+          f"({review} below review confidence floor).", flush=True)
     return 0
+
+
+# --------------------------------------------------------------------------
+# Fixture entry point — required by the §05 scraper fixture contract
+# --------------------------------------------------------------------------
+
+def parse_fixture(fixture_name: str) -> list:
+    """Parse a saved fixture offline (no network). Returns a list of records.
+
+    Raises ArcGISServerError for the blocked-session fixture so the harness
+    can assert clean failure handling. The fixture files live in
+    tests/fixtures/parcel_master/.
+    """
+    path = FIXTURE_DIR / fixture_name
+    fixture = json.loads(path.read_text(encoding="utf-8"))
+
+    def fetch_fn(url: str, params: dict) -> dict:
+        # Error-envelope fixture: replay the ArcGIS error verbatim.
+        if "error" in fixture:
+            return fixture
+        # Paginated fixture: {"by_offset": {"0": resp, "3": resp, ...}}
+        if "by_offset" in fixture:
+            offset = int(params.get("resultOffset", 0) or 0)
+            return fixture["by_offset"].get(str(offset), {"features": []})
+        # Count probe.
+        if str(params.get("returnCountOnly", "")).lower() == "true":
+            return {"count": len(fixture.get("features", []))}
+        # Single-page fixtures: page 0 returns the fixture, later pages empty.
+        if int(params.get("resultOffset", 0) or 0) > 0:
+            return {"features": []}
+        return fixture
+
+    server = ArcGISFeatureServer(SERVICE_URL, user_agent=USER_AGENT,
+                                 fetch_fn=fetch_fn, page_size=100)
+    return list(iter_records(server))
+
+
+# --------------------------------------------------------------------------
+# CLI
+# --------------------------------------------------------------------------
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Smith County, TX parcel-master enrichment adapter "
+                    "(ArcGIS Tax Parcels layer). ENRICHMENT ONLY — no leads.")
+    parser.add_argument("--where", default="1=1",
+                        help="ArcGIS WHERE clause (default: all parcels).")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Max parcels to pull (default: all 141,692).")
+    parser.add_argument("--out", default=str(OUT_PATH),
+                        help="Output JSONL path.")
+    parser.add_argument("--fixture", default=None,
+                        help="Parse a fixture offline and print the records "
+                             "instead of hitting the network.")
+    args = parser.parse_args(argv if argv is not None else sys.argv[1:])
+
+    if args.fixture:
+        try:
+            records = parse_fixture(args.fixture)
+        except ArcGISServerError as exc:
+            print(f"fixture {args.fixture}: blocked/error envelope handled "
+                  f"cleanly: {exc}", flush=True)
+            return 4
+        print(json.dumps(records, indent=2, ensure_ascii=False))
+        return 0
+
+    return run_live(where=args.where, limit=args.limit,
+                    out_path=Path(args.out).resolve())
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 999999,
+    "ACCOUNT": "  ",
+    "ADDRESS": "",
+    "OWN1": "",
+    "OWN2": "",
+    "ZIPCODE": "not-a-zip",
+    "Calc_Acre": "bad",
+    "YRBLT": null,
+    "Type": ""
+   }
+  }
+ ]
+}

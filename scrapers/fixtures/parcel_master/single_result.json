@@ -1,0 +1,230 @@
+{
+ "displayFieldName": "OWN1",
+ "fieldAliases": {
+  "OBJECTID": "OBJECTID",
+  "ACCOUNT": "ACCOUNT",
+  "BLOCK": "BLOCK",
+  "LOT": "LOT",
+  "ADDRESS": "ADDRESS",
+  "CITY_COUNTY": "CITY_COUNTY",
+  "POSTAL_CITY": "POSTAL_CITY",
+  "ZIPCODE": "ZIPCODE",
+  "STATUS": "STATUS",
+  "Calc_Acre": "CALCULATED ACRES",
+  "LastUpdate": "Last Update",
+  "Created_Date": "Created Date",
+  "ParcelID": "Parcel ID",
+  "Type": "Type",
+  "TAXYR": "TAXYR",
+  "OWN1": "OWN1",
+  "OWN2": "OWN2",
+  "SUBDNUM": "SUBDNUM",
+  "PIN": "PIN",
+  "YRBLT": "YRBLT",
+  "SFLA": "SFLA",
+  "LOT_1": "LOT_1",
+  "BLOCK_1": "BLOCK_1",
+  "ISD": "ISD",
+  "COLLEGE": "COLLEGE",
+  "AG_Exemption": "AG_Exemption",
+  "Shape_Length": "Shape_Length",
+  "Shape_Area": "Shape_Area"
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "ACCOUNT",
+   "type": "esriFieldTypeString",
+   "alias": "ACCOUNT",
+   "length": 18
+  },
+  {
+   "name": "BLOCK",
+   "type": "esriFieldTypeString",
+   "alias": "BLOCK",
+   "length": 6
+  },
+  {
+   "name": "LOT",
+   "type": "esriFieldTypeString",
+   "alias": "LOT",
+   "length": 6
+  },
+  {
+   "name": "ADDRESS",
+   "type": "esriFieldTypeString",
+   "alias": "ADDRESS",
+   "length": 60
+  },
+  {
+   "name": "CITY_COUNTY",
+   "type": "esriFieldTypeString",
+   "alias": "CITY_COUNTY",
+   "length": 20
+  },
+  {
+   "name": "POSTAL_CITY",
+   "type": "esriFieldTypeString",
+   "alias": "POSTAL_CITY",
+   "length": 20
+  },
+  {
+   "name": "ZIPCODE",
+   "type": "esriFieldTypeInteger",
+   "alias": "ZIPCODE"
+  },
+  {
+   "name": "STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "STATUS",
+   "length": 15
+  },
+  {
+   "name": "Calc_Acre",
+   "type": "esriFieldTypeDouble",
+   "alias": "CALCULATED ACRES"
+  },
+  {
+   "name": "LastUpdate",
+   "type": "esriFieldTypeDate",
+   "alias": "Last Update",
+   "length": 8
+  },
+  {
+   "name": "Created_Date",
+   "type": "esriFieldTypeDate",
+   "alias": "Created Date",
+   "length": 8
+  },
+  {
+   "name": "ParcelID",
+   "type": "esriFieldTypeString",
+   "alias": "Parcel ID",
+   "length": 20
+  },
+  {
+   "name": "Type",
+   "type": "esriFieldTypeString",
+   "alias": "Type",
+   "length": 25
+  },
+  {
+   "name": "TAXYR",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "TAXYR"
+  },
+  {
+   "name": "OWN1",
+   "type": "esriFieldTypeString",
+   "alias": "OWN1",
+   "length": 50
+  },
+  {
+   "name": "OWN2",
+   "type": "esriFieldTypeString",
+   "alias": "OWN2",
+   "length": 50
+  },
+  {
+   "name": "SUBDNUM",
+   "type": "esriFieldTypeString",
+   "alias": "SUBDNUM",
+   "length": 15
+  },
+  {
+   "name": "PIN",
+   "type": "esriFieldTypeString",
+   "alias": "PIN",
+   "length": 6
+  },
+  {
+   "name": "YRBLT",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "YRBLT"
+  },
+  {
+   "name": "SFLA",
+   "type": "esriFieldTypeInteger",
+   "alias": "SFLA"
+  },
+  {
+   "name": "LOT_1",
+   "type": "esriFieldTypeString",
+   "alias": "LOT_1",
+   "length": 20
+  },
+  {
+   "name": "BLOCK_1",
+   "type": "esriFieldTypeString",
+   "alias": "BLOCK_1",
+   "length": 20
+  },
+  {
+   "name": "ISD",
+   "type": "esriFieldTypeString",
+   "alias": "ISD",
+   "length": 50
+  },
+  {
+   "name": "COLLEGE",
+   "type": "esriFieldTypeString",
+   "alias": "COLLEGE",
+   "length": 50
+  },
+  {
+   "name": "AG_Exemption",
+   "type": "esriFieldTypeString",
+   "alias": "AG_Exemption",
+   "length": 2
+  },
+  {
+   "name": "Shape_Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Length"
+  },
+  {
+   "name": "Shape_Area",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Area"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 1,
+    "ACCOUNT": "100000053100015000",
+    "BLOCK": " ",
+    "LOT": " ",
+    "ADDRESS": "15304 Hwy 64 W",
+    "CITY_COUNTY": "Unincorporated",
+    "POSTAL_CITY": "Tyler",
+    "ZIPCODE": 75704,
+    "STATUS": null,
+    "Calc_Acre": 4.6116,
+    "LastUpdate": 1713795552000,
+    "Created_Date": null,
+    "ParcelID": "PID-48434",
+    "Type": "Residential",
+    "TAXYR": 2026,
+    "OWN1": "YANEZ JUAN & CHRISTIN AGUILAR YANEZ",
+    "OWN2": "",
+    "SUBDNUM": "100531",
+    "PIN": "044895",
+    "YRBLT": 0,
+    "SFLA": 0,
+    "LOT_1": null,
+    "BLOCK_1": null,
+    "ISD": "TY-ISD",
+    "COLLEGE": "TY-CLG",
+    "AG_Exemption": null,
+    "Shape_Length": 652.705285097878,
+    "Shape_Area": 26238.198884546102
+   }
+  }
+ ],
+ "exceededTransferLimit": true
+}

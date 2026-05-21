@@ -66,3 +66,38 @@ single-county repo.
 
 This finding is closed. ESC-001 (Phase 2 SPA browser-tooling halt) is a
 separate, unrelated issue and remains OPEN — v5.3.1 does not address it.
+
+
+---
+
+## FIND-002 — fixture path conflicts with the county-agnostic regression scanner
+
+Found 2026-05-21T23:53:29Z, framework v5.3.1, during Phase 2.
+
+`knowledge_base/engineering/05_verification_and_rollback.md` mandates that
+scraper fixtures live at `tests/fixtures/<source_id>/` and the harness at
+`tests/test_scrapers.py`. But `scaffold/tests/test_county_agnostic_regression.py`
+scans `tests/` as a universal directory and fails the build when county-specific
+terms appear there. County scraper fixtures inherently contain county data
+(owner names, situs cities, the state code) — so the two framework documents
+are in direct conflict: following the fixture doc breaks the regression gate.
+
+The regression scanner's exemption list is `data/`, `runs/`, `.claude/`,
+`dashboard/`, `scrapers/` — it does NOT exempt `tests/`.
+
+### Smith County response (v5.3.1-correct, no framework patch)
+County scraper fixtures and the fixture harness were placed inside the
+regression-exempt `scrapers/` tree instead of `tests/`:
+
+- `scrapers/fixtures/parcel_master/` — the 8-scenario fixtures
+- `scrapers/test_scrapers.py` — the fixture harness
+
+The framework files were NOT modified. The harness still satisfies the §05
+eight-scenario contract; it simply lives in a county-scoped, regression-exempt
+location.
+
+### Recommended v5.3.1+ fix
+Reconcile the two documents: either add `tests/fixtures/` to the regression
+scanner's exemption list (fixtures are inherently county-specific test data),
+or amend `05_verification_and_rollback.md` to specify a county-scoped,
+regression-exempt fixtures path (e.g. `scrapers/fixtures/<source_id>/`).
