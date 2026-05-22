@@ -2,10 +2,13 @@
 
 County: Smith County, Texas (`smith_tx`) — FIPS 48423 — county seat Tyler
 Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1
-Status: **ON HOLD — pending browser-capable build infrastructure**
-Phases 0–2 are complete and carry over unchanged; the build resumes from Phase 3.
-This is a temporary infrastructure hold, not a final delivery.
-Status date: 2026-05-21
+Status: **ON HOLD — parked pending the v5.4.0 pipeline engine**
+County builds do not resume until v5.4.0 ships. At resume, a wide Phase 0
+re-recon runs first (operator wide-recon dossier as input) and the §16 matrix
+is rebuilt, then Build Mode continues. Resume also requires browser + reCAPTCHA
+infrastructure for the clerk primary source.
+This is a temporary hold, not a final delivery.
+Status date: 2026-05-21 (operator wide-recon input captured)
 
 ---
 
@@ -17,10 +20,12 @@ Mode then halted at Phase 3 — the first PRIMARY EVENT SOURCE — because the
 County Clerk records portal is a reCAPTCHA-gated React SPA whose document API
 is runtime-injected, which requires browser-grade tooling this execution
 environment does not provide. The framework halted per Build Mode Protocol
-§02.9 — it did not fabricate lead rows or a dashboard. The Smith County build
-is **ON HOLD pending browser-capable build infrastructure**: a temporary
-infrastructure hold, not a final delivery. Phases 0–2 carry over unchanged;
-Build Mode resumes from Phase 3 on provisioned infrastructure.
+§02.9 — it did not fabricate lead rows or a dashboard. The operator has since
+completed a wide manual recon (36 candidate sources), captured as unverified
+input. The Smith County build is **ON HOLD — parked pending the v5.4.0 pipeline
+engine**: a temporary hold, not a final delivery. Phases 0–2 carry over
+unchanged; at the post-v5.4.0 resume a wide Phase 0 re-recon runs first, then
+Build Mode continues.
 
 ---
 
@@ -34,6 +39,23 @@ Build Eligibility verdict: **READY_TO_BUILD**.
 - 14 recon artifacts + 6 per-source fingerprints; schema-validated
   `config/counties/smith_tx.json`.
 - `REVIEW_GATE_1` signed (`proceed_full`).
+
+## Phase 0 — Wide-Recon Input Captured (2026-05-21)
+
+The operator completed a wide manual recon of Smith County / Tyler — **36
+candidate lead sources** across tax-foreclosure auctions, clerk records, court
+portals, tax-sale law-firm and struck-off resale portals, legal-notice
+publication portals, third-party auction/REO aggregators, parcel/CAD, the
+county excess-proceeds report, and City of Tyler code-enforcement portals.
+
+Captured verbatim, as **UNVERIFIED INPUT**, to
+`runs/smith_tx/recon/operator_source_dossier_2026-05-21.md`. This supersedes
+the original shallow Phase 0 (6 verified sources). It has NOT been probed,
+NOT §13-classified, NOT written into `config/counties/smith_tx.json`, and the
+§16 matrix has NOT been rebuilt from it. A full wide Phase 0 re-recon —
+empirical probe (HTTP status, access class, stdlib reachability) plus §13
+classification of every source, then a §16 matrix rebuild — is scheduled for
+the post-v5.4.0 resume. See `runs/smith_tx/recon/RECON_REOPEN_PENDING.md`.
 
 ## Phase 1 — Synthetic Data Harness — VERIFIED
 
@@ -149,8 +171,12 @@ When re-entered on provisioned infrastructure, Phases 0–2 carry over unchanged
 
 ## Session outcome
 
-Smith County, TX is **ON HOLD — pending browser-capable build infrastructure**.
-A temporary infrastructure hold (ESC-002), not a final delivery. Phases 0–2
-are complete and carry over unchanged. Build Mode does not auto-resume; it
-resumes from Phase 3 when re-entered on infrastructure with Playwright +
-Chromium + scraping dependencies + a reCAPTCHA path + GitHub auth.
+Smith County, TX is **ON HOLD — parked pending the v5.4.0 pipeline engine**.
+A temporary hold, not a final delivery. County builds do not resume until
+v5.4.0 ships. At the post-v5.4.0 resume, a wide Phase 0 re-recon runs first —
+the operator wide-recon dossier (36 sources, unverified) is its input, every
+source is empirically probed and §13-classified, and the §16 matrix is
+rebuilt — then Build Mode continues from Phase 3. Resume also requires
+browser + Chromium + reCAPTCHA infrastructure for the clerk primary source,
+plus the scraping dependencies and GitHub auth listed above. Build Mode does
+not auto-resume.
