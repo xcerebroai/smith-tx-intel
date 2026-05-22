@@ -77,3 +77,30 @@ The same environmental wall applies to the other Build Mode work:
 The framework behaved correctly: it did not fabricate a dashboard or fake
 scraper output when it could not obtain real data. That is the §4 / §13 product
 rule working as designed.
+
+
+---
+
+## HALT-002 — Phase 3 primary event source (clerk) — 2026-05-22T00:05:17Z
+
+Phase: 3 (first primary event source).  Escalation: ESC-002.
+
+Phase 3 attempted the Smith County Clerk primary event source
+(`clerk_recordings`, smith.tx.publicsearch.us) with genuine hidden-API
+discovery from the (now network-capable) build runtime. Findings:
+
+- Backend is `ko-search-api` (Kofile / GovOS Cloud Search).
+- The document-search XHR endpoint base is runtime-injected — not a static
+  literal in any JS bundle. Capturing it needs browser network inspection.
+- The search is Google reCAPTCHA-gated (vendor bundle loads recaptcha/api.js).
+- `/results` SSR returns an empty `isLoading` shell — no records over plain HTTP.
+
+Two compounding blockers (runtime-injected endpoint + reCAPTCHA gate), each
+needing tooling/authorization absent here. Halted per §02.9; no lead output
+fabricated. Recon DID succeed in enumerating the clerk doc-type taxonomy
+(10 groups / 190 types -> runs/smith_tx/recon/clerk_doc_type_taxonomy.json).
+
+Resume needs Playwright + Chromium and a reCAPTCHA path (operator-seeded
+session or an approved solver). Does not auto-resume — see ESC-002.
+
+Phase 2 (parcel-master enrichment) is BUILT and committed and is unaffected.

@@ -4,14 +4,14 @@
   "portal_vendor": "GovOS",
   "portal_family": "GovOS Cloud Search (publicsearch.us)",
   "rendering_type": "SPA",
-  "access_pattern": "SPA_WITH_API",
+  "access_pattern": "SPA_RECAPTCHA",
   "api_discovery_status": "NOT_FOUND",
-  "captcha_status": "NONE",
+  "captcha_status": "UNKNOWN",
   "session_status": "NO_SESSION_REQUIRED",
   "pagination_model": "OFFSET",
   "record_detail_model": "DETAIL_PAGE",
   "download_model": "PDF",
   "source_priority": "P0",
   "recommended_adapter": "scrapers/clerk_recordings.py",
-  "notes": "Free index + OCR full-text search; document images purchase-gated; SPA backed by an internal JSON API."
+  "notes": "Phase 3 correction: React SPA, backend ko-search-api (Kofile/GovOS). Document-search XHR endpoint is runtime-injected (not a static bundle literal); search is Google reCAPTCHA-gated. /results SSR shell carries no records. Phase 0 'captcha NONE' classification superseded. Resume needs Playwright + a reCAPTCHA path (seeded session or approved solver)."
 }

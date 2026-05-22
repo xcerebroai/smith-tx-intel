@@ -1,0 +1,942 @@
+{
+  "_meta": {
+    "source": "smith.tx.publicsearch.us window.__data docTypeMappings",
+    "tenant_id": "48423",
+    "county": "Smith County, Texas",
+    "captured_at": "2026-05-22T00:03:52Z",
+    "backend": "ko-search-api (Kofile/GovOS Cloud Search)",
+    "doc_groups": 10,
+    "total_doc_types": 190,
+    "note": "Clerk document-type taxonomy enumerated from the SSR config blob during the Phase 3 attempt. Lead-bearing groups for Build Mode: FC (Foreclosures), RP (Land Records), GVRN/MISC (liens, judgments where present)."
+  },
+  "doc_type_mappings": [
+    {
+      "code": "ASN",
+      "docGroup": [
+        {
+          "code": "AN",
+          "docType": [
+            {
+              "code": "ABANDON AN",
+              "description": "ABANDONMENT OF ASSUMED NAME"
+            },
+            {
+              "code": "AN",
+              "description": "ASSUMED NAME"
+            },
+            {
+              "code": "VOID AN",
+              "description": "VOID ASSUMED NAME"
+            },
+            {
+              "code": "WITHDRAWAL OF A",
+              "description": "WITHDRAWAL OF ASSUMED NAME"
+            }
+          ],
+          "description": "ASSUMED NAME"
+        }
+      ],
+      "description": "Assumed Names"
+    },
+    {
+      "code": "BR",
+      "docGroup": [
+        {
+          "code": "BR",
+          "docType": [
+            {
+              "code": "AMND BIRTH",
+              "description": "AMENDED BIRTH"
+            },
+            {
+              "code": "BIRTH",
+              "description": "BIRTH CERTIFICATE"
+            },
+            {
+              "code": "DELAY BIRTH",
+              "description": "DELAYED BIRTH"
+            },
+            {
+              "code": "VOID BIRTH",
+              "description": "VOID BIRTH CERTIFICATE"
+            }
+          ],
+          "description": "BIRTH RECORDS"
+        }
+      ],
+      "description": "Vitals"
+    },
+    {
+      "code": "CCM",
+      "docGroup": [
+        {
+          "code": "CCM",
+          "docType": [
+            {
+              "code": "CC AGENDA",
+              "description": "CC AGENDA"
+            },
+            {
+              "code": "CC ANDREW",
+              "description": "CC ANDREWS MINUTES"
+            },
+            {
+              "code": "CC APPL",
+              "description": "CC APPLICATION(S)"
+            },
+            {
+              "code": "CC APPT",
+              "description": "CC APPOINTMENTS"
+            },
+            {
+              "code": "CC APPR",
+              "description": "CC APPROVAL"
+            },
+            {
+              "code": "CC AUDIT",
+              "description": "CC AUDITORS DEPARTMENT"
+            },
+            {
+              "code": "CC AWARDS",
+              "description": "CC AWARDS"
+            },
+            {
+              "code": "CC BAIL",
+              "description": "CC BAIL BONDS MEETINGS"
+            },
+            {
+              "code": "CC BID",
+              "description": "CC BIDS AND PROPOSALS"
+            },
+            {
+              "code": "CC BOND",
+              "description": "CC BOND"
+            },
+            {
+              "code": "CC BUD",
+              "description": "CC BUDGETS"
+            },
+            {
+              "code": "CC COL",
+              "description": "CC COLLECTIONS DEPARTMENT"
+            },
+            {
+              "code": "CC COMM CT",
+              "description": "CC COMMISSIONERS COURT"
+            },
+            {
+              "code": "CC CONST",
+              "description": "CC CONSTABLES OFFICES"
+            },
+            {
+              "code": "CC AGR",
+              "description": "CC CONTRACTS & AGREEMNTS"
+            },
+            {
+              "code": "CC CNTY CL",
+              "description": "CC COUNTY CLERK"
+            },
+            {
+              "code": "CC CNTY CRT",
+              "description": "CC COUNTY COURTS @ LAW"
+            },
+            {
+              "code": "CC CNTY DEP",
+              "description": "CC COUNTY DEPOSITORIES"
+            },
+            {
+              "code": "CC CNTY POL",
+              "description": "CC COUNTY POLICY(S)"
+            },
+            {
+              "code": "CC CH",
+              "description": "CC COURTHOUSE"
+            },
+            {
+              "code": "CC CRIM",
+              "description": "CC CRIMINAL  JUSTICE COORDINATING COMMITTEE"
+            },
+            {
+              "code": "CC DEED",
+              "description": "CC DEED(S)"
+            },
+            {
+              "code": "CC DIST INFO",
+              "description": "CC DISTRIBUTED INFORMATION"
+            },
+            {
+              "code": "CC DIST ATTY",
+              "description": "CC DISTRICT ATTORNEY"
+            },
+            {
+              "code": "CC DIST CL",
+              "description": "CC DISTRICT CLERK"
+            },
+            {
+              "code": "CC ELECT",
+              "description": "CC ELECTIONS"
+            },
+            {
+              "code": "CC EMPLEE REC",
+              "description": "CC EMPLOYEE RECOGNITION"
+            },
+            {
+              "code": "CC EMPMNT REC",
+              "description": "CC EMPLOYMENT RECOGNITION"
+            },
+            {
+              "code": "CC FS",
+              "description": "CC FINANCIAL STATEMENT"
+            },
+            {
+              "code": "CC FIRE",
+              "description": "CC FIRE MARSHAL"
+            },
+            {
+              "code": "CC GRANT",
+              "description": "CC GRANTS"
+            },
+            {
+              "code": "CC IT",
+              "description": "CC INFORMATION TECHNOLOGY"
+            },
+            {
+              "code": "CC INS",
+              "description": "CC INSURANCE"
+            },
+            {
+              "code": "CC JP",
+              "description": "CC JUSTICE OF PEACE OFFICE"
+            },
+            {
+              "code": "CC LET",
+              "description": "CC LETTER(S)"
+            },
+            {
+              "code": "CC LIT",
+              "description": "CC LITTER ABATEMENT"
+            },
+            {
+              "code": "CC LOOP 49",
+              "description": "CC LOOP 49"
+            },
+            {
+              "code": "CC CC MIN",
+              "description": "CC COMMISSIONERS COURT MINUTES"
+            },
+            {
+              "code": "CC MISC",
+              "description": "CC MINUTES MISCELLANEOUS"
+            },
+            {
+              "code": "CC NOT",
+              "description": "CC NOTICES"
+            },
+            {
+              "code": "CC ORD",
+              "description": "CC ORDER"
+            },
+            {
+              "code": "CC PER",
+              "description": "CC PERSONNEL"
+            },
+            {
+              "code": "CC PET",
+              "description": "CC PETITIONS"
+            },
+            {
+              "code": "CC PHYS",
+              "description": "CC PHYSICAL PLNT OR MAINT"
+            },
+            {
+              "code": "CC UTIL",
+              "description": "CC PIPE & UTILITY INSTALL"
+            },
+            {
+              "code": "CC PLAN",
+              "description": "CC PLAN"
+            },
+            {
+              "code": "CC PLAT",
+              "description": "CC PLAT - SUBDIVISIONS"
+            },
+            {
+              "code": "CC PTR",
+              "description": "CC PRE TRIAL RELEASE"
+            },
+            {
+              "code": "CC PRES",
+              "description": "CC PRESENTATION"
+            },
+            {
+              "code": "CC PROJ",
+              "description": "CC PROJECT UPDATE(S)"
+            },
+            {
+              "code": "CC PUB COM",
+              "description": "CC PUBLIC COMMENT"
+            },
+            {
+              "code": "CC PUB HEAR",
+              "description": "CC PUBLIC HEARINGS"
+            },
+            {
+              "code": "CC PURCH",
+              "description": "CC PURCHASING"
+            },
+            {
+              "code": "CC REC",
+              "description": "CC RECORDS SERVICES"
+            },
+            {
+              "code": "CC RENEW",
+              "description": "CC RENEWAL"
+            },
+            {
+              "code": "CC RPT",
+              "description": "CC REPORT"
+            },
+            {
+              "code": "CC REQ",
+              "description": "CC REQUEST"
+            },
+            {
+              "code": "CC RES",
+              "description": "CC RESOLUTIONS"
+            },
+            {
+              "code": "CC REV",
+              "description": "CC REVISION(S)"
+            },
+            {
+              "code": "CC ROAD",
+              "description": "CC ROAD AND BRIDGE"
+            },
+            {
+              "code": "CC ROAD CL",
+              "description": "CC ROAD CLOSURE"
+            },
+            {
+              "code": "CC ROAD RN",
+              "description": "CC ROAD RENAME"
+            },
+            {
+              "code": "CC SHRF",
+              "description": "CC SHERIFF AND JAIL"
+            },
+            {
+              "code": "CC SO",
+              "description": "CC SPECIAL ORDERS"
+            },
+            {
+              "code": "CC LET AGRMT",
+              "description": "CC STANDARD LETTER AGRMT"
+            },
+            {
+              "code": "CC STRCK",
+              "description": "CC STRUCK -OFF"
+            },
+            {
+              "code": "CC TAX",
+              "description": "CC TAX OFFICE"
+            },
+            {
+              "code": "CC TREAS",
+              "description": "CC TREASURERS"
+            },
+            {
+              "code": "CC VET",
+              "description": "CC VETERANS SERVICES"
+            },
+            {
+              "code": "VOID CCM",
+              "description": "VOID Commissioner's Minutes"
+            },
+            {
+              "code": "CC SURETY BONDS",
+              "description": "CC SURETY BONDS"
+            },
+            {
+              "code": "CC MINUTES",
+              "description": "CC MINUTES"
+            },
+            {
+              "code": "CC APRV MINUTES",
+              "description": "CC APPROVED MINUTES"
+            }
+          ],
+          "description": "COMMISSIONERS COURTS MINUTES"
+        }
+      ],
+      "description": "Commissioners Court"
+    },
+    {
+      "code": "DC",
+      "docGroup": [
+        {
+          "code": "DC",
+          "docType": [
+            {
+              "code": "DEATH",
+              "description": "DEATH CERTIFICATE"
+            },
+            {
+              "code": "VOID DEATH",
+              "description": "VOID DEATH CERTIFICATE"
+            }
+          ],
+          "description": "DEATH CERTIFICATE"
+        }
+      ],
+      "description": "Death Certificates"
+    },
+    {
+      "code": "FC",
+      "docGroup": [
+        {
+          "code": "FC",
+          "docType": [
+            {
+              "code": "FN",
+              "description": "FORECLOSURE"
+            },
+            {
+              "code": "VOID FN",
+              "description": "VOID FORECLOSURE"
+            }
+          ],
+          "description": "FORECLOSURE"
+        }
+      ],
+      "description": "Foreclosures"
+    },
+    {
+      "code": "GVRN",
+      "docGroup": [
+        {
+          "code": "GOV",
+          "docType": [
+            {
+              "code": "BOND GOV",
+              "description": "BONDS GOVERNMENTAL"
+            },
+            {
+              "code": "DEP",
+              "description": "DEPUTIZATION"
+            },
+            {
+              "code": "OATH",
+              "description": "OATH OF OFFICE"
+            },
+            {
+              "code": "VOID DEP",
+              "description": "VOID DEPUTIZATION"
+            },
+            {
+              "code": "DEP OATH",
+              "description": "DEPUTIZATIONS AND OATHS"
+            }
+          ],
+          "description": "GOVERNMENTALS"
+        }
+      ],
+      "description": "Governmentals"
+    },
+    {
+      "code": "MB",
+      "docGroup": [
+        {
+          "code": "MB",
+          "docType": [
+            {
+              "code": "BRANDS",
+              "description": "BRANDS"
+            },
+            {
+              "code": "VOID BRANDS",
+              "description": "VOID BRANDS"
+            }
+          ],
+          "description": "MARKS AND BRANDS"
+        }
+      ],
+      "description": "Marks and Brands"
+    },
+    {
+      "code": "MC",
+      "docGroup": [
+        {
+          "code": "MC",
+          "docType": [
+            {
+              "code": "ML",
+              "description": "MARRIAGE LICENSE"
+            },
+            {
+              "code": "TWOGETHER",
+              "description": "TWOGETHER"
+            },
+            {
+              "code": "VOID MARRIAGE L",
+              "description": "VOID MARRIAGE LICENSE"
+            },
+            {
+              "code": "PRE-MAR",
+              "description": "PRE-MARITAL COURSE"
+            },
+            {
+              "code": "MAR APP",
+              "description": "MARRIAGE APPLICATION"
+            }
+          ],
+          "description": "MARRIAGE LICENSES"
+        },
+        {
+          "code": "INF",
+          "docType": [
+            {
+              "code": "INF MAR",
+              "description": "INFORMAL MARRIAGE"
+            },
+            {
+              "code": "VOID IML",
+              "description": "VOID IML"
+            }
+          ],
+          "description": "INFORMAL MARRIAGE"
+        }
+      ],
+      "description": "Marriage"
+    },
+    {
+      "code": "MISC",
+      "docGroup": [
+        {
+          "code": "PB",
+          "docType": [
+            {
+              "code": "PUBLIC NOTICE",
+              "description": "PUBLIC NOTICE"
+            }
+          ],
+          "description": "PUBLIC NOTICES"
+        },
+        {
+          "code": "MISC",
+          "docType": [
+            {
+              "code": "WR",
+              "description": "WATER RECORD"
+            },
+            {
+              "code": "BUDGET",
+              "description": "BUDGET"
+            },
+            {
+              "code": "ESTRAY",
+              "description": "ESTRAY"
+            }
+          ],
+          "description": "MISCELLANEOUS"
+        }
+      ],
+      "description": "Miscellaneous"
+    },
+    {
+      "code": "RP",
+      "docGroup": [
+        {
+          "code": "STATE LIEN",
+          "docType": [
+            {
+              "code": "LN REL STP",
+              "description": "LIEN-RELEASE STATE TAX PUBLIC"
+            },
+            {
+              "code": "LN REL STS",
+              "description": "LIEN-RELEASE STATE TAX STATE"
+            },
+            {
+              "code": "LN STP",
+              "description": "LIEN-STATE TAX PUBLIC"
+            },
+            {
+              "code": "LN STS",
+              "description": "LIEN-STATE TAX-STATE"
+            }
+          ],
+          "description": "STATE TAX LIENS"
+        },
+        {
+          "code": "RP",
+          "docType": [
+            {
+              "code": "ABANDON",
+              "description": "ABANDONMENT"
+            },
+            {
+              "code": "AJ",
+              "description": "ABSTRACT JUDGMENT"
+            },
+            {
+              "code": "ACCEPT",
+              "description": "ACCEPTANCE"
+            },
+            {
+              "code": "AFF",
+              "description": "AFFIDAVIT"
+            },
+            {
+              "code": "AGR",
+              "description": "AGREEMENT"
+            },
+            {
+              "code": "AMNDMNT",
+              "description": "AMENDMENTS"
+            },
+            {
+              "code": "APPL",
+              "description": "APPLICATION"
+            },
+            {
+              "code": "APPT SUB TR",
+              "description": "APPOINTMENT OF SUB TRUSTEE"
+            },
+            {
+              "code": "ARTICLES",
+              "description": "ARTICLES"
+            },
+            {
+              "code": "ASSES",
+              "description": "ASSESSMENT"
+            },
+            {
+              "code": "ASSIGN",
+              "description": "ASSIGNMENT"
+            },
+            {
+              "code": "ASSUME",
+              "description": "ASSUMPTION"
+            },
+            {
+              "code": "BANKRUPTCY",
+              "description": "BANKRUPTCY"
+            },
+            {
+              "code": "BS",
+              "description": "BILL OF SALE"
+            },
+            {
+              "code": "BOND",
+              "description": "BOND"
+            },
+            {
+              "code": "BY LAWS",
+              "description": "BY LAWS"
+            },
+            {
+              "code": "CERT",
+              "description": "CERTIFICATE"
+            },
+            {
+              "code": "CIVIL",
+              "description": "CIVIL"
+            },
+            {
+              "code": "CW",
+              "description": "CONSENT & WAIVER"
+            },
+            {
+              "code": "CONT SALE",
+              "description": "CONTRACT FOR SALE"
+            },
+            {
+              "code": "CONVEY",
+              "description": "CONVEYANCE"
+            },
+            {
+              "code": "DECL",
+              "description": "DECLARATION"
+            },
+            {
+              "code": "DED",
+              "description": "DEDICATION"
+            },
+            {
+              "code": "DEED",
+              "description": "DEED"
+            },
+            {
+              "code": "DT",
+              "description": "DEED OF TRUST"
+            },
+            {
+              "code": "DESIG",
+              "description": "DESIGNATION"
+            },
+            {
+              "code": "DIV",
+              "description": "DIVORCE"
+            },
+            {
+              "code": "ESMNT",
+              "description": "EASEMENT"
+            },
+            {
+              "code": "EXT",
+              "description": "EXTENSIONS"
+            },
+            {
+              "code": "FLD NOTE",
+              "description": "FIELD NOTES"
+            },
+            {
+              "code": "JDG",
+              "description": "JUDGMENT"
+            },
+            {
+              "code": "LSE",
+              "description": "LEASE"
+            },
+            {
+              "code": "LET",
+              "description": "LETTER"
+            },
+            {
+              "code": "LN",
+              "description": "LIEN"
+            },
+            {
+              "code": "LN EXT",
+              "description": "LIEN-EXTENSION"
+            },
+            {
+              "code": "LN MECH",
+              "description": "LIEN-MECHANICS"
+            },
+            {
+              "code": "LN PREL",
+              "description": "LIEN-PARTIAL RELEASE"
+            },
+            {
+              "code": "LN TRAN",
+              "description": "LIEN-TRANSFER"
+            },
+            {
+              "code": "LP",
+              "description": "LIS PENDENS"
+            },
+            {
+              "code": "MOD",
+              "description": "MODIFICATION"
+            },
+            {
+              "code": "NOT",
+              "description": "NOTICE"
+            },
+            {
+              "code": "OAG",
+              "description": "OIL & GAS"
+            },
+            {
+              "code": "ORD",
+              "description": "ORDER"
+            },
+            {
+              "code": "ORDNC",
+              "description": "ORDINANCE"
+            },
+            {
+              "code": "PATENT",
+              "description": "PATENT"
+            },
+            {
+              "code": "PERMIT",
+              "description": "PERMIT"
+            },
+            {
+              "code": "POA",
+              "description": "POWER OF ATTORNEY"
+            },
+            {
+              "code": "PROB",
+              "description": "PROBATE"
+            },
+            {
+              "code": "RAT",
+              "description": "RATIFICATION"
+            },
+            {
+              "code": "RED",
+              "description": "REDACTION"
+            },
+            {
+              "code": "REINST",
+              "description": "REINSTATEMENT"
+            },
+            {
+              "code": "REL",
+              "description": "RELEASE"
+            },
+            {
+              "code": "RENEW",
+              "description": "RENEWAL"
+            },
+            {
+              "code": "RESOL",
+              "description": "RESOLUTION"
+            },
+            {
+              "code": "RESTRCT",
+              "description": "RESTRICTION"
+            },
+            {
+              "code": "REV",
+              "description": "REVOCATION"
+            },
+            {
+              "code": "ROW",
+              "description": "RIGHT OF WAY"
+            },
+            {
+              "code": "SHRF SALE",
+              "description": "SHERIFF SALE"
+            },
+            {
+              "code": "STMNT",
+              "description": "STATEMENT"
+            },
+            {
+              "code": "TRANS",
+              "description": "TRANSFER"
+            },
+            {
+              "code": "TRUST",
+              "description": "TRUST"
+            },
+            {
+              "code": "UTIL",
+              "description": "UTILITIES"
+            },
+            {
+              "code": "VAR",
+              "description": "VARIANCE"
+            },
+            {
+              "code": "VOID REST",
+              "description": "VOID RESTRICTION"
+            },
+            {
+              "code": "VOIDED",
+              "description": "VOIDED"
+            },
+            {
+              "code": "WAIVER",
+              "description": "WAIVER"
+            },
+            {
+              "code": "WD",
+              "description": "WARRANTY DEED"
+            },
+            {
+              "code": "CH NAME",
+              "description": "CHANGE OF NAME"
+            },
+            {
+              "code": "GRID",
+              "description": "GRID"
+            },
+            {
+              "code": "VOID BOND",
+              "description": "VOID BOND"
+            },
+            {
+              "code": "M",
+              "description": "MISCELLANEOUS"
+            }
+          ],
+          "description": "REAL PROPERTY"
+        },
+        {
+          "code": "PL",
+          "docType": [
+            {
+              "code": "PLAT",
+              "description": "PLAT"
+            },
+            {
+              "code": "VOID PLAT",
+              "description": "VOID PLAT"
+            }
+          ],
+          "description": "PLATS"
+        },
+        {
+          "code": "HL",
+          "docType": [
+            {
+              "code": "LN HOSP",
+              "description": "LIEN-HOSPITAL"
+            },
+            {
+              "code": "LN HOSP REL",
+              "description": "LIEN - HOSPITAL RELEASE"
+            },
+            {
+              "code": "VOID HL",
+              "description": "VOID HL"
+            }
+          ],
+          "description": "HOSPITAL LIENS"
+        },
+        {
+          "code": "FS",
+          "docType": [
+            {
+              "code": "FS",
+              "description": "FINANCING STATEMENT"
+            },
+            {
+              "code": "VOID FS",
+              "description": "FINANCING STATEMENT VOID"
+            }
+          ],
+          "description": "FINANCING STATEMENTS"
+        },
+        {
+          "code": "FED LIEN",
+          "docType": [
+            {
+              "code": "LN FTR",
+              "description": "LIEN -FED TAX RELEASE"
+            },
+            {
+              "code": "LN FT",
+              "description": "LIEN-FED TAX"
+            }
+          ],
+          "description": "FEDERAL TAX LIENS"
+        },
+        {
+          "code": "CS LIEN",
+          "docType": [
+            {
+              "code": "LN CS",
+              "description": "LIEN - CHILD SUPPORT"
+            },
+            {
+              "code": "LN CS REL",
+              "description": "LIEN - CHILD SUPPORT RELEASE"
+            },
+            {
+              "code": "LN CS P REL",
+              "description": "LIEN - CHILD SUPPORT PARTIAL RELEASE"
+            }
+          ],
+          "description": "CHILD SUPPORT LIENS"
+        }
+      ],
+      "description": "Land Records"
+    }
+  ]
+}

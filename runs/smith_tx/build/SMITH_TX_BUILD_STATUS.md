@@ -1,9 +1,9 @@
 # Smith County, TX — Build Status
 
 County: Smith County, Texas (`smith_tx`) — FIPS 48423 — county seat Tyler
-Framework: recon/config generated under v5.3.0; Phase 1 verified under v5.3.1
+Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1
 Status: **ON HOLD — pending browser-capable build infrastructure**
-Phases 0–1 are complete and carry over unchanged; the build resumes from Phase 2.
+Phases 0–2 are complete and carry over unchanged; the build resumes from Phase 3.
 This is a temporary infrastructure hold, not a final delivery.
 Status date: 2026-05-21
 
@@ -11,15 +11,16 @@ Status date: 2026-05-21
 
 ## Summary
 
-This run delivered a complete, verified recon dossier and a green synthetic
-harness for Smith County, TX. Build Mode then halted at Phase 2 because the
-primary lead portal is a JavaScript single-page app that requires browser-grade
-automation this execution environment does not provide. The framework halted
-correctly per Build Mode Protocol §02.9 — it did not fabricate scraper output or
-a dashboard. Per operator decision (ESC-001), the Smith County build is **ON HOLD
-— pending browser-capable build infrastructure**. This is a temporary
-infrastructure hold, not a final delivery: Phases 0 and 1 are complete and carry
-over unchanged, and Build Mode resumes from Phase 2 on provisioned infrastructure.
+This run delivered a verified recon dossier, a green synthetic harness, and a
+built-and-tested parcel-master ENRICHMENT adapter for Smith County, TX. Build
+Mode then halted at Phase 3 — the first PRIMARY EVENT SOURCE — because the
+County Clerk records portal is a reCAPTCHA-gated React SPA whose document API
+is runtime-injected, which requires browser-grade tooling this execution
+environment does not provide. The framework halted per Build Mode Protocol
+§02.9 — it did not fabricate lead rows or a dashboard. The Smith County build
+is **ON HOLD pending browser-capable build infrastructure**: a temporary
+infrastructure hold, not a final delivery. Phases 0–2 carry over unchanged;
+Build Mode resumes from Phase 3 on provisioned infrastructure.
 
 ---
 
@@ -27,114 +28,129 @@ over unchanged, and Build Mode resumes from Phase 2 on provisioned infrastructur
 
 Build Eligibility verdict: **READY_TO_BUILD**.
 
-- Source-of-Record Matrix produced for all 27 canonical lead types
-  (`runs/smith_tx/recon/source_of_record_matrix.json` / `.md`): 18 live or
-  live-limited, 4 blocked/paid, 2 not-found (municipal Demolition/Condemnation),
-  1 not-applicable in TX (Tax Sale Certificate — TX is a redeemable tax-deed
-  state), 2 operator-review (Eviction, Surplus).
-- 6 sources verified through the five-layer gate: `clerk_recordings` and
-  `district_court` (PRIMARY), `sheriff_tax_auctions` and `tax_collector`
-  (BLOCKED — anti-bot HTTP 403), `parcel_master` and `gis_parcels` (ENRICHMENT).
-- 14 recon artifacts + 6 per-source fingerprints under `runs/smith_tx/recon/`.
-- County config `config/counties/smith_tx.json` written via
-  `scaffold/ops/write_county_config.py` — schema VALIDATED.
-- `REVIEW_GATE_1` signed (`runs/smith_tx/gates/REVIEW_GATE_1.signoff.json`,
-  decision `proceed_full`).
+- Source-of-Record Matrix for all 27 canonical lead types
+  (`runs/smith_tx/recon/source_of_record_matrix.json` / `.md`).
+- 6 sources verified through the five-layer gate.
+- 14 recon artifacts + 6 per-source fingerprints; schema-validated
+  `config/counties/smith_tx.json`.
+- `REVIEW_GATE_1` signed (`proceed_full`).
 
 ## Phase 1 — Synthetic Data Harness — VERIFIED
 
-- Universal pipeline run end-to-end on the framework synthetic fixtures
-  (12 parcels, 24 signals) with `config/counties/smith_tx.json`.
-- Phase 1 acceptance verifier `verify_synthetic_harness.py`: **110/110
-  assertions PASS, 0 fail** — re-confirmed natively under framework v5.3.1
-  (the v5.3.1 `_auto_discover_county_config()` fix closed FIND-001; see
-  `findings.md`).
-- Framework gate suite `scaffold/tests/run_all.py`: PASS (4/4).
+- Universal pipeline run end-to-end on the framework synthetic fixtures with
+  `config/counties/smith_tx.json`.
+- Phase 1 verifier: **110/110 assertions PASS** (framework v5.3.1).
+- Framework gate suite `run_all.py`: PASS (4/4).
 - Detail: `runs/smith_tx/build/phase1_synthetic_report.md`.
 
-## Phase 2 — First Real Adapter — BLOCKED (ESC-001)
+## Phase 2 — Enrichment Foundation Adapter — BUILT
 
-Target: the `clerk_recordings` adapter for the Smith County Clerk Official
-Public Records portal, `https://smith.tx.publicsearch.us/`.
+Per the corrected build sequencing, Phase 2 builds the ENRICHMENT FOUNDATION
+first (not a lead source). Per §13, parcel data decorates leads — it never
+originates one. This phase produced zero signals and zero lead rows.
 
-**Blocker.** `publicsearch.us` (GovOS Cloud Search) is a JavaScript single-page
-app. Its record data is served by an *undocumented internal* API. Building the
-adapter requires hidden-API discovery via live browser network inspection
-(Playwright / DevTools / a HAR capture). This Build Mode execution environment
-provides file operations, Python/Bash, and single-page WebFetch/WebSearch only —
-no browser, no Playwright, no network inspection. Discovery attempts:
-WebSearch (no documented API exists), `WebFetch https://api.publicsearch.us/`
-(ECONNREFUSED), `WebFetch .../sitemap.xml` (404).
+- **Source discovered:** Smith County GIS open ArcGIS REST "Tax Parcels"
+  layer — `Gallery/TaxParcelQuery/MapServer/1`, 141,692 parcels, no auth,
+  no CAPTCHA. (Supersedes the Phase 0 esearch guess.)
+- **Adapter built:** `scrapers/parcel_master.py` — emits §4.32 wrapped raw
+  records via the framework ArcGIS helper; stale Bexar scrapers deleted.
+- **Verified:** `scrapers/test_scrapers.py` 8-scenario fixture harness —
+  33 assertions pass. Live full-layer coverage: ACCOUNT 99%, owner 98%,
+  situs address 96%. Framework gate green (4/4).
+- Committed to branch `smith-tx-phase0-phase1-delivery`
+  (commit "Phase 2 ENRICHMENT FOUNDATION only — no lead origination").
+- A dashboard is NOT buildable from this output — enrichment cannot
+  originate lead rows.
 
-Guessing the API contract is prohibited by MASTER_PROMPT §7 ("discover ground
-truth from the source"), and an unvalidated scraper would fail the REVIEW_GATE_3
-"validated against the live source" contract. v5.3.0/v5.3.1 also ship no
-`_publicsearch_portal.py` protocol client (§4.32 lists it "Future").
+## Phase 3 — First Primary Event Source — BLOCKED (ESC-002)
 
-The framework halted per §02.9 — `runs/smith_tx/build/halt_log.md` (HALT-001)
-and `runs/smith_tx/build/escalations/ESC-001-clerk-adapter-tooling.md`. No
-dashboard, no scraper output, and no fabricated data were produced.
+Target: `clerk_recordings` — the Smith County Clerk Official Public Records
+(`https://smith.tx.publicsearch.us/`). This is the real lead-origination
+test; lead rows must originate from a primary event source, not enrichment.
+
+**What Phase 3 discovered** (genuine hidden-API discovery from the
+now-network-capable build runtime):
+
+- Backend is **`ko-search-api`** (Kofile / GovOS Cloud Search), a React SPA.
+- Tenant config server-rendered: `tenantId 48423`, Smith County, clerk Phillips.
+- The **clerk document-type taxonomy was fully enumerated** — 10 groups,
+  190 doc types — saved to `runs/smith_tx/recon/clerk_doc_type_taxonomy.json`.
+  Lead-bearing groups: `[FC] Foreclosures`, `[RP] Land Records` (87 types),
+  `[GVRN]`, `[CCM]`, `[MISC]`.
+- `/results` server-renders only an empty `isLoading` shell — document
+  records load via a client-side XHR.
+- The document-search XHR endpoint base is **runtime-injected** (not a static
+  literal in any JS bundle) — capturing it needs browser network inspection.
+- The vendor bundle loads **Google reCAPTCHA** — the search is reCAPTCHA-gated.
+  (This corrects the Phase 0 `captcha NONE` classification; the
+  `clerk_recordings` config block and fingerprint are updated to match.)
+
+**Blocker.** Two compounding blockers: (1) the `ko-search-api` endpoint is
+runtime-injected → needs Playwright/DevTools network capture; (2) the search
+is reCAPTCHA-gated → needs an operator-approved solver or a seeded session
+(§4.14, operator-gated). Both require tooling/authorization this environment
+lacks. Guessing the contract is prohibited by §7. Halted per §02.9 —
+`runs/smith_tx/build/halt_log.md` (HALT-002),
+`runs/smith_tx/build/escalations/ESC-002-clerk-primary-source.md`. No lead
+output was fabricated.
 
 ## This is a source-reality / environment blocker — NOT a framework defect
 
-The framework behaved exactly as designed. It:
-- correctly fingerprinted `publicsearch.us` as an SPA needing hidden-API
-  discovery during recon;
-- entered Build Mode only after the preconditions and gates were satisfied;
-- attempted the approved discovery path;
-- halted cleanly per §02.9 when the path could not complete, with a full
-  halt log and escalation, instead of fabricating output (the §4 / §13
-  product rule — never fill a dashboard with fake or enrichment-only data).
-
-The blocker is the **reality of the source** (a JS SPA) meeting the **reality of
-this environment** (no browser tooling). `publicsearch.us` is fully usable by a
-human and by a properly-provisioned Claude Code instance with Playwright. The
-county is buildable; this environment simply lacks the tooling to build it.
+The framework behaved as designed: it fingerprinted the SPA during recon,
+entered Build Mode through the gates, built the enrichment foundation,
+attempted the primary source with real discovery, and halted cleanly per
+§02.9 rather than fabricate lead rows from enrichment (the §4 / §13 product
+rule). The blocker is the reality of the source (a reCAPTCHA-gated SPA with a
+runtime-injected API) meeting the reality of this environment (no browser
+tooling). The County Clerk source is buildable — by a properly-provisioned
+Claude Code instance with Playwright — and this run got far enough to hand
+that instance the doc-type taxonomy, tenant id, and backend identity.
 
 ---
 
-## Infrastructure required for Build Mode Phases 2–8
+## Infrastructure required to resume Build Mode (Phase 3 onward)
 
-To resume from Phase 2, run Build Mode in an environment that provides:
-
-- **Playwright + Chromium** — for the `publicsearch.us` and Tyler Odyssey SPAs
-  (hidden-API discovery and/or rendered scraping), the RealAuction
-  `use_playwright` strategy, and the Phase 6 live-verification gate.
+- **Playwright + Chromium** — to capture the `ko-search-api` document-search
+  XHR, render the clerk and Tyler Odyssey SPAs, run the RealAuction
+  `use_playwright` strategy, and perform the Phase 6 live-verification gate.
+- **A reCAPTCHA path for the clerk source** — an operator-approved CAPTCHA
+  solver (§4.14 `use_captcha_solver`, cost-gated) or an operator-seeded
+  session (§4.14 E1 `use_seeded_session`).
 - **A Python environment with the scraping dependencies** — `requests`,
-  `httpx`, `playwright`, `beautifulsoup4`/`lxml`, `pdfplumber`/`PyMuPDF`
-  (sheriff/tax PDFs), `openpyxl` (CAD bulk exports), per
-  `knowledge_base/engineering/01_python_environment.md` and `02_scraping_libraries.md`.
+  `httpx`, `playwright`, `beautifulsoup4`/`lxml`, `pdfplumber`/`PyMuPDF`,
+  `openpyxl` (per `engineering/01_python_environment.md`, `02_scraping_libraries.md`).
 - **GitHub authentication + a private repo** — for the Phase 8 GitHub Pages
-  deploy. `config/counties/smith_tx.json` `deployment.github_org` is still the
-  `{{GITHUB_ORG}}` placeholder and must be set.
-- Network egress to the county portals (`publicsearch.us`, `portal.smith-county.com`,
-  `smith.texas.sheriffsaleauctions.com`, `publictax.smith-county.com`,
-  `smithcad.org`).
+  deploy. `deployment.github_org` is still the `{{GITHUB_ORG}}` placeholder.
+- Network egress to the county portals.
 
-Note: per v5.3.0/v5.3.1 VERSION_NOTES (§4.27, §4.39), the production
-live-browser verifier (`verify_live.py`), the watchdog, and the production
-semantic verifier ship as stubs / contract-surface only — Phase 6 production
-verification is a per-county responsibility on that infrastructure.
+Note: per v5.3.x VERSION_NOTES (§4.27, §4.39), the production live-browser
+verifier, watchdog, and semantic verifier ship as contract-surface/stubs —
+Phase 6 production verification is a per-county responsibility on that
+infrastructure.
 
-When re-entered on provisioned infrastructure, Phase 0 recon, the validated
-county config, and the Phase 1 synthetic pass in this repo carry over unchanged.
+When re-entered on provisioned infrastructure, Phases 0–2 carry over unchanged.
 
 ---
 
 ## Carry-over assets (reusable as-is)
 
-- `config/counties/smith_tx.json` — schema-validated county config, 6 sources,
-  27-type SoR matrix embedded.
-- `runs/smith_tx/recon/` — 14 recon artifacts + 6 fingerprints.
+- `config/counties/smith_tx.json` — schema-validated config, 6 sources,
+  27-type SoR matrix; `parcel_master` and `clerk_recordings` blocks updated
+  with Build-Mode discoveries.
+- `runs/smith_tx/recon/` — recon artifacts, 6 fingerprints, and
+  `clerk_doc_type_taxonomy.json` (the enumerated clerk doc-type taxonomy).
+- `scrapers/parcel_master.py` + `scrapers/test_scrapers.py` +
+  `scrapers/fixtures/parcel_master/` — the built, fixture-verified
+  enrichment adapter.
 - `runs/smith_tx/gates/` — REVIEW_GATE_1..6 signoffs.
-- `runs/smith_tx/build/` — Phase 1 report, findings (FIND-001 resolved),
-  halt log, ESC-001, this status report.
-- `runs/smith_tx/operator_notes.md` — operator-volunteered build-scope decisions.
+- `runs/smith_tx/build/` — Phase 1 report, findings (FIND-001 resolved,
+  FIND-002), halt log (HALT-001/002), ESC-001/002, this status report.
+- `runs/smith_tx/operator_notes.md` — operator build-scope decisions.
 
 ## Session outcome
 
 Smith County, TX is **ON HOLD — pending browser-capable build infrastructure**.
-This is a temporary infrastructure hold (ESC-001), not a final delivery. Phases 0
-and 1 are complete and carry over unchanged. Build Mode does not auto-resume; it
-resumes from Phase 2 when re-entered on infrastructure with Playwright + Chromium
-+ scraping dependencies + GitHub auth, as listed above.
+A temporary infrastructure hold (ESC-002), not a final delivery. Phases 0–2
+are complete and carry over unchanged. Build Mode does not auto-resume; it
+resumes from Phase 3 when re-entered on infrastructure with Playwright +
+Chromium + scraping dependencies + a reCAPTCHA path + GitHub auth.
