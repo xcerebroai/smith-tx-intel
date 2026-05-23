@@ -1,0 +1,2282 @@
+[
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001102012060",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=35&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001305021040",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=10&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001819010001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=19&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001826031010",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=37&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001827006020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=20&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=26&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002030",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=38&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000004300025015",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=29&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=2&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019010",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=3&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000020900007002",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=21&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000029100002005",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=27&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701021020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=36&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701034001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=32&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701035001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 2,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=30&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=31&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053000018020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=8&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100014000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=4&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100015000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=1&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000061100001045",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=28&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000062400071000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=22&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026002",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=15&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026050",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=14&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000086700008000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=25&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000109900077020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=9&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800006010",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=6&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800008000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=5&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-102880000000002000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=23&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-157575000001006000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=17&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-179965000001004001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=18&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-180230001300016000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=12&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000245000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 2,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=33&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=7&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000412000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=24&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000413000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=34&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-181210000500001000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 2,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=13&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=16&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-181281000100050000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=11&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_smith_tx-parcel_master-CHEROKEE CO",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "PARCEL_MASTER against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "PARCEL_MASTER against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "PARCEL_MASTER against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "PARCEL_MASTER",
+          "parcel_id": null,
+          "signal_type": "Parcel Master"
+        },
+        "canonical_doc_type": "PARCEL_MASTER",
+        "count": 262,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Parcel Master",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=100&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=101&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=102&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=103&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=104&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=105&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=106&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=107&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=108&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=109&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=110&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=111&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=112&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=113&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=114&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=115&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=116&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=117&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=118&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=119&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=120&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=121&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=122&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=123&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=124&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=125&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=126&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=127&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=128&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=129&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=130&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=131&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=132&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=133&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=134&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=135&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=136&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=137&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=138&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=139&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=140&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=141&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=142&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=143&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=144&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=145&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=146&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=147&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=148&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=149&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=150&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=151&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=152&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=153&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=154&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=155&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=156&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=157&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=158&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=159&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=160&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=161&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=162&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=163&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=164&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=165&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=166&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=167&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=168&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=169&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=170&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=171&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=172&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=173&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=174&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=175&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=176&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=177&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=178&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=179&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=180&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=181&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=182&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=183&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=184&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=185&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=186&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=187&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=188&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=189&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=190&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=191&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=192&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=193&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=194&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=195&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=196&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=197&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=198&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=199&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=200&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=201&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=202&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=203&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=204&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=205&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=206&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=207&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=208&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=209&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=210&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=211&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=212&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=213&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=214&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=215&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=216&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=217&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=218&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=219&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=220&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=221&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=222&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=223&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=224&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=225&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=226&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=227&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=228&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=229&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=230&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=231&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=232&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=233&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=234&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=235&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=236&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=237&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=238&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=239&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=240&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=241&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=242&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=243&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=244&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=245&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=246&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=247&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=248&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=249&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=250&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=251&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=252&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=253&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=254&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=255&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=256&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=257&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=258&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=259&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=260&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=261&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=262&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=263&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=264&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=265&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=266&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=267&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=268&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=269&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=270&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=271&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=272&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=273&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=274&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=275&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=276&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=277&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=278&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=279&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=280&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=281&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=282&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=283&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=284&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=285&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=286&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=287&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=288&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=289&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=290&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=291&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=292&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=293&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=294&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=295&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=296&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=297&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=298&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=299&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=300&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=39&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=40&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=41&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=42&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=43&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=44&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=45&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=46&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=47&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=48&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=49&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=50&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=51&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=52&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=53&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=54&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=55&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=56&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=57&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=58&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=59&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=60&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=61&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=62&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=63&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=64&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=65&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=66&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=67&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=68&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=69&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=70&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=71&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=72&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=73&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=74&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=75&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=76&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=77&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=78&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=79&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=80&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=81&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=82&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=83&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=84&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=85&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=86&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=87&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=88&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=89&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=90&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=91&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=92&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=93&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=94&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=95&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=96&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=97&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=98&f=json",
+          "https://www.smithcountymapsite.org/publicgis/rest/services/Gallery/TaxParcelQuery/MapServer/1/query?objectIds=99&f=json"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  }
+]

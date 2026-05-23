@@ -104,3 +104,40 @@ Resume needs Playwright + Chromium and a reCAPTCHA path (operator-seeded
 session or an approved solver). Does not auto-resume — see ESC-002.
 
 Phase 2 (parcel-master enrichment) is BUILT and committed and is unaffected.
+
+
+---
+
+## HALT-003 — v5.4.0 staged pipeline §20 DEPLOY_BLOCKED — 2026-05-23T22:18:43Z
+
+Phase: 4 (v5.4.0 staged pipeline run).  Stop condition: operator-defined
+"§20 returns DEPLOY_BLOCKED — HALT and report."
+
+The v5.4.0 staged pipeline ran end-to-end through §17 / §18 / §19, then §20
+returned **DEPLOY_BLOCKED**. The framework correctly refused to ship a
+dashboard whose rows would all be enrichment-only.
+
+- raw_events loaded: 300 (parcel_master.jsonl only — the sole built adapter).
+- §17 routed all 300 to REVIEW_REQUIRED (no canonical_doc_type rule for
+  PARCEL_MASTER; correct fallback).
+- §19 collapsed 300 -> 36 matched_leads via the §18 aggregation key.
+- §20 ran 6 of 12 checks; one INVALID:
+    Check 4 (Enrichment status decoupling integrity) — INVALID —
+    "36 enrichment-only row(s) with no PRIMARY_EVENT_SOURCE signal
+    (No False Dashboard, §13.5)."
+  Plus Check 5 AMBIGUOUS (legitimate-null-instrument branch of §18.E).
+
+This is the §4 / §13.5 product rule working as designed — the Bexar mistake
+prevention firing on Smith. NOT a regression.
+
+- seam / scoring / dashboard NOT run (§20 gate).
+- Full detail: runs/smith_tx/build/staged_v5_4_0/V5_4_0_RUN_REPORT.md +
+  semantic_verify_report.json + punch_list.json.
+- Driver: runs/smith_tx/build/run_staged_v5_4_0.py.
+
+Resume condition: at least one PRIMARY_EVENT_SOURCE adapter built and
+producing real records. ESC-002 (clerk_recordings) and the missing
+district_court / sheriff_tax_auctions / tax_collector adapters all still
+need Playwright + a reCAPTCHA path. v5.4.0 shipping resolved the engine
+prerequisite; the browser/reCAPTCHA prerequisite for the primary sources is
+unchanged.

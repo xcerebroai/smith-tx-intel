@@ -1,0 +1,4 @@
+{
+  "verdict": "DEPLOY_BLOCKED",
+  "exception": "\u00a720 returned DEPLOY_BLOCKED \u2014 scoring / dashboard MUST NOT proceed. Triage the \u00a720 report."
+}

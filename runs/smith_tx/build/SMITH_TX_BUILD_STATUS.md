@@ -1,14 +1,15 @@
 # Smith County, TX — Build Status
 
 County: Smith County, Texas (`smith_tx`) — FIPS 48423 — county seat Tyler
-Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1
-Status: **ON HOLD — parked pending the v5.4.0 pipeline engine**
-County builds do not resume until v5.4.0 ships. At resume, a wide Phase 0
-re-recon runs first (operator wide-recon dossier as input) and the §16 matrix
-is rebuilt, then Build Mode continues. Resume also requires browser + reCAPTCHA
-infrastructure for the clerk primary source.
-This is a temporary hold, not a final delivery.
-Status date: 2026-05-21 (operator wide-recon input captured)
+Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1;
+v5.4.0 staged pipeline (commit 266d445) ran end-to-end 2026-05-23.
+Status: **ON HOLD — §20 DEPLOY_BLOCKED until a PRIMARY_EVENT_SOURCE adapter is built**
+v5.4.0 shipped and was exercised end-to-end (§17 → §18 → §19 → §20). §20
+correctly returned DEPLOY_BLOCKED under the §13.5 "No False Dashboard" rule —
+the only available raw data is enrichment (parcel_master). Resume needs a
+browser + reCAPTCHA path for the clerk primary source (ESC-002) and the
+remaining missing adapters; v5.4.0 itself is no longer the blocker.
+Status date: 2026-05-23 (v5.4.0 run executed, §20 DEPLOY_BLOCKED, dashboard not built)
 
 ---
 
@@ -169,14 +170,51 @@ When re-entered on provisioned infrastructure, Phases 0–2 carry over unchanged
   FIND-002), halt log (HALT-001/002), ESC-001/002, this status report.
 - `runs/smith_tx/operator_notes.md` — operator build-scope decisions.
 
+## v5.4.0 Staged Pipeline Run (2026-05-23) — §20 DEPLOY_BLOCKED
+
+v5.4.0 (commit 266d445) shipped on this branch. The staged pipeline was run
+end-to-end by `runs/smith_tx/build/run_staged_v5_4_0.py` against the only raw
+data available — `data/raw/parcel_master.jsonl` (300 ENRICHMENT records). The
+driver bridged the §4.32 wrapped shape into the v5.4.0 `raw_event_record`
+schema at the call site (county-scoped data adaptation, no `scaffold/` edit).
+
+Pipeline outcome:
+
+    §17 debtor_party_engine  300 raw -> 300 debtor_resolved  (all REVIEW_REQUIRED)
+    §18 leads_base writer    parcel_master_leads_base.json   (300 base records)
+    §19 aggregator           300 -> 36 matched_leads          (collapsed by §18 key)
+    §20 semantic verify      DEPLOY_BLOCKED                   (HALT)
+    seam / scoring           NOT RUN  (gated by §20)
+    dashboard                NOT BUILT (gated by §20)
+
+The §20 INVALID check is **Check 4 (Enrichment status decoupling integrity)**:
+"36 enrichment-only row(s) with no PRIMARY_EVENT_SOURCE signal (No False
+Dashboard, §13.5)." This is correct framework behavior — the §13.5 rule blocks
+deploy because every candidate row originates from enrichment, not from a
+primary event source. The framework prevented the Bexar mistake from
+happening on Smith. **The halt is success, not regression.**
+
+Full detail: `runs/smith_tx/build/staged_v5_4_0/V5_4_0_RUN_REPORT.md`,
+`semantic_verify_report.json`, `matched_leads.json`, `punch_list.json`
+(12 items: 4 BLOCKING / 2 MAJOR / 1 MINOR / 5 INFO).
+
 ## Session outcome
 
-Smith County, TX is **ON HOLD — parked pending the v5.4.0 pipeline engine**.
-A temporary hold, not a final delivery. County builds do not resume until
-v5.4.0 ships. At the post-v5.4.0 resume, a wide Phase 0 re-recon runs first —
-the operator wide-recon dossier (36 sources, unverified) is its input, every
-source is empirically probed and §13-classified, and the §16 matrix is
-rebuilt — then Build Mode continues from Phase 3. Resume also requires
-browser + Chromium + reCAPTCHA infrastructure for the clerk primary source,
-plus the scraping dependencies and GitHub auth listed above. Build Mode does
-not auto-resume.
+Smith County, TX is **ON HOLD — §20 DEPLOY_BLOCKED until at least one
+PRIMARY_EVENT_SOURCE adapter ships real records**. The v5.4.0 engine
+prerequisite is resolved; the framework ran cleanly through §17–§20 and the
+halt at §20 is a correct §13.5 enforcement, not a harness failure. What
+remains:
+
+- A wide Phase 0 re-recon (operator dossier as input) — already scheduled.
+- A browser + Chromium + reCAPTCHA path for the clerk source (ESC-002),
+  district court (Tyler Odyssey SPA), sheriff/tax auction (RealAuction),
+  and the county tax portal — so at least one primary-event adapter can
+  ship real raw events.
+- GitHub auth + repo for any future Phase 8 deploy.
+
+When any one primary-event adapter produces real records, re-run
+`runs/smith_tx/build/run_staged_v5_4_0.py`. The §20 Check 4 will turn VALID,
+scoring runs, and the dashboard ships with the parcel_master enrichment
+already in `data/raw/` decorating real leads instead of masquerading as them.
+Build Mode does not auto-resume.

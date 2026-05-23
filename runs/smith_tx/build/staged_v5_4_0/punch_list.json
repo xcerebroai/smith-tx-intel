@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-05-23T22:17:27Z",
+  "framework_version": "v5.4.0",
+  "county": "smith_tx",
+  "deploy_verdict": "DEPLOY_BLOCKED",
+  "halt_reason": "§20 Check 4 INVALID — No False Dashboard (§13.5): all 36 matched_leads are enrichment-only with no PRIMARY_EVENT_SOURCE.",
+  "raw_events_loaded": 300,
+  "raw_events_source_breakdown": {
+    "parcel_master": 300
+  },
+  "debtor_resolved_count": 300,
+  "leads_base_count": 300,
+  "matched_leads_count": 36,
+  "review_required_count": 36,
+  "semantic_checks_run": 6,
+  "semantic_invalid_checks": [
+    4
+  ],
+  "semantic_ambiguous_checks": [
+    5
+  ],
+  "semantic_skipped_checks": [
+    3,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "dashboard_built": false,
+  "scored_leads_count": 0,
+  "items": [
+    {
+      "id": "P-001",
+      "severity": "BLOCKING",
+      "category": "coverage",
+      "item": "4 of 6 declared sources have no built adapter and no raw data — clerk_recordings, district_court, sheriff_tax_auctions, tax_collector. All 4 require browser + reCAPTCHA infrastructure not present in this environment (ESC-002). Without any PRIMARY_EVENT_SOURCE raw data the build cannot ship a dashboard."
+    },
+    {
+      "id": "P-002",
+      "severity": "BLOCKING",
+      "category": "coverage",
+      "item": "gis_parcels source has no adapter/raw data. Phase 2 enrichment discovery used the smithcountymapsite.org TaxParcels ArcGIS layer via the parcel_master adapter; gis_parcels remains a config entry with no adapter."
+    },
+    {
+      "id": "P-003",
+      "severity": "MAJOR",
+      "category": "contract",
+      "item": "scrapers/parcel_master.py emits the §4.32 wrapped raw-record shape (v5.1.2). v5.4.0 raw_event_record.schema.json requires top-level raw_event_id / source_role / canonical_doc_type / parties / property_refs. This driver bridges in-place at the call site; the adapter has NOT been migrated."
+    },
+    {
+      "id": "P-004",
+      "severity": "MAJOR",
+      "category": "contract",
+      "item": "scaffold/pipeline/translators/parcel_master.py exists but is not wired into the v5.4.0 staged orchestrator for raw §4.32 ingest. The Build Mode Protocol §02.3 doc-type normalization stage 2 is effectively bypassed by this driver's in-place bridge."
+    },
+    {
+      "id": "P-005",
+      "severity": "INFO",
+      "category": "§17",
+      "item": "§17 debtor_party_engine correctly routed all 300 parcel_master records to REVIEW_REQUIRED (owner role 'unresolved', owner_name placeholder 'PARCEL_MASTER against unidentified party'). The canonical_doc_type 'PARCEL_MASTER' is not registered in §17.C debtor_party_rules — REVIEW_REQUIRED is the correct fallback."
+    },
+    {
+      "id": "P-006",
+      "severity": "INFO",
+      "category": "§19",
+      "item": "§19 aggregator collapsed 300 raw events to 36 matched_leads via the (parcel_id, canonical_doc_type, signal_type) aggregation key. 300 -> 36 implies heavy parcel-id duplication in the bounded sample (OBJECTID 1-300 of the live Tax Parcels layer); this is fixture noise, not a real Smith County data property."
+    },
+    {
+      "id": "P-007",
+      "severity": "BLOCKING",
+      "category": "§20",
+      "item": "§20 Check 4 (Enrichment status decoupling integrity) = INVALID: '36 enrichment-only row(s) with no PRIMARY_EVENT_SOURCE signal (No False Dashboard, §13.5).' This is correct framework behavior. The §13.5 'No False Dashboard' rule blocks deploy because every candidate row originates from enrichment, not from a primary event source."
+    },
+    {
+      "id": "P-008",
+      "severity": "MINOR",
+      "category": "§20",
+      "item": "§20 Check 5 (Signal aggregation integrity) = AMBIGUOUS: '36 signal(s) have count above the distinct instrument-number count — null-instrument records (legitimate §18.E) or a dedup [issue].' Parcel records have no instrument_number (§4.32 wrapped enrichment) so this is the legitimate-null-instrument branch, not a dedup bug."
+    },
+    {
+      "id": "P-009",
+      "severity": "INFO",
+      "category": "§20",
+      "item": "§20 skipped 6 of 12 checks (3, 7, 8, 9, 10, 11): parcel-resolution plausibility, OCR confidence routing, CSV output schema, source proof links, dashboard row integrity, methodology consistency. All require deploy-time artifacts not present pre-deploy (§20.H)."
+    },
+    {
+      "id": "P-010",
+      "severity": "INFO",
+      "category": "framework",
+      "item": "v5.4.0 framework_version: v5.4.0 (commit 266d445); staged pipeline §17-§20 + scoring seam + dashboard module all present and runnable. Framework gate (run_all.py) was last green at v5.3.1 — should be re-verified on v5.4.0."
+    },
+    {
+      "id": "P-011",
+      "severity": "INFO",
+      "category": "recon",
+      "item": "Operator wide-recon dossier (36 candidate sources) captured 2026-05-21 to runs/smith_tx/recon/operator_source_dossier_2026-05-21.md. Wide Phase 0 re-recon (empirical probing + §13 classification + §16 matrix rebuild) is still pending — RECON_REOPEN_PENDING.md scheduled it for the v5.4.0 resume."
+    },
+    {
+      "id": "P-012",
+      "severity": "BLOCKING",
+      "category": "primary-source",
+      "item": "clerk_recordings (the moat / PRIMARY_LEAD_SOURCE): document search XHR endpoint is runtime-injected (ko-search-api / Kofile-GovOS) and reCAPTCHA-gated; the /results SSR carries no records. Phase 3 ESC-002 / HALT-002 still applies — needs Playwright + a reCAPTCHA path (operator-seeded session or approved solver) to build the adapter."
+    }
+  ]
+}

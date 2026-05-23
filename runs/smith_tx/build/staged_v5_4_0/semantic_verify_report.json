@@ -1,0 +1,541 @@
+{
+  "verdict": "DEPLOY_BLOCKED",
+  "mechanical_ok": true,
+  "checks": [
+    {
+      "check": 1,
+      "name": "Debtor attribution sampling",
+      "status": "VALID",
+      "detail": "full scan of 36 matched leads: no resolved owner_name matches a known filer pattern.",
+      "samples": []
+    },
+    {
+      "check": 2,
+      "name": "Owner type classification sampling",
+      "status": "VALID",
+      "detail": "full scan of 0 resolved matched leads: owner_type agrees with the §17.F classifier.",
+      "samples": []
+    },
+    {
+      "check": 3,
+      "name": "Parcel-resolution plausibility",
+      "status": "SKIPPED",
+      "detail": "requires parcel-master join data and situs-address join keys — a county deploy-time check (§20.H); not present on matched_leads.json.",
+      "samples": []
+    },
+    {
+      "check": 4,
+      "name": "Enrichment status decoupling integrity",
+      "status": "INVALID",
+      "detail": "36 enrichment-only row(s) with no PRIMARY_EVENT_SOURCE signal (No False Dashboard, §13.5).",
+      "samples": [
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001102012060",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001305021040",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001819010001",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001826031010",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001827006020",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002030",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000004300025015",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019010",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000020900007002",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000029100002005",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701021020",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701034001",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701035001",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053000018020",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100014000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100015000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000061100001045",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000062400071000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026002",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026050",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000086700008000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000109900077020",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800006010",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800008000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-102880000000002000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-157575000001006000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-179965000001004001",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180230001300016000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000245000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000412000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000413000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-181210000500001000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-181281000100050000",
+          "source_ids": [
+            "parcel_master"
+          ]
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-CHEROKEE CO",
+          "source_ids": [
+            "parcel_master"
+          ]
+        }
+      ]
+    },
+    {
+      "check": 5,
+      "name": "Signal aggregation integrity",
+      "status": "AMBIGUOUS",
+      "detail": "36 signal(s) have count above the distinct instrument-number count — null-instrument records (legitimate §18.E) or a dedup failure (a bug); routed to operator review.",
+      "samples": [
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001102012060",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001305021040",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001819010001",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001826031010",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000001827006020",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000002001002030",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000004300025015",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000014800019010",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000020900007002",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000029100002005",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701021020",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701034001",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000040701035001",
+          "signal_type": "Parcel Master",
+          "count": 2,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053000018020",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100014000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000053100015000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000061100001045",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000062400071000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026002",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000080001026050",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000086700008000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000109900077020",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800006010",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-100000111800008000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-102880000000002000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-157575000001006000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-179965000001004001",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180230001300016000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000245000",
+          "signal_type": "Parcel Master",
+          "count": 2,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000412000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-180260000000413000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-181210000500001000",
+          "signal_type": "Parcel Master",
+          "count": 2,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-181281000100050000",
+          "signal_type": "Parcel Master",
+          "count": 1,
+          "distinct_instrument_numbers": 0
+        },
+        {
+          "lead_id": "lead_unresolved_smith_tx-parcel_master-CHEROKEE CO",
+          "signal_type": "Parcel Master",
+          "count": 262,
+          "distinct_instrument_numbers": 0
+        }
+      ]
+    },
+    {
+      "check": 6,
+      "name": "Cross-source aggregation integrity",
+      "status": "VALID",
+      "detail": "full scan of 36 signal(s): every signal has a distinct, self-consistent aggregation key (§18.F anti-collapse holds).",
+      "samples": []
+    },
+    {
+      "check": 7,
+      "name": "OCR confidence routing",
+      "status": "SKIPPED",
+      "detail": "requires per-record OCR confidence scores — source-ingestion-time data not carried on matched_leads.json (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 8,
+      "name": "CSV output schema validation",
+      "status": "SKIPPED",
+      "detail": "requires the operator-facing CSV export — a deploy-time artifact (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 9,
+      "name": "Source proof link validation",
+      "status": "SKIPPED",
+      "detail": "requires live source-URL resolution (HTTP / offline-path checks) — a deploy-time check (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 10,
+      "name": "Dashboard row integrity",
+      "status": "SKIPPED",
+      "detail": "requires browser automation against the rendered dashboard — a deploy-time check (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 11,
+      "name": "Methodology consistency",
+      "status": "SKIPPED",
+      "detail": "requires the build report — a deploy-time artifact (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 12,
+      "name": "Filer-as-owner spot check (universal patterns)",
+      "status": "VALID",
+      "detail": "full scan of 36 matched leads: no universal filer pattern appears as owner_name.",
+      "samples": []
+    }
+  ],
+  "checks_run": 6,
+  "checks_skipped": 6,
+  "invalid_checks": [
+    4
+  ],
+  "ambiguous_checks": [
+    5
+  ],
+  "skipped_checks": [
+    3,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "detail": "verdict DEPLOY_BLOCKED over 6 executed check(s); 6 check(s) require deploy-time inputs and were skipped (§20.H)."
+}
