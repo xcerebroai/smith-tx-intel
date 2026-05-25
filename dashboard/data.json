@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T12:59:15Z",
+  "generated_at": "2026-05-25T13:16:14Z",
   "build_label": "PARTIAL_BUILD",
   "mode": "production",
   "county": "Smith County",
@@ -7,13 +7,15 @@
   "semantic_verdict": "DEPLOY_OK",
   "lead_total": 31,
   "enrichment_breakdown": {
-    "ENRICHED": 0,
-    "UNENRICHED": 31
+    "ENRICHED": 30,
+    "UNENRICHED": 1
   },
   "pattern_counts": {
     "tax": 31
   },
-  "attribute_counts": {},
+  "attribute_counts": {
+    "entity_owned": 3
+  },
   "stack_depth_distribution": {
     "1": 31
   },
@@ -26,9 +28,9 @@
   "records": [
     {
       "lead_id": "lead_unresolved_24,171-B",
-      "scored_lead_id": "scored_d29110ff87d93e39",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_d1959989a2564e51",
+      "primary_parcel_id": "180510000000077700",
+      "display_address": "23567 DOGWOOD TRL, MINEOLA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -57,7 +59,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1979,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -72,12 +74,12 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_25,356-B",
       "scored_lead_id": "scored_bffc0c4c2c79f777",
-      "primary_parcel_id": null,
+      "primary_parcel_id": "100000066400012013",
       "display_address": "",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
@@ -126,9 +128,9 @@
     },
     {
       "lead_id": "lead_unresolved_25,478-A",
-      "scored_lead_id": "scored_4d2f0d15308ac558",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_1f8ecd15da8d4a4e",
+      "primary_parcel_id": "180510000000006500",
+      "display_address": "23157 SASSAFRAS DR, MINEOLA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -157,7 +159,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1971,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -172,13 +174,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_25,796-C",
-      "scored_lead_id": "scored_4c03e3b809b5a62e",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_af2739a8e49bc774",
+      "primary_parcel_id": "100000052700003030",
+      "display_address": "4803 C R 313 E, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -222,13 +224,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,009-B",
-      "scored_lead_id": "scored_d6d219c080841403",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_68712431b6af6e02",
+      "primary_parcel_id": "180500000000132000",
+      "display_address": "5132 COUNTRY ESTATES DR, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -257,7 +259,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1971,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -272,15 +274,15 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,019-C",
-      "scored_lead_id": "scored_5e9e2cc049b54b81",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_e697beb14e4e823a",
+      "primary_parcel_id": "100000047100030000",
+      "display_address": "0, OVERTON, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
-      "display_score": 55,
+      "display_score": 57,
       "display_tier": "Workable",
       "display_patterns": [
         "tax"
@@ -291,7 +293,9 @@
       "display_pattern_set": [
         "tax"
       ],
-      "display_attributes": [],
+      "display_attributes": [
+        "entity_owned"
+      ],
       "display_deal_paths": [
         "wholesale"
       ],
@@ -314,6 +318,10 @@
         {
           "factor": "base_TAX_FORECLOSURE_NOTICE",
           "delta": 55
+        },
+        {
+          "factor": "attribute_bonus",
+          "delta": 2
         }
       ],
       "evidence_ids": [],
@@ -322,13 +330,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,052-C",
-      "scored_lead_id": "scored_0cbd9132f2bf1f18",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_de2b792a598f7c9f",
+      "primary_parcel_id": "100000055200007000",
+      "display_address": "0, OVERTON, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -372,13 +380,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,216-B",
-      "scored_lead_id": "scored_84ff8e9a2bc5313f",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_8de82a115f14fd02",
+      "primary_parcel_id": "100000065700010050",
+      "display_address": "WINONA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -422,13 +430,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,217-C",
-      "scored_lead_id": "scored_db1f51badca7d137",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_98d3ccaec308de64",
+      "primary_parcel_id": "100000070100022000",
+      "display_address": "0 HWY 135, OVERTON, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -472,13 +480,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,318-A",
-      "scored_lead_id": "scored_4d232753ec72dd43",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_a972da1af68eaa21",
+      "primary_parcel_id": "100000026600058010",
+      "display_address": "3394 C R 398, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -507,7 +515,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1930,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -522,13 +530,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,563-B",
-      "scored_lead_id": "scored_5039249409160ed7",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_81c37ee4c5004545",
+      "primary_parcel_id": "181040000100032000",
+      "display_address": "217 BRENTWOOD DR, BULLARD, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -572,15 +580,15 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,750-C",
-      "scored_lead_id": "scored_c997d1a329ebbfa3",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_9d9240caf94af6d1",
+      "primary_parcel_id": "100000091700004010",
+      "display_address": "0 FM 2089, OVERTON, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
-      "display_score": 55,
+      "display_score": 57,
       "display_tier": "Workable",
       "display_patterns": [
         "tax"
@@ -591,7 +599,9 @@
       "display_pattern_set": [
         "tax"
       ],
-      "display_attributes": [],
+      "display_attributes": [
+        "entity_owned"
+      ],
       "display_deal_paths": [
         "wholesale"
       ],
@@ -614,6 +624,10 @@
         {
           "factor": "base_TAX_FORECLOSURE_NOTICE",
           "delta": 55
+        },
+        {
+          "factor": "attribute_bonus",
+          "delta": 2
         }
       ],
       "evidence_ids": [],
@@ -622,13 +636,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,785-B",
-      "scored_lead_id": "scored_9bbb1d648d3d9a05",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_03ae33c91ad14a95",
+      "primary_parcel_id": "180510000000022000",
+      "display_address": "23459 LIVE OAK DR, MINEOLA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -657,7 +671,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1975,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -672,13 +686,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,849-B",
-      "scored_lead_id": "scored_64c962b6755f7ba2",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_cb04cbd189d837b3",
+      "primary_parcel_id": "100000001700028007",
+      "display_address": "22671 C R 2159, TROUP, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -707,7 +721,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1999,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -722,13 +736,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,894-B",
-      "scored_lead_id": "scored_68296e96b048b21a",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_eab721b556c4f429",
+      "primary_parcel_id": "180705000100147000",
+      "display_address": "22946 CREEKWOOD DR, FLINT, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -757,7 +771,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1978,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -772,13 +786,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,895-C",
-      "scored_lead_id": "scored_b4a7defd604edac2",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_9d55e2536e460eca",
+      "primary_parcel_id": "180705000200014000",
+      "display_address": "16848 C R 1170, FLINT, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -822,13 +836,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_26,976-C",
-      "scored_lead_id": "scored_340f506503e4e0a0",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_65afab14b8e354ac",
+      "primary_parcel_id": "100000111700007001",
+      "display_address": "223 LADO DE LOMA DR, WINONA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -872,13 +886,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,071-C",
-      "scored_lead_id": "scored_0462b69d184d4093",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_4ff3fe92563146c7",
+      "primary_parcel_id": "100000000902019000",
+      "display_address": "TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -922,13 +936,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,164-C",
-      "scored_lead_id": "scored_311a8a97d4b8263a",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_8ed6866ef56084d8",
+      "primary_parcel_id": "105030000200001020",
+      "display_address": "100 DEE ST, ARP, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -957,7 +971,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1970,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -972,13 +986,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,189-A",
-      "scored_lead_id": "scored_1f0d0556fc7235c0",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_2722fe3fa4b05f11",
+      "primary_parcel_id": "180705000200133000",
+      "display_address": "16861 LAKEWAY CIR, FLINT, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1022,13 +1036,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,242-C",
-      "scored_lead_id": "scored_47eecd28fbeee835",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_7909d566039a02d2",
+      "primary_parcel_id": "100000024000002000",
+      "display_address": "16703 FM 16 E, WINONA, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1057,7 +1071,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 1950,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -1072,13 +1086,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,323-C",
-      "scored_lead_id": "scored_ebfcc722ba45a829",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_852f8f196b77cf2e",
+      "primary_parcel_id": "100000001400007013",
+      "display_address": "0 C R 15, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1122,13 +1136,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,343-B",
-      "scored_lead_id": "scored_694d4ca65b48ef83",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_bfe500bda90a0c8d",
+      "primary_parcel_id": "181043000000003002",
+      "display_address": "21924 FM 2493, BULLARD, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1157,7 +1171,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 2025,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -1172,13 +1186,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,407-C",
-      "scored_lead_id": "scored_1e8bfc2f2021969b",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_1975ba39699f7aa5",
+      "primary_parcel_id": "180705000100125000",
+      "display_address": "23100 PINEY WOODS TRL, FLINT, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1222,13 +1236,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,413-C",
-      "scored_lead_id": "scored_03465a355ad23a01",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_1ebb3d2be17f7d2b",
+      "primary_parcel_id": "100000001303040000",
+      "display_address": "TROUP, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1272,13 +1286,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,629-C",
-      "scored_lead_id": "scored_0d5f93d66b130421",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_5884e22d4516fe4e",
+      "primary_parcel_id": "100000103700020044",
+      "display_address": "16084 HWY 271, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1322,13 +1336,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,653-C",
-      "scored_lead_id": "scored_babc7110dea2a17e",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_6baf304761a77ee3",
+      "primary_parcel_id": "100000054500006000",
+      "display_address": "0 FM 16 E, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1372,13 +1386,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,695-C",
-      "scored_lead_id": "scored_1d54646010c0ff24",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_e049381fd2e327fe",
+      "primary_parcel_id": "181295000000003000",
+      "display_address": "14243 C R 4154, LINDALE, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1407,7 +1421,7 @@
       "display_assessed_value": null,
       "display_last_sale_price": null,
       "display_last_sale_date": null,
-      "display_year_built": null,
+      "display_year_built": 2025,
       "display_match_confidence": 0,
       "stack_depth": 1,
       "score_reasons": [
@@ -1422,13 +1436,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,726-A",
-      "scored_lead_id": "scored_041950db4ffcc6bc",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_ec8d669083633f12",
+      "primary_parcel_id": "140000005100006000",
+      "display_address": "0 S RAILROAD ST, TROUP, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1472,15 +1486,15 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_27,785-C",
-      "scored_lead_id": "scored_08884f932aa41388",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_71c71126e6f6c7d2",
+      "primary_parcel_id": "150000144504002210",
+      "display_address": "3970 MCDONALD RD, TYLER, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
-      "display_score": 55,
+      "display_score": 57,
       "display_tier": "Workable",
       "display_patterns": [
         "tax"
@@ -1491,7 +1505,9 @@
       "display_pattern_set": [
         "tax"
       ],
-      "display_attributes": [],
+      "display_attributes": [
+        "entity_owned"
+      ],
       "display_deal_paths": [
         "wholesale"
       ],
@@ -1514,6 +1530,10 @@
         {
           "factor": "base_TAX_FORECLOSURE_NOTICE",
           "delta": 55
+        },
+        {
+          "factor": "attribute_bonus",
+          "delta": 2
         }
       ],
       "evidence_ids": [],
@@ -1522,13 +1542,13 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     },
     {
       "lead_id": "lead_unresolved_28,007-C",
-      "scored_lead_id": "scored_c539b03361f675a0",
-      "primary_parcel_id": null,
-      "display_address": "",
+      "scored_lead_id": "scored_24305399dbc90938",
+      "primary_parcel_id": "100000099300010000",
+      "display_address": "0, OVERTON, TX",
       "display_owner": "tax_foreclosure_notice against unidentified party",
       "display_score": 55,
       "display_tier": "Workable",
@@ -1572,7 +1592,7 @@
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "enrichment_status": "ENRICHED"
     }
   ]
 }

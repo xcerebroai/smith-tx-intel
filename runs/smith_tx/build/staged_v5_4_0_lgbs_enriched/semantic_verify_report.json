@@ -1,0 +1,103 @@
+{
+  "verdict": "DEPLOY_OK",
+  "mechanical_ok": true,
+  "checks": [
+    {
+      "check": 1,
+      "name": "Debtor attribution sampling",
+      "status": "VALID",
+      "detail": "full scan of 31 matched leads: no resolved owner_name matches a known filer pattern.",
+      "samples": []
+    },
+    {
+      "check": 2,
+      "name": "Owner type classification sampling",
+      "status": "VALID",
+      "detail": "full scan of 0 resolved matched leads: owner_type agrees with the §17.F classifier.",
+      "samples": []
+    },
+    {
+      "check": 3,
+      "name": "Parcel-resolution plausibility",
+      "status": "SKIPPED",
+      "detail": "requires parcel-master join data and situs-address join keys — a county deploy-time check (§20.H); not present on matched_leads.json.",
+      "samples": []
+    },
+    {
+      "check": 4,
+      "name": "Enrichment status decoupling integrity",
+      "status": "VALID",
+      "detail": "enrichment-status pairs valid (§13.14.1); every matched lead carries a PRIMARY_EVENT_SOURCE signal.",
+      "samples": []
+    },
+    {
+      "check": 5,
+      "name": "Signal aggregation integrity",
+      "status": "VALID",
+      "detail": "full scan of 31 signal(s): count equals the distinct instrument-number count (clean §18.E stacking).",
+      "samples": []
+    },
+    {
+      "check": 6,
+      "name": "Cross-source aggregation integrity",
+      "status": "VALID",
+      "detail": "full scan of 31 signal(s): every signal has a distinct, self-consistent aggregation key (§18.F anti-collapse holds).",
+      "samples": []
+    },
+    {
+      "check": 7,
+      "name": "OCR confidence routing",
+      "status": "SKIPPED",
+      "detail": "requires per-record OCR confidence scores — source-ingestion-time data not carried on matched_leads.json (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 8,
+      "name": "CSV output schema validation",
+      "status": "SKIPPED",
+      "detail": "requires the operator-facing CSV export — a deploy-time artifact (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 9,
+      "name": "Source proof link validation",
+      "status": "SKIPPED",
+      "detail": "requires live source-URL resolution (HTTP / offline-path checks) — a deploy-time check (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 10,
+      "name": "Dashboard row integrity",
+      "status": "SKIPPED",
+      "detail": "requires browser automation against the rendered dashboard — a deploy-time check (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 11,
+      "name": "Methodology consistency",
+      "status": "SKIPPED",
+      "detail": "requires the build report — a deploy-time artifact (§20.H).",
+      "samples": []
+    },
+    {
+      "check": 12,
+      "name": "Filer-as-owner spot check (universal patterns)",
+      "status": "VALID",
+      "detail": "full scan of 31 matched leads: no universal filer pattern appears as owner_name.",
+      "samples": []
+    }
+  ],
+  "checks_run": 6,
+  "checks_skipped": 6,
+  "invalid_checks": [],
+  "ambiguous_checks": [],
+  "skipped_checks": [
+    3,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "detail": "verdict DEPLOY_OK over 6 executed check(s); 6 check(s) require deploy-time inputs and were skipped (§20.H)."
+}

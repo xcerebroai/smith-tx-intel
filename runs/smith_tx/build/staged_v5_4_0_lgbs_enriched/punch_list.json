@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-05-25T13:16:14Z",
+  "framework_version": "v5.4.0",
+  "county": "smith_tx",
+  "semantic_verdict": "DEPLOY_OK",
+  "lead_total": 31,
+  "lgbs_accounts": 31,
+  "enrichment_cache_size": 30,
+  "join_coverage": "30/31",
+  "enriched_count": 30,
+  "unenriched_count": 1,
+  "unmatched_accounts": [
+    "100000066400012013"
+  ],
+  "primary_parcel_id_patched": 31,
+  "items": [
+    "1 LGBS account(s) not found in Smith CAD TaxParcels: ['100000066400012013'] — possible reasons: cross-county precinct, retired account number, or LGBS using a non-CAD account id format.",
+    "F-1 framework finding (leads_base_writer.py): debtor_resolution_status REVIEW_REQUIRED cascades to parcel_resolution_status REVIEW_REQUIRED and nulls aggregation_key.parcel_id, which then nulls matched_lead.primary_parcel_id. The §13.14 spec calls these statuses independent. Recommend v5.4.x backlog: leads_base_writer should populate aggregation_key.parcel_id whenever property_refs.parcel_id is non-null, regardless of debtor_resolution_status. Workaround applied here is runner-side only — framework code unchanged.",
+    "1 lead(s) UNENRICHED — same as the join-miss set above; honest UNENRICHED per §13.14 (lead not dropped).",
+    "Smith CAD TaxParcels GIS layer does NOT carry assessed_value / last_sale data — those live in Smith CAD's esearch system. Monetary attribute derivations (high_equity, free_and_clear, etc.) will be empty even on ENRICHED rows. Followup: ingest the Smith CAD bulk appraisal roll for value enrichment."
+  ]
+}

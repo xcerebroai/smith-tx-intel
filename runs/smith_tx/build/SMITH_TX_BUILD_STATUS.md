@@ -5,7 +5,7 @@ Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1;
 v5.4.0 staged pipeline (commit 266d445) — first run 2026-05-23 returned
 §20 DEPLOY_BLOCKED (correct — only enrichment data was available);
 v5.4.0 re-run 2026-05-25 with the first PRIMARY_EVENT_SOURCE adapter — **DEPLOYED**.
-Status: **DEPLOYED (partial build) — 31 lead rows, §20 DEPLOY_OK**
+Status: **DEPLOYED (partial build) — 31 lead rows, §20 DEPLOY_OK, 30/31 ENRICHED**
 Empirical primary-source hunt 2026-05-25 found Linebarger's `taxsales.lgbs.com`
 JSON API is stdlib-reachable (HTTP 200, JSON, no auth, no CAPTCHA, 31 current
 Smith records with property attachment proven for every row). Built
@@ -238,6 +238,46 @@ to the registered canonical **`tax_foreclosure_notice`** (lowercase per §17
 rule keys; bridges to §16 lead type "Tax Lien Foreclosure", lead_pattern "tax").
 Adapter + config `doc_type_synonyms` updated; pipeline re-run; pattern_counts
 now correctly emits the tax pattern for every row.
+
+Enrichment wired (2026-05-25): parcel_master enrichment wired into the seam
+following the greene-ny runner pattern (county-side only, no scaffold/ edits).
+Driver `runs/smith_tx/build/run_staged_v5_4_0_lgbs_enriched.py`:
+- Targeted Smith CAD ArcGIS pull (`WHERE ACCOUNT IN (…31 LGBS account_nbrs)`)
+  built an enrichment cache; **30/31 accounts joined** (1 unmatched: account
+  `100000066400012013`, may be a cross-county-precinct property — punch-list).
+- Replicates run_staged_pipeline's stages so we can apply one county-side
+  patch between §19 aggregator and §20 verify: rewrite
+  `matched_lead.primary_parcel_id` from the raw_event lookup, because §18
+  cascades parcel_resolution_status from debtor_resolution_status (framework
+  F-1 finding — should be decoupled per §13.14) and nulls the parcel_id when
+  §17 routes REVIEW_REQUIRED.
+- §17 / §18 / §19 framework code unchanged. §17 still reads only
+  `raw_event.parties`; LGBS has none; owner stays REVIEW_REQUIRED /
+  owner_not_on_document — never relabeled as §17-resolved.
+- Seam called with a real `enrichment_provider(parcel_id)` callable;
+  attributes derived inline via `normalize.derive_attributes` (no post-hoc
+  parcel_display mutation).
+
+Per-lead attribution after enrichment:
+- event_source     = LGBS tax foreclosure (PRIMARY_EVENT_SOURCE)
+- owner_source     = parcel_master / Smith CAD (downstream enrichment, NOT §17)
+- enrichment_source = parcel_master / Smith CAD TaxParcels
+
+Post-enrichment dashboard counts:
+    lead_total:               31    (unchanged — LGBS is and remains the source of leads)
+    enrichment_breakdown:     {ENRICHED: 30, UNENRICHED: 1}
+    pattern_counts:           {tax: 31}
+    attribute_counts:         {entity_owned: 3}   (LLC/corporate-owned parcels detected
+                                                    from enriched owner_name)
+    score_tier_distribution:  {Workable: 31}
+    deal_path_distribution:   {wholesale: 31}
+    stack_depth_distribution: {1: 31}
+
+Limitation: Smith CAD's public ArcGIS TaxParcels layer carries owner / situs /
+year_built / acres / sqft but NOT assessed_value / last_sale data. Monetary-
+derived attributes (high_equity, free_and_clear, long_term_owned) are empty.
+Followup punch-list item: ingest the Smith CAD bulk appraisal roll for value
+enrichment.
 
 Other stdlib-reachable primary sources discovered but deferred:
 `pbfcm_smith_tax_resale.pdf` (4 Tyler-ISD struck-off; pure-stdlib zlib+regex
