@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-25T16:58:30Z",
+  "generated_at": "2026-05-25T18:13:44Z",
   "framework_version": "v5.4.0",
   "county": "smith_tx",
   "semantic_verdict": "DEPLOY_OK",
-  "lead_total": 39819,
+  "lead_total": 39482,
   "review_required_count": 131,
   "per_source": {
     "lgbs_smith_tax_sales": 31,

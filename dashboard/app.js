@@ -60,7 +60,11 @@
     // it independently of the years filter so toggling year=1 ON for the
     // 8,957 legitimate 1-yr QUALIFIED leads doesn't pull the noise in.
     includeLowPriority: false,
-    sort: "urgency", shown: 0, preset: "all"
+    // Default sort: "recent" — newest recorded distress events first. This
+    // gives a neutral all-records open view (FC-sweep / lis-pendens / etc.
+    // recorded in the last weeks lead), rather than pinning the 949
+    // estate-titled rows to the top via the urgency tier as before.
+    sort: "recent", shown: 0, preset: "all"
   };
   var PAGE = 60;
   var marked = loadMarked();   // Set of lead_id (localStorage)
@@ -127,18 +131,18 @@
   }
   function urgencyTier(r) {
     var d = r._days;
+    // Foreclosure-sale-imminent only — these are the genuinely urgent rows
+    // (sale within 21/60 days). Estate-titled has been DEMOTED out of the
+    // urgency tiers: the operator's lead board must open on ALL records
+    // neutrally sorted, not with 949 probate rows pinned to the top. The
+    // operator filters TO estate-titled via the dedicated control.
     if (r._isFcl && d != null && d >= 0 && d <= 21) return 1;
     if (r._isFcl && d != null && d > 21 && d <= 60) return 2;
-    // tier 3: estate-titled property. The estate-detection now keys off the
-    // delinquent-tax owner field too (operator framework decision — an
-    // estate title in the tax-roll owner is the distress fact, surfaced
-    // as a standalone probate lead).
-    if (r._estate) return 3;
-    // tier 4: stacked / multi-signal — strongest combined-evidence class.
-    if (r._stacked || (r.signal_count || 0) >= 2) return 4;
-    // tier 5: hot tax-delinquent (3+ unpaid years).
-    if (r._taxHot) return 5;
-    return 6;
+    // tier 3: stacked / multi-signal — strongest combined-evidence class.
+    if (r._stacked || (r.signal_count || 0) >= 2) return 3;
+    // tier 4: hot tax-delinquent (3+ unpaid years).
+    if (r._taxHot) return 4;
+    return 5;
   }
 
   // ---------- boot ----------
@@ -474,9 +478,21 @@
       }
       if (by === "value") return b._assessed - a._assessed;
       if (by === "recent") {
-        var af = a._filed ? a._filed.getTime() : 0;
-        var bf = b._filed ? b._filed.getTime() : 0;
-        return bf - af;
+        // Only PRIMARY-event recorded dates count for recency. Synth
+        // (estate / tax_default) rows carry the SFTP drop date as their
+        // latest_event_date — that's a scrape artifact, not a county
+        // recording date. Treat synth as undated so primary leads
+        // dominate the top of the default view; synth fills the body
+        // distributed by parcel_id (lexicographic tiebreak, neutral
+        // across estate / tax-default / etc — no class is pinned).
+        var ap = a.provenance === "primary_event";
+        var bp = b.provenance === "primary_event";
+        var af = (ap && a._filed) ? a._filed.getTime() : 0;
+        var bf = (bp && b._filed) ? b._filed.getTime() : 0;
+        if (af !== bf) return bf - af;
+        // tied (typically: both synth) → stable parcel_id alpha — distributes
+        // estate rows across the synth body rather than bunching them.
+        return (a.parcel_id || "") < (b.parcel_id || "") ? -1 : 1;
       }
       if (by === "signals")
         return (b.signal_count || 0) - (a.signal_count || 0);

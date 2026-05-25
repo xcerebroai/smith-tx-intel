@@ -130,29 +130,88 @@ MM_OWNER_STATE  = slice(580, 582)   # 2 chars (NB: city slice runs to 584;
                                     # in some rows — strip+validate downstream)
 MM_OWNER_ZIP    = slice(600, 610)   # 10 chars
 
-# Estate-title detection — refined regex. The MM owner-name field carries
-# verbatim assessor text; we surface accounts whose owner reads as a probate
-# / decedent estate (NOT a commercial "REAL ESTATE LLC"). Word-boundary
-# anchored, negative lookback on "REAL ".
+# Estate-title detection — three orthogonal classifiers.
+#
+# 1. CORP_SUFFIX_RE — corporate / entity owners. ESTATE-shaped strings on
+#    these are commercial naming ("REFORGED REAL ESTATE LLC", "ESTATE
+#    PALIFROVA FIX & FLIPS LLC", "JORDAN MARGARET ROYALTIES INC EST"), NOT
+#    decedent estates. Hard exclusion from BOTH probate and life-estate.
+#
+# 2. LIFE_ESTATE_PATTERNS — a life estate is a living estate-planning
+#    arrangement; the named life-tenant is alive. NOT probate. Tagged
+#    separately as `life_estate` so the operator can see them but not
+#    confuse them with motivated-heir probate leads.
+#
+# 3. ESTATE_PATTERNS — genuine decedent estates: "ESTATE OF X", "EST OF X",
+#    "X ESTATE", "X (DECD)", "X DECEASED", "X DCSD", "HEIRS OF X". Operator
+#    keep-list per 2026-05-25 spec.
+CORP_SUFFIX_RE = re.compile(
+    r"\b("
+    r"LLC|L\.L\.C\.|INC|INCORPORATED|CORP|CORPORATION|"
+    r"LP|LLP|LLLP|PLLC|PA|PC|"
+    r"COMPANY|CO\.|CO,|"
+    r"REALTY|REAL\s+ESTATE|REAL\s+ESTATES|PROPERTIES|PROPERTY|"
+    r"HOMES|ESTATES|HOLDINGS|INVESTMENTS|VENTURES|PARTNERS|"
+    r"PARTNERSHIP|GROUP|FUND|TRUST|REVOCABLE|IRREVOCABLE|"
+    r"RENTALS|MANAGEMENT|ENTERPRISE|ENTERPRISES|ROYALTIES|"
+    r"BANK|N\.A\.|CHURCH|MINISTRIES|CITY\s+OF|COUNTY\s+OF|"
+    r"STATE\s+OF|ISD|SCHOOL\s+DISTRICT"
+    r")\b",
+    re.IGNORECASE)
+
+LIFE_ESTATE_PATTERNS = re.compile(
+    r"\bLIFE\s+ESTATES?\b|\bLIFE\s+ESTS?\b|"
+    r"\bL\s*/\s*E\b|\bL\.E\.\b",
+    re.IGNORECASE)
+
+# Real decedent-estate patterns. Each requires either a leading/trailing
+# context that disambiguates from corporate "ESTATE" or "EST" usage.
 ESTATE_PATTERNS = re.compile(
-    r"(?<!REAL\s)\bESTATE\b(?!\s+LLC)|"        # bare ESTATE not "REAL ESTATE LLC"
-    r"\bESTATE\s+OF\b|"
-    r"\bEST\s+OF\b|"
-    r"\bLIFE\s+ESTATE\b|"
-    r"\bDECEASED\b|"
-    r"\bDEC[''’]?D\b|"
-    r"\bDCSD\b|"
-    r"\bDECD\b|"
-    r"\bHEIRS?\s+OF\b|"
-    r"\s+EST$",
+    r"\bESTATE\s+OF\b|"                           # ESTATE OF X
+    r"\bEST\s+OF\b|"                              # EST OF X
+    r"\bESTATE\s*(?:\(|$)|"                       # X ESTATE end-of-string or "X ESTATE (..."
+    r"\s+ESTATE\s*$|"                             # X ESTATE (end)
+    r"\s+EST\s*$|"                                # X EST (end)
+    r"\bDECEASED\b|"                              # X DECEASED
+    r"\bDEC[''’]?D\b|"                            # X DEC'D
+    r"\bDCSD\b|"                                  # X DCSD
+    r"\bDECD\b|"                                  # X DECD
+    r"\bHEIRS?\s+OF\b|"                           # HEIRS OF X
+    r"\(\s*DECD\s*\)|"                            # (DECD)
+    r"\(\s*DECEASED\s*\)",                        # (DECEASED)
     re.IGNORECASE)
 
 
-def is_estate_titled(owner: str) -> bool:
-    """True iff the owner-name string reads as a decedent estate."""
+def classify_owner_estate(owner: str) -> str:
+    """Return one of: 'estate' (decedent probate), 'life_estate' (living
+    estate-planning vehicle — NOT probate), or '' (neither).
+
+    Order matters:
+      1. Corporate / entity / trust → never estate-typed (excluded)
+      2. Life-estate phrase wins over generic ESTATE match
+      3. Genuine probate patterns
+    """
     if not owner:
-        return False
-    return bool(ESTATE_PATTERNS.search(owner))
+        return ""
+    if CORP_SUFFIX_RE.search(owner):
+        return ""
+    if LIFE_ESTATE_PATTERNS.search(owner):
+        return "life_estate"
+    if ESTATE_PATTERNS.search(owner):
+        return "estate"
+    return ""
+
+
+def is_estate_titled(owner: str) -> bool:
+    """True iff the owner-name string reads as a DECEDENT estate (real
+    probate lead). Excludes corporates AND life estates."""
+    return classify_owner_estate(owner) == "estate"
+
+
+def is_life_estate(owner: str) -> bool:
+    """True iff the owner reads as a LIVING life estate (estate-planning
+    vehicle — NOT probate)."""
+    return classify_owner_estate(owner) == "life_estate"
 
 
 def _now_iso() -> str:
@@ -361,7 +420,12 @@ def parse_mm_owners(mm_path: Path,
                 "owner_city": city or None,
                 "owner_state": state or None,
                 "owner_zip": zipc or None,
+                # Three orthogonal estate classifiers — corporates are
+                # excluded from BOTH; living life estates are tagged
+                # `life_estate` (NOT probate); decedent estates are
+                # `estate_titled`.
                 "estate_titled": is_estate_titled(owner),
+                "life_estate":   is_life_estate(owner),
                 # No genuine payment-plan flag exists in MM (verified 2026-05-25
                 # via keyword sweep across the 950-char layout — PLAN keyword
                 # only catches "PLANO" the city; AGREEM only catches trust

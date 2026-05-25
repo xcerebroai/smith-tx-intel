@@ -546,6 +546,12 @@ for pid, dlq in delinq_cache.items():
         "provenance": ("estate_titled_delinquency" if is_estate
                        else "tax_default_source_of_record"),
     }
+    # Life-estate flag — informational only, NOT a probate signal. Living
+    # life-tenants (e.g. "PASCHE J MARK LIFE ESTATE") are dropped from the
+    # probate class but kept here so the operator can see the
+    # estate-planning context.
+    if dlq.get("life_estate"):
+        synth["life_estate"] = True
     # Optional fields — emit only when non-empty (saves ~80 B/row when blank)
     if addr:    synth["property_full_address"] = addr
     if mailing: synth["mailing_full_address"]  = mailing
@@ -556,6 +562,70 @@ for pid, dlq in delinq_cache.items():
     if len(stack_signals_s) > 1:
         synth["stack_signals"] = sorted(set(stack_signals_s))
     synth_records.append(synth)
+
+# ---- Dedupe ESTATE leads by owner_name (operator framework correction) -----
+# A single decedent estate can own many parcels in Smith County (e.g. JONES
+# MINNIE JARVIS ESTATE × 28 parcels). The operator-facing lead is the ESTATE
+# itself — contacting the executor once handles all properties. Collapse
+# every (owner_name) cluster of probate-tagged synth rows into ONE row, list
+# the parcels in `linked_parcels`, sum the balance, take the worst
+# years_back / earliest_year. Non-estate tax_default leads are NOT deduped
+# (each parcel is a distinct opportunity).
+def _norm_owner(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip().upper())
+
+estate_rows  = [r for r in synth_records
+                 if r["provenance"] == "estate_titled_delinquency"]
+nonestate    = [r for r in synth_records
+                 if r["provenance"] != "estate_titled_delinquency"]
+n_before_dedup = len(estate_rows)
+estate_groups: dict = defaultdict(list)
+for r in estate_rows:
+    estate_groups[_norm_owner(r.get("owner_name", ""))].append(r)
+collapsed_estate: list = []
+for owner_key, group in estate_groups.items():
+    if len(group) == 1:
+        r = group[0]
+        r["linked_parcels"] = [r["parcel_id"]]
+        r["estate_parcel_count"] = 1
+        collapsed_estate.append(r)
+        continue
+    # Aggregate: pick the parcel with the largest balance as primary; carry
+    # the rest as linked. Sum balance, max years_back, min(earliest_year),
+    # max(latest_year). Property address / mailing come from the primary.
+    primary = max(group, key=lambda r: r.get("tax_delinquent_balance") or 0)
+    total_bal = round(sum(r.get("tax_delinquent_balance") or 0 for r in group), 2)
+    max_yrs   = max(r.get("tax_delinquent_years_back") or 0 for r in group)
+    earliest  = min((r.get("tax_delinquent_earliest_year")
+                     for r in group if r.get("tax_delinquent_earliest_year")),
+                    default=None)
+    latest    = max((r.get("tax_delinquent_latest_year")
+                     for r in group if r.get("tax_delinquent_latest_year")),
+                    default=None)
+    parcels   = sorted({r["parcel_id"] for r in group})
+    merged = dict(primary)
+    merged["lead_id"] = f"lead_probate_estate_{primary['parcel_id']}"
+    merged["tax_delinquent_balance"] = total_bal
+    merged["tax_delinquent_years_back"] = max_yrs
+    merged["tax_delinquent_hot"] = max_yrs >= 3
+    if earliest is not None: merged["tax_delinquent_earliest_year"] = earliest
+    if latest   is not None: merged["tax_delinquent_latest_year"]   = latest
+    merged["linked_parcels"] = parcels
+    merged["estate_parcel_count"] = len(parcels)
+    # Adjust the signal label to reflect the aggregate
+    merged["signals"] = [{
+        "signal_type": "probate",
+        "signal_label": (f"Probate (Estate-Titled Tax Delinquent) — "
+                          f"{len(parcels)} parcels, ${total_bal:,.2f} total, "
+                          f"{max_yrs}yr"),
+        "source_id": "smith_delinquent_tax_sftp_lgbs",
+    }]
+    collapsed_estate.append(merged)
+synth_records = nonestate + collapsed_estate
+n_after_dedup = len(collapsed_estate)
+print(f"  estate dedupe: {n_before_dedup:,} rows  ->  "
+      f"{n_after_dedup:,} unique estates  "
+      f"({n_before_dedup - n_after_dedup:,} multi-parcel rows collapsed)")
 
 # Annotate every PRIMARY lead with its tax-default qualification subtype.
 # The §17 canonical_doc_type is preserved as-is (no scaffold edits); we add
