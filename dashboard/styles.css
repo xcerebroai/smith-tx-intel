@@ -173,6 +173,8 @@ main { display: flex; flex: 1; min-height: 0; }
 .badge.qdef   { background: #1f2a3a; color: #9bcfff; font-weight: 600; }
 .badge.qlow   { background: #25272d; color: #8b919c; }
 .badge.prim   { background: #1f3324; color: #9be3a8; }
+.hint         { font-size: 10px; color: var(--ink3); margin-top: 4px;
+                line-height: 1.3; }
 
 /* ---- detail panel (UI-4) ---- */
 .detail { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line);

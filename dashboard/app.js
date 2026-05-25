@@ -56,6 +56,10 @@
     newOnly: false, last30Only: false,
     yearsRange: { 0: true, 1: false, 2: false, 3: true, 4: true, 5: true },
     qualFilter: null,             // optional qualification_class filter
+    // TAX_DEFAULT_LOW_PRIORITY (1yr + <$100) is operator noise; default-hide
+    // it independently of the years filter so toggling year=1 ON for the
+    // 8,957 legitimate 1-yr QUALIFIED leads doesn't pull the noise in.
+    includeLowPriority: false,
     sort: "urgency", shown: 0, preset: "all"
   };
   var PAGE = 60;
@@ -161,26 +165,41 @@
   }
 
   function topStatsHtml(p) {
+    // Default-view universe = everything EXCEPT TAX_DEFAULT_LOW_PRIORITY.
+    // That bucket is operator noise (1yr + <$100) — surfaced only when the
+    // "Show low-priority" toggle flips on.
+    var defaultViewCount = records.filter(function (r) {
+      return r._qualClass !== "TAX_DEFAULT_LOW_PRIORITY";
+    }).length;
+    var lpCount  = records.length - defaultViewCount;
     var nNew    = records.filter(function (r) { return r._isNew; }).length;
     var nL30    = records.filter(function (r) { return r._isL30; }).length;
     var nStack  = records.filter(function (r) { return r._stacked; }).length;
     var nEstate = records.filter(function (r) { return r._estate; }).length;
-    var nHot    = records.filter(function (r) { return r._taxHot; }).length;
+    var nHot    = records.filter(function (r) {
+      return r._taxHot && r._qualClass !== "TAX_DEFAULT_LOW_PRIORITY";
+    }).length;
     function st(n, l, cls) {
       return '<div class="topstat ' + (cls || "") + '"><div class="n">' +
         n.toLocaleString() + '</div><div class="l">' + l + "</div></div>";
     }
-    return st(records.length, "leads") +
+    var lpStat = lpCount ? st(lpCount, "low-priority (hidden)") : "";
+    return st(defaultViewCount, "leads") +
       st(nNew,    "NEW today",         "urgent") +
       st(nL30,    "last 30 days") +
       st(nStack,  "stacked",           "estate") +
       st(nEstate, "estate-titled",     "estate") +
-      st(nHot,    "tax delinq 3+yr",   "urgent");
+      st(nHot,    "tax delinq 3+yr",   "urgent") +
+      lpStat;
   }
   function populateYearsCounts() {
     var c = {0:0,1:0,2:0,3:0,4:0,5:0};
     records.forEach(function (r) { c[r._yrsBucket]++; });
     for (var k in c) { var el = $("yc" + k); if (el) el.textContent = c[k].toLocaleString(); }
+    var lp = records.filter(function (r) {
+      return r._qualClass === "TAX_DEFAULT_LOW_PRIORITY";
+    }).length;
+    var lpEl = $("lpCount"); if (lpEl) lpEl.textContent = lp.toLocaleString();
   }
 
   // ---------- sidebar ----------
@@ -301,6 +320,11 @@
     if (togL30) togL30.addEventListener("change", function (e) {
       state.last30Only = e.target.checked; markPresetActive(""); render();
     });
+    var togLp = $("togLowPri");
+    if (togLp) togLp.addEventListener("change", function (e) {
+      state.includeLowPriority = e.target.checked;
+      markPresetActive(""); render();
+    });
     var yf = $("yearsFilter");
     if (yf) {
       yf.querySelectorAll('input[type=checkbox][data-yrs]').forEach(function (cb) {
@@ -340,6 +364,8 @@
     state.estateOnly  = false; if ($("togEstate"))  $("togEstate").checked  = false;
     state.newOnly     = false; if ($("togNew"))     $("togNew").checked     = false;
     state.last30Only  = false; if ($("togL30"))     $("togL30").checked     = false;
+    state.includeLowPriority = false;
+    if ($("togLowPri")) $("togLowPri").checked = false;
     // years filter — default (operator framework decision): 3/4/5 + non-
     // delinquent ON; 1/2 OFF.
     var defaults = { 0: true, 1: false, 2: false, 3: true, 4: true, 5: true };
@@ -416,6 +442,8 @@
       if (state.last30Only && !r._isL30) return false;
       if (state.yearsRange && state.yearsRange[r._yrsBucket] === false)
         return false;
+      if (!state.includeLowPriority
+          && r._qualClass === "TAX_DEFAULT_LOW_PRIORITY") return false;
       if (state.qualFilter && r._qualClass !== state.qualFilter) return false;
       if (!allSig) {
         var hit = (r.signal_types || []).some(function (t) {
@@ -483,8 +511,19 @@
     var list = $("leadList");
     io.unobserve(sentinel);
     list.innerHTML = "";               // detaches sentinel — JS ref survives
-    $("rowCount").textContent = filtered.length.toLocaleString() +
-      " of " + records.length.toLocaleString() + " leads";
+    // Denominator reflects the EFFECTIVE universe (low-priority excluded
+    // unless the operator toggled it on). Total kept visible for context.
+    var lpHidden = records.filter(function (r) {
+      return r._qualClass === "TAX_DEFAULT_LOW_PRIORITY";
+    }).length;
+    var universeN = state.includeLowPriority
+      ? records.length : records.length - lpHidden;
+    var rcLine = filtered.length.toLocaleString() +
+      " of " + universeN.toLocaleString() + " leads";
+    if (!state.includeLowPriority && lpHidden)
+      rcLine += "  (" + lpHidden.toLocaleString() +
+        " low-priority hidden — toggle in sidebar)";
+    $("rowCount").textContent = rcLine;
     $("markedCount").textContent = Object.keys(marked).length;
     updateFilterSummary();
 

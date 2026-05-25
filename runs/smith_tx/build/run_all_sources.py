@@ -727,6 +727,11 @@ payload = {
     "delinquent_tax_drop_date": drop_iso,
     "delinquent_tax_universe": len(delinq_cache),
     "lead_total": len(records),
+    # The dashboard hides TAX_DEFAULT_LOW_PRIORITY by default (1yr + <$100,
+    # operator noise). default_view_lead_count is the count the client sees
+    # on first load; lead_total is the full universe available via the
+    # "Show low-priority" toggle in the sidebar.
+    "default_view_lead_count": len(records) - n_tax_default_lowpri,
     "qualification_class_distribution": dict(qual_counts),
     "qualified_tax_default_lead_count": n_qualified_tax_default,
     "tax_foreclosure_lead_count":       n_tax_foreclosure,
@@ -757,8 +762,11 @@ _compact = (",", ":")
 (DASH / "data.json").write_text(json.dumps(payload, separators=_compact, ensure_ascii=False) + "\n")
 (DASH / "data.js").write_text("window.LEADS=" + json.dumps(payload, separators=_compact, ensure_ascii=False) + ";\n")
 print(f"  dashboard data.json + data.js written")
-print(f"  lead_total: {payload['lead_total']}  primary: {primary_count}  "
-      f"estate: {estate_synth}  tax-default-originated: {default_synth}")
+print(f"  default-view lead count: {payload['default_view_lead_count']:,}  "
+      f"(low-priority hidden: {n_tax_default_lowpri:,})")
+print(f"  lead_total (incl. low-priority): {payload['lead_total']:,}  "
+      f"primary: {primary_count}  estate: {estate_synth}  "
+      f"tax-default-originated: {default_synth}")
 print(f"  qualification matrix:")
 for k in ("QUALIFIED_TAX_DEFAULT_LEAD", "TAX_FORECLOSURE_LEAD", "TAX_SALE_LEAD",
           "TAX_DEFAULT_LOW_PRIORITY", "ESTATE_TITLED_LEAD",
