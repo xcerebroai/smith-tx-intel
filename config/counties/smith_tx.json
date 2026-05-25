@@ -814,7 +814,7 @@
         "Linebarger handles general Smith County + most ISDs; Tyler ISD tax sales (handled by Perdue Brandon) are NOT covered by this source.",
         "API carries no party names — debtor is REVIEW_REQUIRED at §17."
       ],
-      "last_verified_at": "2026-05-25T12:48:03Z",
+      "last_verified_at": "2026-05-25T12:59:15Z",
       "auth_required": false,
       "rate_limit_rpm": 60,
       "scraper_module": "scrapers/lgbs_smith_tax_sales.py",
@@ -876,7 +876,7 @@
       "estimated_cost_category": "FREE",
       "portal_fingerprint_id": "smith_tx_lgbs_smith_tax_sales",
       "portal_family": "Django REST Framework / LGBS",
-      "fingerprinted_at": "2026-05-25T12:48:03Z",
+      "fingerprinted_at": "2026-05-25T12:59:15Z",
       "fingerprint_confidence": "HIGH",
       "fingerprint_summary": "Django REST Framework, JSON, unauthenticated, paginated via limit/offset and `next` URL. No CAPTCHA, no SPA gating.",
       "recommended_adapter": "scrapers/lgbs_smith_tax_sales.py",

@@ -223,9 +223,21 @@ the v5.4.0 staged pipeline:
     §18 leads_base:      31
     §19 matched_leads:   31
     §20 verdict:         DEPLOY_OK
-    seam scored_leads:   31  (all UNENRICHED, all "Archive" tier — no enrichment
-                              provider wired; scoring matches that reality)
+    seam scored_leads:   31  (all UNENRICHED — no enrichment_provider wired;
+                              correctly scored "Workable" tier on the tax pattern)
     dashboard:           dashboard/data.json — 31 lead rows, build_label PARTIAL_BUILD
+                         pattern_counts: {"tax": 31}
+                         score_tier_distribution: {"Workable": 31}
+                         deal_path_distribution: {"wholesale": 31}
+
+Doc-type fix (2026-05-25): the initial run mapped LGBS sale_type to the
+unregistered string `TAX_FORECLOSURE_SALE` (fell through §17's F-5 default →
+empty pattern_counts, all "Archive" tier). Verified §17 / canonical_doc_types.json
+/ doc_type_bridge.py registrations and remapped both `SALE` and `STRUCK OFF`
+to the registered canonical **`tax_foreclosure_notice`** (lowercase per §17
+rule keys; bridges to §16 lead type "Tax Lien Foreclosure", lead_pattern "tax").
+Adapter + config `doc_type_synonyms` updated; pipeline re-run; pattern_counts
+now correctly emits the tax pattern for every row.
 
 Other stdlib-reachable primary sources discovered but deferred:
 `pbfcm_smith_tax_resale.pdf` (4 Tyler-ISD struck-off; pure-stdlib zlib+regex

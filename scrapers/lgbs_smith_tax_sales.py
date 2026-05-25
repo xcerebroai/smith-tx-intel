@@ -49,14 +49,25 @@ USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 FIXTURE_DIR = REPO_ROOT / "scrapers" / "fixtures" / SOURCE_ID
 OUT_PATH = REPO_ROOT / "data" / "raw" / "lgbs_smith_tax_sales.jsonl"
 
-# Mapping of LGBS sale_type → framework canonical doc type. Property
-# attachment is proven for every record (account_nbr + prop_address_one
-# present on all 31 Smith records as of the build date), so mapping to
-# TAX_FORECLOSURE_SALE — a lead-generating canonical type — meets the
-# Duval JUDGMENT standard the operator cited.
+# Mapping of LGBS sale_type → framework-registered canonical_doc_type.
+#
+# Per the §17 debtor_party_engine rule table (lowercase keys) and the
+# canonical_doc_types.json registry (UPPERCASE keys with lowercase subtype),
+# the lead-bearing tax-foreclosure canonicals are:
+#   tax_foreclosure_notice  -> §16 lead_type "Tax Lien Foreclosure" (lead_pattern "tax")
+#   tax_deed                -> §16 lead_type "Tax Sale"
+#   tax_sale_certificate    -> §16 lead_type "Tax Sale Certificate" (not used in TX)
+#
+# LGBS records are EITHER "Scheduled for Online Auction" with a sale_date_only
+# (upcoming first-Tuesday tax-foreclosure auction) OR "Available for Future
+# Sale" struck-off properties (taxing-entity-held, awaiting re-listing). Both
+# represent UPCOMING / SCHEDULED tax-foreclosure SALE NOTICES rather than
+# completed deed transfers; per the operator's mapping guidance both map to
+# `tax_foreclosure_notice` (lowercase to match §17 rule keys directly).
+# Property attachment is proven on every row (Duval JUDGMENT standard met).
 SALE_TYPE_TO_CANONICAL = {
-    "SALE": "TAX_FORECLOSURE_SALE",
-    "STRUCK OFF": "TAX_FORECLOSURE_SALE",
+    "SALE": "tax_foreclosure_notice",
+    "STRUCK OFF": "tax_foreclosure_notice",
 }
 
 
@@ -145,7 +156,7 @@ def normalize_record(rec: dict) -> dict:
     # is the §17/§18 stage's responsibility; the adapter just flags it.
     confidence = 50 if status.lower() == "cancelled" else 95
 
-    canonical = SALE_TYPE_TO_CANONICAL.get(sale_type.upper(), "TAX_FORECLOSURE_SALE")
+    canonical = SALE_TYPE_TO_CANONICAL.get(sale_type.upper(), "tax_foreclosure_notice")
 
     amounts = []
     mb = _to_float_or_none(rec.get("minimum_bid"))

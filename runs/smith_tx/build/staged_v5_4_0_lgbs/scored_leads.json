@@ -1,15 +1,23 @@
 [
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -18,48 +26,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_f410f43adcf7d462",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_d29110ff87d93e39",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -68,48 +92,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_e36c34ccc4ea21b7",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_bffc0c4c2c79f777",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -118,48 +158,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_d3fc1fcac44e63d0",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_4d2f0d15308ac558",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -168,48 +224,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_d48f68c445dc2442",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_4c03e3b809b5a62e",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -218,48 +290,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_d9fabc29d2a9456d",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_d6d219c080841403",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -268,48 +356,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_3f40c382dee22b2b",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_5e9e2cc049b54b81",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -318,48 +422,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_6faaa93ede6bfa8e",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_0cbd9132f2bf1f18",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -368,48 +488,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_8f00443b5530761c",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_84ff8e9a2bc5313f",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -418,48 +554,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_50fa92431c47b9c0",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_db1f51badca7d137",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -468,48 +620,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_efc83f4c4fdd9d5e",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_4d232753ec72dd43",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -518,48 +686,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_2d73cb364a762ff3",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_5039249409160ed7",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -568,48 +752,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_ca53487c6044868f",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_c997d1a329ebbfa3",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -618,48 +818,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_9458d0099318a9fd",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_9bbb1d648d3d9a05",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -668,48 +884,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_15c66cc5ba98b09d",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_64c962b6755f7ba2",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -718,48 +950,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_1e10df25bceda59e",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_68296e96b048b21a",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -768,48 +1016,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_6e21c073719ffdea",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_b4a7defd604edac2",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -818,48 +1082,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_aa2e5abdf19c7941",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_340f506503e4e0a0",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -868,48 +1148,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_f1c46e74c0311965",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_0462b69d184d4093",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -918,48 +1214,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_afd51c8f9bb36f7d",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_311a8a97d4b8263a",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -968,48 +1280,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_165ea59cba2234db",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1f0d0556fc7235c0",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1018,48 +1346,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_0ba7a239df57eaeb",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_47eecd28fbeee835",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1068,48 +1412,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_19023b0863d4cb68",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_ebfcc722ba45a829",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1118,48 +1478,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_b33efd27f59bd070",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_694d4ca65b48ef83",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1168,48 +1544,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_05a55934685d3996",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1e8bfc2f2021969b",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1218,48 +1610,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_bb27337673ed3a4f",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_03465a355ad23a01",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1268,48 +1676,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_22be46e1a52a2b3d",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_0d5f93d66b130421",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1318,48 +1742,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_a253d70d4758f8c1",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_babc7110dea2a17e",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1368,48 +1808,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_ade978c61a850daf",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1d54646010c0ff24",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1418,48 +1874,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_ddc3b52061be1bd1",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_041950db4ffcc6bc",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1468,48 +1940,64 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_0ce81aa7f8c8385f",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_08884f932aa41388",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"
   },
   {
     "attributes": [],
-    "deal_paths": [],
-    "display_patterns": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
     "doc_type_normalization": {
       "canonical_doc_types": [
-        "TAX_FORECLOSURE_SALE"
+        "tax_foreclosure_notice"
       ],
-      "doc_type_review_required": true,
+      "doc_type_review_required": false,
       "normalized_doc_types": [
-        ""
+        "TAX_FORECLOSURE_NOTICE"
       ]
     },
     "enrichment_status": "UNENRICHED",
@@ -1518,33 +2006,41 @@
     "lead_status": "REVIEW_REQUIRED",
     "lead_status_history": [
       {
-        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T12:48:04Z"
+        "transitioned_at": "2026-05-25T12:59:15Z"
       }
     ],
     "match_confidence": null,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "parcel_display": null,
-    "pattern_set": [],
-    "patterns": [],
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
     "primary_event_date": null,
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
       "parcel_resolution_review_required",
-      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
-      "no_pattern_fired"
+      "matched_lead_review_reason:owner_not_on_document"
     ],
-    "score": 0,
-    "score_reasons": [],
-    "scored_lead_id": "scored_c12f6dc5c32a9c6b",
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_c539b03361f675a0",
     "source_ids": [
       "lgbs_smith_tax_sales"
     ],
-    "stack_depth": 0,
-    "tier": "Archive",
+    "stack_depth": 1,
+    "tier": "Workable",
     "title_complexity_contributors": [],
     "title_complexity_score": 0,
     "title_complexity_tier": "None"

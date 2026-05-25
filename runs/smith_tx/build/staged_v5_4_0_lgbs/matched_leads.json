@@ -7,13 +7,13 @@
     "lead_id": "lead_unresolved_24,171-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -22,17 +22,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -44,7 +44,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -65,13 +65,13 @@
     "lead_id": "lead_unresolved_25,356-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -80,17 +80,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -102,7 +102,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -123,13 +123,13 @@
     "lead_id": "lead_unresolved_25,478-A",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -138,17 +138,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -160,7 +160,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -181,13 +181,13 @@
     "lead_id": "lead_unresolved_25,796-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -196,17 +196,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -218,7 +218,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -239,13 +239,13 @@
     "lead_id": "lead_unresolved_26,009-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -254,17 +254,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -276,7 +276,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -297,13 +297,13 @@
     "lead_id": "lead_unresolved_26,019-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -312,17 +312,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -334,7 +334,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -355,13 +355,13 @@
     "lead_id": "lead_unresolved_26,052-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -370,17 +370,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -392,7 +392,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -413,13 +413,13 @@
     "lead_id": "lead_unresolved_26,216-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -428,17 +428,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -450,7 +450,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -471,13 +471,13 @@
     "lead_id": "lead_unresolved_26,217-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -486,17 +486,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -508,7 +508,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -529,13 +529,13 @@
     "lead_id": "lead_unresolved_26,318-A",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -544,17 +544,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -566,7 +566,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -587,13 +587,13 @@
     "lead_id": "lead_unresolved_26,563-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -602,17 +602,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -624,7 +624,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -645,13 +645,13 @@
     "lead_id": "lead_unresolved_26,750-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -660,17 +660,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -682,7 +682,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -703,13 +703,13 @@
     "lead_id": "lead_unresolved_26,785-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -718,17 +718,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -740,7 +740,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -761,13 +761,13 @@
     "lead_id": "lead_unresolved_26,849-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -776,17 +776,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -798,7 +798,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -819,13 +819,13 @@
     "lead_id": "lead_unresolved_26,894-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -834,17 +834,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -856,7 +856,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -877,13 +877,13 @@
     "lead_id": "lead_unresolved_26,895-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -892,17 +892,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -914,7 +914,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -935,13 +935,13 @@
     "lead_id": "lead_unresolved_26,976-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -950,17 +950,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -972,7 +972,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -993,13 +993,13 @@
     "lead_id": "lead_unresolved_27,071-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1008,17 +1008,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1030,7 +1030,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1051,13 +1051,13 @@
     "lead_id": "lead_unresolved_27,164-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1066,17 +1066,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1088,7 +1088,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1109,13 +1109,13 @@
     "lead_id": "lead_unresolved_27,189-A",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1124,17 +1124,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1146,7 +1146,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1167,13 +1167,13 @@
     "lead_id": "lead_unresolved_27,242-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1182,17 +1182,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1204,7 +1204,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1225,13 +1225,13 @@
     "lead_id": "lead_unresolved_27,323-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1240,17 +1240,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1262,7 +1262,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1283,13 +1283,13 @@
     "lead_id": "lead_unresolved_27,343-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1298,17 +1298,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1320,7 +1320,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1341,13 +1341,13 @@
     "lead_id": "lead_unresolved_27,407-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1356,17 +1356,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1378,7 +1378,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1399,13 +1399,13 @@
     "lead_id": "lead_unresolved_27,413-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1414,17 +1414,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1436,7 +1436,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1457,13 +1457,13 @@
     "lead_id": "lead_unresolved_27,629-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1472,17 +1472,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1494,7 +1494,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1515,13 +1515,13 @@
     "lead_id": "lead_unresolved_27,653-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1530,17 +1530,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1552,7 +1552,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1573,13 +1573,13 @@
     "lead_id": "lead_unresolved_27,695-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1588,17 +1588,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1610,7 +1610,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1631,13 +1631,13 @@
     "lead_id": "lead_unresolved_27,726-A",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1646,17 +1646,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1668,7 +1668,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1689,13 +1689,13 @@
     "lead_id": "lead_unresolved_27,785-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1704,17 +1704,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1726,7 +1726,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
@@ -1747,13 +1747,13 @@
     "lead_id": "lead_unresolved_28,007-C",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_name": "tax_foreclosure_notice against unidentified party",
     "owner_type": "UNKNOWN",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "TAX_FORECLOSURE_SALE against unidentified party",
+        "name": "tax_foreclosure_notice against unidentified party",
         "name_type": null,
         "notes": null,
         "resolution_status": "REVIEW_REQUIRED",
@@ -1762,17 +1762,17 @@
       }
     ],
     "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
     "primary_parcel_id": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
+    "review_reason": "owner_not_on_document",
     "signals": [
       {
         "aggregation_key": {
-          "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+          "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "Tax Foreclosure Sale"
+          "signal_type": "Tax Foreclosure Notice"
         },
-        "canonical_doc_type": "TAX_FORECLOSURE_SALE",
+        "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
         "earliest_recorded_date": null,
         "evidence_ids": [],
@@ -1784,7 +1784,7 @@
           null,
           null
         ],
-        "signal_type": "Tax Foreclosure Sale",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "lgbs_smith_tax_sales"
         ],
