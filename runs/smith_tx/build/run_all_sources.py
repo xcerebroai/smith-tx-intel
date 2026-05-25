@@ -511,36 +511,23 @@ for pid, dlq in delinq_cache.items():
         stack_signals_s.append("tax_default_3plus")
     stack_class_s = "+".join(sorted(set(stack_signals_s)))
 
-    # Per-record source-proof bundle (criterion 4).
-    record_id = f"{drop_label or 'latest'}::{pid}"
-    source_url = f"{SOURCE_URL_BASE}#account={pid}"
-    # LGBS taxsales operator-clickable URL — operator can confirm against the
-    # firm's public-facing tax-sale board, when the parcel surfaces there.
-    secondary_url = f"{LGBS_TAX_SALES_URL_BASE}{pid}"
-
+    # Per-record signal — SLIM. The criterion-4 source-proof boilerplate
+    # (source_name, source_url base, drop_label, captured_at) is identical
+    # across all 37K synth rows; we move it to payload-level
+    # `tax_default_source_meta` and reconstruct per-row URLs client-side from
+    # parcel_id. This drops ~700 bytes/row × 37K = ~26 MB off data.js so it
+    # fits in the git tree the live Pages site serves.
     synth = {
         "lead_id": (f"lead_probate_{pid}" if is_estate
                      else f"lead_taxdefault_{pid}"),
         "parcel_id": pid,
         "owner_name": owner or "",
         "owner_type": ot,
-        "property_full_address": addr,
-        "mailing_full_address": mailing,
         "signal_types": [signal_type] if signal_type else [],
         "signals": ([{
             "signal_type": signal_type,
             "signal_label": signal_label,
             "source_id": "smith_delinquent_tax_sftp_lgbs",
-            "source_name": ("Linebarger Goggan Blair & Sampson LLP "
-                            "(Smith County retained delinquent-tax firm) — "
-                            "MFT TaxRoll drop"),
-            "source_url": source_url,
-            "secondary_source_url": secondary_url,
-            "record_id": record_id,
-            "drop_label": drop_label,
-            "captured_at": dlq.get("_captured_at"),
-            "recorded_date": drop_iso,
-            "qualification_class": qualification,
         }] if signal_type else []),
         "signal_count": 1 if signal_type else 0,
         "latest_event_date": drop_iso,
@@ -552,17 +539,22 @@ for pid, dlq in delinq_cache.items():
         "tax_delinquent_hot": years_back >= 3,
         "tax_delinquent_balance": round(bal, 2),
         "tax_delinquent_years_back": years_back,
-        "tax_delinquent_earliest_year": dlq.get("earliest_year"),
-        "tax_delinquent_latest_year":   dlq.get("latest_year"),
         "estate_titled": is_estate,
         "stacked_lead": False,
         "stack_class": stack_class_s,
-        "stack_signals": sorted(set(stack_signals_s)),
         "qualification_class": qualification,
-        # provenance — leans on the qualification class for transparency
         "provenance": ("estate_titled_delinquency" if is_estate
                        else "tax_default_source_of_record"),
     }
+    # Optional fields — emit only when non-empty (saves ~80 B/row when blank)
+    if addr:    synth["property_full_address"] = addr
+    if mailing: synth["mailing_full_address"]  = mailing
+    if dlq.get("earliest_year"):
+        synth["tax_delinquent_earliest_year"] = dlq.get("earliest_year")
+    if dlq.get("latest_year"):
+        synth["tax_delinquent_latest_year"]   = dlq.get("latest_year")
+    if len(stack_signals_s) > 1:
+        synth["stack_signals"] = sorted(set(stack_signals_s))
     synth_records.append(synth)
 
 # Annotate every PRIMARY lead with its tax-default qualification subtype.
@@ -710,6 +702,21 @@ payload = {
     "refresh_date": TODAY.isoformat(),
     "build_label": cfg["dashboard"].get("build_label") or "PARTIAL_BUILD",
     "build_label_reason": cfg["dashboard"].get("build_label_reason") or "",
+    # Tax-default source-of-record metadata. Per-row URLs reconstruct from
+    # parcel_id + these bases (saves ~26 MB across 37K synth rows).
+    "tax_default_source_meta": {
+        "source_id": "smith_delinquent_tax_sftp_lgbs",
+        "source_name": ("Linebarger Goggan Blair & Sampson LLP "
+                        "(Smith County retained delinquent-tax firm) — "
+                        "MFT TaxRoll drop"),
+        "source_url_base": SOURCE_URL_BASE,             # sftp://mft.smi.tax/...
+        "secondary_source_url_base": LGBS_TAX_SALES_URL_BASE,
+        "record_id_prefix": (drop_label or "latest") + "::",
+        "drop_label": drop_label,
+        "drop_date": drop_iso,
+        "captured_at": next((r.get("_captured_at") for r in delinq_cache.values()
+                              if r.get("_captured_at")), None),
+    },
     "sources_active": list(per_source.keys()),
     "enrichment_sources_active": [
         "smith_cad_taxparcels",

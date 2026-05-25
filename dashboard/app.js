@@ -147,12 +147,9 @@
     records.forEach(prep);
 
     $("topStats").innerHTML = topStatsHtml(payload);
-    if (payload.build_label && payload.build_label !== "FULL_BUILD") {
-      var b = $("banner");
-      b.hidden = false;
-      b.textContent = "PARTIAL LEAD BOARD (" + payload.build_label + ") — " +
-        (payload.build_label_reason || "");
-    }
+    // Build-status banner intentionally suppressed — operator does not want
+    // PARTIAL_BUILD / SOURCE_LIMITED messaging on the operator board.
+    var b = $("banner"); if (b) b.hidden = true;
 
     buildPresets();
     buildSignalFilter();
@@ -810,13 +807,15 @@
 
   // ---------- start ----------
   function start() {
+    // Canonical data path: <script src="data.js"></script> in index.html
+    // sets window.LEADS before app.js runs. A script include cannot return
+    // HTML-as-JSON, so a 404 on data.js produces a clean
+    // "DATA is null" state we surface via a console message — not a JSON
+    // parse error from fetch()ing a 404 HTML page.
     if (DATA) { boot(DATA); return; }
-    fetch("data.json").then(function (r) { return r.json(); }).then(boot)
-      .catch(function (e) {
-        var b = $("banner"); b.hidden = false;
-        b.textContent = "Could not load data (" + e + ").";
-        document.documentElement.setAttribute("data-ready", "1");
-      });
+    console.error("data.js did not set window.LEADS — dashboard/data.js is "
+                  + "missing or not loaded. Check the deployment.");
+    document.documentElement.setAttribute("data-ready", "1");
   }
   if (document.readyState === "loading")
     document.addEventListener("DOMContentLoaded", start);

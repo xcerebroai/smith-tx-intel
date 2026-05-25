@@ -31,12 +31,14 @@ data/raw/
 data/runs/*/raw/
 data/evidence/*.pdf
 
-# Daily-refresh build artifacts: large per-run payloads (35 MB+) generated
-# by runs/smith_tx/build/run_all_sources.py. The Pages workflow regenerates
-# and publishes them on every run via upload-pages-artifact — no git commit
-# required, and committing them daily would balloon history.
+# Daily-refresh build artifacts.
+# - dashboard/data.js IS committed — it is the canonical data file the
+#   dashboard loads via <script src="data.js"> from the live Pages site.
+#   index.html references it directly; without it on origin/main the live
+#   site 404s and the renderer shows zero leads.
+# - dashboard/data.json is local-dev-only (for programmatic inspection); the
+#   live dashboard never fetches it. Keep gitignored to halve commit size.
 dashboard/data.json
-dashboard/data.js
 
 # Per-county run logs and transient artifacts
 # The runs/<slug>/ folder itself IS committed (launch files, manifests, notes).
