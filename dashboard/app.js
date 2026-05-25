@@ -115,6 +115,11 @@
     r._estate = !!r.estate_titled || r.owner_type === "ESTATE";
     r._isNew = !!r.is_new;
     r._isL30 = !!r.is_last_30_days;
+    // Sale-window — forward-looking, distinct from is_last_30_days
+    // (which is backward-looking on the RECORDED date). Past sales
+    // never trigger the upcoming-sale badge.
+    r._isUpcomingSale30 = !!r.is_upcoming_sale_30d;
+    r._saleStatus = r.sale_status || null;   // past | today | upcoming_30d | upcoming_later
     r._tier = urgencyTier(r);
     var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
       r.signal_types.indexOf("federal_tax_lien") >= 0 ||
@@ -600,7 +605,22 @@
     else if (r.legal_description)
       addr = '<div class="addr legal">Legal: ' +
         esc(r.legal_description) + "</div>";
-    else
+    else if ((r.signal_types || []).indexOf("foreclosure_notice") >= 0) {
+      // Foreclosure-specific REVIEW_REQUIRED card line — show doc# +
+      // sale-date prominently so the operator has an actionable hook
+      // even when the publicsearch FC listing doesn't expose the owner.
+      var fs2 = (r.signals || []).filter(function (x) {
+        return x.signal_type === "foreclosure_notice";
+      })[0] || {};
+      var instr = (fs2.instrument_numbers || [])[0] ||
+                  (r.lead_id || "").replace(/^lead_unresolved_/, "");
+      var saleTxt = fs2.sale_date ? "  ·  Sale " + esc(fs2.sale_date) +
+        (r._saleStatus === "past" ? " (past)" :
+          r._saleStatus === "today" ? " (today)" :
+          r._saleStatus === "upcoming_30d" ? " (upcoming)" : "") : "";
+      addr = '<div class="addr none">Doc #' + esc(instr) + saleTxt +
+        '  ·  Owner not on filing — clerk doc image required</div>';
+    } else
       addr = '<div class="addr none">No property address — skip-trace ' +
         'from owner + instrument</div>';
 
@@ -668,8 +688,16 @@
     else if (r.tax_delinquent && r._qualClass !== "TAX_DEFAULT_LOW_PRIORITY")
       b.push('<span class="badge warm">' +
              (r.tax_delinquent_years_back || 0) + 'yr</span>');
+    // Recency: backward-looking, fires only when the COUNTY RECORDED date
+    // is within the last 30 days. NEVER fires for past sale dates.
     if (r._isL30 && !r._isNew)
-      b.push('<span class="badge l30">≤30d</span>');
+      b.push('<span class="badge l30">Filed ≤30d</span>');
+    // Sale-window: forward-looking, fires only when there's an UPCOMING
+    // sale in the next 30 days. Past sales get a distinct "Sale past" tag.
+    if (r._isUpcomingSale30)
+      b.push('<span class="badge sale-soon">Sale ≤30d (upcoming)</span>');
+    else if (r._saleStatus === "past")
+      b.push('<span class="badge sale-past">Sale past</span>');
     if (r._review)
       b.push('<span class="badge warn">REVIEW REQUIRED</span>');
     if (r.absentee_owner_flag)

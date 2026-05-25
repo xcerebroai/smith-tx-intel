@@ -78,47 +78,58 @@ jobs:
         continue-on-error: true
         run: python scrapers/pbfcm_smith_tax_resale.py
 
-      - name: County Excess Proceeds (district clerk registry)
-        id: excess
-        continue-on-error: true
-        run: python scrapers/county_excess_proceeds.py
+      # county_excess_proceeds (sheriff_sale_surplus) DROPPED 2026-05-25 —
+      # client doesn't work surplus. Scraper file stays in tree but is not
+      # run in CI and is excluded from run_all_sources.py SOURCES list.
 
       - name: publicsearch.us clerk — FC + keyword sweep
         id: clerk
         continue-on-error: true
         run: python scrapers/publicsearch_clerk.py
 
-      - name: Parcel master CAD enrichment
-        id: parcels
-        continue-on-error: true
-        run: |
-          if [ -f scrapers/parcel_master.py ]; then
-            python scrapers/parcel_master.py || true
-          fi
+      # CAD parcel enrichment runs INLINE inside run_all_sources.py — it
+      # queries Smith CAD ArcGIS at build time for the specific parcels
+      # primary leads carry AND for the FC-foreclosure address join. The
+      # standalone scrapers/parcel_master.py adapter writes a separate
+      # enrichment file that the current build path does NOT consume; the
+      # step is intentionally omitted here so a parcel_master failure
+      # never confuses the audit. The verify_published.py step below
+      # checks the inline CAD enrichment produced owners + addresses.
 
-      # ----- enrichment: delinquent-tax SFTP drop (weekly refresh) -----
+      # ----- enrichment: delinquent-tax SFTP drop (weekly refresh). NOT
+      #       continue-on-error — a missed SFTP pull would silently wipe
+      #       the 39K delinquent-account universe (the bulk of the board).
       - name: Smith delinquent tax SFTP
         id: dlq
-        continue-on-error: true
         run: python scrapers/smith_delinquent_tax.py
 
-      # ----- pipeline + dashboard -----
+      # ----- pipeline + dashboard. run_all_sources.py performs the CAD
+      #       parcel + address-join enrichment INLINE (queries Smith CAD
+      #       ArcGIS at build time). That's the Greene failure mode: if
+      #       this step or the inline CAD calls fail silently, owners
+      #       come out Unknown. The verify_published step below catches it.
       - name: §17 -> §20 + dashboard render
         id: build
         run: python runs/smith_tx/build/run_all_sources.py
 
+      # ----- SANITY THRESHOLD — fails the build if per-source counts drop
+      #       below floor OR if owner/address enrichment ratio collapses
+      #       (the Greene "525 of 1,210 leads" / "Unknown owners" guard).
+      - name: Verify published — per-source floors + enrichment ratio
+        id: verify
+        run: python runs/smith_tx/build/verify_published.py dashboard/data.json
+
       - name: Report failed sources (informational)
+        if: always()
         env:
           LGBS_OUT:    ${{ steps.lgbs.outcome }}
           PBFCM_OUT:   ${{ steps.pbfcm.outcome }}
-          EXCESS_OUT:  ${{ steps.excess.outcome }}
           CLERK_OUT:   ${{ steps.clerk.outcome }}
-          PARCELS_OUT: ${{ steps.parcels.outcome }}
           DLQ_OUT:     ${{ steps.dlq.outcome }}
         run: |
           fail=""
-          for kv in "lgbs:$LGBS_OUT" "pbfcm:$PBFCM_OUT" "excess:$EXCESS_OUT" \
-                    "clerk:$CLERK_OUT" "parcels:$PARCELS_OUT" "dlq:$DLQ_OUT"; do
+          for kv in "lgbs:$LGBS_OUT" "pbfcm:$PBFCM_OUT" \
+                    "clerk:$CLERK_OUT" "dlq:$DLQ_OUT"; do
             name="${kv%%:*}"; out="${kv##*:}"
             if [ "$out" != "success" ]; then fail="$fail $name($out)"; fi
           done
@@ -128,20 +139,23 @@ jobs:
             echo "all adapters succeeded"
           fi
 
-      # ----- commit refreshed AUDIT artifacts only (NOT the 37MB data files) -----
-      # dashboard/data.json + data.js are gitignored — they get published via
-      # the Pages artifact below and never enter git history (committing
-      # 70+ MB daily would balloon the repo). data/raw/*.jsonl is also
-      # gitignored (build artifact). Only the per-run audit JSONs go in.
-      - name: Commit audit artifacts
+      # ----- commit refreshed data.js + audit artifacts to main.
+      # Pages is configured legacy-mode (deploys from main branch tree),
+      # so the live site updates by committing dashboard/data.js. The
+      # 37MB daily commit is intentional; alternative is to switch Pages
+      # to "Source: GitHub Actions" + use upload-pages-artifact (kept
+      # below as a no-op when Pages is legacy; activates if Pages source
+      # is switched later). data.json is local-dev-only — gitignored.
+      - name: Commit refreshed data.js + audit artifacts
         run: |
           git config user.name  "Smith TX Daily Refresh Bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/data.js || true
           git add runs/smith_tx/build/staged_v5_4_0_all_sources/*.json || true
           if git diff --cached --quiet; then
-            echo "no audit changes to commit"
+            echo "no changes to commit"
           else
-            git commit -m "Smith TX daily refresh audit — $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "Smith TX daily refresh — $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
             git push
           fi
 

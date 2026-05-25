@@ -3,132 +3,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_13-2734-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "SESSIONS, ERNESTINE",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2013-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_079e0e31a262cf7f",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_13-3235-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "WOODRING, GARY H.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2013-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_dd190182c1fc31bf",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -154,7 +28,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -222,7 +96,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -285,7 +159,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -353,7 +227,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -416,7 +290,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -479,7 +353,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -547,7 +421,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -610,7 +484,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -673,7 +547,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -736,7 +610,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -799,7 +673,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -867,7 +741,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -935,7 +809,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1001,7 +875,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1064,7 +938,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1127,7 +1001,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1195,7 +1069,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1258,7 +1132,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1326,7 +1200,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1389,7 +1263,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1457,7 +1331,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1520,7 +1394,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1588,7 +1462,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1654,7 +1528,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1717,7 +1591,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1780,7 +1654,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1843,7 +1717,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1911,7 +1785,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -1979,7 +1853,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2047,7 +1921,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2110,7 +1984,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2173,7 +2047,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2241,7 +2115,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2309,7 +2183,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2372,7 +2246,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2435,7 +2309,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2498,7 +2372,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2566,7 +2440,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2629,7 +2503,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2697,7 +2571,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2765,7 +2639,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2833,7 +2707,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2896,7 +2770,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -2962,7 +2836,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3028,7 +2902,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3096,7 +2970,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3164,7 +3038,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3232,7 +3106,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3300,7 +3174,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3363,7 +3237,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3426,7 +3300,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3489,7 +3363,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3552,7 +3426,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3615,7 +3489,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3678,7 +3552,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3746,7 +3620,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3809,7 +3683,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3877,7 +3751,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -3940,7 +3814,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4008,7 +3882,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4076,7 +3950,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4139,7 +4013,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4207,7 +4081,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4275,7 +4149,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4343,7 +4217,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4411,7 +4285,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4474,7 +4348,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4537,7 +4411,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4600,7 +4474,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4668,7 +4542,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4731,7 +4605,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4799,7 +4673,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4862,7 +4736,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4930,7 +4804,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -4998,7 +4872,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5061,7 +4935,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5129,7 +5003,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5192,7 +5066,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5260,7 +5134,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5328,7 +5202,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5391,7 +5265,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5454,7 +5328,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5517,7 +5391,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5585,7 +5459,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5651,7 +5525,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5717,7 +5591,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5783,7 +5657,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5849,7 +5723,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5915,7 +5789,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -5981,7 +5855,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6047,7 +5921,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6113,7 +5987,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6179,7 +6053,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6245,7 +6119,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6311,7 +6185,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6377,7 +6251,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6443,7 +6317,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6509,7 +6383,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6575,7 +6449,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6641,7 +6515,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6707,7 +6581,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6773,7 +6647,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6839,7 +6713,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6905,7 +6779,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -6971,7 +6845,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7037,7 +6911,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7103,7 +6977,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7169,7 +7043,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7235,7 +7109,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7301,7 +7175,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7367,7 +7241,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7433,7 +7307,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7499,7 +7373,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7565,7 +7439,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7631,7 +7505,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7697,7 +7571,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7763,7 +7637,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7829,7 +7703,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7895,7 +7769,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -7961,7 +7835,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8027,7 +7901,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8093,7 +7967,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8159,7 +8033,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8225,7 +8099,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8291,7 +8165,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8357,7 +8231,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8423,7 +8297,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8489,7 +8363,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8555,7 +8429,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8621,7 +8495,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8687,7 +8561,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8753,7 +8627,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8819,7 +8693,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8885,7 +8759,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -8951,7 +8825,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9017,7 +8891,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9083,7 +8957,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9149,7 +9023,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9215,7 +9089,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9281,7 +9155,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9347,7 +9221,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9413,7 +9287,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9479,7 +9353,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9545,7 +9419,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9611,7 +9485,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9677,7 +9551,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9743,7 +9617,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9809,7 +9683,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9875,7 +9749,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -9941,7 +9815,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10007,7 +9881,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10073,7 +9947,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10139,7 +10013,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10205,7 +10079,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10271,7 +10145,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10337,7 +10211,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10403,7 +10277,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10469,7 +10343,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10535,7 +10409,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10601,7 +10475,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10667,7 +10541,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10733,7 +10607,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10799,7 +10673,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10865,7 +10739,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10931,7 +10805,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -10997,7 +10871,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11063,7 +10937,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11129,7 +11003,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11195,7 +11069,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11261,7 +11135,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11327,7 +11201,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11393,7 +11267,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11459,7 +11333,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11525,7 +11399,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11591,7 +11465,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11657,7 +11531,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11723,7 +11597,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11791,7 +11665,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11859,7 +11733,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11927,7 +11801,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -11990,7 +11864,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12058,7 +11932,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12121,7 +11995,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12184,7 +12058,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12252,7 +12126,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12315,7 +12189,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12378,7 +12252,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12441,7 +12315,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12509,7 +12383,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12577,7 +12451,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12644,7 +12518,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12711,7 +12585,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12778,7 +12652,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12850,7 +12724,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12922,7 +12796,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -12975,69 +12849,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_24,881-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Lindley, Ethel J.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2024-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_9acf0ec6f89ac056",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -13063,7 +12874,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -13116,195 +12927,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,254-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Kay, Joycelyn",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_232dde05da36db95",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,313-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Roxburgh, David",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_9e85e40abee626e7",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,320-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Gladewater Independent School District",
-    "owner_type": "ENTITY",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_489db1f9ad712f9e",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -13330,7 +12952,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -13396,7 +13018,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -13449,384 +13071,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,530-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Cook, Faye L.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_40aca7ec225bf063",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,542-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "WESTFAHL, RAYMOND R",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_b0b48e3cfd4035a1",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,567-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Warren, Donald C.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_f7b3f26fd2f416b8",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,591-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Johnson, Emmitt",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_47a703bfe3776b7d",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,639-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Curtis, Barbara N.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_c10f091c589a7714",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,773-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "SCOTT, MARY",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_9eb9f3de3e485433",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -13852,7 +13096,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -13905,132 +13149,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,832-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "FLOWERS, EARLY LEE",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_601b8e12af8d1107",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_25,921-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Choice, Irma Jean",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2025-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_aa40da79050f2dfc",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -14056,7 +13174,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14136,7 +13254,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14218,7 +13336,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14271,132 +13389,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,084-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Maroney, May Donnie",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_bb80b789d2692e9e",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,157-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Swann, Leonard",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_25a877a78046733c",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -14422,7 +13414,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14500,7 +13492,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14578,7 +13570,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14631,195 +13623,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,400-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Bowers, Mary",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_f52c47b9d4a601bd",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,414-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Luder, Marvin",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_0aaee24783b045c5",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,418-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Oliver, Clarence",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_fe7081d320342e0f",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -14845,7 +13648,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -14895,69 +13698,6 @@
     "title_complexity_tier": "None"
   },
   {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,657-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Shackelford, Tommy",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_dd261a094f40aec1",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
     "attributes": [
       "entity_owned"
     ],
@@ -14988,7 +13728,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15070,7 +13810,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15123,195 +13863,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,788-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Sarahshua Enterprise LLC",
-    "owner_type": "ENTITY",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_da9d8ae4e70a74aa",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,826-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Langley, Clintric Cortez",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_f6810280229dc6a0",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,832-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "SMITH, TRACY",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_20fc82feb908ec23",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -15337,7 +13888,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15390,69 +13941,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,876-B",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "BRITTON, KRISTOPHER SCOTT",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_5c298e4599666607",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -15478,7 +13966,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15556,7 +14044,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15609,69 +14097,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,943-C",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "GINN, DONALD LOUIS",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_7fe77a6f61260e04",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -15697,7 +14122,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15750,132 +14175,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,986-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
-    "owner_type": "ENTITY",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_586bbc9826e568b5",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_26,992-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "BRYANT, J W",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2026-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": false,
-    "review_flags": [],
-    "score": 40,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      }
-    ],
-    "scored_lead_id": "scored_8fe8c15115752553",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -15901,7 +14200,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -15979,7 +14278,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16057,7 +14356,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16110,73 +14409,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_27,081-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Gamble, Steven",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2027-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": true,
-    "review_flags": [],
-    "score": 45,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      },
-      {
-        "delta": 5,
-        "factor": "recent_filing_within_30_days"
-      }
-    ],
-    "scored_lead_id": "scored_9c95599eb20884e5",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -16202,7 +14434,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16280,7 +14512,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16358,7 +14590,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16411,73 +14643,6 @@
     "attributes": [],
     "deal_paths": [
       {
-        "confidence": "high",
-        "path": "surplus_recovery",
-        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
-      }
-    ],
-    "display_patterns": [
-      "surplus_owed"
-    ],
-    "doc_type_normalization": {
-      "canonical_doc_types": [
-        "sheriff_sale_surplus"
-      ],
-      "doc_type_review_required": false,
-      "normalized_doc_types": [
-        "SHERIFF_SALE_SURPLUS"
-      ]
-    },
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [],
-    "lead_id": "lead_unresolved_27,243-A",
-    "lead_status": "APPROVED_FOR_DASHBOARD",
-    "lead_status_history": [
-      {
-        "reason": "no review flags triggered",
-        "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T18:13:45Z"
-      }
-    ],
-    "match_confidence": null,
-    "owner_name": "Ramirez, Moya Antonio, Jr.",
-    "owner_type": "INDIVIDUAL",
-    "parcel_display": null,
-    "pattern_set": [
-      "surplus_owed"
-    ],
-    "patterns": [
-      "surplus_owed"
-    ],
-    "primary_event_date": "2027-01-01",
-    "primary_parcel_id": null,
-    "recent_flag": true,
-    "review_flags": [],
-    "score": 45,
-    "score_reasons": [
-      {
-        "delta": 40,
-        "factor": "base_SHERIFF_SALE_SURPLUS"
-      },
-      {
-        "delta": 5,
-        "factor": "recent_filing_within_30_days"
-      }
-    ],
-    "scored_lead_id": "scored_02f615b5953f6aa9",
-    "source_ids": [
-      "county_excess_proceeds"
-    ],
-    "stack_depth": 1,
-    "tier": "Low",
-    "title_complexity_contributors": [],
-    "title_complexity_score": 0,
-    "title_complexity_tier": "None"
-  },
-  {
-    "attributes": [],
-    "deal_paths": [
-      {
         "confidence": "moderate",
         "path": "wholesale",
         "rationale": "Single-signal distress; lower-conviction wholesale candidate."
@@ -16503,7 +14668,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16581,7 +14746,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16659,7 +14824,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16737,7 +14902,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16815,7 +14980,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16893,7 +15058,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -16971,7 +15136,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -17049,7 +15214,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -17129,7 +15294,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,
@@ -17211,7 +15376,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T18:13:45Z"
+        "transitioned_at": "2026-05-25T20:34:33Z"
       }
     ],
     "match_confidence": null,

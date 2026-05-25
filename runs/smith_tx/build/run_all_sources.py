@@ -50,7 +50,13 @@ def P(msg): punch.append(msg); print(f"  punch: {msg}")
 # LOADED below but NEVER added to SOURCES, NEVER fed to §17, and NEVER
 # allowed to originate a standalone lead. It only stacks onto primary leads
 # that already exist for the same parcel_id.
-SOURCES = ["lgbs_smith_tax_sales", "pbfcm_smith_tax_resale", "county_excess_proceeds", "publicsearch_clerk"]
+# county_excess_proceeds (sheriff_sale_surplus) DROPPED from active sources
+# 2026-05-25 per operator framework decision — the client does not work
+# surplus. The scraper code at scrapers/county_excess_proceeds.py stays in
+# tree for future re-enable, but its raw_events file is intentionally
+# excluded from this SOURCES list so it never enters the §17 / dashboard
+# pipeline.
+SOURCES = ["lgbs_smith_tax_sales", "pbfcm_smith_tax_resale", "publicsearch_clerk"]
 raw_events: list = []
 per_source: dict = {}
 for sid in SOURCES:
@@ -93,6 +99,95 @@ if parcel_ids:
     if missing:
         P(f"{len(missing)} parcel_id(s) not in Smith CAD TaxParcels: "
           f"{missing[:5]}{'...' if len(missing) > 5 else ''}")
+
+# ---- 2b. FC ENRICHMENT — recover owner+address for foreclosure_notice rows ---
+# The publicsearch.us department=FC listing exposes doc_number / recorded_date
+# / sale_date / property_address only. ~2/97 records carry a real address
+# (the rest read "N/A" because TX trustee notices index by party+doc, not
+# address). Without a joinable signal, §17 routes these REVIEW_REQUIRED.
+#
+# Downstream enrichment per operator framework: for any FC record that
+# carries a non-N/A property_address, reverse-lookup Smith CAD by ADDRESS
+# to recover owner_name + ACCOUNT (parcel_id) + full address. This runs
+# every build (CI included).
+#
+# Per the operator: REVIEW_REQUIRED still applies internally (§17 honest);
+# the CARD displays the resolved owner. FC records that cannot join (no
+# situs_address) stay REVIEW_REQUIRED — reported as a count.
+fc_events = [ev for ev in raw_events
+              if ev.get("canonical_doc_type") == "foreclosure_notice"]
+fc_with_addr = [ev for ev in fc_events
+                 if (ev.get("property_refs") or {}).get("situs_address")]
+fc_addr_cache: dict = {}   # normalized_address -> CAD attrs
+print(f"\n  FC foreclosure_notice records: {len(fc_events)}  "
+      f"with situs_address: {len(fc_with_addr)}")
+if fc_with_addr:
+    # Build a CAD address-lookup query (ArcGIS supports IN on ADDRESS).
+    # Normalize: uppercase, strip, collapse whitespace.
+    def _norm_addr(s):
+        return re.sub(r"\s+", " ", (s or "").strip().upper())
+    wanted_addrs = sorted({_norm_addr(ev["property_refs"]["situs_address"])
+                            for ev in fc_with_addr})
+    # CAD ADDRESS values are uppercase + space-normalized; build a LIKE-OR
+    # WHERE clause (chunked if many) — for 2-5 addresses, a simple IN works.
+    # Quote single quotes inside addresses.
+    def _q(s): return "'%s'" % s.replace("'", "''")
+    where = "ADDRESS IN (%s)" % ",".join(_q(a) for a in wanted_addrs)
+    params2 = urllib.parse.urlencode({
+        "where": where, "outFields": "*", "returnGeometry": "false", "f": "json"})
+    try:
+        with urllib.request.urlopen(
+            urllib.request.Request(CAD_URL + "?" + params2, headers=UA),
+            timeout=45
+        ) as r:
+            feats = json.loads(r.read()).get("features", [])
+        for f in feats:
+            a = f.get("attributes") or {}
+            addr_key = _norm_addr(a.get("ADDRESS"))
+            if addr_key and addr_key not in fc_addr_cache:
+                fc_addr_cache[addr_key] = a
+        print(f"  FC address-lookup resolved: {len(fc_addr_cache)} / {len(wanted_addrs)}")
+    except Exception as exc:
+        P(f"FC address lookup failed ({type(exc).__name__}: {exc})")
+# Per-FC-doc resolution table (lookup by instrument_number)
+fc_resolution: dict = {}
+for ev in fc_events:
+    refs = ev.get("property_refs") or {}
+    situs = refs.get("situs_address")
+    if not situs:
+        fc_resolution[ev["instrument_number"]] = {
+            "resolved": False, "reason": "no_situs_address_on_clerk_listing",
+        }
+        continue
+    norm = re.sub(r"\s+", " ", situs.strip().upper())
+    cad = fc_addr_cache.get(norm)
+    if not cad:
+        fc_resolution[ev["instrument_number"]] = {
+            "resolved": False, "reason": "address_not_in_smith_cad",
+        }
+        continue
+    own1 = (cad.get("OWN1") or "").strip()
+    own2 = (cad.get("OWN2") or "").strip()
+    owner = own1 if not own2 else f"{own1} {own2}".strip()
+    acct  = (cad.get("ACCOUNT") or "").strip()
+    addr  = (cad.get("ADDRESS") or "").strip()
+    city  = (cad.get("POSTAL_CITY") or "").strip()
+    zipc  = str(cad.get("ZIPCODE") or "").strip()
+    full  = ", ".join(p for p in (addr, city, "TX" if (addr or city) else "", zipc) if p).replace(", ,", ",")
+    fc_resolution[ev["instrument_number"]] = {
+        "resolved": True, "owner_name": owner or None, "parcel_id": acct or None,
+        "property_full_address": full or None,
+        "property_street": addr or None, "property_city": city or None,
+        "property_zip": zipc or None,
+        "_owner_source": "smith_cad_taxparcels_address_join",
+    }
+    # Also seed parcel_cache so the seam enrichment_provider picks it up
+    # downstream when scoring runs against this parcel.
+    if acct and acct not in parcel_cache:
+        parcel_cache[acct] = cad
+fc_resolved_count = sum(1 for r in fc_resolution.values() if r["resolved"])
+print(f"  FC enrichment per-doc: resolved {fc_resolved_count}/{len(fc_events)}, "
+      f"REVIEW_REQUIRED {len(fc_events) - fc_resolved_count}")
 
 def enrichment_provider(parcel_id):
     cad = parcel_cache.get(parcel_id) if parcel_id else None
@@ -247,14 +342,20 @@ for s in scored:
                 ev = raw_by_instr[instr]; break
         if ev: break
 
-    # ---- owner: prefer parcel_master enrichment; otherwise §17 resolved party (Excess Proc DF fallback) ----
+    # ---- owner: prefer parcel_master enrichment; otherwise §17 resolved party
+    # (Excess Proc DF fallback); otherwise FC address→CAD resolution. -----
     cad = parcel_cache.get(parcel_id) if parcel_id else None
+    fc_res = None
+    if ev and ev.get("canonical_doc_type") == "foreclosure_notice":
+        fc_res = fc_resolution.get(ev.get("instrument_number"))
     if cad:
         own1 = (cad.get("OWN1") or "").strip()
         own2 = (cad.get("OWN2") or "").strip()
         owner_name = own1 if not own2 else f"{own1} {own2}".strip()
+    elif fc_res and fc_res.get("resolved"):
+        owner_name = fc_res.get("owner_name") or ""
     elif s.get("owner_name") and "against unidentified party" not in s["owner_name"]:
-        owner_name = s["owner_name"]   # §17 resolved (DF fallback) — Excess Proceeds path
+        owner_name = s["owner_name"]   # §17 resolved (DF fallback)
     else:
         owner_name = ""
     owner_type = classify_owner_type(owner_name)
@@ -266,6 +367,8 @@ for s in scored:
         zip_ = str(cad.get("ZIPCODE") or "").strip()
         property_full = ", ".join(p for p in (addr, city, "TX" if (addr or city) else "", zip_) if p).strip(",  ")
         property_full = property_full.replace(", ,", ",")
+    elif fc_res and fc_res.get("resolved"):
+        property_full = fc_res.get("property_full_address") or ""
     elif ev:
         refs = ev.get("property_refs") or {}
         property_full = refs.get("situs_address") or ""
@@ -370,6 +473,11 @@ for s in scored:
         "source_urls": source_urls,
         "signal_count": len(out_signals),
         "latest_event_date": latest_event,
+        # FC enrichment status — surfaced on the card so the operator can
+        # see at-a-glance whether the foreclosure resolved an owner via the
+        # CAD address-join enrichment, or remains genuinely REVIEW_REQUIRED.
+        "fc_owner_resolved": bool(fc_res and fc_res.get("resolved")),
+        "fc_review_reason":  (fc_res or {}).get("reason"),
         # delinquent-tax enrichment (stacking signal — never a primary lead)
         "tax_delinquent": bool(dlq),
         "tax_delinquent_hot": tax_delinquent_hot,   # years_back >= 3
@@ -675,11 +783,45 @@ for r in records + synth_records:
         r["is_new"] = False
         r["is_last_30_days"] = False
         r["recency_age_days"] = None
+        r["is_upcoming_sale_30d"] = False
+        r["sale_status"] = None
         continue
-    d = _parse_iso_date(r.get("latest_event_date"))
-    r["is_new"] = bool(d and d == TODAY)
-    r["is_last_30_days"] = bool(d and 0 <= (TODAY - d).days <= 30)
-    r["recency_age_days"] = (TODAY - d).days if d else None
+    # Recency tag — keyed off the COUNTY RECORDED date (backward-looking).
+    # For most primary leads (lis_pendens, AOJ, sheriff surplus,
+    # tax_foreclosure_notice) this is the same as latest_event_date. For
+    # FC sweep foreclosure_notice rows we set event_date = sale_date and
+    # recorded_date = the actual filing date; pull the recorded date off
+    # the originating raw_event for those rows so the "last 30 days" badge
+    # only fires on RECENTLY FILED records, not on past sale dates.
+    primary_sig = (r.get("signals") or [{}])[0]
+    rec_iso = primary_sig.get("recorded_date") or r.get("latest_event_date")
+    d_filed = _parse_iso_date(rec_iso)
+    r["is_new"]          = bool(d_filed and d_filed == TODAY)
+    r["is_last_30_days"] = bool(d_filed and 0 <= (TODAY - d_filed).days <= 30)
+    r["recency_age_days"] = (TODAY - d_filed).days if d_filed else None
+    # Sale-window tag — distinct from recency. Fires ONLY for foreclosure-
+    # type leads with an UPCOMING sale date in the next 30 days; never for
+    # past sales (which carry "(past)" in the chip). The dashboard
+    # ≤30d badge keys on this for foreclosure rows.
+    sale_iso = primary_sig.get("sale_date")
+    d_sale = _parse_iso_date(sale_iso)
+    if d_sale:
+        days_to_sale = (d_sale - TODAY).days
+        if days_to_sale < 0:
+            r["sale_status"] = "past"
+            r["is_upcoming_sale_30d"] = False
+        elif days_to_sale == 0:
+            r["sale_status"] = "today"
+            r["is_upcoming_sale_30d"] = True
+        elif days_to_sale <= 30:
+            r["sale_status"] = "upcoming_30d"
+            r["is_upcoming_sale_30d"] = True
+        else:
+            r["sale_status"] = "upcoming_later"
+            r["is_upcoming_sale_30d"] = False
+    else:
+        r["sale_status"] = None
+        r["is_upcoming_sale_30d"] = False
 
 records.extend(synth_records)
 print(f"\n  synthesized standalone leads from delinquency: {len(synth_records):,}")

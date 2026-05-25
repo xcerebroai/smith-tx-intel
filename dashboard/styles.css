@@ -173,6 +173,9 @@ main { display: flex; flex: 1; min-height: 0; }
 .badge.qdef   { background: #1f2a3a; color: #9bcfff; font-weight: 600; }
 .badge.qlow   { background: #25272d; color: #8b919c; }
 .badge.prim   { background: #1f3324; color: #9be3a8; }
+/* Sale-window — distinct past vs upcoming */
+.badge.sale-soon { background: var(--red); color: #fff; font-weight: 700; }
+.badge.sale-past { background: #2a2a2a; color: #8b919c; }
 .hint         { font-size: 10px; color: var(--ink3); margin-top: 4px;
                 line-height: 1.3; }
 
