@@ -1,0 +1,163 @@
+name: Smith TX — daily refresh + Pages deploy
+
+# Re-runs every Smith County adapter, rebuilds the v5.4.0 lead board, and
+# publishes dashboard/ to GitHub Pages. The delinquent-tax SFTP drop refreshes
+# weekly; the publicsearch / LGBS / PBFCM / Excess Proceeds adapters refresh
+# daily. The workflow pulls the latest available drop on every run.
+#
+# Credentials: NEVER committed. Fed via repo secrets:
+#   secrets.SMITH_TAX_SFTP_HOST      (default mft.smi.tax)
+#   secrets.SMITH_TAX_SFTP_USER      (default taxrolls)
+#   secrets.SMITH_TAX_SFTP_PASSWORD  (required)
+#
+# Known CI consideration: scrapers/publicsearch_clerk.py drives Chromium via
+# Playwright. Headless Chromium runs cleanly on ubuntu-latest without xvfb;
+# the adapter halts gracefully on reCAPTCHA (no challenge has fired on Smith
+# read-only quick-search navigations). If a future reCAPTCHA gate appears,
+# the publicsearch step will fail and the dashboard will still publish from
+# the LGBS + PBFCM + Excess Proceeds + delinquent-tax + parcel_master pulls
+# — adapter failures are isolated (continue-on-error per source step).
+
+on:
+  schedule:
+    # 07:30 UTC ≈ 02:30 CT — runs after typical overnight assessor batches
+    - cron: "30 7 * * *"
+  workflow_dispatch: {}        # manual trigger from the Actions tab
+
+permissions:
+  contents: write              # commit refreshed dashboard/* + data/raw/*.jsonl
+  pages: write
+  id-token: write
+
+concurrency:
+  group: smith-tx-daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SMITH_TAX_SFTP_HOST:     ${{ secrets.SMITH_TAX_SFTP_HOST || 'mft.smi.tax' }}
+      SMITH_TAX_SFTP_USER:     ${{ secrets.SMITH_TAX_SFTP_USER || 'taxrolls' }}
+      SMITH_TAX_SFTP_PASSWORD: ${{ secrets.SMITH_TAX_SFTP_PASSWORD }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright playwright-stealth paramiko beautifulsoup4 lxml requests
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Sanity check — credentials present
+        run: |
+          if [ -z "$SMITH_TAX_SFTP_PASSWORD" ]; then
+            echo "::error::SMITH_TAX_SFTP_PASSWORD secret is not set."
+            exit 1
+          fi
+          echo "credentials wired"
+
+      # ----- primary adapters (parallel-safe but kept serial for log readability) -----
+      - name: LGBS tax sales
+        id: lgbs
+        continue-on-error: true
+        run: python scrapers/lgbs_smith_tax_sales.py
+
+      - name: PBFCM struck-off resale
+        id: pbfcm
+        continue-on-error: true
+        run: python scrapers/pbfcm_smith_tax_resale.py
+
+      - name: County Excess Proceeds (district clerk registry)
+        id: excess
+        continue-on-error: true
+        run: python scrapers/county_excess_proceeds.py
+
+      - name: publicsearch.us clerk — FC + keyword sweep
+        id: clerk
+        continue-on-error: true
+        run: python scrapers/publicsearch_clerk.py
+
+      - name: Parcel master CAD enrichment
+        id: parcels
+        continue-on-error: true
+        run: |
+          if [ -f scrapers/parcel_master.py ]; then
+            python scrapers/parcel_master.py || true
+          fi
+
+      # ----- enrichment: delinquent-tax SFTP drop (weekly refresh) -----
+      - name: Smith delinquent tax SFTP
+        id: dlq
+        continue-on-error: true
+        run: python scrapers/smith_delinquent_tax.py
+
+      # ----- pipeline + dashboard -----
+      - name: §17 -> §20 + dashboard render
+        id: build
+        run: python runs/smith_tx/build/run_all_sources.py
+
+      - name: Report failed sources (informational)
+        env:
+          LGBS_OUT:    ${{ steps.lgbs.outcome }}
+          PBFCM_OUT:   ${{ steps.pbfcm.outcome }}
+          EXCESS_OUT:  ${{ steps.excess.outcome }}
+          CLERK_OUT:   ${{ steps.clerk.outcome }}
+          PARCELS_OUT: ${{ steps.parcels.outcome }}
+          DLQ_OUT:     ${{ steps.dlq.outcome }}
+        run: |
+          fail=""
+          for kv in "lgbs:$LGBS_OUT" "pbfcm:$PBFCM_OUT" "excess:$EXCESS_OUT" \
+                    "clerk:$CLERK_OUT" "parcels:$PARCELS_OUT" "dlq:$DLQ_OUT"; do
+            name="${kv%%:*}"; out="${kv##*:}"
+            if [ "$out" != "success" ]; then fail="$fail $name($out)"; fi
+          done
+          if [ -n "$fail" ]; then
+            echo "::warning::Some adapters did not succeed:$fail"
+          else
+            echo "all adapters succeeded"
+          fi
+
+      # ----- commit refreshed AUDIT artifacts only (NOT the 37MB data files) -----
+      # dashboard/data.json + data.js are gitignored — they get published via
+      # the Pages artifact below and never enter git history (committing
+      # 70+ MB daily would balloon the repo). data/raw/*.jsonl is also
+      # gitignored (build artifact). Only the per-run audit JSONs go in.
+      - name: Commit audit artifacts
+        run: |
+          git config user.name  "Smith TX Daily Refresh Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add runs/smith_tx/build/staged_v5_4_0_all_sources/*.json || true
+          if git diff --cached --quiet; then
+            echo "no audit changes to commit"
+          else
+            git commit -m "Smith TX daily refresh audit — $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      # ----- publish dashboard/ to Pages -----
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

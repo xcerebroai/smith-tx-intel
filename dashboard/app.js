@@ -1,6 +1,8 @@
-/* El Paso County Distress Intelligence — operator lead board logic (v5).
+/* Smith County Distress Intelligence — operator lead board logic.
    Client-side only. Reads dashboard/data.json (or window.LEADS). Operator
-   triage flags persist in localStorage; no backend. */
+   triage flags persist in localStorage; no backend.
+   Daily-refresh-aware: surfaces NEW (recorded today) + last-30-days +
+   years-delinquent (1/2/3/4/5+) filters atop the legacy v5 controls. */
 (function () {
   "use strict";
 
@@ -43,10 +45,17 @@
   // ---------- state ----------
   var DATA = (typeof window !== "undefined" && window.LEADS) || null;
   var records = [];
+  // yearsRange — 6 buckets keyed by years_back: 0 (not delinquent), 1, 2, 3,
+  // 4, 5 (5-or-more). Default: 3/4/5 + non-delinquent ON; 1/2 OFF so the
+  // default view hides the "just late" noise (operator framework decision —
+  // 1-year-late is not strong distress).
   var state = {
     search: "", saleWindow: "any", valMin: null, valMax: null,
     signals: {}, owners: {}, absentee: false, oos: false, review: false,
-    multiOnly: false, sort: "urgency", shown: 0, preset: "all"
+    multiOnly: false, stackedOnly: false, estateOnly: false,
+    newOnly: false, last30Only: false,
+    yearsRange: { 0: true, 1: false, 2: false, 3: true, 4: true, 5: true },
+    sort: "urgency", shown: 0, preset: "all"
   };
   var PAGE = 60;
   var marked = loadMarked();   // Set of lead_id (localStorage)
@@ -89,12 +98,21 @@
     r._assessed = Number(r.assessed_value) || 0;
     r._review = r.parcel_resolution_status === "REVIEW_REQUIRED";
     r._filed = parseDate(r.latest_event_date);
+    // years_back bucket (0/1/2/3/4/5 — 5 catches 5-or-more)
+    var yb = Number(r.tax_delinquent_years_back) || 0;
+    r._yrsBucket = yb >= 5 ? 5 : yb;
+    r._taxHot = !!r.tax_delinquent_hot;
+    r._stacked = !!r.stacked_lead;
+    r._estate = !!r.estate_titled || r.owner_type === "ESTATE";
+    r._isNew = !!r.is_new;
+    r._isL30 = !!r.is_last_30_days;
     r._tier = urgencyTier(r);
     var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
-      r.signal_types.indexOf("federal_tax_lien") >= 0;
+      r.signal_types.indexOf("federal_tax_lien") >= 0 ||
+      r.signal_types.indexOf("tax_delinquent") >= 0;
     r._taxDelinquent = taxd;
     r._blob = [r.owner_name, r.property_full_address, r.mailing_full_address,
-      r.legal_description, r.filer_entity,
+      r.legal_description, r.filer_entity, r.parcel_id,
       (r.signals || []).map(function (s) {
         return (s.instrument_numbers || []).join(" ");
       }).join(" ")].join(" ").toLowerCase();
@@ -103,15 +121,15 @@
     var d = r._days;
     if (r._isFcl && d != null && d >= 0 && d <= 21) return 1;
     if (r._isFcl && d != null && d > 21 && d <= 60) return 2;
-    // tier 3: estate-titled property. The v5 spec floored this at a high
-    // assessed value, but EPCAD resolves ~0 estate-named owners, so a
-    // value floor would empty the tier — estate-titled property is itself
-    // a strong probate / motivated-heir lead signal, so it ranks here.
-    if (r.owner_type === "ESTATE") return 3;
-    if ((r.signal_count || 0) >= 2) return 4;
-    var tax = (r.signal_types || []).indexOf("state_tax_lien") >= 0 ||
-      (r.signal_types || []).indexOf("federal_tax_lien") >= 0;
-    if (tax && r.out_of_state_owner_flag) return 5;
+    // tier 3: estate-titled property. The estate-detection now keys off the
+    // delinquent-tax owner field too (operator framework decision — an
+    // estate title in the tax-roll owner is the distress fact, surfaced
+    // as a standalone probate lead).
+    if (r._estate) return 3;
+    // tier 4: stacked / multi-signal — strongest combined-evidence class.
+    if (r._stacked || (r.signal_count || 0) >= 2) return 4;
+    // tier 5: hot tax-delinquent (3+ unpaid years).
+    if (r._taxHot) return 5;
     return 6;
   }
 
@@ -131,6 +149,7 @@
     buildPresets();
     buildSignalFilter();
     buildOwnerFilter();
+    populateYearsCounts();
     wireControls();
     setupObserver();
     render();
@@ -138,35 +157,39 @@
   }
 
   function topStatsHtml(p) {
-    var fclAddr = records.filter(function (r) {
-      return r._isFcl && r.property_full_address;
-    }).length;
-    var soon = records.filter(function (r) {
-      return r._isFcl && r._days != null && r._days >= 0 && r._days <= 21;
-    }).length;
-    var estates = records.filter(function (r) {
-      return r.owner_type === "ESTATE";
-    }).length;
-    var act = p.actionable_leads != null ? p.actionable_leads : records.length;
+    var nNew    = records.filter(function (r) { return r._isNew; }).length;
+    var nL30    = records.filter(function (r) { return r._isL30; }).length;
+    var nStack  = records.filter(function (r) { return r._stacked; }).length;
+    var nEstate = records.filter(function (r) { return r._estate; }).length;
+    var nHot    = records.filter(function (r) { return r._taxHot; }).length;
     function st(n, l, cls) {
       return '<div class="topstat ' + (cls || "") + '"><div class="n">' +
-        n + '</div><div class="l">' + l + "</div></div>";
+        n.toLocaleString() + '</div><div class="l">' + l + "</div></div>";
     }
-    return st(records.length.toLocaleString(), "leads") +
-      st(act.toLocaleString(), "actionable") +
-      st(fclAddr, "foreclosures w/ addr") +
-      st(soon, "sale &le;21 days", "urgent") +
-      st(estates, "estate-titled leads", "estate");
+    return st(records.length, "leads") +
+      st(nNew,    "NEW today",         "urgent") +
+      st(nL30,    "last 30 days") +
+      st(nStack,  "stacked",           "estate") +
+      st(nEstate, "estate-titled",     "estate") +
+      st(nHot,    "tax delinq 3+yr",   "urgent");
+  }
+  function populateYearsCounts() {
+    var c = {0:0,1:0,2:0,3:0,4:0,5:0};
+    records.forEach(function (r) { c[r._yrsBucket]++; });
+    for (var k in c) { var el = $("yc" + k); if (el) el.textContent = c[k].toLocaleString(); }
   }
 
   // ---------- sidebar ----------
   var PRESETS = [
-    { id: "fcl21", label: "Foreclosures — next 21 days" },
-    { id: "estates", label: "Estate-titled properties" },
-    { id: "oos", label: "Out-of-state absentees" },
-    { id: "multi", label: "Multi-signal stacked" },
-    { id: "tax", label: "Tax delinquent" },
-    { id: "all", label: "Show all" }
+    { id: "new",     label: "NEW today" },
+    { id: "last30",  label: "Last 30 days" },
+    { id: "fcl21",   label: "Foreclosures — next 21 days" },
+    { id: "estates", label: "Estate-titled (probate)" },
+    { id: "stacked", label: "Stacked leads (multi-signal)" },
+    { id: "tax5",    label: "Tax delinquent 5+ years" },
+    { id: "tax3",    label: "Tax delinquent 3+ years" },
+    { id: "oos",     label: "Out-of-state absentees" },
+    { id: "all",     label: "Show all" }
   ];
   function buildPresets() {
     var box = $("presets");
@@ -255,6 +278,34 @@
     $("togReview").addEventListener("change", function (e) {
       state.review = e.target.checked; markPresetActive(""); render();
     });
+    // New filter wires — added for daily-refresh feature set.
+    var togStacked = $("togStacked");
+    if (togStacked) togStacked.addEventListener("change", function (e) {
+      state.stackedOnly = e.target.checked; markPresetActive(""); render();
+    });
+    var togEstate = $("togEstate");
+    if (togEstate) togEstate.addEventListener("change", function (e) {
+      state.estateOnly = e.target.checked; markPresetActive(""); render();
+    });
+    var togNew = $("togNew");
+    if (togNew) togNew.addEventListener("change", function (e) {
+      state.newOnly = e.target.checked; markPresetActive(""); render();
+    });
+    var togL30 = $("togL30");
+    if (togL30) togL30.addEventListener("change", function (e) {
+      state.last30Only = e.target.checked; markPresetActive(""); render();
+    });
+    var yf = $("yearsFilter");
+    if (yf) {
+      yf.querySelectorAll('input[type=checkbox][data-yrs]').forEach(function (cb) {
+        var key = Number(cb.dataset.yrs);
+        cb.checked = !!state.yearsRange[key];
+        cb.addEventListener("change", function (e) {
+          state.yearsRange[key] = e.target.checked;
+          markPresetActive(""); render();
+        });
+      });
+    }
     $("sortMode").addEventListener("change", function (e) {
       state.sort = e.target.value; render();
     });
@@ -279,6 +330,15 @@
     state.oos = false; $("togOos").checked = false;
     state.review = false; $("togReview").checked = false;
     state.multiOnly = false;
+    state.stackedOnly = false; if ($("togStacked")) $("togStacked").checked = false;
+    state.estateOnly  = false; if ($("togEstate"))  $("togEstate").checked  = false;
+    state.newOnly     = false; if ($("togNew"))     $("togNew").checked     = false;
+    state.last30Only  = false; if ($("togL30"))     $("togL30").checked     = false;
+    // years filter — default (operator framework decision): 3/4/5 + non-
+    // delinquent ON; 1/2 OFF.
+    var defaults = { 0: true, 1: false, 2: false, 3: true, 4: true, 5: true };
+    Object.keys(defaults).forEach(function (k) { state.yearsRange[k] = defaults[k]; });
+    syncYearsCheckboxes();
     setAllChecks("signalFilter", "sig", state.signals, true);
     setAllChecks("ownerFilter", "own", state.owners, true);
 
@@ -286,18 +346,31 @@
       state.saleWindow = "21"; $("saleWindow").value = "21";
       onlyChecks("signalFilter", "sig", state.signals, ["foreclosure_notice"]);
     } else if (id === "estates") {
-      onlyChecks("ownerFilter", "own", state.owners, ["ESTATE"]);
+      state.estateOnly = true; if ($("togEstate")) $("togEstate").checked = true;
     } else if (id === "oos") {
       state.absentee = true; $("togAbsentee").checked = true;
       state.oos = true; $("togOos").checked = true;
-    } else if (id === "multi") {
-      state.multiOnly = true;
-    } else if (id === "tax") {
-      onlyChecks("signalFilter", "sig", state.signals,
-        ["state_tax_lien", "federal_tax_lien"]);
+    } else if (id === "stacked") {
+      state.stackedOnly = true; if ($("togStacked")) $("togStacked").checked = true;
+    } else if (id === "new") {
+      state.newOnly = true; if ($("togNew")) $("togNew").checked = true;
+    } else if (id === "last30") {
+      state.last30Only = true; if ($("togL30")) $("togL30").checked = true;
+    } else if (id === "tax5") {
+      state.yearsRange = { 0: false, 1: false, 2: false, 3: false, 4: false, 5: true };
+      syncYearsCheckboxes();
+    } else if (id === "tax3") {
+      state.yearsRange = { 0: false, 1: false, 2: false, 3: true, 4: true, 5: true };
+      syncYearsCheckboxes();
     }
     markPresetActive(id);
     render();
+  }
+  function syncYearsCheckboxes() {
+    var yf = $("yearsFilter"); if (!yf) return;
+    yf.querySelectorAll('input[type=checkbox][data-yrs]').forEach(function (cb) {
+      cb.checked = !!state.yearsRange[Number(cb.dataset.yrs)];
+    });
   }
   function setAllChecks(boxId, attr, store, on) {
     $(boxId).querySelectorAll("input[type=checkbox]").forEach(function (c) {
@@ -322,6 +395,12 @@
     return records.filter(function (r) {
       if (skipped[r.lead_id]) return false;
       if (state.review && !r._review) return false;
+      if (state.stackedOnly && !r._stacked) return false;
+      if (state.estateOnly && !r._estate) return false;
+      if (state.newOnly && !r._isNew) return false;
+      if (state.last30Only && !r._isL30) return false;
+      if (state.yearsRange && state.yearsRange[r._yrsBucket] === false)
+        return false;
       if (!allSig) {
         var hit = (r.signal_types || []).some(function (t) {
           return state.signals[t];
@@ -495,6 +574,22 @@
   }
   function badgeHtml(r) {
     var b = [];
+    if (r._isNew)
+      b.push('<span class="badge new">NEW</span>');
+    if (r._stacked)
+      b.push('<span class="badge stack">STACKED · ' +
+             esc(r.stack_class || "multi") + '</span>');
+    if (r._estate)
+      b.push('<span class="badge estate">Estate-titled</span>');
+    if (r._taxHot)
+      b.push('<span class="badge hot">Tax delinq ' +
+             (r.tax_delinquent_years_back || 0) + 'yr · ' +
+             money(r.tax_delinquent_balance) + '</span>');
+    else if (r.tax_delinquent)
+      b.push('<span class="badge warm">Tax delinq ' +
+             (r.tax_delinquent_years_back || 0) + 'yr</span>');
+    if (r._isL30 && !r._isNew)
+      b.push('<span class="badge l30">≤30d</span>');
     if (r._review)
       b.push('<span class="badge warn">REVIEW REQUIRED</span>');
     if (r.absentee_owner_flag)
@@ -503,9 +598,8 @@
       b.push('<span class="badge warn">Out-of-state</span>');
     if (r.homestead === "HOMESTEAD")
       b.push('<span class="badge good">Homestead</span>');
-    if (r.epcad_enrichment_status === "ENRICHED" ||
-      r.parcel_resolution_status === "RESOLVED" && r.parcel_id)
-      b.push('<span class="badge">EPCAD enriched</span>');
+    if (r.epcad_enrichment_status === "ENRICHED")
+      b.push('<span class="badge">CAD enriched</span>');
     return b.join("");
   }
 

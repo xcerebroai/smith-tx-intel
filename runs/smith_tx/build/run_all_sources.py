@@ -31,6 +31,7 @@ from scaffold.pipeline import (
 from scaffold.pipeline.run_pipeline_staged import build_dashboard_payload
 
 NOW = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+TODAY = date.today()
 WORKDIR = REPO / "runs" / "smith_tx" / "build" / "staged_v5_4_0_all_sources"
 WORKDIR.mkdir(parents=True, exist_ok=True)
 DASH = REPO / "dashboard"
@@ -44,6 +45,11 @@ punch: list = []
 def P(msg): punch.append(msg); print(f"  punch: {msg}")
 
 # ---- 1. Load raw_events from every adapter that produced output ----------
+# STAGE BOUNDARY: smith_delinquent_tax is ENRICHMENT-only (delinquency status
+# is tax-roll state, not a recorded distress event — §13 / §16.B). It is
+# LOADED below but NEVER added to SOURCES, NEVER fed to §17, and NEVER
+# allowed to originate a standalone lead. It only stacks onto primary leads
+# that already exist for the same parcel_id.
 SOURCES = ["lgbs_smith_tax_sales", "pbfcm_smith_tax_resale", "county_excess_proceeds", "publicsearch_clerk"]
 raw_events: list = []
 per_source: dict = {}
@@ -112,6 +118,28 @@ def enrichment_provider(parcel_id):
         "last_sale_date": None, "last_sale_price": None,
         "_enrichment_source": "smith_cad_taxparcels",
     }
+
+# ---- 2b. Delinquent-tax enrichment cache (SFTP drop, ENRICHMENT-only) ----
+# Loaded once into a {parcel_id: {balance, years_back, ...}} dict. Joins onto
+# the per-lead render below via parcel_id. NEVER feeds §17 — this is roll
+# status, not a recorded event document. Never originates a standalone lead.
+delinq_cache: dict = {}
+DELINQ_PATH = RAW / "smith_delinquent_tax.jsonl"
+if DELINQ_PATH.exists():
+    with DELINQ_PATH.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            r = json.loads(line)
+            pid = (r.get("parcel_id") or "").strip()
+            if pid:
+                delinq_cache[pid] = r
+    print(f"  delinquent-tax enrichment cache: {len(delinq_cache):,} accounts "
+          f"(drop_label={next(iter(delinq_cache.values()),{}).get('_drop_label','?')})")
+else:
+    P(f"missing enrichment file: data/raw/smith_delinquent_tax.jsonl "
+      f"— delinquent-tax adapter not yet run")
 
 # ---- 3. Staged pipeline §17->§19 + county patch + §20 + seam -------------
 print("\n== §17 -> §18 -> §19 [patch] -> §20 -> seam ==")
@@ -256,11 +284,15 @@ for s in scored:
     for sig in ml.get("signals") or []:
         canon = sig.get("canonical_doc_type") or "unknown"
         label = CANON_TO_LABEL.get(canon, canon.replace("_", " ").title())
-        # event_date from originating raw_event
+        # event_date / recorded_date from originating raw_event. Some sources
+        # (publicsearch FC sweep) carry the trustee sale date in event_date
+        # and the actual recording date in recorded_date — split them on the
+        # signal so the dashboard column "recorded_date" stays truthful.
         ev_for_sig = None
         for ii in sig.get("instrument_numbers") or []:
             ev_for_sig = raw_by_instr.get(ii) or ev_for_sig
-        sale_date = (ev_for_sig or {}).get("event_date") if ev_for_sig else None
+        ev_event = (ev_for_sig or {}).get("event_date") if ev_for_sig else None
+        ev_recorded = (ev_for_sig or {}).get("recorded_date") if ev_for_sig else None
         out_signals.append({
             "signal_type": canon,
             "signal_label": label,
@@ -271,13 +303,49 @@ for s in scored:
             "evidence_ids": sig.get("evidence_ids", []),
             "instrument_numbers": sig.get("instrument_numbers", []),
             "doc_type_raw": (ev_for_sig or {}).get("raw_doc_type"),
-            "recorded_date": sale_date,
-            "sale_date": sale_date,
+            "recorded_date": ev_recorded or ev_event,
+            "sale_date": ev_event,
         })
 
     signal_types = list(dict.fromkeys(sig["signal_type"] for sig in out_signals))
     source_urls = list(dict.fromkeys(u for sig in out_signals for u in sig["source_urls"]))
     latest_event = max((sig["sale_date"] for sig in out_signals if sig.get("sale_date")), default=None)
+
+    # ---- delinquent-tax enrichment join (parcel_id only) --------------------
+    # Stage-boundary preserved: this NEVER creates a lead — it only attaches
+    # to a lead that already exists for this parcel_id. The lead's primary
+    # `signal_types` are unchanged; delinquency surfaces as enrichment
+    # attributes + a stacking flag.
+    dlq = delinq_cache.get(parcel_id) if parcel_id else None
+    if dlq:
+        years_delinq = dlq.get("years_delinquent") or []
+        years_back   = int(dlq.get("years_back") or 0)
+        delinq_balance = float(dlq.get("delinquent_balance") or 0.0)
+        delinq_earliest = dlq.get("earliest_year")
+        delinq_latest   = dlq.get("latest_year")
+    else:
+        years_delinq, years_back = [], 0
+        delinq_balance, delinq_earliest, delinq_latest = 0.0, None, None
+
+    # Operator distress filter: ONLY 3+ distinct unpaid years count as a hot
+    # tax-delinquency signal. 1-2 years late is "just late" and must not
+    # carry strong distress weight. The flag below is the dashboard filter.
+    tax_delinquent_hot = years_back >= 3
+
+    # Stacked-lead classification. Multi-signal == this parcel carries more
+    # than one primary distress signal_type, OR a primary distress AND
+    # hot-delinquency enrichment. We surface the stack class for the
+    # operator's lead-board (probate + tax_delinquent is the canonical
+    # high-value pattern).
+    primary_signal_types = list(signal_types)
+    stack_signals = list(primary_signal_types)
+    if tax_delinquent_hot:
+        stack_signals.append("tax_delinquent_3plus")
+    elif dlq:
+        stack_signals.append("tax_delinquent")
+    stacked = len(set(primary_signal_types)) > 1 or (tax_delinquent_hot and primary_signal_types)
+    stack_class = "+".join(sorted(set(stack_signals))) if len(stack_signals) > 1 else (
+        stack_signals[0] if stack_signals else "")
 
     records.append({
         "lead_id": lead_id,
@@ -302,29 +370,229 @@ for s in scored:
         "source_urls": source_urls,
         "signal_count": len(out_signals),
         "latest_event_date": latest_event,
+        # delinquent-tax enrichment (stacking signal — never a primary lead)
+        "tax_delinquent": bool(dlq),
+        "tax_delinquent_hot": tax_delinquent_hot,   # years_back >= 3
+        "tax_delinquent_balance": round(delinq_balance, 2),
+        "tax_delinquent_years": years_delinq,
+        "tax_delinquent_years_back": years_back,
+        "tax_delinquent_earliest_year": delinq_earliest,
+        "tax_delinquent_latest_year":   delinq_latest,
+        # stacking
+        "stacked_lead": bool(stacked),
+        "stack_class": stack_class,
+        "stack_signals": sorted(set(stack_signals)),
+        # provenance — every row in the dashboard declares how it came to be
+        "provenance": "primary_event",
     })
+
+
+# ---- Synthesize STANDALONE delinquency leads (operator framework decision) ---
+# Per the operator framework call: every delinquent account on the SFTP drop
+# surfaces as a dashboard row. Estate-titled owners ORIGINATE as probate-
+# tagged standalone leads (the estate title in the owner-name field is the
+# distress fact). Non-estate delinquent accounts surface as tax_delinquent
+# standalone leads, gated client-side by the years_back filter (1/2/3/4/5+).
+#
+# STAGE BOUNDARY HOLDS: these rows are NOT primary §19 leads. They never
+# entered §17 / §18 / §19 / §20 — the §20 verdict above still ran on the
+# primary set only. Each row below carries `provenance` distinct from
+# "primary_event" so a downstream consumer can filter them. The framework's
+# DEPLOY_OK verdict remains a statement about primary leads.
+#
+# Parcels ALREADY covered by a primary lead are skipped — their delinquency
+# enrichment has already attached above (stacked_lead flow).
+primary_parcels = {r["parcel_id"] for r in records if r.get("parcel_id")}
+synth_records: list = []
+drop_label = next((r.get("_drop_label") for r in delinq_cache.values()
+                    if r.get("_drop_label")), None)
+# Drop label → date (e.g. TaxRoll_Smith_Flat_V1_2026_05_23 → 2026-05-23)
+drop_iso = None
+if drop_label:
+    m = re.search(r"(\d{4})_(\d{2})_(\d{2})", drop_label)
+    if m: drop_iso = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+
+for pid, dlq in delinq_cache.items():
+    if pid in primary_parcels:
+        continue   # already attached to a primary lead — don't double-count
+    years_back = int(dlq.get("years_back") or 0)
+    is_estate = bool(dlq.get("estate_titled"))
+    owner = (dlq.get("owner_name") or "").strip() or None
+
+    # Owner-type classification (same engine as primary leads)
+    if is_estate:
+        ot = "ESTATE"
+    else:
+        ot = classify_owner_type(owner or "")
+
+    # CAD enrichment opportunistic (most delinquent accounts are NOT in our
+    # parcel_cache because we only pre-fetched parcels that primary leads
+    # carry — pulling CAD for 39K rows on every run would be a 30-second
+    # hot path; deferred).
+    cad = parcel_cache.get(pid)
+    addr = ""
+    if cad:
+        a = (cad.get("ADDRESS") or "").strip()
+        c = (cad.get("POSTAL_CITY") or "").strip()
+        z = str(cad.get("ZIPCODE") or "").strip()
+        addr = ", ".join(p for p in (a, c, "TX" if (a or c) else "", z) if p).replace(", ,", ",")
+    elif dlq.get("owner_street") or dlq.get("owner_city"):
+        # MM owner mailing address — note this is OWNER mailing, not SITUS
+        # (the property address); we surface it but tag the difference.
+        addr = ""    # leave property_full_address blank; mailing surfaced below
+
+    canon = "probate" if is_estate else "tax_delinquent"
+    label = "Probate (Estate-Titled Tax Delinquent)" if is_estate else "Tax Delinquent"
+    stack_signals_s = [canon]
+    if years_back >= 3 and not is_estate:
+        stack_signals_s.append("tax_delinquent_3plus")
+    stack_class_s = "+".join(sorted(set(stack_signals_s)))
+    mailing = ", ".join(p for p in (
+        dlq.get("owner_street"), dlq.get("owner_city"),
+        dlq.get("owner_state"), dlq.get("owner_zip")) if p
+    ) if not cad else ""
+    # Compact synth record — only the fields the dashboard renderer uses.
+    # 37K full primary-shaped records would balloon data.json past Pages
+    # limits; the dashboard's prep() handles missing fields gracefully.
+    synth = {
+        "lead_id": f"lead_delinquent_{pid}",
+        "parcel_id": pid,
+        "owner_name": owner or "",
+        "owner_type": ot,
+        "property_full_address": addr,
+        "mailing_full_address": mailing,
+        "signal_types": [canon],
+        "signals": [{
+            "signal_type": canon,
+            "signal_label": label,
+            "source_id": "smith_delinquent_tax_sftp",
+            "recorded_date": drop_iso,
+        }],
+        "signal_count": 1,
+        "latest_event_date": drop_iso,
+        "parcel_resolution_status": "APPROVED_FOR_DASHBOARD",
+        "epcad_enrichment_status": "ENRICHED" if cad else "UNENRICHED",
+        "tax_delinquent": True,
+        "tax_delinquent_hot": years_back >= 3,
+        "tax_delinquent_balance": float(dlq.get("delinquent_balance") or 0.0),
+        "tax_delinquent_years_back": years_back,
+        "tax_delinquent_earliest_year": dlq.get("earliest_year"),
+        "tax_delinquent_latest_year":   dlq.get("latest_year"),
+        "estate_titled": is_estate,
+        "stacked_lead": False,
+        "stack_class": stack_class_s,
+        "stack_signals": sorted(set(stack_signals_s)),
+        "provenance": ("estate_titled_delinquency" if is_estate
+                       else "tax_roll_delinquency_only"),
+    }
+    synth_records.append(synth)
+
+# Mark estate-titled status on existing primary leads too (so the stacking
+# probate + tax_delinquent_3plus class can be detected when the operator's
+# probate-detect criterion holds on the delinquency owner name).
+for r in records:
+    pid = r.get("parcel_id")
+    dlq_e = delinq_cache.get(pid) if pid else None
+    r["estate_titled"] = bool(dlq_e and dlq_e.get("estate_titled"))
+    if r["estate_titled"] and r["stacked_lead"]:
+        # Surface the canonical probate+tax_delinquent stack class explicitly
+        r["stack_class"] = "probate+" + r["stack_class"]
+        r["stack_signals"] = sorted(set(["probate", *r["stack_signals"]]))
+
+# Recency tagging — primary-event leads only. The operator's spec keys off
+# the county's recorded date, NOT the scrape date. Synthesized delinquency
+# leads carry the SFTP drop date as their `latest_event_date` for
+# rendering purposes, but that is a refresh artifact — it is not a real
+# recording date, so it MUST NOT trigger NEW / last-30-days tags.
+def _parse_iso_date(s):
+    try:
+        return date.fromisoformat(s) if s else None
+    except (TypeError, ValueError):
+        return None
+
+for r in records + synth_records:
+    if r["provenance"] != "primary_event":
+        r["is_new"] = False
+        r["is_last_30_days"] = False
+        r["recency_age_days"] = None
+        continue
+    d = _parse_iso_date(r.get("latest_event_date"))
+    r["is_new"] = bool(d and d == TODAY)
+    r["is_last_30_days"] = bool(d and 0 <= (TODAY - d).days <= 30)
+    r["recency_age_days"] = (TODAY - d).days if d else None
+
+records.extend(synth_records)
+print(f"\n  synthesized standalone leads from delinquency: {len(synth_records):,}")
+print(f"    of which estate-titled (probate): "
+      f"{sum(1 for r in synth_records if r.get('estate_titled')):,}")
+print(f"    of which non-estate tax_delinquent: "
+      f"{sum(1 for r in synth_records if not r.get('estate_titled')):,}")
+print(f"  primary leads with estate-titled tax owner: "
+      f"{sum(1 for r in records if r['provenance']=='primary_event' and r['estate_titled']):,}")
 
 cfg = json.load(open(REPO / "config" / "counties" / "smith_tx.json"))
 review_required = sum(1 for r in records if r["parcel_resolution_status"] == "REVIEW_REQUIRED")
+
+# Provenance + recency + delinquency rollups for the dashboard summary band.
+primary_count   = sum(1 for r in records if r["provenance"] == "primary_event")
+estate_synth    = sum(1 for r in records if r["provenance"] == "estate_titled_delinquency")
+delinq_synth    = sum(1 for r in records if r["provenance"] == "tax_roll_delinquency_only")
+tax_delinquent_attached  = sum(1 for r in records if r["tax_delinquent"])
+tax_delinquent_hot_count = sum(1 for r in records if r["tax_delinquent_hot"])
+stacked_count            = sum(1 for r in records if r["stacked_lead"])
+stack_class_counter      = Counter(r["stack_class"] for r in records if r["stack_class"])
+new_count                = sum(1 for r in records if r["is_new"])
+last_30_count            = sum(1 for r in records if r["is_last_30_days"])
+years_back_hist          = Counter(min(r["tax_delinquent_years_back"], 5)
+                                    for r in records if r["tax_delinquent"])
+
 payload = {
     "generated_at": NOW, "county": "Smith", "state": "TX",
+    "refresh_date": TODAY.isoformat(),
     "build_label": cfg["dashboard"].get("build_label") or "PARTIAL_BUILD",
     "build_label_reason": cfg["dashboard"].get("build_label_reason") or "",
     "sources_active": list(per_source.keys()),
+    "enrichment_sources_active": [
+        "smith_cad_taxparcels",
+        *(["smith_delinquent_tax_sftp"] if delinq_cache else []),
+    ],
+    "delinquent_tax_drop_label": drop_label,
+    "delinquent_tax_drop_date": drop_iso,
+    "delinquent_tax_universe": len(delinq_cache),
     "lead_total": len(records),
+    "primary_lead_count": primary_count,
+    "estate_titled_lead_count": estate_synth,
+    "tax_delinquent_only_lead_count": delinq_synth,
     "epcad_enrichment_resolved": sum(1 for r in records if r["epcad_enrichment_status"] == "ENRICHED"),
     "epcad_enrichment_unresolved": sum(1 for r in records if r["epcad_enrichment_status"] == "UNENRICHED"),
+    "tax_delinquent_attached": tax_delinquent_attached,
+    "tax_delinquent_hot_count": tax_delinquent_hot_count,
+    "stacked_lead_count": stacked_count,
+    "stack_class_distribution": dict(stack_class_counter),
+    "years_back_distribution":  {str(k): v for k, v in sorted(years_back_hist.items())},
+    "new_lead_count": new_count,
+    "last_30_days_count": last_30_count,
     "review_required": review_required,
     "actionable_leads": len(records),
     "records": records,
 }
-(DASH / "data.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
-(DASH / "data.js").write_text("window.LEADS = " + json.dumps(payload, ensure_ascii=False) + ";\n")
+_compact = (",", ":")
+(DASH / "data.json").write_text(json.dumps(payload, separators=_compact, ensure_ascii=False) + "\n")
+(DASH / "data.js").write_text("window.LEADS=" + json.dumps(payload, separators=_compact, ensure_ascii=False) + ";\n")
 print(f"  dashboard data.json + data.js written")
-print(f"  lead_total: {payload['lead_total']}  enriched: {payload['epcad_enrichment_resolved']}")
+print(f"  lead_total: {payload['lead_total']}  primary: {primary_count}  "
+      f"estate-synth: {estate_synth}  delinq-synth: {delinq_synth}")
 print(f"  signal_types: {dict(Counter(t for r in records for t in r['signal_types']))}")
 print(f"  owner_type:   {dict(Counter(r['owner_type'] for r in records))}")
-print(f"  per source:   {dict(Counter(r['signals'][0]['source_id'] for r in records if r['signals']))}")
+print(f"  tax_delinquent attached: {tax_delinquent_attached}  "
+      f"(3+ years HOT: {tax_delinquent_hot_count})")
+print(f"  stacked leads:           {stacked_count}")
+print(f"  stack_class top:         "
+      f"{dict(stack_class_counter.most_common(6))}")
+print(f"  years_back histogram:    "
+      f"{dict(sorted(years_back_hist.items()))}")
+print(f"  NEW (recorded=today):    {new_count}")
+print(f"  last 30 days:            {last_30_count}")
 
 # punch_list
 (WORKDIR / "punch_list.json").write_text(json.dumps({

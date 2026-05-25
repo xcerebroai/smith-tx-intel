@@ -31,6 +31,13 @@ data/raw/
 data/runs/*/raw/
 data/evidence/*.pdf
 
+# Daily-refresh build artifacts: large per-run payloads (35 MB+) generated
+# by runs/smith_tx/build/run_all_sources.py. The Pages workflow regenerates
+# and publishes them on every run via upload-pages-artifact — no git commit
+# required, and committing them daily would balloon history.
+dashboard/data.json
+dashboard/data.js
+
 # Per-county run logs and transient artifacts
 # The runs/<slug>/ folder itself IS committed (launch files, manifests, notes).
 # But per-county logs are scratch and not committed.
@@ -43,6 +50,7 @@ runs/*/.cache/
 .env.*
 !.env.example
 secrets/
+.secrets/
 *.pem
 *.key
 

@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Smith County Distress Intelligence</title>
+  <meta name="description" content="Operator distress lead board for Smith County, TX — primary recorded events + tax-roll delinquency, refreshed daily.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -67,10 +69,30 @@
       </section>
 
       <section class="side-block">
+        <h2>Tax delinquency &mdash; years behind</h2>
+        <div class="checkgroup" id="yearsFilter">
+          <label class="chk"><input type="checkbox" data-yrs="1"> 1 year (just late)<span class="cnt" id="yc1">0</span></label>
+          <label class="chk"><input type="checkbox" data-yrs="2"> 2 years<span class="cnt" id="yc2">0</span></label>
+          <label class="chk"><input type="checkbox" checked data-yrs="3"> 3 years<span class="cnt" id="yc3">0</span></label>
+          <label class="chk"><input type="checkbox" checked data-yrs="4"> 4 years<span class="cnt" id="yc4">0</span></label>
+          <label class="chk"><input type="checkbox" checked data-yrs="5"> 5+ years (HOT)<span class="cnt" id="yc5">0</span></label>
+          <label class="chk"><input type="checkbox" checked data-yrs="0"> Not delinquent<span class="cnt" id="yc0">0</span></label>
+        </div>
+      </section>
+
+      <section class="side-block">
+        <h2>Recency</h2>
+        <label class="chk"><input type="checkbox" id="togNew"> NEW today only</label>
+        <label class="chk"><input type="checkbox" id="togL30"> Last 30 days only</label>
+      </section>
+
+      <section class="side-block">
         <h2>Enrichment</h2>
         <label class="chk"><input type="checkbox" id="togAbsentee"> Absentee owner only</label>
         <label class="chk"><input type="checkbox" id="togOos"> Out-of-state owner only</label>
         <label class="chk"><input type="checkbox" id="togReview"> Review-required only</label>
+        <label class="chk"><input type="checkbox" id="togStacked"> Stacked-lead only</label>
+        <label class="chk"><input type="checkbox" id="togEstate"> Estate-titled only</label>
       </section>
 
       <button id="resetBtn" class="btn btn-block">Reset all filters</button>

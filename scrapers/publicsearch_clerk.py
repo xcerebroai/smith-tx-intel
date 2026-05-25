@@ -62,6 +62,10 @@ DISTRESS_QUERIES = [
 
 # DOC TYPE (publicsearch column) -> §17-registered canonical_doc_type.
 # Verified against §17 rule keys in scaffold/pipeline/debtor_party_engine.py.
+# Synonym for the Smith County Clerk index taxonomy ("ABSTRACT JUDGMENT" — the
+# literal DOC TYPE column value) added 2026-05-25 after the keyword sweep
+# returned 50 raw rows with that exact label (the FRAMEWORK-level
+# canonical_doc_types.json registry knows it as "ABSTRACT OF JUDGMENT").
 DOC_TYPE_MAP = {
     "LIS PENDENS": "lis_pendens",
     "NOTICE OF LIS PENDENS": "lis_pendens",
@@ -73,14 +77,30 @@ DOC_TYPE_MAP = {
     "MECHANIC LIEN": "mechanics_lien",
     "AFFIDAVIT OF HEIRSHIP": "affidavit_of_heirship",
     "ABSTRACT OF JUDGMENT": "abstract_of_judgment",
+    "ABSTRACT JUDGMENT": "abstract_of_judgment",   # Smith clerk taxonomy code AJ
     "NOTICE OF SUBSTITUTE TRUSTEE'S SALE": "foreclosure_notice",
     "NOTICE OF SUBSTITUTE TRUSTEES SALE": "foreclosure_notice",
     "NOTICE OF TRUSTEE'S SALE": "foreclosure_notice",
     "NOTICE OF TRUSTEES SALE": "foreclosure_notice",
     "NOTICE OF FORECLOSURE SALE": "foreclosure_notice",
+    "FORECLOSURE": "foreclosure_notice",     # FC department row literal
     "PUBLIC NOTICE": "foreclosure_notice",   # only emitted when query==FORECLOSURE
     "NOTICE": "foreclosure_notice",          # same context-gated
 }
+
+# Canonical doc types for which the publicsearch grantor/grantee columns
+# carry the litigation-style PL/DF roles §17 expects (and NOT the GR/GE
+# recording roles). On Smith County's publicsearch portal we verified the
+# convention from the rendered table:
+#   - LIS PENDENS:        GR = plaintiff filing the notice  (= PL)
+#                         GE = defendant property owner    (= DF)
+#   - ABSTRACT JUDGMENT:  GR = judgment creditor / filer    (= PL)
+#                         GE = judgment debtor             (= DF)
+# §17 rule keys (lis_pendens / abstract_of_judgment) expect
+# expected_debtor_name_type=DF, filer_name_types=[PL]. Emitting GR/GE here
+# results in REVIEW_REQUIRED / owner_not_on_document → UNKNOWN owner_type on
+# the dashboard. The remap below routes them correctly.
+PL_DF_REMAP_CANONICALS = {"lis_pendens", "abstract_of_judgment"}
 
 # DEEDs are not distress on their own — only emit when grantor pattern
 # matches a taxing-entity trustee (tax_deed). Built downstream.
@@ -104,6 +124,29 @@ def _build_results_url(keyword: str, date_from: str, date_to: str,
         "searchOcrText": "false",
         "searchType": "quickSearch",
         "searchValue": keyword,
+    })
+    return f"{RESULTS_URL}?{qs}"
+
+
+def _build_fc_url(date_from: str, date_to: str,
+                  offset: int = 0, limit: int = 50) -> str:
+    """Compose the department=FC trustee-foreclosure listing URL.
+
+    The FC department table layout (operator-verified 2026-05-25):
+        DOC TYPE | RECORDED DATE | SALE DATE | DOC NUMBER | PROPERTY ADDRESS
+    NO grantor / grantee columns — the listing is indexed by doc number, and
+    PROPERTY ADDRESS is typically "N/A" because TX trustee foreclosure notices
+    record the legal/parcel only inside the document body.
+    """
+    qs = urllib.parse.urlencode({
+        "department": "FC",
+        "instrumentDateRange": f"{date_from},{date_to}",
+        "keywordSearch": "false",
+        "limit": str(limit),
+        "offset": str(offset),
+        "searchType": "quickSearch",
+        "sort": "desc",
+        "sortBy": "recordedDate",
     })
     return f"{RESULTS_URL}?{qs}"
 
@@ -153,13 +196,25 @@ def _record(row: dict, query_keyword: str) -> dict | None:
     if not doc_number:
         return None  # no instrument number -> can't dedup/cite; skip
 
+    # Party-role remap: for lis_pendens / abstract_of_judgment the
+    # publicsearch GR/GE columns carry plaintiff / defendant identities, NOT
+    # recording-style grantor / grantee. Emit PL / DF so §17 resolves the
+    # debtor instead of routing REVIEW_REQUIRED / owner_not_on_document.
+    if canon in PL_DF_REMAP_CANONICALS:
+        gr_name_type, gr_raw_role = "PL", "plaintiff / filer (publicsearch GR column)"
+        ge_name_type, ge_raw_role = "DF", "defendant / debtor (publicsearch GE column)"
+    else:
+        gr_name_type, gr_raw_role = "GR", "grantor (publicsearch column)"
+        ge_name_type, ge_raw_role = "GE", "grantee (publicsearch column)"
     parties = []
     if grantor:
-        parties.append({"name": grantor, "name_type": "GR",
-                        "raw_role": "grantor (publicsearch column)"})
-    if grantee:
-        parties.append({"name": grantee, "name_type": "GE",
-                        "raw_role": "grantee (publicsearch column)"})
+        parties.append({"name": grantor, "name_type": gr_name_type,
+                        "raw_role": gr_raw_role})
+    if grantee and grantee.upper() != "PUBLIC":
+        # Skip "PUBLIC" placeholder on foreclosure_notice / NOTICE rows — it is
+        # the clerk's stand-in for "notice to the public", never a real party.
+        parties.append({"name": grantee, "name_type": ge_name_type,
+                        "raw_role": ge_raw_role})
 
     detail_url = (f"https://smith.tx.publicsearch.us/doc/{doc_number}"
                   if doc_number else RESULTS_URL)
@@ -186,6 +241,66 @@ def _record(row: dict, query_keyword: str) -> dict | None:
         "parser_name": "scrapers/publicsearch_clerk.py",
         "parser_version": "0.1",
         "parser_confidence": 90,
+        "captured_at": _now_iso(),
+    }
+
+
+def _record_fc(row: dict) -> dict | None:
+    """Convert a department=FC listing row into a v5.4.0 raw_event.
+
+    FC rows carry NO parties — `parties=[]` — so §17 will REVIEW_REQUIRED the
+    lead with `owner_not_on_document`; downstream enrichment can attach an
+    owner via parcel_master if the situs_address (or a later document-body
+    drill) resolves. The trustee sale date (the operator-relevant future
+    date) is carried via `event_date`; the actual recording date stays in
+    `recorded_date`.
+    """
+    doc_type = (row.get("doc_type") or "").strip()
+    doc_number = (row.get("doc_number") or "").strip()
+    recorded = _parse_iso_date(row.get("recorded_date"))
+    sale_iso = _parse_iso_date(row.get("sale_date"))
+    addr_raw = (row.get("property_address") or "").strip()
+
+    canon = _classify_canonical(doc_type, "", "FORECLOSURE")
+    if canon != "foreclosure_notice":
+        return None
+    if not doc_number:
+        return None
+
+    # PROPERTY ADDRESS is "N/A" on most TX trustee notices — keep None then,
+    # the lead resolves REVIEW_REQUIRED for parcel and downstream enrichment
+    # picks it up. Real addresses pass through verbatim.
+    situs = None
+    if addr_raw and addr_raw.upper() not in {"N/A", "NA", ""}:
+        situs = addr_raw
+
+    detail_url = f"https://smith.tx.publicsearch.us/doc/{doc_number}"
+    return {
+        "raw_event_id": f"smith_tx-publicsearch-{doc_number}",
+        "source_id": SOURCE_ID,
+        "source_role": "PRIMARY_EVENT_SOURCE",
+        "raw_doc_type": doc_type or "FORECLOSURE",
+        "canonical_doc_type": canon,
+        "instrument_number": doc_number,
+        "recorded_date": recorded,
+        # event_date carries the trustee sale_date — this is the
+        # operator-relevant date the FC listing exposes, and the dashboard
+        # renderer already pulls event_date into the per-lead sale_date slot.
+        "event_date": sale_iso or recorded,
+        "source_url": detail_url,
+        "parties": [],
+        "document_body_text": None,
+        "property_refs": {
+            "parcel_id": None,
+            "situs_address": situs,
+            "legal_description": None,
+            "case_number": None,
+        },
+        "amounts": [],
+        "evidence_ids": [],
+        "parser_name": "scrapers/publicsearch_clerk.py",
+        "parser_version": "0.2",
+        "parser_confidence": 92,
         "captured_at": _now_iso(),
     }
 
@@ -266,6 +381,123 @@ def _fetch_with_playwright(keyword: str, date_from: str, date_to: str,
     return rows
 
 
+def _fetch_fc_page(date_from: str, date_to: str, offset: int, limit: int,
+                    timeout_ms: int = 90000) -> tuple[list[dict], int | None]:
+    """Fetch ONE page of department=FC listings via stealth Playwright.
+
+    Returns (rows, total_result_count). The result_count is parsed from the
+    page header text ("75 Results") and is used by the caller to drive
+    pagination — None if it can't be parsed.
+    """
+    from playwright.sync_api import sync_playwright
+    from playwright_stealth import Stealth
+
+    url = _build_fc_url(date_from, date_to, offset=offset, limit=limit)
+    rows: list[dict] = []
+    total: int | None = None
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"])
+        ctx = browser.new_context(
+            user_agent=USER_AGENT,
+            viewport={"width": 1400, "height": 900})
+        page = ctx.new_page()
+        Stealth().apply_stealth_sync(page)
+        try:
+            page.goto(url, timeout=timeout_ms, wait_until="domcontentloaded")
+            page.wait_for_timeout(5000)  # SPA render
+            if page.locator("iframe[src*='recaptcha'][title*='challenge']").count() > 0:
+                raise RuntimeError("reCAPTCHA challenge fired; halting")
+            data = page.evaluate("""() => {
+                const out = {rows: [], total: null};
+                const txt = document.body.innerText || '';
+                const m = txt.match(/([\\d,]+)\\s+(?:Results|results)/);
+                if (m) out.total = parseInt(m[1].replace(/,/g, ''), 10);
+                const tables = Array.from(document.querySelectorAll('table'));
+                for (const t of tables) {
+                    const headerEls = Array.from(t.querySelectorAll('thead th, tr:first-child th'));
+                    const headers = headerEls.map(c => (c.innerText || '').trim().toUpperCase());
+                    if (!headers.some(h => h.includes('DOC TYPE'))) continue;
+                    if (!headers.some(h => h.includes('SALE DATE'))) continue;
+                    // map column headers to indices
+                    const idx = {};
+                    headers.forEach((h, i) => {
+                        if (h.includes('DOC TYPE'))       idx.doc_type = i;
+                        if (h.includes('RECORDED DATE'))  idx.recorded_date = i;
+                        if (h.includes('SALE DATE'))      idx.sale_date = i;
+                        if (h.includes('DOC NUMBER'))     idx.doc_number = i;
+                        if (h.includes('PROPERTY ADDRESS')) idx.property_address = i;
+                    });
+                    const trs = Array.from(t.querySelectorAll('tbody tr'));
+                    for (const tr of trs) {
+                        const tds = Array.from(tr.querySelectorAll('td')).map(c =>
+                            (c.innerText || '').trim());
+                        const get = key => (idx[key] != null ? tds[idx[key]] || '' : '');
+                        out.rows.push({
+                            doc_type:         get('doc_type'),
+                            recorded_date:    get('recorded_date'),
+                            sale_date:        get('sale_date'),
+                            doc_number:       get('doc_number'),
+                            property_address: get('property_address'),
+                        });
+                    }
+                    if (out.rows.length) break;
+                }
+                return out;
+            }""")
+            rows = data.get("rows") or []
+            total = data.get("total")
+        finally:
+            browser.close()
+    return rows, total
+
+
+def fetch_fc_department(date_from: str, date_to: str,
+                         rate_limit_seconds: float = 2.0,
+                         page_limit: int = 50,
+                         max_pages: int = 50) -> list[dict]:
+    """Paginate the department=FC listing through `offset` until exhausted.
+
+    Returns a list of v5.4.0 raw_event dicts (canonical_doc_type =
+    foreclosure_notice). Pagination stops when (a) we've drained
+    `total_result_count`, (b) a page returns 0 rows, or (c) we hit `max_pages`.
+    """
+    print(f"  FC sweep: department=FC  range: {date_from}..{date_to}", flush=True)
+    events: list[dict] = []
+    seen: set = set()
+    offset = 0
+    total: int | None = None
+    pages = 0
+    while pages < max_pages:
+        pages += 1
+        try:
+            rows, page_total = _fetch_fc_page(date_from, date_to, offset, page_limit)
+        except Exception as exc:
+            print(f"    FC page offset={offset} FAILED ({type(exc).__name__}): {exc}",
+                  flush=True)
+            break
+        if total is None and page_total is not None:
+            total = page_total
+            print(f"    FC total result_count (header): {total}", flush=True)
+        n_emit = 0
+        for r in rows:
+            ev = _record_fc(r)
+            if ev and ev["instrument_number"] not in seen:
+                seen.add(ev["instrument_number"])
+                events.append(ev)
+                n_emit += 1
+        print(f"    FC page offset={offset:>4}  raw: {len(rows):>2}  "
+              f"emitted: {n_emit:>2}  cumulative: {len(events)}", flush=True)
+        if not rows:
+            break
+        offset += len(rows)
+        if total is not None and offset >= total:
+            break
+        time.sleep(rate_limit_seconds)
+    return events
+
+
 def fetch_all_distress(date_from: str | None = None, date_to: str | None = None,
                        queries: list[str] = None,
                        rate_limit_seconds: float = 2.0) -> list[dict]:
@@ -325,6 +557,10 @@ def main(argv=None) -> int:
                    help="Override default distress query keywords.")
     p.add_argument("--days", type=int, default=730,
                    help="Days back to search (default 730 = 2 years).")
+    p.add_argument("--skip-fc", action="store_true",
+                   help="Skip the department=FC trustee-foreclosure sweep.")
+    p.add_argument("--skip-keywords", action="store_true",
+                   help="Skip the keyword sweeps (RP department).")
     p.add_argument("--fixture", default=None)
     args = p.parse_args(argv if argv is not None else sys.argv[1:])
     if args.fixture:
@@ -334,15 +570,34 @@ def main(argv=None) -> int:
     df = (date.today() - timedelta(days=args.days)).strftime("%Y%m%d")
     dt = date.today().strftime("%Y%m%d")
     print(f"fetching publicsearch.us clerk records via Playwright "
-          f"({df}..{dt}, {len(args.queries or DISTRESS_QUERIES)} queries)", flush=True)
-    evs = fetch_all_distress(df, dt, queries=args.queries)
+          f"({df}..{dt})", flush=True)
+    all_evs: list[dict] = []
+    seen: set = set()
+    if not args.skip_fc:
+        print(f"-- department=FC trustee foreclosure sweep --", flush=True)
+        for ev in fetch_fc_department(df, dt):
+            if ev["instrument_number"] not in seen:
+                seen.add(ev["instrument_number"])
+                all_evs.append(ev)
+    if not args.skip_keywords:
+        nq = len(args.queries or DISTRESS_QUERIES)
+        print(f"-- keyword sweep (department=RP, {nq} queries) --", flush=True)
+        for ev in fetch_all_distress(df, dt, queries=args.queries):
+            if ev["instrument_number"] not in seen:
+                seen.add(ev["instrument_number"])
+                all_evs.append(ev)
     out = Path(args.out).resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8") as fh:
-        for ev in evs:
+        for ev in all_evs:
             fh.write(json.dumps(ev, ensure_ascii=False) + "\n")
-    print(f"wrote {len(evs)} raw_event records to {out.relative_to(REPO_ROOT)}",
+    # one-line summary by canonical doc type
+    by_canon: dict = {}
+    for ev in all_evs:
+        by_canon[ev["canonical_doc_type"]] = by_canon.get(ev["canonical_doc_type"], 0) + 1
+    print(f"wrote {len(all_evs)} raw_event records to {out.relative_to(REPO_ROOT)}",
           flush=True)
+    print(f"  canonical_doc_type breakdown: {by_canon}", flush=True)
     return 0
 
 

@@ -101,10 +101,27 @@ def parse_pdf_text(text: str) -> list[dict]:
     return rows
 
 
+def _case_filed_year(case: str) -> int | None:
+    """Smith DC cause numbers prefix with a 2-digit filing year — '13-2734-B'
+    → 2013, '22,773-B' → 2022, '26,175-C/B' → 2026. Return 4-digit year."""
+    m = re.match(r"^(\d{2})[,-]", case or "")
+    if not m: return None
+    yy = int(m.group(1))
+    # Assume 20YY; 90+ would map to 19YY but Smith DC didn't index there.
+    return 2000 + yy if yy < 90 else 1900 + yy
+
+
 def normalize_record(row: dict, fetched_at: str) -> dict:
     """Emit v5.4.0 raw_event with DF-tagged party (§17 fallback resolves)."""
     case = row["case_number"]
     party = row["party_name"]
+    # Derive an event_date from the case number's filing-year prefix (1 Jan
+    # of that year) — the registry PDF doesn't carry an exact filed date,
+    # but the case prefix is operator-verified to encode the filing year.
+    # This is approximate-by-year only; never qualifies a stale case for
+    # NEW / last-30-days recency tagging, which is the correct behavior.
+    yy = _case_filed_year(case)
+    event_iso = f"{yy:04d}-01-01" if yy else None
     return {
         "raw_event_id": f"smith_tx-excess_proceeds-{case}",
         "source_id": SOURCE_ID,
@@ -112,8 +129,10 @@ def normalize_record(row: dict, fetched_at: str) -> dict:
         "raw_doc_type": "District Clerk Registry & Trust — Excess Proceeds",
         "canonical_doc_type": "sheriff_sale_surplus",
         "instrument_number": case,
-        "recorded_date": None,
-        "event_date": None,
+        # No exact recorded date in source. event_date approximates from case
+        # prefix (year-grain) so recency filters degrade gracefully.
+        "recorded_date": event_iso,
+        "event_date": event_iso,
         "source_url": PDF_URL + f"#case={case.replace(',', '%2C')}",
         "parties": [{
             "name": party,

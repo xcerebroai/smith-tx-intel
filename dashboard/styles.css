@@ -158,8 +158,15 @@ main { display: flex; flex: 1; min-height: 0; }
 .badges { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .badge { font-size: 10px; padding: 1px 6px; border-radius: 3px;
   background: var(--chip-bg); color: var(--ink2); }
-.badge.warn { background: #33291f; color: #f0c98a; }
-.badge.good { background: #1f3324; color: #9be3a8; }
+.badge.warn   { background: #33291f; color: #f0c98a; }
+.badge.good   { background: #1f3324; color: #9be3a8; }
+.badge.new    { background: var(--red);   color: #fff; font-weight: 700;
+                letter-spacing: .5px; }
+.badge.stack  { background: #2a1f3a; color: #d3b3ff; font-weight: 600; }
+.badge.estate { background: #1f3324; color: #9be3a8; }
+.badge.hot    { background: #3a1f1f; color: #ffb3b3; font-weight: 600; }
+.badge.warm   { background: #2a261f; color: #d6c08a; }
+.badge.l30    { background: #1f2a3a; color: #b3ceff; }
 
 /* ---- detail panel (UI-4) ---- */
 .detail { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line);
