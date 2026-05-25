@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-25T13:47:52Z",
+  "framework_version": "v5.4.0",
+  "county": "smith_tx",
+  "semantic_verdict": "DEPLOY_OK",
+  "lead_total": 63,
+  "review_required_count": 34,
+  "per_source": {
+    "lgbs_smith_tax_sales": 31,
+    "pbfcm_smith_tax_resale": 4,
+    "county_excess_proceeds": 29
+  },
+  "items": [
+    "1 parcel_id(s) not in Smith CAD TaxParcels: ['100000066400012013']"
+  ]
+}

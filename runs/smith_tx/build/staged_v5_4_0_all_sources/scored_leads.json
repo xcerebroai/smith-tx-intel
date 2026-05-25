@@ -1,0 +1,4487 @@
+[
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_13-2734-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "SESSIONS, ERNESTINE",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_079e0e31a262cf7f",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_13-3235-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "WOODRING, GARY H.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_dd190182c1fc31bf",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_24,171-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "23567 DOGWOOD TRL",
+      "situs_city": "MINEOLA",
+      "situs_state": "TX",
+      "year_built": 1979
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180510000000077700",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_d1959989a2564e51",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_24,881-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Lindley, Ethel J.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_9acf0ec6f89ac056",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_24,998-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "926  ACADEMY AVE",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": 2025
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "150000057700027000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_87e552ccf6f28986",
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,254-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Kay, Joycelyn",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_232dde05da36db95",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,313-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Roxburgh, David",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_9e85e40abee626e7",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,320-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Gladewater Independent School District",
+    "owner_type": "ENTITY",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_489db1f9ad712f9e",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,356-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000066400012013",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_bffc0c4c2c79f777",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,478-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "23157 SASSAFRAS DR",
+      "situs_city": "MINEOLA",
+      "situs_state": "TX",
+      "year_built": 1971
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180510000000006500",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1f8ecd15da8d4a4e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,530-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Cook, Faye L.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_40aca7ec225bf063",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,542-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "WESTFAHL, RAYMOND R",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_b0b48e3cfd4035a1",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,567-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Warren, Donald C.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_f7b3f26fd2f416b8",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,591-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Johnson, Emmitt",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_47a703bfe3776b7d",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,639-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Curtis, Barbara N.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_c10f091c589a7714",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,773-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "SCOTT, MARY",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_9eb9f3de3e485433",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,796-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "4803 C R 313 E",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000052700003030",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_af2739a8e49bc774",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,832-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "FLOWERS, EARLY LEE",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_601b8e12af8d1107",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,921-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Choice, Irma Jean",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_aa40da79050f2dfc",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,009-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "5132 COUNTRY ESTATES DR",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": 1971
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180500000000132000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_68712431b6af6e02",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "entity_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,019-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0",
+      "situs_city": "OVERTON",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000047100030000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 57,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 2,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_e697beb14e4e823a",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,052-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0",
+      "situs_city": "OVERTON",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000055200007000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_de2b792a598f7c9f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,084-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Maroney, May Donnie",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_bb80b789d2692e9e",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,157-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Swann, Leonard",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_25a877a78046733c",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,216-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": null,
+      "situs_city": "WINONA",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000065700010050",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_8de82a115f14fd02",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,217-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 HWY 135",
+      "situs_city": "OVERTON",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000070100022000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_98d3ccaec308de64",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,318-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "3394 C R 398",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": 1930
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000026600058010",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_a972da1af68eaa21",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,400-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Bowers, Mary",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_f52c47b9d4a601bd",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,414-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Luder, Marvin",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_0aaee24783b045c5",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,418-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Oliver, Clarence",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_fe7081d320342e0f",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,563-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "217 BRENTWOOD DR",
+      "situs_city": "BULLARD",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "181040000100032000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_81c37ee4c5004545",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,657-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Shackelford, Tommy",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_dd261a094f40aec1",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "entity_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,750-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 FM 2089",
+      "situs_city": "OVERTON",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000091700004010",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 57,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 2,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_9d9240caf94af6d1",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,785-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "23459 LIVE OAK DR",
+      "situs_city": "MINEOLA",
+      "situs_state": "TX",
+      "year_built": 1975
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180510000000022000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_03ae33c91ad14a95",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,788-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Sarahshua Enterprise LLC",
+    "owner_type": "ENTITY",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_da9d8ae4e70a74aa",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,826-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Langley, Clintric Cortez",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_f6810280229dc6a0",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,832-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "SMITH, TRACY",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_20fc82feb908ec23",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,849-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "22671 C R 2159",
+      "situs_city": "TROUP",
+      "situs_state": "TX",
+      "year_built": 1999
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000001700028007",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_cb04cbd189d837b3",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,876-B",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "BRITTON, KRISTOPHER SCOTT",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_5c298e4599666607",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,894-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "22946 CREEKWOOD DR",
+      "situs_city": "FLINT",
+      "situs_state": "TX",
+      "year_built": 1978
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180705000100147000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_eab721b556c4f429",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,895-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "16848 C R 1170",
+      "situs_city": "FLINT",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180705000200014000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_9d55e2536e460eca",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,943-C",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "GINN, DONALD LOUIS",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_7fe77a6f61260e04",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,976-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "223 LADO DE LOMA DR",
+      "situs_city": "WINONA",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000111700007001",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_65afab14b8e354ac",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,986-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+    "owner_type": "ENTITY",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_586bbc9826e568b5",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,992-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "BRYANT, J W",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_8fe8c15115752553",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26915-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 COTTEN RD",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000028000038000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_8a3e6b21ee5d3eaa",
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26987-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 C R 310 E",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000064400004050",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_e0af82d030c44de9",
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,071-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": null,
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000000902019000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_4ff3fe92563146c7",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,081-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Gamble, Steven",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_4f0ee53a226e199b",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,164-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "100 DEE ST",
+      "situs_city": "ARP",
+      "situs_state": "TX",
+      "year_built": 1970
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "105030000200001020",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_8ed6866ef56084d8",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,189-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "16861 LAKEWAY CIR",
+      "situs_city": "FLINT",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180705000200133000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_2722fe3fa4b05f11",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,242-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "16703 FM 16 E",
+      "situs_city": "WINONA",
+      "situs_state": "TX",
+      "year_built": 1950
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000024000002000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_7909d566039a02d2",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "high",
+        "path": "surplus_recovery",
+        "rationale": "Surplus-owed signal: post-foreclosure-sale recovery persona, not routed to acquisition paths."
+      }
+    ],
+    "display_patterns": [
+      "surplus_owed"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "sheriff_sale_surplus"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "SHERIFF_SALE_SURPLUS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,243-A",
+    "lead_status": "APPROVED_FOR_DASHBOARD",
+    "lead_status_history": [
+      {
+        "reason": "no review flags triggered",
+        "status": "APPROVED_FOR_DASHBOARD",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "Ramirez, Moya Antonio, Jr.",
+    "owner_type": "INDIVIDUAL",
+    "parcel_display": null,
+    "pattern_set": [
+      "surplus_owed"
+    ],
+    "patterns": [
+      "surplus_owed"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 40,
+        "factor": "base_SHERIFF_SALE_SURPLUS"
+      }
+    ],
+    "scored_lead_id": "scored_8ec2ae94957a950f",
+    "source_ids": [
+      "county_excess_proceeds"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,323-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 C R 15",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000001400007013",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_852f8f196b77cf2e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,343-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "21924 FM 2493",
+      "situs_city": "BULLARD",
+      "situs_state": "TX",
+      "year_built": 2025
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "181043000000003002",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_bfe500bda90a0c8d",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,407-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "23100 PINEY WOODS TRL",
+      "situs_city": "FLINT",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "180705000100125000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1975ba39699f7aa5",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,413-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": null,
+      "situs_city": "TROUP",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000001303040000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_1ebb3d2be17f7d2b",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,629-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "16084 HWY 271",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000103700020044",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_5884e22d4516fe4e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,653-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 FM 16 E",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000054500006000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_6baf304761a77ee3",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,695-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "14243 C R 4154",
+      "situs_city": "LINDALE",
+      "situs_state": "TX",
+      "year_built": 2025
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "181295000000003000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_e049381fd2e327fe",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,726-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0 S RAILROAD ST",
+      "situs_city": "TROUP",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "140000005100006000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_ec8d669083633f12",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [
+      "entity_owned"
+    ],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,785-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "3970 MCDONALD RD",
+      "situs_city": "TYLER",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "150000144504002210",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 57,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 2,
+        "factor": "attribute_bonus"
+      }
+    ],
+    "scored_lead_id": "scored_71c71126e6f6c7d2",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "ENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_28,007-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T13:47:52Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": {
+      "assessed_value": null,
+      "last_sale_date": null,
+      "last_sale_price": null,
+      "owner_mailing_address": null,
+      "owner_mailing_city": null,
+      "owner_mailing_state": null,
+      "owner_mailing_zip": null,
+      "situs_address": "0",
+      "situs_city": "OVERTON",
+      "situs_state": "TX",
+      "year_built": null
+    },
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": "100000099300010000",
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      }
+    ],
+    "scored_lead_id": "scored_24305399dbc90938",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  }
+]

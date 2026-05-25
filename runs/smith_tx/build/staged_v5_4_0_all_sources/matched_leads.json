@@ -1,0 +1,3657 @@
+[
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_13-2734-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SESSIONS, ERNESTINE",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SESSIONS, ERNESTINE",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SESSIONS, ERNESTINE",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "13-2734-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=13-2734-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_13-3235-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "WOODRING, GARY H.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "WOODRING, GARY H.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "WOODRING, GARY H.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "13-3235-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=13-3235-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_24,171-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180510000000077700",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "24,171-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007477760/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_24,881-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Lindley, Ethel J.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Lindley, Ethel J.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Lindley, Ethel J.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "24,881-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=24%2C881-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_24,998-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "150000057700027000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "24,998-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "pbfcm_smith_tax_resale"
+        ],
+        "source_urls": [
+          "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=150000057700027000"
+        ]
+      }
+    ],
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,254-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Kay, Joycelyn",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Kay, Joycelyn",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Kay, Joycelyn",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,254-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C254-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,313-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Roxburgh, David",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Roxburgh, David",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Roxburgh, David",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,313-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C313-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,320-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Gladewater Independent School District",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Gladewater Independent School District",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Gladewater Independent School District",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,320-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C320-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,356-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000066400012013",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,356-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007224607/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,478-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180510000000006500",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,478-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009557015/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,530-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Cook, Faye L.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Cook, Faye L.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Cook, Faye L.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,530-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C530-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,542-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "WESTFAHL, RAYMOND R",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "WESTFAHL, RAYMOND R",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "WESTFAHL, RAYMOND R",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,542-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C542-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,567-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Warren, Donald C.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Warren, Donald C.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Warren, Donald C.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,567-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C567-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,591-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Johnson, Emmitt",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Johnson, Emmitt",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Johnson, Emmitt",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,591-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C591-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,639-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Curtis, Barbara N.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Curtis, Barbara N.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Curtis, Barbara N.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,639-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C639-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,773-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SCOTT, MARY",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SCOTT, MARY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SCOTT, MARY",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,773-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C773-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,796-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000052700003030",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,796-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007493400/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,832-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "FLOWERS, EARLY LEE",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "FLOWERS, EARLY LEE",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "FLOWERS, EARLY LEE",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,832-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C832-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,921-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Choice, Irma Jean",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Choice, Irma Jean",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Choice, Irma Jean",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "25,921-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C921-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,009-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180500000000132000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,009-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009365438/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,019-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000047100030000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,019-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007500778/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,052-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000055200007000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,052-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007293772/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,084-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Maroney, May Donnie",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Maroney, May Donnie",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Maroney, May Donnie",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,084-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C084-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,157-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Swann, Leonard",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Swann, Leonard",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Swann, Leonard",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,157-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C157-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,216-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000065700010050",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,216-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008597711/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,217-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000070100022000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,217-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008999357/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,318-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000026600058010",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,318-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007669090/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,400-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Bowers, Mary",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Bowers, Mary",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Bowers, Mary",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,400-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C400-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,414-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Luder, Marvin",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Luder, Marvin",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Luder, Marvin",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,414-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C414-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,418-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Oliver, Clarence",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Oliver, Clarence",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Oliver, Clarence",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,418-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C418-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,563-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "181040000100032000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,563-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009566743/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,657-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Shackelford, Tommy",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Shackelford, Tommy",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Shackelford, Tommy",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,657-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C657-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,750-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000091700004010",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,750-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008621336/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,785-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180510000000022000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,785-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008650414/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,788-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Sarahshua Enterprise LLC",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Sarahshua Enterprise LLC",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Sarahshua Enterprise LLC",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,788-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C788-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,826-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Langley, Clintric Cortez",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Langley, Clintric Cortez",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Langley, Clintric Cortez",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,826-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C826-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,832-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SMITH, TRACY",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SMITH, TRACY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SMITH, TRACY",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,832-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C832-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,849-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000001700028007",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,849-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008211769/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,876-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "BRITTON, KRISTOPHER SCOTT",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "BRITTON, KRISTOPHER SCOTT",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "BRITTON, KRISTOPHER SCOTT",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,876-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C876-B"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,894-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180705000100147000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,894-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009309149/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,895-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180705000200014000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,895-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008351342/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,943-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "GINN, DONALD LOUIS",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "GINN, DONALD LOUIS",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "GINN, DONALD LOUIS",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,943-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C943-C"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,976-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000111700007001",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,976-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008628017/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,986-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,986-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C986-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,992-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "BRYANT, J W",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "BRYANT, J W",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "BRYANT, J W",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26,992-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C992-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26915-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000028000038000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26915-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "pbfcm_smith_tax_resale"
+        ],
+        "source_urls": [
+          "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000028000038000"
+        ]
+      }
+    ],
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26987-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000064400004050",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "26987-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "pbfcm_smith_tax_resale"
+        ],
+        "source_urls": [
+          "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000055700016120",
+          "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000064400004050"
+        ]
+      }
+    ],
+    "source_ids": [
+      "pbfcm_smith_tax_resale"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,071-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000000902019000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,071-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007716612/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,081-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Gamble, Steven",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Gamble, Steven",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Gamble, Steven",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,081-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=27%2C081-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,164-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "105030000200001020",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,164-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007373896/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,189-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180705000200133000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,189-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008402883/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,242-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000024000002000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,242-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009398168/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,243-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Ramirez, Moya Antonio, Jr.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Ramirez, Moya Antonio, Jr.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Ramirez, Moya Antonio, Jr.",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "sheriff_sale_surplus",
+          "parcel_id": null,
+          "signal_type": "Sheriff Sale Surplus"
+        },
+        "canonical_doc_type": "sheriff_sale_surplus",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,243-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Sheriff Sale Surplus",
+        "source_ids": [
+          "county_excess_proceeds"
+        ],
+        "source_urls": [
+          "https://www.smith-county.com/DocumentCenter/View/2032#case=27%2C243-A"
+        ]
+      }
+    ],
+    "source_ids": [
+      "county_excess_proceeds"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,323-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000001400007013",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,323-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008377512/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,343-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "181043000000003002",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,343-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007933357/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,407-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "180705000100125000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,407-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009024394/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,413-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000001303040000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,413-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009344794/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,629-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000103700020044",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,629-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009276090/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,653-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000054500006000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,653-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007254758/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,695-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "181295000000003000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,695-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008034669/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,726-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "140000005100006000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,726-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009281372/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,785-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "150000144504002210",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "27,785-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1016815842/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_28,007-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": "100000099300010000",
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Tax Foreclosure Notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "28,007-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "Tax Foreclosure Notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007705203/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  }
+]

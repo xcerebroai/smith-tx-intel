@@ -5,7 +5,15 @@ Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1;
 v5.4.0 staged pipeline (commit 266d445) — first run 2026-05-23 returned
 §20 DEPLOY_BLOCKED (correct — only enrichment data was available);
 v5.4.0 re-run 2026-05-25 with the first PRIMARY_EVENT_SOURCE adapter — **DEPLOYED**.
-Status: **DEPLOYED (partial build) — 31 lead rows, §20 DEPLOY_OK, 30/31 ENRICHED**
+Status: **DEPLOYED (multi-source) — 63 lead rows across 2 distress types, §20 DEPLOY_OK**
+
+2026-05-25 expansion: 3 primary event sources wired (LGBS + PBFCM struck-off +
+County Excess Proceeds), 2 distress types on the dashboard (Tax Foreclosure
+Notice 34 / Sheriff Sale Surplus 29). Chromium installed for SPA work;
+production Playwright adapters for Tyler Odyssey courts + publicsearch.us
+clerk are punch-listed (see `SMITH_PLAYWRIGHT_RECON.md`) — both need
+operator-seeded session or fingerprint-stealth work that's a focused
+follow-on rather than in-turn.
 Empirical primary-source hunt 2026-05-25 found Linebarger's `taxsales.lgbs.com`
 JSON API is stdlib-reachable (HTTP 200, JSON, no auth, no CAPTCHA, 31 current
 Smith records with property attachment proven for every row). Built

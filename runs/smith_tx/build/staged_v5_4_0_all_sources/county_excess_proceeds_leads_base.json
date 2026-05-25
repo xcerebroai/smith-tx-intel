@@ -1,0 +1,1365 @@
+[
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-13-2734-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "13-2734-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SESSIONS, ERNESTINE",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SESSIONS, ERNESTINE",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SESSIONS, ERNESTINE",
+    "property_refs": {
+      "case_number": "13-2734-B",
+      "legal_description": "Smith County District Court Cause No. 13-2734-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-13-2734-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=13-2734-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-13-3235-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "13-3235-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "WOODRING, GARY H.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "WOODRING, GARY H.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "WOODRING, GARY H.",
+    "property_refs": {
+      "case_number": "13-3235-B",
+      "legal_description": "Smith County District Court Cause No. 13-3235-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-13-3235-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=13-3235-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-24,881-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "24,881-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Lindley, Ethel J.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Lindley, Ethel J.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Lindley, Ethel J.",
+    "property_refs": {
+      "case_number": "24,881-C",
+      "legal_description": "Smith County District Court Cause No. 24,881-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-24,881-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=24%2C881-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,254-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,254-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Kay, Joycelyn",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Kay, Joycelyn",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Kay, Joycelyn",
+    "property_refs": {
+      "case_number": "25,254-B",
+      "legal_description": "Smith County District Court Cause No. 25,254-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,254-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C254-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,313-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,313-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Roxburgh, David",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Roxburgh, David",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Roxburgh, David",
+    "property_refs": {
+      "case_number": "25,313-A",
+      "legal_description": "Smith County District Court Cause No. 25,313-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,313-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C313-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,320-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,320-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Gladewater Independent School District",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Gladewater Independent School District",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Gladewater Independent School District",
+    "property_refs": {
+      "case_number": "25,320-B",
+      "legal_description": "Smith County District Court Cause No. 25,320-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,320-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C320-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,530-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,530-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Cook, Faye L.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Cook, Faye L.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Cook, Faye L.",
+    "property_refs": {
+      "case_number": "25,530-B",
+      "legal_description": "Smith County District Court Cause No. 25,530-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,530-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C530-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,542-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,542-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "WESTFAHL, RAYMOND R",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "WESTFAHL, RAYMOND R",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "WESTFAHL, RAYMOND R",
+    "property_refs": {
+      "case_number": "25,542-B",
+      "legal_description": "Smith County District Court Cause No. 25,542-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,542-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C542-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,567-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,567-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Warren, Donald C.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Warren, Donald C.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Warren, Donald C.",
+    "property_refs": {
+      "case_number": "25,567-A",
+      "legal_description": "Smith County District Court Cause No. 25,567-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,567-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C567-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,591-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,591-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Johnson, Emmitt",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Johnson, Emmitt",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Johnson, Emmitt",
+    "property_refs": {
+      "case_number": "25,591-A",
+      "legal_description": "Smith County District Court Cause No. 25,591-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,591-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C591-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,639-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,639-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Curtis, Barbara N.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Curtis, Barbara N.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Curtis, Barbara N.",
+    "property_refs": {
+      "case_number": "25,639-A",
+      "legal_description": "Smith County District Court Cause No. 25,639-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,639-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C639-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,773-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,773-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SCOTT, MARY",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SCOTT, MARY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SCOTT, MARY",
+    "property_refs": {
+      "case_number": "25,773-A",
+      "legal_description": "Smith County District Court Cause No. 25,773-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,773-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C773-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,832-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,832-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "FLOWERS, EARLY LEE",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "FLOWERS, EARLY LEE",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "FLOWERS, EARLY LEE",
+    "property_refs": {
+      "case_number": "25,832-C",
+      "legal_description": "Smith County District Court Cause No. 25,832-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,832-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C832-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-25,921-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "25,921-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Choice, Irma Jean",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Choice, Irma Jean",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Choice, Irma Jean",
+    "property_refs": {
+      "case_number": "25,921-A",
+      "legal_description": "Smith County District Court Cause No. 25,921-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-25,921-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=25%2C921-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,084-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,084-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Maroney, May Donnie",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Maroney, May Donnie",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Maroney, May Donnie",
+    "property_refs": {
+      "case_number": "26,084-B",
+      "legal_description": "Smith County District Court Cause No. 26,084-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,084-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C084-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,157-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,157-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Swann, Leonard",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Swann, Leonard",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Swann, Leonard",
+    "property_refs": {
+      "case_number": "26,157-C",
+      "legal_description": "Smith County District Court Cause No. 26,157-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,157-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C157-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,400-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,400-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Bowers, Mary",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Bowers, Mary",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Bowers, Mary",
+    "property_refs": {
+      "case_number": "26,400-B",
+      "legal_description": "Smith County District Court Cause No. 26,400-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,400-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C400-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,414-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,414-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Luder, Marvin",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Luder, Marvin",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Luder, Marvin",
+    "property_refs": {
+      "case_number": "26,414-A",
+      "legal_description": "Smith County District Court Cause No. 26,414-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,414-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C414-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,418-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,418-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Oliver, Clarence",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Oliver, Clarence",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Oliver, Clarence",
+    "property_refs": {
+      "case_number": "26,418-A",
+      "legal_description": "Smith County District Court Cause No. 26,418-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,418-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C418-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,657-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,657-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Shackelford, Tommy",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Shackelford, Tommy",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Shackelford, Tommy",
+    "property_refs": {
+      "case_number": "26,657-C",
+      "legal_description": "Smith County District Court Cause No. 26,657-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,657-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C657-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,788-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,788-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Sarahshua Enterprise LLC",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Sarahshua Enterprise LLC",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Sarahshua Enterprise LLC",
+    "property_refs": {
+      "case_number": "26,788-B",
+      "legal_description": "Smith County District Court Cause No. 26,788-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,788-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C788-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,826-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,826-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Langley, Clintric Cortez",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Langley, Clintric Cortez",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Langley, Clintric Cortez",
+    "property_refs": {
+      "case_number": "26,826-C",
+      "legal_description": "Smith County District Court Cause No. 26,826-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,826-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C826-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,832-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,832-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "SMITH, TRACY",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "SMITH, TRACY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "SMITH, TRACY",
+    "property_refs": {
+      "case_number": "26,832-C",
+      "legal_description": "Smith County District Court Cause No. 26,832-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,832-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C832-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,876-B",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,876-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "BRITTON, KRISTOPHER SCOTT",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "BRITTON, KRISTOPHER SCOTT",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "BRITTON, KRISTOPHER SCOTT",
+    "property_refs": {
+      "case_number": "26,876-B",
+      "legal_description": "Smith County District Court Cause No. 26,876-B — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,876-B",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C876-B"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,943-C",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,943-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "GINN, DONALD LOUIS",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "GINN, DONALD LOUIS",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "GINN, DONALD LOUIS",
+    "property_refs": {
+      "case_number": "26,943-C",
+      "legal_description": "Smith County District Court Cause No. 26,943-C — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,943-C",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C943-C"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,986-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,986-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+    "owner_type": "ENTITY",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "CENTRAL FREIGHT LINES INC ATTN: BILLY LANEY",
+    "property_refs": {
+      "case_number": "26,986-A",
+      "legal_description": "Smith County District Court Cause No. 26,986-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,986-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C986-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-26,992-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26,992-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "BRYANT, J W",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "BRYANT, J W",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "BRYANT, J W",
+    "property_refs": {
+      "case_number": "26,992-A",
+      "legal_description": "Smith County District Court Cause No. 26,992-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-26,992-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=26%2C992-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-27,081-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "27,081-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Gamble, Steven",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Gamble, Steven",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Gamble, Steven",
+    "property_refs": {
+      "case_number": "27,081-A",
+      "legal_description": "Smith County District Court Cause No. 27,081-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-27,081-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=27%2C081-A"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "sheriff_sale_surplus",
+      "parcel_id": null,
+      "signal_type": "Sheriff Sale Surplus"
+    },
+    "base_record_id": "base_smith_tx-excess_proceeds-27,243-A",
+    "canonical_doc_type": "sheriff_sale_surplus",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "27,243-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Ramirez, Moya Antonio, Jr.",
+    "owner_type": "INDIVIDUAL",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Ramirez, Moya Antonio, Jr.",
+        "name_type": "DF",
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "DF"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Ramirez, Moya Antonio, Jr.",
+    "property_refs": {
+      "case_number": "27,243-A",
+      "legal_description": "Smith County District Court Cause No. 27,243-A — Excess Proceeds (114th Judicial District)",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-excess_proceeds-27,243-A",
+    "recorded_date": null,
+    "review_reason": null,
+    "signal_type": "Sheriff Sale Surplus",
+    "source_id": "county_excess_proceeds",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.smith-county.com/DocumentCenter/View/2032#case=27%2C243-A"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Tax Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-pbfcm_resale-100000028000038000-26915-B",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2022-11-01",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26915-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "26915-B",
+      "legal_description": "A. R. CLARK SURVEY COTTEN RD",
+      "parcel_id": "100000028000038000",
+      "situs_address": "A. R. CLARK SURVEY COTTEN RD"
+    },
+    "raw_event_id": "smith_tx-pbfcm_resale-100000028000038000-26915-B",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "Tax Foreclosure Notice",
+    "source_id": "pbfcm_smith_tax_resale",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000028000038000"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Tax Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-pbfcm_resale-100000055700016120-26987-B",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2023-06-06",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26987-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "26987-B",
+      "legal_description": "JOHNLANE SURVEY FM 14 TYLER",
+      "parcel_id": "100000055700016120",
+      "situs_address": "JOHNLANE SURVEY FM 14 TYLER"
+    },
+    "raw_event_id": "smith_tx-pbfcm_resale-100000055700016120-26987-B",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "Tax Foreclosure Notice",
+    "source_id": "pbfcm_smith_tax_resale",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000055700016120"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Tax Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-pbfcm_resale-100000064400004050-26987-B",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2023-06-06",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "26987-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "26987-B",
+      "legal_description": "THE D. MINOR SURVEY 304 C R 310- TYLER TX",
+      "parcel_id": "100000064400004050",
+      "situs_address": "THE D. MINOR SURVEY 304 C R 310- TYLER TX"
+    },
+    "raw_event_id": "smith_tx-pbfcm_resale-100000064400004050-26987-B",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "Tax Foreclosure Notice",
+    "source_id": "pbfcm_smith_tax_resale",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=100000064400004050"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Tax Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-pbfcm_resale-150000057700027000-24,998-C",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2022-07-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "24,998-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "24,998-C",
+      "legal_description": "ACADEMY HEIGHTS BLOCK 577 LOT 27 926 ACADEMY",
+      "parcel_id": "150000057700027000",
+      "situs_address": "ACADEMY HEIGHTS BLOCK 577 LOT 27 926 ACADEMY"
+    },
+    "raw_event_id": "smith_tx-pbfcm_resale-150000057700027000-24,998-C",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "Tax Foreclosure Notice",
+    "source_id": "pbfcm_smith_tax_resale",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://www.pbfcm.com/docs/taxdocs/resales/smithcountytaxresale.pdf#account=150000057700027000"
+  }
+]
