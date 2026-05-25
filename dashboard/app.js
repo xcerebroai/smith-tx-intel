@@ -1,0 +1,663 @@
+/* El Paso County Distress Intelligence — operator lead board logic (v5).
+   Client-side only. Reads dashboard/data.json (or window.LEADS). Operator
+   triage flags persist in localStorage; no backend. */
+(function () {
+  "use strict";
+
+  // ---------- small helpers ----------
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function money(v) {
+    var n = Number(v);
+    return (v == null || v === "" || isNaN(n)) ? "—"
+      : "$" + n.toLocaleString("en-US");
+  }
+  var MONTHS = { jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,
+    nov:10,dec:11 };
+  function parseDate(s) {
+    if (!s) return null;
+    s = String(s).trim();
+    var m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (m) return new Date(+m[3], +m[1] - 1, +m[2]);
+    m = s.match(/^([A-Za-z]{3,})\.?\s+(\d{1,2}),?\s+(\d{4})$/);
+    if (m) {
+      var mi = MONTHS[m[1].toLowerCase().slice(0, 3)];
+      if (mi != null) return new Date(+m[3], mi, +m[2]);
+    }
+    m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+    var d = new Date(s);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  var TODAY = (function () {
+    var d = new Date(); d.setHours(0, 0, 0, 0); return d;
+  })();
+  function daysFromToday(d) {
+    return d ? Math.round((d - TODAY) / 86400000) : null;
+  }
+
+  // ---------- state ----------
+  var DATA = (typeof window !== "undefined" && window.LEADS) || null;
+  var records = [];
+  var state = {
+    search: "", saleWindow: "any", valMin: null, valMax: null,
+    signals: {}, owners: {}, absentee: false, oos: false, review: false,
+    multiOnly: false, sort: "urgency", shown: 0, preset: "all"
+  };
+  var PAGE = 60;
+  var marked = loadMarked();   // Set of lead_id (localStorage)
+  var skipped = {};            // session-only hide
+  var filtered = [];
+  var io = null;
+  var sentinel = null;   // persistent JS node — never lives in index.html
+
+  function loadMarked() {
+    try {
+      var raw = localStorage.getItem("elp_marked_v5");
+      var arr = raw ? JSON.parse(raw) : [];
+      var s = {}; arr.forEach(function (x) { s[x] = true; });
+      return s;
+    } catch (e) { return {}; }
+  }
+  function saveMarked() {
+    try {
+      localStorage.setItem("elp_marked_v5",
+        JSON.stringify(Object.keys(marked)));
+    } catch (e) { /* storage unavailable — non-fatal */ }
+  }
+
+  // ---------- preprocessing ----------
+  function fclSignal(r) {
+    var s = (r.signals || []).filter(function (x) {
+      return x.signal_type === "foreclosure_notice";
+    });
+    return s.length ? s[0] : null;
+  }
+  function prep(r) {
+    r.signal_types = r.signal_types || [];
+    r.signals = r.signals || [];
+    var fs = fclSignal(r);
+    r._fcl = fs;
+    r._isFcl = !!fs;
+    var sd = fs ? parseDate(fs.sale_date) : null;
+    r._saleDate = sd;
+    r._days = daysFromToday(sd);
+    r._assessed = Number(r.assessed_value) || 0;
+    r._review = r.parcel_resolution_status === "REVIEW_REQUIRED";
+    r._filed = parseDate(r.latest_event_date);
+    r._tier = urgencyTier(r);
+    var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
+      r.signal_types.indexOf("federal_tax_lien") >= 0;
+    r._taxDelinquent = taxd;
+    r._blob = [r.owner_name, r.property_full_address, r.mailing_full_address,
+      r.legal_description, r.filer_entity,
+      (r.signals || []).map(function (s) {
+        return (s.instrument_numbers || []).join(" ");
+      }).join(" ")].join(" ").toLowerCase();
+  }
+  function urgencyTier(r) {
+    var d = r._days;
+    if (r._isFcl && d != null && d >= 0 && d <= 21) return 1;
+    if (r._isFcl && d != null && d > 21 && d <= 60) return 2;
+    // tier 3: estate-titled property. The v5 spec floored this at a high
+    // assessed value, but EPCAD resolves ~0 estate-named owners, so a
+    // value floor would empty the tier — estate-titled property is itself
+    // a strong probate / motivated-heir lead signal, so it ranks here.
+    if (r.owner_type === "ESTATE") return 3;
+    if ((r.signal_count || 0) >= 2) return 4;
+    var tax = (r.signal_types || []).indexOf("state_tax_lien") >= 0 ||
+      (r.signal_types || []).indexOf("federal_tax_lien") >= 0;
+    if (tax && r.out_of_state_owner_flag) return 5;
+    return 6;
+  }
+
+  // ---------- boot ----------
+  function boot(payload) {
+    records = (payload && payload.records) || [];
+    records.forEach(prep);
+
+    $("topStats").innerHTML = topStatsHtml(payload);
+    if (payload.build_label && payload.build_label !== "FULL_BUILD") {
+      var b = $("banner");
+      b.hidden = false;
+      b.textContent = "PARTIAL LEAD BOARD (" + payload.build_label + ") — " +
+        (payload.build_label_reason || "");
+    }
+
+    buildPresets();
+    buildSignalFilter();
+    buildOwnerFilter();
+    wireControls();
+    setupObserver();
+    render();
+    document.documentElement.setAttribute("data-ready", "1");
+  }
+
+  function topStatsHtml(p) {
+    var fclAddr = records.filter(function (r) {
+      return r._isFcl && r.property_full_address;
+    }).length;
+    var soon = records.filter(function (r) {
+      return r._isFcl && r._days != null && r._days >= 0 && r._days <= 21;
+    }).length;
+    var estates = records.filter(function (r) {
+      return r.owner_type === "ESTATE";
+    }).length;
+    var act = p.actionable_leads != null ? p.actionable_leads : records.length;
+    function st(n, l, cls) {
+      return '<div class="topstat ' + (cls || "") + '"><div class="n">' +
+        n + '</div><div class="l">' + l + "</div></div>";
+    }
+    return st(records.length.toLocaleString(), "leads") +
+      st(act.toLocaleString(), "actionable") +
+      st(fclAddr, "foreclosures w/ addr") +
+      st(soon, "sale &le;21 days", "urgent") +
+      st(estates, "estate-titled leads", "estate");
+  }
+
+  // ---------- sidebar ----------
+  var PRESETS = [
+    { id: "fcl21", label: "Foreclosures — next 21 days" },
+    { id: "estates", label: "Estate-titled properties" },
+    { id: "oos", label: "Out-of-state absentees" },
+    { id: "multi", label: "Multi-signal stacked" },
+    { id: "tax", label: "Tax delinquent" },
+    { id: "all", label: "Show all" }
+  ];
+  function buildPresets() {
+    var box = $("presets");
+    PRESETS.forEach(function (p) {
+      var b = document.createElement("button");
+      b.className = "preset"; b.textContent = p.label; b.dataset.id = p.id;
+      b.addEventListener("click", function () { applyPreset(p.id); });
+      box.appendChild(b);
+    });
+  }
+  function markPresetActive(id) {
+    state.preset = id;
+    Array.prototype.forEach.call($("presets").children, function (b) {
+      b.classList.toggle("active", b.dataset.id === id);
+    });
+  }
+
+  function buildSignalFilter() {
+    var counts = {}, labels = {};
+    records.forEach(function (r) {
+      (r.signals || []).forEach(function (s) {
+        counts[s.signal_type] = (counts[s.signal_type] || 0) + 1;
+        labels[s.signal_type] = s.signal_label || s.signal_type;
+      });
+    });
+    var box = $("signalFilter");
+    Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; })
+      .forEach(function (t) {
+        state.signals[t] = true;
+        var l = document.createElement("label");
+        l.className = "chk";
+        l.innerHTML = '<input type="checkbox" checked data-sig="' + esc(t) +
+          '"> ' + esc(labels[t]) + '<span class="cnt">' + counts[t] + "</span>";
+        l.querySelector("input").addEventListener("change", function (e) {
+          state.signals[t] = e.target.checked; markPresetActive("");
+          render();
+        });
+        box.appendChild(l);
+      });
+  }
+  function buildOwnerFilter() {
+    var counts = {};
+    records.forEach(function (r) {
+      var o = r.owner_type || "UNKNOWN";
+      counts[o] = (counts[o] || 0) + 1;
+    });
+    var box = $("ownerFilter");
+    Object.keys(counts).sort().forEach(function (o) {
+      state.owners[o] = true;
+      var l = document.createElement("label");
+      l.className = "chk";
+      l.innerHTML = '<input type="checkbox" checked data-own="' + esc(o) +
+        '"> ' + esc(o) + '<span class="cnt">' + counts[o] + "</span>";
+      l.querySelector("input").addEventListener("change", function (e) {
+        state.owners[o] = e.target.checked; markPresetActive(""); render();
+      });
+      box.appendChild(l);
+    });
+  }
+
+  function wireControls() {
+    var deb;
+    $("search").addEventListener("input", function (e) {
+      clearTimeout(deb);
+      deb = setTimeout(function () {
+        state.search = e.target.value.trim().toLowerCase(); render();
+      }, 300);
+    });
+    $("saleWindow").addEventListener("change", function (e) {
+      state.saleWindow = e.target.value; markPresetActive(""); render();
+    });
+    $("valMin").addEventListener("input", function (e) {
+      state.valMin = e.target.value === "" ? null : Number(e.target.value);
+      markPresetActive(""); render();
+    });
+    $("valMax").addEventListener("input", function (e) {
+      state.valMax = e.target.value === "" ? null : Number(e.target.value);
+      markPresetActive(""); render();
+    });
+    $("togAbsentee").addEventListener("change", function (e) {
+      state.absentee = e.target.checked; markPresetActive(""); render();
+    });
+    $("togOos").addEventListener("change", function (e) {
+      state.oos = e.target.checked; markPresetActive(""); render();
+    });
+    $("togReview").addEventListener("change", function (e) {
+      state.review = e.target.checked; markPresetActive(""); render();
+    });
+    $("sortMode").addEventListener("change", function (e) {
+      state.sort = e.target.value; render();
+    });
+    $("resetBtn").addEventListener("click", function () { applyPreset("all"); });
+    $("exportFiltered").addEventListener("click", function () {
+      exportCsv(filtered, "el_paso_leads_filtered.csv");
+    });
+    $("exportMarked").addEventListener("click", function () {
+      var rows = records.filter(function (r) { return marked[r.lead_id]; });
+      if (!rows.length) { alert("No leads marked for review yet."); return; }
+      exportCsv(rows, "el_paso_leads_marked.csv");
+    });
+  }
+
+  function applyPreset(id) {
+    // reset everything to defaults first
+    state.search = ""; $("search").value = "";
+    state.saleWindow = "any"; $("saleWindow").value = "any";
+    state.valMin = null; state.valMax = null;
+    $("valMin").value = ""; $("valMax").value = "";
+    state.absentee = false; $("togAbsentee").checked = false;
+    state.oos = false; $("togOos").checked = false;
+    state.review = false; $("togReview").checked = false;
+    state.multiOnly = false;
+    setAllChecks("signalFilter", "sig", state.signals, true);
+    setAllChecks("ownerFilter", "own", state.owners, true);
+
+    if (id === "fcl21") {
+      state.saleWindow = "21"; $("saleWindow").value = "21";
+      onlyChecks("signalFilter", "sig", state.signals, ["foreclosure_notice"]);
+    } else if (id === "estates") {
+      onlyChecks("ownerFilter", "own", state.owners, ["ESTATE"]);
+    } else if (id === "oos") {
+      state.absentee = true; $("togAbsentee").checked = true;
+      state.oos = true; $("togOos").checked = true;
+    } else if (id === "multi") {
+      state.multiOnly = true;
+    } else if (id === "tax") {
+      onlyChecks("signalFilter", "sig", state.signals,
+        ["state_tax_lien", "federal_tax_lien"]);
+    }
+    markPresetActive(id);
+    render();
+  }
+  function setAllChecks(boxId, attr, store, on) {
+    $(boxId).querySelectorAll("input[type=checkbox]").forEach(function (c) {
+      c.checked = on; store[c.dataset[attr]] = on;
+    });
+  }
+  function onlyChecks(boxId, attr, store, keep) {
+    $(boxId).querySelectorAll("input[type=checkbox]").forEach(function (c) {
+      var on = keep.indexOf(c.dataset[attr]) >= 0;
+      c.checked = on; store[c.dataset[attr]] = on;
+    });
+  }
+
+  // ---------- filtering + sorting ----------
+  function applyFilters() {
+    var sigKeys = Object.keys(state.signals);
+    var allSig = sigKeys.every(function (k) { return state.signals[k]; });
+    var ownKeys = Object.keys(state.owners);
+    var allOwn = ownKeys.every(function (k) { return state.owners[k]; });
+    var win = state.saleWindow === "any" ? null : Number(state.saleWindow);
+
+    return records.filter(function (r) {
+      if (skipped[r.lead_id]) return false;
+      if (state.review && !r._review) return false;
+      if (!allSig) {
+        var hit = (r.signal_types || []).some(function (t) {
+          return state.signals[t];
+        });
+        if (!hit) return false;
+      }
+      if (!allOwn && !state.owners[r.owner_type || "UNKNOWN"]) return false;
+      if (state.absentee && !r.absentee_owner_flag) return false;
+      if (state.oos && !r.out_of_state_owner_flag) return false;
+      if (state.multiOnly && (r.signal_count || 0) < 2) return false;
+      if (win != null) {
+        if (!r._isFcl || r._days == null || r._days < 0 || r._days > win)
+          return false;
+      }
+      if (state.valMin != null && r._assessed < state.valMin) return false;
+      if (state.valMax != null &&
+        (r._assessed > state.valMax || r._assessed === 0)) return false;
+      if (state.search && r._blob.indexOf(state.search) < 0) return false;
+      return true;
+    });
+  }
+  function sortRows(rows) {
+    var c = rows.slice();
+    var by = state.sort;
+    c.sort(function (a, b) {
+      if (by === "sale") {
+        var av = a._saleDate ? a._saleDate.getTime() : 8e15;
+        var bv = b._saleDate ? b._saleDate.getTime() : 8e15;
+        return av - bv;
+      }
+      if (by === "value") return b._assessed - a._assessed;
+      if (by === "recent") {
+        var af = a._filed ? a._filed.getTime() : 0;
+        var bf = b._filed ? b._filed.getTime() : 0;
+        return bf - af;
+      }
+      if (by === "signals")
+        return (b.signal_count || 0) - (a.signal_count || 0);
+      // urgency (default): tier asc, then within-tier secondary
+      if (a._tier !== b._tier) return a._tier - b._tier;
+      if (a._tier <= 2) {            // foreclosure tiers: soonest sale first
+        var as = a._saleDate ? a._saleDate.getTime() : 8e15;
+        var bs = b._saleDate ? b._saleDate.getTime() : 8e15;
+        return as - bs;
+      }
+      if ((b.signal_count || 0) !== (a.signal_count || 0))
+        return (b.signal_count || 0) - (a.signal_count || 0);
+      return b._assessed - a._assessed;
+    });
+    return c;
+  }
+
+  // ---------- rendering (UI-7 incremental window) ----------
+  function setupObserver() {
+    sentinel = document.createElement("div");
+    sentinel.className = "sentinel";
+    io = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) renderMore();
+    }, { root: $("leadList"), rootMargin: "300px" });
+  }
+  function render() {
+    filtered = sortRows(applyFilters());
+    state.shown = 0;
+    var list = $("leadList");
+    io.unobserve(sentinel);
+    list.innerHTML = "";               // detaches sentinel — JS ref survives
+    $("rowCount").textContent = filtered.length.toLocaleString() +
+      " of " + records.length.toLocaleString() + " leads";
+    $("markedCount").textContent = Object.keys(marked).length;
+    updateFilterSummary();
+
+    var empty = $("emptyMsg");
+    if (!filtered.length) {
+      empty.hidden = false;
+      empty.innerHTML = "<b>No leads match the current filters.</b>" +
+        "Try widening the foreclosure sale window, clearing the assessed-" +
+        "value range, or re-checking signal/owner types — or hit " +
+        "<em>Show all</em>.";
+      return;
+    }
+    empty.hidden = true;
+    renderMore();
+  }
+  function renderMore() {
+    var list = $("leadList");
+    var end = Math.min(state.shown + PAGE, filtered.length);
+    var frag = document.createDocumentFragment();
+    for (var i = state.shown; i < end; i++) frag.appendChild(rowEl(filtered[i]));
+    list.appendChild(frag);
+    list.appendChild(sentinel);        // keep sentinel last
+    state.shown = end;
+    if (state.shown < filtered.length) io.observe(sentinel);
+    else io.unobserve(sentinel);
+  }
+
+  function chipHtml(r) {
+    return (r.signals || []).map(function (s) {
+      var n = s.count || 1;
+      var cb = n > 1 ? '<span class="cb">' + n + "</span>" : "";
+      var cls = "chip", label = esc(s.signal_label || s.signal_type);
+      if (s.signal_type === "foreclosure_notice") {
+        cls += " fcl";
+        var d = r._days;
+        if (d != null && d >= 0 && d <= 21) cls += " soon";
+        if (s.sale_date) {
+          label = "Foreclosure — Sale " + esc(s.sale_date);
+          if (d != null) label += d < 0 ? " (past)"
+            : d === 0 ? " (today)" : " (in " + d + "d)";
+        }
+      } else if (s.signal_type === "estate_titled_property" ||
+        s.signal_type === "trust_titled_property") {
+        cls += " estate";
+      } else if (s.signal_type === "state_tax_lien" ||
+        s.signal_type === "federal_tax_lien") {
+        cls += " tax";
+      }
+      return '<span class="' + cls + '">' + label + cb + "</span>";
+    }).join("");
+  }
+  function rowEl(r) {
+    var el = document.createElement("div");
+    el.className = "lead u-" + r._tier +
+      (r._review ? " review" : "") + (marked[r.lead_id] ? " marked" : "");
+    el.dataset.id = r.lead_id;
+
+    var addr;
+    if (r.property_full_address)
+      addr = '<div class="addr">' + esc(r.property_full_address) + "</div>";
+    else if (r.legal_description)
+      addr = '<div class="addr legal">Legal: ' +
+        esc(r.legal_description) + "</div>";
+    else
+      addr = '<div class="addr none">No property address — skip-trace ' +
+        'from owner + instrument</div>';
+
+    var mail = (r.mailing_full_address &&
+      r.mailing_full_address !== r.property_full_address)
+      ? '<div class="mail">Mailing: ' + esc(r.mailing_full_address) +
+        "</div>" : "";
+    var filer = r._review && r.filer_entity
+      ? '<div class="filer-note">Filed by: ' + esc(r.filer_entity) +
+        " — debtor not identified in record</div>" : "";
+
+    var ownCls = "owner" +
+      (/unidentified party/i.test(r.owner_name || "") ? " placeholder" : "");
+    var badges = badgeHtml(r);
+    var av = r._assessed
+      ? '<div class="assessed">' + money(r.assessed_value) +
+        '<div class="ac">assessed</div></div>' : "";
+
+    el.innerHTML =
+      '<div class="lead-main">' +
+        '<div class="lead-id">' +
+          '<div class="' + ownCls + '">' + esc(r.owner_name || "—") +
+            '<span class="otype">' + esc(r.owner_type || "UNKNOWN") +
+            "</span></div>" +
+          addr + mail + filer +
+          '<div class="chips">' + chipHtml(r) + "</div>" +
+        "</div>" +
+        '<div class="lead-right">' + av +
+          '<div class="badges">' + badges + "</div>" +
+        "</div>" +
+      "</div>" +
+      '<div class="detail"></div>';
+
+    el.addEventListener("click", function (ev) {
+      if (ev.target.closest(".detail-actions")) return;
+      toggleDetail(el, r);
+    });
+    return el;
+  }
+  function badgeHtml(r) {
+    var b = [];
+    if (r._review)
+      b.push('<span class="badge warn">REVIEW REQUIRED</span>');
+    if (r.absentee_owner_flag)
+      b.push('<span class="badge warn">Absentee</span>');
+    if (r.out_of_state_owner_flag)
+      b.push('<span class="badge warn">Out-of-state</span>');
+    if (r.homestead === "HOMESTEAD")
+      b.push('<span class="badge good">Homestead</span>');
+    if (r.epcad_enrichment_status === "ENRICHED" ||
+      r.parcel_resolution_status === "RESOLVED" && r.parcel_id)
+      b.push('<span class="badge">EPCAD enriched</span>');
+    return b.join("");
+  }
+
+  // ---------- detail panel (UI-4) ----------
+  function toggleDetail(el, r) {
+    if (el.classList.contains("open")) {
+      el.classList.remove("open"); return;
+    }
+    var d = el.querySelector(".detail");
+    if (!d.dataset.built) { d.innerHTML = detailHtml(r); d.dataset.built = "1"; }
+    el.classList.add("open");
+    wireDetail(el, d, r);
+  }
+  function detailHtml(r) {
+    var fs = r._fcl;
+    var rows = [];
+    function add(k, v) { if (v) rows.push([k, v]); }
+    add("Resolution", r.parcel_resolution_status +
+      (r.epcad_enrichment_status ? " · EPCAD " + r.epcad_enrichment_status : ""));
+    if (r.filer_entity) add("Filer entity", esc(r.filer_entity));
+    add("Parcel ID", r.parcel_id);
+    add("Legal description", esc(r.legal_description));
+    add("Mailing address", esc(r.mailing_full_address));
+    if (r.assessed_value != null || r.appraised_value != null)
+      add("Assessed / Appraised",
+        money(r.assessed_value) + " / " + money(r.appraised_value) +
+        (r.homestead ? " · " + r.homestead.replace("_", " ").toLowerCase()
+          : ""));
+    if (fs) {
+      add("Foreclosure sale date", esc(fs.sale_date));
+      add("DoT document #", esc(fs.dot_document_number));
+      add("Lender / beneficiary", esc(fs.lender_beneficiary));
+      var legal = ["subdivision", "lot", "block", "unit"].map(function (k) {
+        return fs[k] ? k + " " + fs[k] : "";
+      }).filter(Boolean).join(", ");
+      add("Plat", esc(legal));
+    }
+    r.signals.forEach(function (s) {
+      var ins = (s.instrument_numbers || []).join(", ");
+      if (ins) add(s.signal_label + " instr#", esc(ins));
+    });
+    var urls = (r.source_urls || []).map(function (u) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' +
+        esc(u) + "</a>";
+    }).join("<br>");
+    if (urls) rows.push(["Source records", urls]);
+
+    var grid = '<dl class="detail-grid">' + rows.map(function (kv) {
+      return "<dt>" + kv[0] + "</dt><dd>" + kv[1] + "</dd>";
+    }).join("") + "</dl>";
+    var mk = marked[r.lead_id];
+    return grid +
+      '<div class="detail-actions">' +
+        '<button class="btn btn-mark act-mark">' +
+          (mk ? "✓ Marked for review" : "Mark for review") + "</button>" +
+        '<button class="btn act-skip">Skip (hide)</button>' +
+        '<button class="btn act-export">Export this lead</button>' +
+      "</div>";
+  }
+  function wireDetail(el, d, r) {
+    var mb = d.querySelector(".act-mark");
+    mb.onclick = function () {
+      if (marked[r.lead_id]) delete marked[r.lead_id];
+      else marked[r.lead_id] = true;
+      saveMarked();
+      el.classList.toggle("marked", !!marked[r.lead_id]);
+      mb.textContent = marked[r.lead_id]
+        ? "✓ Marked for review" : "Mark for review";
+      $("markedCount").textContent = Object.keys(marked).length;
+    };
+    d.querySelector(".act-skip").onclick = function () {
+      skipped[r.lead_id] = true; render();
+    };
+    d.querySelector(".act-export").onclick = function () {
+      exportCsv([r], "el_paso_lead_" + (r.lead_id || "row") + ".csv");
+    };
+  }
+
+  // ---------- filter summary (UI-5) ----------
+  function updateFilterSummary() {
+    var parts = [];
+    var preset = PRESETS.filter(function (p) {
+      return p.id === state.preset && p.id !== "all";
+    })[0];
+    if (preset) parts.push("<b>" + esc(preset.label) + "</b>");
+    if (state.search) parts.push('search "' + esc(state.search) + '"');
+    if (state.saleWindow !== "any")
+      parts.push("sale &le; " + state.saleWindow + " days");
+    var sigOff = Object.keys(state.signals).filter(function (k) {
+      return !state.signals[k];
+    });
+    if (sigOff.length)
+      parts.push((Object.keys(state.signals).length - sigOff.length) +
+        " signal type(s)");
+    var ownOff = Object.keys(state.owners).filter(function (k) {
+      return !state.owners[k];
+    });
+    if (ownOff.length)
+      parts.push(Object.keys(state.owners).filter(function (k) {
+        return state.owners[k];
+      }).join("/"));
+    if (state.valMin != null) parts.push("min " + money(state.valMin));
+    if (state.valMax != null) parts.push("max " + money(state.valMax));
+    if (state.absentee) parts.push("absentee");
+    if (state.oos) parts.push("out-of-state");
+    if (state.review) parts.push("review-required");
+    if (state.multiOnly) parts.push("multi-signal");
+    $("filterSummary").innerHTML = parts.length
+      ? "Showing: " + parts.join(" · ")
+      : "Showing: <b>all leads</b> — sorted by urgency";
+  }
+
+  // ---------- CSV (UI-8) ----------
+  var CSV_COLS = ["lead_id", "owner_name", "owner_type",
+    "parcel_resolution_status", "epcad_enrichment_status", "filer_entity",
+    "property_full_address", "property_city", "property_zip",
+    "mailing_full_address", "mailing_state", "assessed_value",
+    "appraised_value", "homestead", "absentee_owner_flag",
+    "out_of_state_owner_flag", "signal_count", "primary_signal",
+    "latest_event_date", "legal_description", "parcel_id"];
+  function exportCsv(rows, fname) {
+    var head = CSV_COLS.concat(["sale_date", "signal_types", "source_urls"]);
+    var lines = [head.join(",")];
+    rows.forEach(function (r) {
+      var cells = CSV_COLS.map(function (c) { return q(r[c]); });
+      cells.push(q(r._fcl ? r._fcl.sale_date : ""));
+      cells.push(q((r.signal_types || []).join("; ")));
+      cells.push(q((r.source_urls || []).join(" ")));
+      lines.push(cells.join(","));
+    });
+    var blob = new Blob([lines.join("\n")], { type: "text/csv" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fname;
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  function q(v) {
+    if (v == null) v = "";
+    return '"' + String(v).replace(/"/g, '""') + '"';
+  }
+
+  // ---------- start ----------
+  function start() {
+    if (DATA) { boot(DATA); return; }
+    fetch("data.json").then(function (r) { return r.json(); }).then(boot)
+      .catch(function (e) {
+        var b = $("banner"); b.hidden = false;
+        b.textContent = "Could not load data (" + e + ").";
+        document.documentElement.setAttribute("data-ready", "1");
+      });
+  }
+  if (document.readyState === "loading")
+    document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();

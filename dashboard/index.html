@@ -1,101 +1,108 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-ready="0">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Distress Intelligence</title>
-  <link rel="stylesheet" href="dashboard.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smith County Distress Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body data-ready="0" data-mode="loading">
+<body>
+  <!-- Top bar: identity + live build stats (UI-5) -->
   <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">
-        <span class="brand-title" id="brand-title">Distress Intelligence</span>
-        <span class="brand-subtitle" id="brand-subtitle">Daily-refreshed real estate distress signals</span>
-      </div>
-      <div class="topbar-meta">
-        <span class="meta-pill" id="build-label">FULL_BUILD</span>
-        <span class="meta-pill" id="generated-at">—</span>
-        <span class="meta-pill" id="view-mode-pill">CLIENT_VIEW</span>
-      </div>
+    <div class="brand">
+      <h1>Smith County Distress Intelligence</h1>
+      <span class="brand-sub">Operator lead board &middot; private artifact</span>
+    </div>
+    <div class="topstats" id="topStats"></div>
+    <div class="topactions">
+      <button id="exportFiltered" class="btn">Export filtered CSV</button>
+      <button id="exportMarked" class="btn btn-mark">Export marked &mdash; <span id="markedCount">0</span></button>
     </div>
   </header>
 
-  <section class="status-banner" id="status-banner" hidden></section>
+  <div class="banner" id="banner" hidden></div>
 
-  <main class="layout">
-    <aside class="filter-rail" id="filter-rail">
-      <div class="rail-group">
-        <h3 class="rail-heading">Score tier</h3>
-        <div class="chip-group" id="chips-tier" data-axis="tier"></div>
-      </div>
-      <div class="rail-group">
-        <h3 class="rail-heading">Pattern</h3>
-        <div class="chip-group" id="chips-pattern" data-axis="pattern"></div>
-      </div>
-      <div class="rail-group">
-        <h3 class="rail-heading">Attribute</h3>
-        <div class="chip-group" id="chips-attribute" data-axis="attribute"></div>
-      </div>
-      <div class="rail-group">
-        <h3 class="rail-heading">Deal path</h3>
-        <div class="chip-group" id="chips-deal-path" data-axis="deal_path"></div>
-      </div>
-      <div class="rail-group">
-        <h3 class="rail-heading">Stack depth</h3>
-        <div class="chip-group" id="chips-stack-depth" data-axis="stack_depth"></div>
-      </div>
+  <div class="filterbar" id="filterSummary"></div>
 
-      <div class="rail-group rail-actions">
-        <button id="reset-filters" class="action-btn">Reset filters</button>
-        <button id="toggle-view-mode" class="action-btn secondary">
-          Switch to Operator View
-        </button>
-        <button id="csv-export" class="action-btn primary" data-testid="csv-export">
-          Export CSV
-        </button>
-      </div>
+  <main>
+    <!-- Filter sidebar (UI-2) -->
+    <aside class="sidebar" id="sidebar">
+      <section class="side-block">
+        <h2>Quick views</h2>
+        <div class="presets" id="presets"></div>
+      </section>
+
+      <section class="side-block">
+        <h2>Search</h2>
+        <input type="text" id="search" placeholder="owner, address, instrument&hellip;">
+      </section>
+
+      <section class="side-block">
+        <h2>Foreclosure sale window</h2>
+        <select id="saleWindow">
+          <option value="any">Any sale date</option>
+          <option value="21">Next 21 days</option>
+          <option value="60">Next 60 days</option>
+          <option value="90">Next 90 days</option>
+        </select>
+      </section>
+
+      <section class="side-block">
+        <h2>Assessed value</h2>
+        <div class="range-row">
+          <input type="number" id="valMin" placeholder="min $" min="0" step="10000">
+          <span>&ndash;</span>
+          <input type="number" id="valMax" placeholder="max $" min="0" step="10000">
+        </div>
+      </section>
+
+      <section class="side-block">
+        <h2>Distress signal</h2>
+        <div class="checkgroup" id="signalFilter"></div>
+      </section>
+
+      <section class="side-block">
+        <h2>Owner type</h2>
+        <div class="checkgroup" id="ownerFilter"></div>
+      </section>
+
+      <section class="side-block">
+        <h2>Enrichment</h2>
+        <label class="chk"><input type="checkbox" id="togAbsentee"> Absentee owner only</label>
+        <label class="chk"><input type="checkbox" id="togOos"> Out-of-state owner only</label>
+        <label class="chk"><input type="checkbox" id="togReview"> Review-required only</label>
+      </section>
+
+      <button id="resetBtn" class="btn btn-block">Reset all filters</button>
     </aside>
 
-    <section class="content">
-      <div class="stat-tiles" id="stat-tiles" role="status"></div>
-      <div class="precanned-views" id="precanned-views"></div>
-
-      <div class="table-wrap" id="table-wrap">
-        <table class="leads-table" id="leads-table" aria-label="Distress leads">
-          <thead>
-            <tr>
-              <th data-sort="display_score">Score</th>
-              <th data-sort="display_tier">Tier</th>
-              <th data-sort="primary_parcel_id">Parcel</th>
-              <th data-sort="display_address">Address</th>
-              <th data-sort="display_owner">Owner</th>
-              <th>Patterns</th>
-              <th>Attributes</th>
-              <th>Deal paths</th>
-              <th data-sort="stack_depth">Stack</th>
-              <th data-sort="display_assessed_value">Assessed</th>
-              <th data-sort="display_last_sale_price">Last sale</th>
-              <th data-sort="expected_sale_date">Sale / event date</th>
-              <th>Review flags</th>
-              <th>Source</th>
-            </tr>
-          </thead>
-          <tbody id="leads-tbody"></tbody>
-        </table>
-        <p class="empty-state" id="empty-state" hidden>
-          No leads match the current filter set.
-        </p>
+    <!-- Results (UI-3 rows, UI-7 windowed render) -->
+    <section class="results">
+      <div class="results-head">
+        <span class="rowcount" id="rowCount">&mdash;</span>
+        <label class="sort-ctl">Sort
+          <select id="sortMode">
+            <option value="urgency">Urgency (default)</option>
+            <option value="sale">Sale date &uarr;</option>
+            <option value="value">Assessed value &darr;</option>
+            <option value="recent">Recently filed</option>
+            <option value="signals">Signal count &darr;</option>
+          </select>
+        </label>
+        <span class="legend">
+          <span class="lg lg-r"></span>Foreclosure &le;21d
+          <span class="lg lg-o"></span>22&ndash;60d
+          <span class="lg lg-g"></span>Estate-titled
+          <span class="lg lg-y"></span>Multi-signal
+          <span class="lg lg-v"></span>Review required
+        </span>
       </div>
+      <div class="leadlist" id="leadList"></div>
+      <div class="empty" id="emptyMsg" hidden></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span id="footer-counts">—</span>
-    <span class="footer-spacer"></span>
-    <a class="footer-link" id="repo-link" href="#" target="_blank" rel="noopener" hidden>repo</a>
-  </footer>
-
-  <script src="dashboard.js" defer></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
