@@ -44,7 +44,7 @@ punch: list = []
 def P(msg): punch.append(msg); print(f"  punch: {msg}")
 
 # ---- 1. Load raw_events from every adapter that produced output ----------
-SOURCES = ["lgbs_smith_tax_sales", "pbfcm_smith_tax_resale", "county_excess_proceeds"]
+SOURCES = ["lgbs_smith_tax_sales", "pbfcm_smith_tax_resale", "county_excess_proceeds", "publicsearch_clerk"]
 raw_events: list = []
 per_source: dict = {}
 for sid in SOURCES:

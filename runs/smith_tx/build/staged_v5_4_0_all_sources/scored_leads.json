@@ -28,7 +28,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -91,7 +91,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -135,6 +135,3483 @@
       }
     ],
     "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401015161",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-05-29",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_448dd22b8d2e0eba",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401016430",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-06-11",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_c66e5860e3c7d926",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401019821",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-07-12",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f7aaf16f8d197eb4",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401021350",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-07-29",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_4b7e304ee488ddf8",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401021352",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-07-29",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_caf53b1feae53427",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "NOTICE_OF_SALE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401021901",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-08-01",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:document_body_debtor_not_extractable"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 60,
+        "factor": "base_NOTICE_OF_SALE"
+      }
+    ],
+    "scored_lead_id": "scored_5e69920084ba797c",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401022696",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-08-09",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f3d130ea5d8d0e3e",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401023998",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-08-22",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_554bd11dfad8c068",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401024793",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-08-29",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_2e74cd3d4cf7a4ad",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401025699",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-09-09",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_9f203c1b6bec8baa",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "NOTICE_OF_SALE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401025877",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:document_body_debtor_not_extractable",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-09-10",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:document_body_debtor_not_extractable"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 60,
+        "factor": "base_NOTICE_OF_SALE"
+      }
+    ],
+    "scored_lead_id": "scored_bf62c6ead8229c03",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401029257",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-10-10",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_5fb9a7b5113584fd",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401029320",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-10-10",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f3a0224fe4baa920",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401029350",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-10-11",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_c6e3de69a4b4aad9",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401031099",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-10-29",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_1ea8f91d8d731269",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401032017",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-11-05",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_67446b4ef0a9f52e",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401033341",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-11-19",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_82030fedac4d3166",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401034224",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-11-26",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f40daa26f573c2e7",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401034381",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-11-27",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f3699159c6be80b5",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202401035627",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2024-12-09",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f3a8be116c919ce8",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501001630",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-01-21",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_63cf764c0fcc10d5",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501003645",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-02-07",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_73e45d899c4b2259",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501005344",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-02-25",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_2370491d80e526ca",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501006393",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-03-05",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_08e0880de6e62cfa",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501010979",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-04-16",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_318db2be9b734bf6",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501012668",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-05-01",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_ccd9373a8ce2a786",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501014195",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-05-14",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_0d4bf5cc846ce4a5",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501014196",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-05-14",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_1f430f455ff2d453",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501015198",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-05-23",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_e1cc4a0eda48be91",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501017583",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-06-16",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_5bf9aa9e71d434f1",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501018623",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-06-25",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_8f4260596b55f895",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501020286",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-07-10",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_7eda9776d99bc55b",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501025921",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-08-28",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_5fc831d146436992",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501028308",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-09-18",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_b56657122124ab01",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501030737",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-10-14",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_2c931d006ea0a226",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501031946",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-10-23",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_b618805e34f170c6",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501033166",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-11-05",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_7c3f9985f13d179e",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501034844",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-11-20",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_a83f703332625f49",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501035517",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-12-01",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_f3ee8ee0a6e92488",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202501038754",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2025-12-31",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_d52acc85e3a36794",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601000115",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-01-05",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_1d9cf88d08c22c50",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601001323",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-01-15",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_17256703a007dd57",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601002668",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-02-02",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_e956a717f2d40a3c",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601003130",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-02-05",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_423f2f5bc7cead2b",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601007414",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-03-18",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_fee923b655a75194",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601008576",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-03-30",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_2e7d6c3d28894546",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601010691",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-04-15",
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 35,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      }
+    ],
+    "scored_lead_id": "scored_9634190c26161683",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601013819",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-05-14",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_91bbd86bbe3a1de4",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "foreclosure"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIS_PENDENS"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_202601014641",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:expected_debtor_name_type DF missing",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T14:14:27Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "foreclosure"
+    ],
+    "patterns": [
+      "foreclosure"
+    ],
+    "primary_event_date": "2026-05-21",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:expected_debtor_name_type DF missing"
+    ],
+    "score": 40,
+    "score_reasons": [
+      {
+        "delta": 35,
+        "factor": "base_LIS_PENDENS"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_a9498b26f6d89e41",
+    "source_ids": [
+      "publicsearch_clerk"
+    ],
+    "stack_depth": 1,
+    "tier": "Low",
+    "title_complexity_contributors": [
+      {
+        "factor": "active_lis_pendens",
+        "weight": 5
+      }
+    ],
+    "title_complexity_score": 5,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
       "tax"
     ],
     "doc_type_normalization": {
@@ -154,7 +3631,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -232,7 +3709,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -295,7 +3772,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -373,7 +3850,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -436,7 +3913,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -499,7 +3976,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -562,7 +4039,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -628,7 +4105,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -706,7 +4183,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -769,7 +4246,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -832,7 +4309,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -895,7 +4372,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -958,7 +4435,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1021,7 +4498,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1084,7 +4561,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1162,7 +4639,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1225,7 +4702,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1288,7 +4765,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1368,7 +4845,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1450,7 +4927,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1528,7 +5005,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1591,7 +5068,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1654,7 +5131,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1732,7 +5209,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1810,7 +5287,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1888,7 +5365,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -1951,7 +5428,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2014,7 +5491,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2077,7 +5554,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2155,7 +5632,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2220,7 +5697,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2302,7 +5779,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2380,7 +5857,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2443,7 +5920,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2506,7 +5983,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2569,7 +6046,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2647,7 +6124,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2710,7 +6187,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2788,7 +6265,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2866,7 +6343,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -2929,7 +6406,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3007,7 +6484,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3070,7 +6547,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3133,7 +6610,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3211,7 +6688,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3289,7 +6766,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3367,7 +6844,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3430,7 +6907,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3508,7 +6985,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3586,7 +7063,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3664,7 +7141,7 @@
       {
         "reason": "no review flags triggered",
         "status": "APPROVED_FOR_DASHBOARD",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3727,7 +7204,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3805,7 +7282,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3883,7 +7360,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -3961,7 +7438,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4039,7 +7516,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4117,7 +7594,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4195,7 +7672,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4273,7 +7750,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4353,7 +7830,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,
@@ -4435,7 +7912,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-25T13:47:52Z"
+        "transitioned_at": "2026-05-25T14:14:27Z"
       }
     ],
     "match_confidence": null,

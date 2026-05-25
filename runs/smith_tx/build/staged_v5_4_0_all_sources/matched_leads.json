@@ -120,6 +120,2848 @@
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [],
     "filer_entity": null,
+    "lead_id": "lead_unresolved_202401015161",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-05-29",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401015161"
+        ],
+        "latest_recorded_date": "2024-05-29",
+        "recorded_date_range": [
+          "2024-05-29",
+          "2024-05-29"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401015161"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401016430",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-06-11",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401016430"
+        ],
+        "latest_recorded_date": "2024-06-11",
+        "recorded_date_range": [
+          "2024-06-11",
+          "2024-06-11"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401016430"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401019821",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-07-12",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401019821"
+        ],
+        "latest_recorded_date": "2024-07-12",
+        "recorded_date_range": [
+          "2024-07-12",
+          "2024-07-12"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401019821"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401021350",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-07-29",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401021350"
+        ],
+        "latest_recorded_date": "2024-07-29",
+        "recorded_date_range": [
+          "2024-07-29",
+          "2024-07-29"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401021350"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401021352",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-07-29",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401021352"
+        ],
+        "latest_recorded_date": "2024-07-29",
+        "recorded_date_range": [
+          "2024-07-29",
+          "2024-07-29"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401021352"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401021901",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Foreclosure Notice"
+        },
+        "canonical_doc_type": "foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2024-08-01",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401021901"
+        ],
+        "latest_recorded_date": "2024-08-01",
+        "recorded_date_range": [
+          "2024-08-01",
+          "2024-08-01"
+        ],
+        "signal_type": "Foreclosure Notice",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401021901"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401022696",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-08-09",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401022696"
+        ],
+        "latest_recorded_date": "2024-08-09",
+        "recorded_date_range": [
+          "2024-08-09",
+          "2024-08-09"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401022696"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401023998",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-08-22",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401023998"
+        ],
+        "latest_recorded_date": "2024-08-22",
+        "recorded_date_range": [
+          "2024-08-22",
+          "2024-08-22"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401023998"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401024793",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-08-29",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401024793"
+        ],
+        "latest_recorded_date": "2024-08-29",
+        "recorded_date_range": [
+          "2024-08-29",
+          "2024-08-29"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401024793"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401025699",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-09-09",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401025699"
+        ],
+        "latest_recorded_date": "2024-09-09",
+        "recorded_date_range": [
+          "2024-09-09",
+          "2024-09-09"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401025699"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401025877",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "Foreclosure Notice"
+        },
+        "canonical_doc_type": "foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2024-09-10",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401025877"
+        ],
+        "latest_recorded_date": "2024-09-10",
+        "recorded_date_range": [
+          "2024-09-10",
+          "2024-09-10"
+        ],
+        "signal_type": "Foreclosure Notice",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401025877"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401029257",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-10-10",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401029257"
+        ],
+        "latest_recorded_date": "2024-10-10",
+        "recorded_date_range": [
+          "2024-10-10",
+          "2024-10-10"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401029257"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401029320",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-10-10",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401029320"
+        ],
+        "latest_recorded_date": "2024-10-10",
+        "recorded_date_range": [
+          "2024-10-10",
+          "2024-10-10"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401029320"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401029350",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-10-11",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401029350"
+        ],
+        "latest_recorded_date": "2024-10-11",
+        "recorded_date_range": [
+          "2024-10-11",
+          "2024-10-11"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401029350"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401031099",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-10-29",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401031099"
+        ],
+        "latest_recorded_date": "2024-10-29",
+        "recorded_date_range": [
+          "2024-10-29",
+          "2024-10-29"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401031099"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401032017",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-11-05",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401032017"
+        ],
+        "latest_recorded_date": "2024-11-05",
+        "recorded_date_range": [
+          "2024-11-05",
+          "2024-11-05"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401032017"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401033341",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-11-19",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401033341"
+        ],
+        "latest_recorded_date": "2024-11-19",
+        "recorded_date_range": [
+          "2024-11-19",
+          "2024-11-19"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401033341"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401034224",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-11-26",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401034224"
+        ],
+        "latest_recorded_date": "2024-11-26",
+        "recorded_date_range": [
+          "2024-11-26",
+          "2024-11-26"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401034224"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401034381",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-11-27",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401034381"
+        ],
+        "latest_recorded_date": "2024-11-27",
+        "recorded_date_range": [
+          "2024-11-27",
+          "2024-11-27"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401034381"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202401035627",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2024-12-09",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202401035627"
+        ],
+        "latest_recorded_date": "2024-12-09",
+        "recorded_date_range": [
+          "2024-12-09",
+          "2024-12-09"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202401035627"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501001630",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-01-21",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501001630"
+        ],
+        "latest_recorded_date": "2025-01-21",
+        "recorded_date_range": [
+          "2025-01-21",
+          "2025-01-21"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501001630"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501003645",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-02-07",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501003645"
+        ],
+        "latest_recorded_date": "2025-02-07",
+        "recorded_date_range": [
+          "2025-02-07",
+          "2025-02-07"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501003645"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501005344",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-02-25",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501005344"
+        ],
+        "latest_recorded_date": "2025-02-25",
+        "recorded_date_range": [
+          "2025-02-25",
+          "2025-02-25"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501005344"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501006393",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-03-05",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501006393"
+        ],
+        "latest_recorded_date": "2025-03-05",
+        "recorded_date_range": [
+          "2025-03-05",
+          "2025-03-05"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501006393"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501010979",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-04-16",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501010979"
+        ],
+        "latest_recorded_date": "2025-04-16",
+        "recorded_date_range": [
+          "2025-04-16",
+          "2025-04-16"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501010979"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501012668",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-05-01",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501012668"
+        ],
+        "latest_recorded_date": "2025-05-01",
+        "recorded_date_range": [
+          "2025-05-01",
+          "2025-05-01"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501012668"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501014195",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-05-14",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501014195"
+        ],
+        "latest_recorded_date": "2025-05-14",
+        "recorded_date_range": [
+          "2025-05-14",
+          "2025-05-14"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501014195"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501014196",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-05-14",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501014196"
+        ],
+        "latest_recorded_date": "2025-05-14",
+        "recorded_date_range": [
+          "2025-05-14",
+          "2025-05-14"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501014196"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501015198",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-05-23",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501015198"
+        ],
+        "latest_recorded_date": "2025-05-23",
+        "recorded_date_range": [
+          "2025-05-23",
+          "2025-05-23"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501015198"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501017583",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-06-16",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501017583"
+        ],
+        "latest_recorded_date": "2025-06-16",
+        "recorded_date_range": [
+          "2025-06-16",
+          "2025-06-16"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501017583"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501018623",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-06-25",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501018623"
+        ],
+        "latest_recorded_date": "2025-06-25",
+        "recorded_date_range": [
+          "2025-06-25",
+          "2025-06-25"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501018623"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501020286",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-07-10",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501020286"
+        ],
+        "latest_recorded_date": "2025-07-10",
+        "recorded_date_range": [
+          "2025-07-10",
+          "2025-07-10"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501020286"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501025921",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-08-28",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501025921"
+        ],
+        "latest_recorded_date": "2025-08-28",
+        "recorded_date_range": [
+          "2025-08-28",
+          "2025-08-28"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501025921"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501028308",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-09-18",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501028308"
+        ],
+        "latest_recorded_date": "2025-09-18",
+        "recorded_date_range": [
+          "2025-09-18",
+          "2025-09-18"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501028308"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501030737",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-14",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501030737"
+        ],
+        "latest_recorded_date": "2025-10-14",
+        "recorded_date_range": [
+          "2025-10-14",
+          "2025-10-14"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501030737"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501031946",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-23",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501031946"
+        ],
+        "latest_recorded_date": "2025-10-23",
+        "recorded_date_range": [
+          "2025-10-23",
+          "2025-10-23"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501031946"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501033166",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-11-05",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501033166"
+        ],
+        "latest_recorded_date": "2025-11-05",
+        "recorded_date_range": [
+          "2025-11-05",
+          "2025-11-05"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501033166"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501034844",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-11-20",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501034844"
+        ],
+        "latest_recorded_date": "2025-11-20",
+        "recorded_date_range": [
+          "2025-11-20",
+          "2025-11-20"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501034844"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501035517",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-12-01",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501035517"
+        ],
+        "latest_recorded_date": "2025-12-01",
+        "recorded_date_range": [
+          "2025-12-01",
+          "2025-12-01"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501035517"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202501038754",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2025-12-31",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202501038754"
+        ],
+        "latest_recorded_date": "2025-12-31",
+        "recorded_date_range": [
+          "2025-12-31",
+          "2025-12-31"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202501038754"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601000115",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-01-05",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601000115"
+        ],
+        "latest_recorded_date": "2026-01-05",
+        "recorded_date_range": [
+          "2026-01-05",
+          "2026-01-05"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601000115"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601001323",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-01-15",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601001323"
+        ],
+        "latest_recorded_date": "2026-01-15",
+        "recorded_date_range": [
+          "2026-01-15",
+          "2026-01-15"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601001323"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601002668",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-02-02",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601002668"
+        ],
+        "latest_recorded_date": "2026-02-02",
+        "recorded_date_range": [
+          "2026-02-02",
+          "2026-02-02"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601002668"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601003130",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-02-05",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601003130"
+        ],
+        "latest_recorded_date": "2026-02-05",
+        "recorded_date_range": [
+          "2026-02-05",
+          "2026-02-05"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601003130"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601007414",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-03-18",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601007414"
+        ],
+        "latest_recorded_date": "2026-03-18",
+        "recorded_date_range": [
+          "2026-03-18",
+          "2026-03-18"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601007414"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601008576",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-03-30",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601008576"
+        ],
+        "latest_recorded_date": "2026-03-30",
+        "recorded_date_range": [
+          "2026-03-30",
+          "2026-03-30"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601008576"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601010691",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-04-15",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601010691"
+        ],
+        "latest_recorded_date": "2026-04-15",
+        "recorded_date_range": [
+          "2026-04-15",
+          "2026-04-15"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601010691"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601013819",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-05-14",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601013819"
+        ],
+        "latest_recorded_date": "2026-05-14",
+        "recorded_date_range": [
+          "2026-05-14",
+          "2026-05-14"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601013819"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_202601014641",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-05-21",
+        "evidence_ids": [],
+        "instrument_numbers": [
+          "202601014641"
+        ],
+        "latest_recorded_date": "2026-05-21",
+        "recorded_date_range": [
+          "2026-05-21",
+          "2026-05-21"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "publicsearch_clerk"
+        ],
+        "source_urls": [
+          "https://smith.tx.publicsearch.us/doc/202601014641"
+        ]
+      }
+    ],
+    "source_ids": [
+      "publicsearch_clerk"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "filer_entity": null,
     "lead_id": "lead_unresolved_24,171-B",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,

@@ -1,75 +1,110 @@
-# Smith TX — Playwright recon notes (2026-05-25)
+# Smith TX — Playwright recon + gated-source findings (2026-05-25)
 
-Operator authorized Playwright for the SPA / reCAPTCHA primary sources.
-Chromium installed via `python -m playwright install chromium` (succeeded).
-This file records what the recon probes found and why two production
-adapters (Tyler Odyssey courts, publicsearch.us clerk) were punch-listed
-rather than shipped in this turn.
+Operator authorized Playwright with stealth. This file records the outcomes
+of the deep probing pass on the two reCAPTCHA-gated primary sources
+(publicsearch.us clerk + Tyler Odyssey district court) and the resulting
+production adapter for publicsearch.us.
 
-## Tyler Odyssey — portal.smith-county.com (district courts)
+Stack: chromium installed (`python -m playwright install chromium`),
+`playwright-stealth==2.0.3` (`pip install --break-system-packages`).
 
-- Probe URL: `https://portal.smith-county.com/Public/Home/Dashboard/29` (Smart Search)
-- Page loads cleanly in headless chromium (title "Smart Search - Tyler Odyssey Portal").
-- reCAPTCHA library present in HTML but no widget rendered on page load (invisible v3).
-- Submitted a name search ("SMITH" / Last name) via Playwright form-fill:
-  - 35 GETs to `portal.smith-county.com` captured — every one was a static
-    asset (CSS, JS, images: `kendo.css`, `TylerUiCss`, `smartSearchPortlet.js`, etc.).
-  - **Zero XHR / fetch responses to data endpoints** captured.
-  - The page title transitioned to `Loading https://portal.smith-county.com/Public/SmartSearch/SmartSearch/SmartSearch`
-    but the body did not render results within the probe window. Likely
-    causes: (a) reCAPTCHA v3 bot-score gating the submit, (b) the portlet
-    posts to a server-side handler that returns a redirect, (c) headless
-    fingerprint failing Tyler's bot detection.
+## publicsearch.us (Smith County Clerk official records) — BROKEN THROUGH
 
-**Production-adapter requirements** (deferred, punch-list):
-- `playwright-stealth` plugin or undetected fingerprint to pass reCAPTCHA v3 scoring.
-- Probably operator-seeded session cookies (operator clears reCAPTCHA once
-  in a real browser; framework replays cookies) — the framework's
-  `use_seeded_session` strategy.
-- Result parser for the Odyssey table layout.
-- Pagination + retry strategy.
+**Discovery:** the portal SPA renders results via hyperscript / htmx-style
+HTML swap, not a JSON API. A plain `urllib` GET to `/results?...` returns
+only a "Loading Search Results..." shell — production scraping requires a
+real browser (Playwright). reCAPTCHA library IS loaded in the vendor
+bundle but is NOT triggered on read-only quick-search navigations during
+recon. Each query is rate-limited; the adapter halts cleanly on a
+reCAPTCHA challenge.
 
-Endpoint candidate identified: `/Public/SmartSearch/SmartSearch/SmartSearch`
-(POST). Validation requires the above-listed work.
+**Quick-search URL pattern:**
 
-## publicsearch.us (Smith County Clerk official records)
+    https://smith.tx.publicsearch.us/results?
+      department=RP&keywordSearch=false
+      &recordedDateRange=YYYYMMDD,YYYYMMDD
+      &searchOcrText=false&searchType=quickSearch
+      &searchValue=<KEYWORD>
 
-- Probe URL: `https://smith.tx.publicsearch.us/`
-- Page loads (React SPA, "window.__data" SSR with empty `isLoading:true`
-  state — confirmed earlier in Phase 3 ESC-002).
-- Playwright form-fill attempted on `input[type=text],input[type=search]`
-  → Locator timeout 5000ms (the search UI uses a different element /
-  needs a click-to-open). 3 XHRs captured (Google Analytics, hyperscript
-  asset, Bugsnag session) — no document-search API call.
+**Results-table column layout** (mapped by HEADER NAME — there are
+variable leading control cells; index-based extraction failed):
+`GRANTOR | GRANTEE | DOC TYPE | RECORDED DATE | DOC NUMBER | BOOK/VOLUME/PAGE | LEGAL DESCRIPTION`.
 
-**Production-adapter requirements** (deferred, punch-list):
-- Identify the SPA's search-input element (likely a `<button>` opening a
-  modal `<input>` or a non-standard custom element).
-- Capture the `ko-search-api` XHR request signature after reCAPTCHA
-  resolves — ESC-002 / HALT-002 documented the runtime-injected endpoint
-  + Google reCAPTCHA gating.
-- Either a CAPTCHA solver (cost-gated per §4.14) or an operator-seeded
-  session per §4.14 E1.
-- Doc-type discovery is already complete (10 groups, 190 types, saved at
-  `runs/smith_tx/recon/clerk_doc_type_taxonomy.json`).
+**Adapter:** `scrapers/publicsearch_clerk.py`. Sweeps a fixed set of
+distress keywords (FORECLOSURE, LIS PENDENS, FEDERAL TAX LIEN, STATE TAX
+LIEN, MECHANIC LIEN, AFFIDAVIT OF HEIRSHIP, ABSTRACT OF JUDGMENT), parses
+the rendered table by header name, classifies each row's
+`canonical_doc_type` from the DOC TYPE column, emits one v5.4.0 raw_event
+per row.
 
-## What WAS built this turn (stdlib only)
+**Live yield (2024-05-25 .. 2026-05-25, 2 years back):**
 
-- `scrapers/pbfcm_smith_tax_resale.py` — Tyler-ISD struck-off PDF
-  (4 evergreen records, pure-stdlib zlib+regex parsing).
-- `scrapers/county_excess_proceeds.py` — District Clerk Registry & Trust
-  PDF (29 sheriff_sale_surplus rows with net > 0, party-name resolved to
-  DF for §17 fallback).
-- `scrapers/_pdf_text.py` — pure-stdlib PDF text extractor used by both.
+| query | raw rows | emitted | canonical(s) |
+|---|---|---|---|
+| FORECLOSURE | 3 | 2 | foreclosure_notice |
+| LIS PENDENS | 50 | 47 | lis_pendens |
+| FEDERAL TAX LIEN | 1 | 0 | (release-only; not distress) |
+| STATE TAX LIEN | 0 | 0 | — |
+| MECHANIC LIEN | 0 | 0 | — |
+| AFFIDAVIT OF HEIRSHIP | 0 | 0 | — |
+| ABSTRACT OF JUDGMENT | 50 | 0 | (publisher labels differ; refinement needed) |
+| **total** | **104** | **49** | — |
 
-## Status
+Limitations / punch-list:
+- **Party-role mapping** — publicsearch uses GR/GE columns; §17 lien/lis-
+  pendens rules expect PL/DF. The 47 lis_pendens rows currently route to
+  REVIEW_REQUIRED with placeholder owner because GE != expected DF. Fix:
+  emit each party with BOTH role variants (GR+PL for grantor, GE+DF for
+  grantee). Refinement, not a blocker.
+- **ABSTRACT OF JUDGMENT query returns 50 raw rows with 0 emitted** — DOC
+  TYPE column likely uses "JUDGMENT" or similar variant not in the map.
+  Needs raw-row inspection + map expansion.
+- **No parcel_id in publicsearch table** — leads ship UNRESOLVED parcel
+  with legal_description as the skip-trace handle (§13.14 compliant).
 
-Chromium binary is on disk and importable. The fingerprint / session
-work to make the two SPA adapters production-grade is a real follow-on
-ticket (each probably one focused session). Smith now ships:
+## Tyler Odyssey (portal.smith-county.com) — REACHABLE BUT LOOKUP-ONLY
 
-    sources active:        3  (LGBS, PBFCM, county Excess Proceeds)
-    lead types on board:   2  (Tax Foreclosure Notice, Sheriff Sale Surplus)
-    lead_total:            63
-    §20 verdict:           DEPLOY_OK
-    Playwright adapters:   recon complete, deferred
+**Discovery:** `Settings.CaptchaEnabled = False` in the Hearings form
+POST — Smith County's Tyler tenant has form-CAPTCHA disabled. POSTs
+succeed (302 → Search Results). The blocker is NOT reCAPTCHA, it's the
+search design:
+
+- `SearchByType` is a required field with options: `CaseNumber`,
+  `PartyName`, `BusinessName`, `AttorneyName`, `AttorneyBarNumber`,
+  `JudicialOfficer`, `Courtroom`. **No `DateRange` / `RecentlyFiled` /
+  `AllCases` option.** The error on date-only submit: "Search Criteria
+  is required."
+- `SelectedHearingType` filter exists (All Civil / All Criminal / All
+  Family / All Probate) but only as a refinement, not a sole criterion.
+
+Tyler Odyssey Hearings Search is **LOOKUP-by-name/case-number, not
+BROWSE-by-date-range**. Bulk extraction of "all foreclosure cases filed
+in the last 30 days" is not natively supported by this form.
+
+**Punch-list — production paths require an external seed:**
+- (a) Seed loop — feed names from LGBS / publicsearch records into
+  Odyssey Smart Search to enrich each with court-case detail. Adapter
+  pattern: enrichment-via-lookup, not primary-origination.
+- (b) Use a different Tyler product (Calendar / Docket view) — would
+  require a different portal or operator-provided credentials.
+- (c) Iterate common surnames (impractical for a county-wide build).
+
+**Adapter NOT built this turn.** No production-grade way to bulk-extract
+from this surface without an external seed strategy. Honest punch-list
+per the operator's explicit "do not ship an adapter that emits
+unreliable/empty data" rule.
+
+## Dashboard now carries 4 distress types
+
+After wiring publicsearch_clerk:
+
+```
+sources active:     4 (LGBS + PBFCM + Excess Proceeds + publicsearch_clerk)
+lead_total:         112
+signal_types:       lis_pendens 47, tax_foreclosure_notice 34,
+                    sheriff_sale_surplus 29, foreclosure_notice 2
+owner_types:        INDIVIDUAL 44, UNKNOWN 50, ENTITY 15, ESTATE 3
+                    (50 UNKNOWN = publicsearch GR/GE -> §17 DF mismatch, refinement)
+ENRICHED / UNENRICHED:  33 / 79 (publicsearch + Excess Proceeds carry no parcel_id)
+§20 verdict:        DEPLOY_OK
+```

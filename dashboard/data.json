@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T13:47:52Z",
+  "generated_at": "2026-05-25T14:14:27Z",
   "county": "Smith",
   "state": "TX",
   "build_label": "PARTIAL_BUILD",
@@ -7,13 +7,14 @@
   "sources_active": [
     "lgbs_smith_tax_sales",
     "pbfcm_smith_tax_resale",
-    "county_excess_proceeds"
+    "county_excess_proceeds",
+    "publicsearch_clerk"
   ],
-  "lead_total": 63,
+  "lead_total": 112,
   "epcad_enrichment_resolved": 33,
-  "epcad_enrichment_unresolved": 30,
-  "review_required": 34,
-  "actionable_leads": 63,
+  "epcad_enrichment_unresolved": 79,
+  "review_required": 83,
+  "actionable_leads": 112,
   "records": [
     {
       "lead_id": "lead_unresolved_13-2734-B",
@@ -140,6 +141,3093 @@
       ],
       "signal_count": 1,
       "latest_event_date": null
+    },
+    {
+      "lead_id": "lead_unresolved_202401015161",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.883 ACRE GEORGE W WELSH SURVEY A-1025",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401015161"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401015161"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-05-29",
+          "sale_date": "2024-05-29"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401015161"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-05-29"
+    },
+    {
+      "lead_id": "lead_unresolved_202401016430",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "10.774 ACRE SEC 35 DON THOMAS QUEVADO SEVEN LEAGUE A-18",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401016430"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401016430"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-06-11",
+          "sale_date": "2024-06-11"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401016430"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-06-11"
+    },
+    {
+      "lead_id": "lead_unresolved_202401019821",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401019821"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401019821"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-07-12",
+          "sale_date": "2024-07-12"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401019821"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-07-12"
+    },
+    {
+      "lead_id": "lead_unresolved_202401021350",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77148A",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401021350"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401021350"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-07-29",
+          "sale_date": "2024-07-29"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401021350"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-07-29"
+    },
+    {
+      "lead_id": "lead_unresolved_202401021352",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SMITH CO CCL3 CAUSE NO 77149B",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401021352"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401021352"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-07-29",
+          "sale_date": "2024-07-29"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401021352"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-07-29"
+    },
+    {
+      "lead_id": "lead_unresolved_202401021901",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "foreclosure_notice against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "FORECLOSURE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Foreclosure Notice",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401021901"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401021901"
+          ],
+          "doc_type_raw": "NOTICE",
+          "recorded_date": "2024-08-01",
+          "sale_date": "2024-08-01"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401021901"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-08-01"
+    },
+    {
+      "lead_id": "lead_unresolved_202401022696",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77236",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401022696"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401022696"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-08-09",
+          "sale_date": "2024-08-09"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401022696"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-08-09"
+    },
+    {
+      "lead_id": "lead_unresolved_202401023998",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "1.878 ACRE R TOMBS SURVEY A-984",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401023998"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401023998"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-08-22",
+          "sale_date": "2024-08-22"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401023998"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-08-22"
+    },
+    {
+      "lead_id": "lead_unresolved_202401024793",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "COUNTY CRT AT LAW 2 SMITH CO CAUSE NO 77309A",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401024793"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401024793"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-08-29",
+          "sale_date": "2024-08-29"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401024793"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-08-29"
+    },
+    {
+      "lead_id": "lead_unresolved_202401025699",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 37 NCB 1505 HAMPTON HILL SUBD UNIT 1",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401025699"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401025699"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-09-09",
+          "sale_date": "2024-09-09"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401025699"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-09-09"
+    },
+    {
+      "lead_id": "lead_unresolved_202401025877",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "foreclosure_notice against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "FORECLOSURE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Foreclosure Notice",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401025877"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401025877"
+          ],
+          "doc_type_raw": "NOTICE",
+          "recorded_date": "2024-09-10",
+          "sale_date": "2024-09-10"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401025877"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-09-10"
+    },
+    {
+      "lead_id": "lead_unresolved_202401029257",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE 242793C 241ST JUDICIAL DIST COURT SMITH COUNTY",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401029257"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401029257"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-10-10",
+          "sale_date": "2024-10-10"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401029257"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-10-10"
+    },
+    {
+      "lead_id": "lead_unresolved_202401029320",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.4648 ACRE THOMAS PRICE SURVEY A-794",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401029320"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401029320"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-10-10",
+          "sale_date": "2024-10-10"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401029320"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-10-10"
+    },
+    {
+      "lead_id": "lead_unresolved_202401029350",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77509A",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401029350"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401029350"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-10-11",
+          "sale_date": "2024-10-11"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401029350"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-10-11"
+    },
+    {
+      "lead_id": "lead_unresolved_202401031099",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "241ST DIST CRT SMITH CO CAUSE NO 241568C",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401031099"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401031099"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-10-29",
+          "sale_date": "2024-10-29"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401031099"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-10-29"
+    },
+    {
+      "lead_id": "lead_unresolved_202401032017",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401032017"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401032017"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-11-05",
+          "sale_date": "2024-11-05"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401032017"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-11-05"
+    },
+    {
+      "lead_id": "lead_unresolved_202401033341",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401033341"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401033341"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-11-19",
+          "sale_date": "2024-11-19"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401033341"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-11-19"
+    },
+    {
+      "lead_id": "lead_unresolved_202401034224",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "68TH JDC DALLAS CO CAUSE NO DC2419256",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401034224"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401034224"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-11-26",
+          "sale_date": "2024-11-26"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401034224"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-11-26"
+    },
+    {
+      "lead_id": "lead_unresolved_202401034381",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": ".9495 ACRE SAMUEL EPPS SURVEY A-335",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401034381"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401034381"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-11-27",
+          "sale_date": "2024-11-27"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401034381"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-11-27"
+    },
+    {
+      "lead_id": "lead_unresolved_202401035627",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.245 ACRE LOT 13A 14 15& 16A NCB 160",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202401035627"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202401035627"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2024-12-09",
+          "sale_date": "2024-12-09"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202401035627"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2024-12-09"
+    },
+    {
+      "lead_id": "lead_unresolved_202501001630",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501001630"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501001630"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-01-21",
+          "sale_date": "2025-01-21"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501001630"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-01-21"
+    },
+    {
+      "lead_id": "lead_unresolved_202501003645",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 243009B JUDICIAL DISTRICT SMITH CO",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501003645"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501003645"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-02-07",
+          "sale_date": "2025-02-07"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501003645"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-02-07"
+    },
+    {
+      "lead_id": "lead_unresolved_202501005344",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.1334 ACRE WILLIAM B RATCLIFF SURVEY A-817",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501005344"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501005344"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-02-25",
+          "sale_date": "2025-02-25"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501005344"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-02-25"
+    },
+    {
+      "lead_id": "lead_unresolved_202501006393",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CCL2 TARRANT CO CAUSE NO 2024 006731 2",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501006393"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501006393"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-03-05",
+          "sale_date": "2025-03-05"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501006393"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-03-05"
+    },
+    {
+      "lead_id": "lead_unresolved_202501010979",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 199 NCB 669N FOREST HILLS ADD",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501010979"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501010979"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-04-16",
+          "sale_date": "2025-04-16"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501010979"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-04-16"
+    },
+    {
+      "lead_id": "lead_unresolved_202501012668",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "TR 1 LOT 9 & 10 BASSLAKE PROPERTIES PHASE 1",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501012668"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501012668"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-05-01",
+          "sale_date": "2025-05-01"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501012668"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-05-01"
+    },
+    {
+      "lead_id": "lead_unresolved_202501014195",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 240376A 7TH JUDICIAL DIST CRT SMITH CO",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501014195"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501014195"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-05-14",
+          "sale_date": "2025-05-14"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501014195"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-05-14"
+    },
+    {
+      "lead_id": "lead_unresolved_202501014196",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 240376A 7TH JUDICIAL DIST CRT SMITH CO",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501014196"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501014196"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-05-14",
+          "sale_date": "2025-05-14"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501014196"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-05-14"
+    },
+    {
+      "lead_id": "lead_unresolved_202501015198",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.2538 ACRE JOHN J RATCLIFF SURVEY A-819",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501015198"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501015198"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-05-23",
+          "sale_date": "2025-05-23"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501015198"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-05-23"
+    },
+    {
+      "lead_id": "lead_unresolved_202501017583",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 25-1597-A SMITH CO 7TH JUDICIAL DISTRICT COURT",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501017583"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501017583"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-06-16",
+          "sale_date": "2025-06-16"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501017583"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-06-16"
+    },
+    {
+      "lead_id": "lead_unresolved_202501018623",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE 2024 006731 2 CCL2 TARRANT CO TEXAS",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501018623"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501018623"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-06-25",
+          "sale_date": "2025-06-25"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501018623"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-06-25"
+    },
+    {
+      "lead_id": "lead_unresolved_202501020286",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "0.2178 ACRE JOHN J RATCLIFF SURVEY A-819",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501020286"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501020286"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-07-10",
+          "sale_date": "2025-07-10"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501020286"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-07-10"
+    },
+    {
+      "lead_id": "lead_unresolved_202501025921",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501025921"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501025921"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-08-28",
+          "sale_date": "2025-08-28"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501025921"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-08-28"
+    },
+    {
+      "lead_id": "lead_unresolved_202501028308",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501028308"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501028308"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-09-18",
+          "sale_date": "2025-09-18"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501028308"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-09-18"
+    },
+    {
+      "lead_id": "lead_unresolved_202501030737",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501030737"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501030737"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-10-14",
+          "sale_date": "2025-10-14"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501030737"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-10-14"
+    },
+    {
+      "lead_id": "lead_unresolved_202501031946",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 10 BLK 1058 ALTA MIRA ADD",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501031946"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501031946"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-10-23",
+          "sale_date": "2025-10-23"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501031946"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-10-23"
+    },
+    {
+      "lead_id": "lead_unresolved_202501033166",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE 75553B CCL3 SMITH CO",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501033166"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501033166"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-11-05",
+          "sale_date": "2025-11-05"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501033166"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-11-05"
+    },
+    {
+      "lead_id": "lead_unresolved_202501034844",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SEE INSTRUMENT",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501034844"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501034844"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-11-20",
+          "sale_date": "2025-11-20"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501034844"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-11-20"
+    },
+    {
+      "lead_id": "lead_unresolved_202501035517",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 35 AND LOT 36 MAEGIN COVE UNIT 1",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501035517"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501035517"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-12-01",
+          "sale_date": "2025-12-01"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501035517"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-12-01"
+    },
+    {
+      "lead_id": "lead_unresolved_202501038754",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "PARTIAL RELEASE & TERMINATION",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202501038754"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202501038754"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2025-12-31",
+          "sale_date": "2025-12-31"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202501038754"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2025-12-31"
+    },
+    {
+      "lead_id": "lead_unresolved_202601000115",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 32 BLK 5 SUNNY MEADOWS ADD PHASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601000115"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601000115"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-01-05",
+          "sale_date": "2026-01-05"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601000115"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-01-05"
+    },
+    {
+      "lead_id": "lead_unresolved_202601001323",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "SMITH CO 114TH DIST CRT CAUSE 250843CB",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601001323"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601001323"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-01-15",
+          "sale_date": "2026-01-15"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601001323"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-01-15"
+    },
+    {
+      "lead_id": "lead_unresolved_202601002668",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601002668"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601002668"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-02-02",
+          "sale_date": "2026-02-02"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601002668"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-02-02"
+    },
+    {
+      "lead_id": "lead_unresolved_202601003130",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "RELEASE",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601003130"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601003130"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-02-05",
+          "sale_date": "2026-02-05"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601003130"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-02-05"
+    },
+    {
+      "lead_id": "lead_unresolved_202601007414",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "20.277 ACRE MATTHEW ARNOLD SURVEY A-27",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601007414"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601007414"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-03-18",
+          "sale_date": "2026-03-18"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601007414"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-03-18"
+    },
+    {
+      "lead_id": "lead_unresolved_202601008576",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "LOT 1 BLK 4 JACKSON OAKS SUBD",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601008576"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601008576"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-03-30",
+          "sale_date": "2026-03-30"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601008576"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-03-30"
+    },
+    {
+      "lead_id": "lead_unresolved_202601010691",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 261058B 114TH JUD DIST CRT SMITH CO",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601010691"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601010691"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-04-15",
+          "sale_date": "2026-04-15"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601010691"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-04-15"
+    },
+    {
+      "lead_id": "lead_unresolved_202601013819",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "5.000 ACRE THOMAS A GARRET SURVEY A-399",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601013819"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601013819"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-05-14",
+          "sale_date": "2026-05-14"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601013819"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-05-14"
+    },
+    {
+      "lead_id": "lead_unresolved_202601014641",
+      "parcel_resolution_status": "REVIEW_REQUIRED",
+      "epcad_enrichment_status": "UNENRICHED",
+      "filer_entity": "",
+      "parcel_id": "",
+      "owner_name": "",
+      "owner_type": "UNKNOWN",
+      "owners": [
+        {
+          "confidence": null,
+          "is_primary": true,
+          "name": "lis_pendens against unidentified party",
+          "name_type": null,
+          "notes": null,
+          "resolution_status": "REVIEW_REQUIRED",
+          "role": "unresolved",
+          "source_field": null
+        }
+      ],
+      "property_full_address": "",
+      "property_street": "",
+      "property_city": "",
+      "property_state": "TX",
+      "property_zip": "",
+      "mailing_full_address": "",
+      "mailing_city": "",
+      "mailing_state": "",
+      "assessed_value": null,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "CAUSE NO 75222 SMITH COUNTY",
+      "year_built": null,
+      "signals": [
+        {
+          "signal_type": "lis_pendens",
+          "signal_label": "Lis Pendens",
+          "signal_confidence": "HIGH",
+          "source_id": "publicsearch_clerk",
+          "count": 1,
+          "source_urls": [
+            "https://smith.tx.publicsearch.us/doc/202601014641"
+          ],
+          "evidence_ids": [],
+          "instrument_numbers": [
+            "202601014641"
+          ],
+          "doc_type_raw": "LIS PENDENS",
+          "recorded_date": "2026-05-21",
+          "sale_date": "2026-05-21"
+        }
+      ],
+      "signal_types": [
+        "lis_pendens"
+      ],
+      "source_urls": [
+        "https://smith.tx.publicsearch.us/doc/202601014641"
+      ],
+      "signal_count": 1,
+      "latest_event_date": "2026-05-21"
     },
     {
       "lead_id": "lead_unresolved_24,171-B",

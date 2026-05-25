@@ -1,0 +1,2305 @@
+[
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401015161",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-05-29",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401015161",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.883 ACRE GEORGE W WELSH SURVEY A-1025",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401015161",
+    "recorded_date": "2024-05-29",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401015161"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401016430",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-06-11",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401016430",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "10.774 ACRE SEC 35 DON THOMAS QUEVADO SEVEN LEAGUE A-18",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401016430",
+    "recorded_date": "2024-06-11",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401016430"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401019821",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-07-12",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401019821",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401019821",
+    "recorded_date": "2024-07-12",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401019821"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401021350",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-07-29",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401021350",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77148A",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401021350",
+    "recorded_date": "2024-07-29",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401021350"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401021352",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-07-29",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401021352",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SMITH CO CCL3 CAUSE NO 77149B",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401021352",
+    "recorded_date": "2024-07-29",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401021352"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401021901",
+    "canonical_doc_type": "foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-08-01",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401021901",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "FORECLOSURE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401021901",
+    "recorded_date": "2024-08-01",
+    "review_reason": "document_body_debtor_not_extractable",
+    "signal_type": "Foreclosure Notice",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401021901"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401022696",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-08-09",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401022696",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77236",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401022696",
+    "recorded_date": "2024-08-09",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401022696"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401023998",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-08-22",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401023998",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "1.878 ACRE R TOMBS SURVEY A-984",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401023998",
+    "recorded_date": "2024-08-22",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401023998"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401024793",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-08-29",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401024793",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "COUNTY CRT AT LAW 2 SMITH CO CAUSE NO 77309A",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401024793",
+    "recorded_date": "2024-08-29",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401024793"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401025699",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-09-09",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401025699",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 37 NCB 1505 HAMPTON HILL SUBD UNIT 1",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401025699",
+    "recorded_date": "2024-09-09",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401025699"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "Foreclosure Notice"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401025877",
+    "canonical_doc_type": "foreclosure_notice",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-09-10",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401025877",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "FORECLOSURE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401025877",
+    "recorded_date": "2024-09-10",
+    "review_reason": "document_body_debtor_not_extractable",
+    "signal_type": "Foreclosure Notice",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401025877"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401029257",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-10-10",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401029257",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE 242793C 241ST JUDICIAL DIST COURT SMITH COUNTY",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401029257",
+    "recorded_date": "2024-10-10",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401029257"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401029320",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-10-10",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401029320",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.4648 ACRE THOMAS PRICE SURVEY A-794",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401029320",
+    "recorded_date": "2024-10-10",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401029320"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401029350",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-10-11",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401029350",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SMITH CO CCL2 CAUSE NO 77509A",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401029350",
+    "recorded_date": "2024-10-11",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401029350"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401031099",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-10-29",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401031099",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "241ST DIST CRT SMITH CO CAUSE NO 241568C",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401031099",
+    "recorded_date": "2024-10-29",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401031099"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401032017",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-11-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401032017",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401032017",
+    "recorded_date": "2024-11-05",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401032017"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401033341",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-11-19",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401033341",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401033341",
+    "recorded_date": "2024-11-19",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401033341"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401034224",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-11-26",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401034224",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "68TH JDC DALLAS CO CAUSE NO DC2419256",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401034224",
+    "recorded_date": "2024-11-26",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401034224"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401034381",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-11-27",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401034381",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": ".9495 ACRE SAMUEL EPPS SURVEY A-335",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401034381",
+    "recorded_date": "2024-11-27",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401034381"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202401035627",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2024-12-09",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202401035627",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.245 ACRE LOT 13A 14 15& 16A NCB 160",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202401035627",
+    "recorded_date": "2024-12-09",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202401035627"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501001630",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-01-21",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501001630",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501001630",
+    "recorded_date": "2025-01-21",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501001630"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501003645",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-02-07",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501003645",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 243009B JUDICIAL DISTRICT SMITH CO",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501003645",
+    "recorded_date": "2025-02-07",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501003645"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501005344",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-02-25",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501005344",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.1334 ACRE WILLIAM B RATCLIFF SURVEY A-817",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501005344",
+    "recorded_date": "2025-02-25",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501005344"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501006393",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-03-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501006393",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CCL2 TARRANT CO CAUSE NO 2024 006731 2",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501006393",
+    "recorded_date": "2025-03-05",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501006393"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501010979",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-04-16",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501010979",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 199 NCB 669N FOREST HILLS ADD",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501010979",
+    "recorded_date": "2025-04-16",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501010979"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501012668",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-05-01",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501012668",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "TR 1 LOT 9 & 10 BASSLAKE PROPERTIES PHASE 1",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501012668",
+    "recorded_date": "2025-05-01",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501012668"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501014195",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-05-14",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501014195",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 240376A 7TH JUDICIAL DIST CRT SMITH CO",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501014195",
+    "recorded_date": "2025-05-14",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501014195"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501014196",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-05-14",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501014196",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 240376A 7TH JUDICIAL DIST CRT SMITH CO",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501014196",
+    "recorded_date": "2025-05-14",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501014196"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501015198",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-05-23",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501015198",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.2538 ACRE JOHN J RATCLIFF SURVEY A-819",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501015198",
+    "recorded_date": "2025-05-23",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501015198"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501017583",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-06-16",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501017583",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 25-1597-A SMITH CO 7TH JUDICIAL DISTRICT COURT",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501017583",
+    "recorded_date": "2025-06-16",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501017583"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501018623",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-06-25",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501018623",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE 2024 006731 2 CCL2 TARRANT CO TEXAS",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501018623",
+    "recorded_date": "2025-06-25",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501018623"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501020286",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-07-10",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501020286",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "0.2178 ACRE JOHN J RATCLIFF SURVEY A-819",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501020286",
+    "recorded_date": "2025-07-10",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501020286"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501025921",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-08-28",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501025921",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501025921",
+    "recorded_date": "2025-08-28",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501025921"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501028308",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-09-18",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501028308",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501028308",
+    "recorded_date": "2025-09-18",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501028308"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501030737",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-10-14",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501030737",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501030737",
+    "recorded_date": "2025-10-14",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501030737"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501031946",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-10-23",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501031946",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 10 BLK 1058 ALTA MIRA ADD",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501031946",
+    "recorded_date": "2025-10-23",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501031946"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501033166",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-11-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501033166",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE 75553B CCL3 SMITH CO",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501033166",
+    "recorded_date": "2025-11-05",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501033166"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501034844",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-11-20",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501034844",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SEE INSTRUMENT",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501034844",
+    "recorded_date": "2025-11-20",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501034844"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501035517",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-12-01",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501035517",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 35 AND LOT 36 MAEGIN COVE UNIT 1",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501035517",
+    "recorded_date": "2025-12-01",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501035517"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202501038754",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2025-12-31",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202501038754",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "PARTIAL RELEASE & TERMINATION",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202501038754",
+    "recorded_date": "2025-12-31",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202501038754"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601000115",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-01-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601000115",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 32 BLK 5 SUNNY MEADOWS ADD PHASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601000115",
+    "recorded_date": "2026-01-05",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601000115"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601001323",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-01-15",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601001323",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "SMITH CO 114TH DIST CRT CAUSE 250843CB",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601001323",
+    "recorded_date": "2026-01-15",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601001323"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601002668",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-02-02",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601002668",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601002668",
+    "recorded_date": "2026-02-02",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601002668"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601003130",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-02-05",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601003130",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "RELEASE",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601003130",
+    "recorded_date": "2026-02-05",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601003130"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601007414",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-03-18",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601007414",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "20.277 ACRE MATTHEW ARNOLD SURVEY A-27",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601007414",
+    "recorded_date": "2026-03-18",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601007414"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601008576",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-03-30",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601008576",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "LOT 1 BLK 4 JACKSON OAKS SUBD",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601008576",
+    "recorded_date": "2026-03-30",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601008576"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601010691",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-04-15",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601010691",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 261058B 114TH JUD DIST CRT SMITH CO",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601010691",
+    "recorded_date": "2026-04-15",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601010691"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601013819",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-05-14",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601013819",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "5.000 ACRE THOMAS A GARRET SURVEY A-399",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601013819",
+    "recorded_date": "2026-05-14",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601013819"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "lis_pendens",
+      "parcel_id": null,
+      "signal_type": "Lis Pendens"
+    },
+    "base_record_id": "base_smith_tx-publicsearch-202601014641",
+    "canonical_doc_type": "lis_pendens",
+    "confidence_status": "Unknown",
+    "enrichment_status": "UNENRICHED",
+    "event_date": "2026-05-21",
+    "evidence_ids": [],
+    "filer_entity": null,
+    "instrument_number": "202601014641",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "property_refs": {
+      "case_number": null,
+      "legal_description": "CAUSE NO 75222 SMITH COUNTY",
+      "parcel_id": null,
+      "situs_address": null
+    },
+    "raw_event_id": "smith_tx-publicsearch-202601014641",
+    "recorded_date": "2026-05-21",
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signal_type": "Lis Pendens",
+    "source_id": "publicsearch_clerk",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://smith.tx.publicsearch.us/doc/202601014641"
+  }
+]

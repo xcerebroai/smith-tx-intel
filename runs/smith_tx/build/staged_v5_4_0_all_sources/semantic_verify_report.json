@@ -6,7 +6,7 @@
       "check": 1,
       "name": "Debtor attribution sampling",
       "status": "VALID",
-      "detail": "full scan of 63 matched leads: no resolved owner_name matches a known filer pattern.",
+      "detail": "full scan of 112 matched leads: no resolved owner_name matches a known filer pattern.",
       "samples": []
     },
     {
@@ -34,14 +34,14 @@
       "check": 5,
       "name": "Signal aggregation integrity",
       "status": "VALID",
-      "detail": "full scan of 63 signal(s): count equals the distinct instrument-number count (clean §18.E stacking).",
+      "detail": "full scan of 112 signal(s): count equals the distinct instrument-number count (clean §18.E stacking).",
       "samples": []
     },
     {
       "check": 6,
       "name": "Cross-source aggregation integrity",
       "status": "VALID",
-      "detail": "full scan of 63 signal(s): every signal has a distinct, self-consistent aggregation key (§18.F anti-collapse holds).",
+      "detail": "full scan of 112 signal(s): every signal has a distinct, self-consistent aggregation key (§18.F anti-collapse holds).",
       "samples": []
     },
     {
@@ -83,7 +83,7 @@
       "check": 12,
       "name": "Filer-as-owner spot check (universal patterns)",
       "status": "VALID",
-      "detail": "full scan of 63 matched leads: no universal filer pattern appears as owner_name.",
+      "detail": "full scan of 112 matched leads: no universal filer pattern appears as owner_name.",
       "samples": []
     }
   ],
