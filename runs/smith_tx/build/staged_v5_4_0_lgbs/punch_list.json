@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-25T12:48:03Z",
+  "framework_version": "v5.4.0",
+  "county": "smith_tx",
+  "semantic_verdict": "DEPLOY_OK",
+  "lead_total": 31,
+  "review_required_count": 31,
+  "raw_events_loaded": 31,
+  "primary_source": "lgbs_smith_tax_sales",
+  "items": [
+    "parcel_master.jsonl (300 ENRICHMENT records) intentionally NOT loaded as raw_events — per operator rule, enrichment never feeds §17 as an event document. Enrichment attachment is a downstream seam concern.",
+    "Coverage: LGBS = general Smith County + most ISDs. Tyler ISD tax sales (Perdue Brandon, smithcountytaxresale.pdf — also stdlib-reachable PDF) are NOT in this run; punch-list for a second adapter.",
+    "clerk_recordings (publicsearch.us): still ESC-002-blocked — reCAPTCHA + runtime-injected ko-search-api endpoint require Playwright + a reCAPTCHA path. Not addressed by this run.",
+    "district_court (portal.smith-county.com/Public): also reCAPTCHA-gated."
+  ]
+}

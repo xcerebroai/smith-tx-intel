@@ -1,0 +1,14 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "sale_type": "SALE",
+      "status": "oops",
+      "prop_address_one": "",
+      "account_nbr": "",
+      "cause_nbr": ""
+    }
+  ]
+}

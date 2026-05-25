@@ -2,14 +2,19 @@
 
 County: Smith County, Texas (`smith_tx`) — FIPS 48423 — county seat Tyler
 Framework: recon/config under v5.3.0; Phases 1–2 verified under v5.3.1;
-v5.4.0 staged pipeline (commit 266d445) ran end-to-end 2026-05-23.
-Status: **ON HOLD — §20 DEPLOY_BLOCKED until a PRIMARY_EVENT_SOURCE adapter is built**
-v5.4.0 shipped and was exercised end-to-end (§17 → §18 → §19 → §20). §20
-correctly returned DEPLOY_BLOCKED under the §13.5 "No False Dashboard" rule —
-the only available raw data is enrichment (parcel_master). Resume needs a
-browser + reCAPTCHA path for the clerk primary source (ESC-002) and the
-remaining missing adapters; v5.4.0 itself is no longer the blocker.
-Status date: 2026-05-23 (v5.4.0 run executed, §20 DEPLOY_BLOCKED, dashboard not built)
+v5.4.0 staged pipeline (commit 266d445) — first run 2026-05-23 returned
+§20 DEPLOY_BLOCKED (correct — only enrichment data was available);
+v5.4.0 re-run 2026-05-25 with the first PRIMARY_EVENT_SOURCE adapter — **DEPLOYED**.
+Status: **DEPLOYED (partial build) — 31 lead rows, §20 DEPLOY_OK**
+Empirical primary-source hunt 2026-05-25 found Linebarger's `taxsales.lgbs.com`
+JSON API is stdlib-reachable (HTTP 200, JSON, no auth, no CAPTCHA, 31 current
+Smith records with property attachment proven for every row). Built
+`scrapers/lgbs_smith_tax_sales.py` (stdlib only), wired into
+`config/counties/smith_tx.json`, ran §17→§20 end-to-end — §20 = DEPLOY_OK —
+dashboard built at `dashboard/data.json`. The clerk, district court,
+RealAuction, tax portal, and Tyler-code primary sources are still
+ESC-002-blocked (browser + reCAPTCHA required).
+Status date: 2026-05-25 (first PRIMARY source live; dashboard deployed)
 
 ---
 
@@ -198,23 +203,51 @@ Full detail: `runs/smith_tx/build/staged_v5_4_0/V5_4_0_RUN_REPORT.md`,
 `semantic_verify_report.json`, `matched_leads.json`, `punch_list.json`
 (12 items: 4 BLOCKING / 2 MAJOR / 1 MINOR / 5 INFO).
 
+## v5.4.0 Re-Run (2026-05-25) with the first PRIMARY EVENT SOURCE — DEPLOY_OK
+
+Empirical primary-source hunt (18 dossier candidates probed; full report at
+`runs/smith_tx/build/SMITH_PRIMARY_SOURCE_HUNT.md`) found the Linebarger
+(LGBS) JSON API at `taxsales.lgbs.com/api/property_sales/` is stdlib-
+reachable: HTTP 200, JSON, no auth, no CAPTCHA, 31 current Smith County
+records, 100% with `account_nbr + prop_address_one + cause_nbr` — property
+attachment proven for every row (Duval JUDGMENT standard met).
+
+Adapter built: `scrapers/lgbs_smith_tax_sales.py` (stdlib only). Wired the
+`lgbs_smith_tax_sales` source into `config/counties/smith_tx.json`. Ran
+the v5.4.0 staged pipeline:
+
+    raw_events:        31 (LGBS PRIMARY_EVENT_SOURCE — parcel_master intentionally
+                          NOT fed to §17 per operator stage-boundary rule)
+    §17 debtor_resolved: 31  (all REVIEW_REQUIRED — LGBS API has NO party names;
+                              §17.D missing_debtor_behavior fires; correct)
+    §18 leads_base:      31
+    §19 matched_leads:   31
+    §20 verdict:         DEPLOY_OK
+    seam scored_leads:   31  (all UNENRICHED, all "Archive" tier — no enrichment
+                              provider wired; scoring matches that reality)
+    dashboard:           dashboard/data.json — 31 lead rows, build_label PARTIAL_BUILD
+
+Other stdlib-reachable primary sources discovered but deferred:
+`pbfcm_smith_tax_resale.pdf` (4 Tyler-ISD struck-off; pure-stdlib zlib+regex
+parseable) and the county Excess Proceeds PDF (Surplus lead type;
+operator-scoped-out earlier).
+
 ## Session outcome
 
-Smith County, TX is **ON HOLD — §20 DEPLOY_BLOCKED until at least one
-PRIMARY_EVENT_SOURCE adapter ships real records**. The v5.4.0 engine
-prerequisite is resolved; the framework ran cleanly through §17–§20 and the
-halt at §20 is a correct §13.5 enforcement, not a harness failure. What
-remains:
+Smith County, TX is **DEPLOYED (partial build)** — `dashboard/data.json`
+carries 31 real Smith County tax-foreclosure lead rows from the LGBS
+primary event source. All 31 are correctly flagged `REVIEW_REQUIRED`
+because the LGBS API does not carry party names (the §17 placeholder owner
+reads `"TAX_FORECLOSURE_SALE against unidentified party"`); owner-name
+enrichment is a downstream attachment from `parcel_master` via the
+`account_nbr` / `parcel_id` join, not a §17 input — per the operator's
+stage-boundary rule.
 
-- A wide Phase 0 re-recon (operator dossier as input) — already scheduled.
-- A browser + Chromium + reCAPTCHA path for the clerk source (ESC-002),
-  district court (Tyler Odyssey SPA), sheriff/tax auction (RealAuction),
-  and the county tax portal — so at least one primary-event adapter can
-  ship real raw events.
-- GitHub auth + repo for any future Phase 8 deploy.
-
-When any one primary-event adapter produces real records, re-run
-`runs/smith_tx/build/run_staged_v5_4_0.py`. The §20 Check 4 will turn VALID,
-scoring runs, and the dashboard ships with the parcel_master enrichment
-already in `data/raw/` decorating real leads instead of masquerading as them.
-Build Mode does not auto-resume.
+What remains (punch-list):
+- Add `scrapers/pbfcm_smith_tax_resale.py` (stdlib PDF adapter) as a second
+  primary source for Tyler-ISD tax-sale coverage.
+- Wire the `parcel_master` enrichment_provider into the seam so owner /
+  situs / value display on the rendered dashboard rows.
+- The clerk (`publicsearch.us`), district court (Tyler Odyssey),
+  RealAuction, tax portal, and Tyler code-enforcement primaries still need
+  Playwright + a reCAPTCHA path — ESC-002 unchanged.

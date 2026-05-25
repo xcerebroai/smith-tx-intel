@@ -1,0 +1,1552 @@
+[
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_24,171-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_f410f43adcf7d462",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,356-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_e36c34ccc4ea21b7",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,478-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_d3fc1fcac44e63d0",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_25,796-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_d48f68c445dc2442",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,009-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_d9fabc29d2a9456d",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,019-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_3f40c382dee22b2b",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,052-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_6faaa93ede6bfa8e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,216-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_8f00443b5530761c",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,217-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_50fa92431c47b9c0",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,318-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_efc83f4c4fdd9d5e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,563-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_2d73cb364a762ff3",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,750-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_ca53487c6044868f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,785-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_9458d0099318a9fd",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,849-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_15c66cc5ba98b09d",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,894-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_1e10df25bceda59e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,895-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_6e21c073719ffdea",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_26,976-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_aa2e5abdf19c7941",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,071-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_f1c46e74c0311965",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,164-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_afd51c8f9bb36f7d",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,189-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_165ea59cba2234db",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,242-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_0ba7a239df57eaeb",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,323-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_19023b0863d4cb68",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,343-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_b33efd27f59bd070",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,407-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_05a55934685d3996",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,413-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_bb27337673ed3a4f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,629-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_22be46e1a52a2b3d",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,653-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_a253d70d4758f8c1",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,695-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_ade978c61a850daf",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,726-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_ddc3b52061be1bd1",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_27,785-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_0ce81aa7f8c8385f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [],
+    "display_patterns": [],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "TAX_FORECLOSURE_SALE"
+      ],
+      "doc_type_review_required": true,
+      "normalized_doc_types": [
+        ""
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [],
+    "lead_id": "lead_unresolved_28,007-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type; no_pattern_fired",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-05-25T12:48:04Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "TAX_FORECLOSURE_SALE against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [],
+    "patterns": [],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type",
+      "no_pattern_fired"
+    ],
+    "score": 0,
+    "score_reasons": [],
+    "scored_lead_id": "scored_c12f6dc5c32a9c6b",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 0,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  }
+]

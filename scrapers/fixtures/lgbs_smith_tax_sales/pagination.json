@@ -1,0 +1,81 @@
+{
+  "count": 31,
+  "next": "http://taxsales.lgbs.com/api/property_sales/?county=SMITH+COUNTY&limit=2&offset=2&state=TX",
+  "previous": null,
+  "results": [
+    {
+      "uid": 1007477760,
+      "has_photo": true,
+      "sale_id": 1000161365,
+      "venue_id": 1064,
+      "state": "TX",
+      "county": "SMITH COUNTY",
+      "cause_nbr": "24,171-B",
+      "precinct": "",
+      "sale_nbr": null,
+      "sale_date": null,
+      "sale_date_only": null,
+      "property_loc": "",
+      "county_sale_list": "",
+      "sale_published": "N",
+      "sale_type": "STRUCK OFF",
+      "status": "Available for Future Sale",
+      "account_nbr": "180510000000077700",
+      "street_name": "DOGWOOD TRL",
+      "prop_address_one": "23541 DOGWOOD TRL",
+      "prop_address_two": "",
+      "prop_city": "MINEOLA",
+      "prop_state": "TX",
+      "prop_zipcode": "75773",
+      "value": "54906.00",
+      "minimum_bid": "10235.64",
+      "google_view": "Y",
+      "book_nbr": null,
+      "sale_notes": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.541345,
+          32.612455
+        ]
+      }
+    },
+    {
+      "uid": 1009557015,
+      "has_photo": true,
+      "sale_id": 1000252762,
+      "venue_id": 1064,
+      "state": "TX",
+      "county": "SMITH COUNTY",
+      "cause_nbr": "25,478-A",
+      "precinct": "",
+      "sale_nbr": null,
+      "sale_date": null,
+      "sale_date_only": null,
+      "property_loc": "",
+      "county_sale_list": "",
+      "sale_published": "Y",
+      "sale_type": "STRUCK OFF",
+      "status": "Available for Future Sale",
+      "account_nbr": "180510000000006500",
+      "street_name": "SASSAFRAS DR",
+      "prop_address_one": "23157 SASSAFRAS DR",
+      "prop_address_two": "",
+      "prop_city": "MINEOLA",
+      "prop_state": "TX",
+      "prop_zipcode": "75773-9597",
+      "value": "5749.00",
+      "minimum_bid": "5749.00",
+      "google_view": "Y",
+      "book_nbr": null,
+      "sale_notes": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.541934,
+          32.604576
+        ]
+      }
+    }
+  ]
+}
