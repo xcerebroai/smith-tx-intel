@@ -1,0 +1,12 @@
+[
+  {
+    "id": "F-S20-TAXDEFAULT-1",
+    "severity": "MAJOR",
+    "framework_section": "§20 semantic_verify Check 4 + §16 source-of-record matrix",
+    "title": "Tax-default source-of-record rows must originate primary leads when they meet official default criteria; unqualified tax-roll enrichment must be blocked.",
+    "current_behavior": "§20 sees only §17-routed clerk-recorded events. Officially-authorized tax-default sources (e.g. the county's retained delinquent-tax firm's MFT drop) never reach §17 and are invisible to §20. The verdict therefore validates nothing about tax-default leads.",
+    "required_behavior": "Add a `tax_default` canonical_doc_type to the §17 registry with rule expected_debtor_name_type=TP (taxpayer), missing_debtor_review_reason=owner_not_on_document. Add `tax_default_source` as a §16 source role distinct from PRIMARY_EVENT_SOURCE and ENRICHMENT_SOURCE — it can originate leads, but §20 must verify each row carries (a) an officially-authorized source, (b) real default status, (c) property tie, (d) source proof, (e) is not generic roll data. §20 should pass qualified tax-default rows and DEPLOY_BLOCK unqualified ones (e.g. balance==0 without context).",
+    "county_side_workaround_active": true,
+    "workaround_location": "runs/smith_tx/build/run_all_sources.py qualify_tax_default()"
+  }
+]

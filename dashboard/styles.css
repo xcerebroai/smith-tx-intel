@@ -167,6 +167,12 @@ main { display: flex; flex: 1; min-height: 0; }
 .badge.hot    { background: #3a1f1f; color: #ffb3b3; font-weight: 600; }
 .badge.warm   { background: #2a261f; color: #d6c08a; }
 .badge.l30    { background: #1f2a3a; color: #b3ceff; }
+/* qualification-class badges (operator audit overlay) */
+.badge.qsale  { background: var(--red);   color: #fff; font-weight: 700; }
+.badge.qfcl   { background: #3a2618; color: #ffc08a; font-weight: 600; }
+.badge.qdef   { background: #1f2a3a; color: #9bcfff; font-weight: 600; }
+.badge.qlow   { background: #25272d; color: #8b919c; }
+.badge.prim   { background: #1f3324; color: #9be3a8; }
 
 /* ---- detail panel (UI-4) ---- */
 .detail { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line);

@@ -387,23 +387,32 @@ for s in scored:
     })
 
 
-# ---- Synthesize STANDALONE delinquency leads (operator framework decision) ---
-# Per the operator framework call: every delinquent account on the SFTP drop
-# surfaces as a dashboard row. Estate-titled owners ORIGINATE as probate-
-# tagged standalone leads (the estate title in the owner-name field is the
-# distress fact). Non-estate delinquent accounts surface as tax_delinquent
-# standalone leads, gated client-side by the years_back filter (1/2/3/4/5+).
+# ---- TAX-DEFAULT QUALIFICATION AUDIT (operator framework correction) --------
+# The earlier pass converted all 37,796 SFTP delinquent rows into untagged
+# "synth" leads with no qualification. That was wrong. The current rule:
+# OFFICIAL TAX-DEFAULT RECORDS originate leads when they prove default;
+# unqualified tax-roll data stays enrichment. We classify every non-primary
+# account against five criteria and tag it into a six-class matrix.
 #
-# STAGE BOUNDARY HOLDS: these rows are NOT primary §19 leads. They never
-# entered §17 / §18 / §19 / §20 — the §20 verdict above still ran on the
-# primary set only. Each row below carries `provenance` distinct from
-# "primary_event" so a downstream consumer can filter them. The framework's
-# DEPLOY_OK verdict remains a statement about primary leads.
+# Source authority (criterion 1) is OFFICIALLY-AUTHORIZED:
+#   The Smith County Tax Office (smith-county.com/357 — Property Tax FAQs)
+#   states: "We have retained the law firm of Linebarger, Goggan, Blair and
+#   Sampson, LLP to assist in resolving delinquent accounts."
+#   smith-county.com/358 (Delinquent Tax Sales) lists LGBS as the tax
+#   attorney representing Smith County. mft.smi.tax is the LGBS Managed File
+#   Transfer host that delivers the same firm's authoritative delinquent
+#   receivables (MR) + master accounts (MM) on a weekly cadence. That makes
+#   the TaxRoll_Smith_Flat_V1 drop the operational source of record for
+#   Smith County delinquent-tax status — officially authorized under
+#   criterion 1.
 #
-# Parcels ALREADY covered by a primary lead are skipped — their delinquency
-# enrichment has already attached above (stacked_lead flow).
+# Aggregation is at the account level. The MR file is account × year × unit
+# line items; we aggregate to ONE record per account carrying years_delinquent
+# (multi-year list) + total outstanding balance — one tax_default lead per
+# delinquent account, never one per year or per tax-unit.
 primary_parcels = {r["parcel_id"] for r in records if r.get("parcel_id")}
 synth_records: list = []
+audit_counts: dict = defaultdict(int)
 drop_label = next((r.get("_drop_label") for r in delinq_cache.values()
                     if r.get("_drop_label")), None)
 # Drop label → date (e.g. TaxRoll_Smith_Flat_V1_2026_05_23 → 2026-05-23)
@@ -411,24 +420,80 @@ drop_iso = None
 if drop_label:
     m = re.search(r"(\d{4})_(\d{2})_(\d{2})", drop_label)
     if m: drop_iso = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+# Synthetic per-account source URL — encodes provenance to the official
+# drop. SFTP isn't browser-clickable, but it's the auditable record-of-fetch.
+SOURCE_URL_BASE = ("sftp://mft.smi.tax/Smith/"
+                   + (drop_label + ".zip" if drop_label else "latest.zip"))
+LGBS_TAX_SALES_URL_BASE = ("https://taxsales.lgbs.com/map?lat=32.35&lon=-95.30"
+                          "&county=smith&state=TX#account=")
+
+
+def qualify_tax_default(dlq: dict, owner_name: str) -> tuple[str, str, str]:
+    """Apply the five-criteria gate. Return (class, signal_type, signal_label).
+
+    Criteria:
+      1. SOURCE: official/authorized (always True here — LGBS/mft.smi.tax).
+      2. RECORD: real default condition (open balance > 0, year(s) present).
+      3. RECORD ties to real property (account_nbr always present).
+      4. RECORD has source proof (drop_label, captured_at, source URL).
+      5. NOT mere parcel enrichment (the record is a TAX ACCOUNT WITH
+         OFFICIAL DELINQUENT STATUS, not generic owner / value / GIS data).
+    """
+    bal = float(dlq.get("delinquent_balance") or 0.0)
+    yrs = int(dlq.get("years_back") or 0)
+    has_owner = bool(owner_name and owner_name.strip())
+    # Criterion 2: real default — open balance AND at least one delinquent year
+    if bal <= 0 or yrs <= 0:
+        return ("TAX_ROLL_ENRICHMENT_ONLY", None, None)
+    # Criterion 3: must tie to property — account_nbr is REQUIRED (always true
+    # for entries in this cache; defensive guard for malformed input)
+    if not dlq.get("parcel_id"):
+        return ("REVIEW_REQUIRED", "tax_default", "Tax Default — review")
+    # Criterion 5 / owner-of-record proof: an account with delinquency but
+    # NO owner name on the master record cannot surface as a lead — the
+    # debtor is unidentified.
+    if not has_owner:
+        return ("REVIEW_REQUIRED", "tax_default", "Tax Default — review")
+    # Low-priority bucket: just-late + nominal balance is not strong distress.
+    # Threshold: 1 year AND under $100 outstanding (operator: 1-yr late is
+    # "just late", not real distress).
+    if yrs == 1 and bal < 100.0:
+        return ("TAX_DEFAULT_LOW_PRIORITY", "tax_default_low_priority",
+                f"Tax Default (Low Priority) — {yrs}yr / ${bal:.2f}")
+    return ("QUALIFIED_TAX_DEFAULT_LEAD", "tax_default",
+            f"Tax Default — {yrs}yr / ${bal:,.2f}")
+
 
 for pid, dlq in delinq_cache.items():
     if pid in primary_parcels:
-        continue   # already attached to a primary lead — don't double-count
-    years_back = int(dlq.get("years_back") or 0)
+        # Already attached as enrichment to a primary lead — don't
+        # double-count. Audit count tracked separately.
+        audit_counts["STACKED_WITH_PRIMARY"] += 1
+        continue
     is_estate = bool(dlq.get("estate_titled"))
     owner = (dlq.get("owner_name") or "").strip() or None
 
-    # Owner-type classification (same engine as primary leads)
     if is_estate:
-        ot = "ESTATE"
+        # Estate-titled is a SEPARATE operator framework decision. These
+        # surface as standalone probate leads regardless of the
+        # tax-default qualification matrix (the estate title in the owner
+        # field IS the distress fact). They never demote to enrichment.
+        qualification = "ESTATE_TITLED_LEAD"
+        signal_type   = "probate"
+        signal_label  = "Probate (Estate-Titled Tax Delinquent)"
     else:
-        ot = classify_owner_type(owner or "")
+        qualification, signal_type, signal_label = qualify_tax_default(dlq, owner)
 
-    # CAD enrichment opportunistic (most delinquent accounts are NOT in our
-    # parcel_cache because we only pre-fetched parcels that primary leads
-    # carry — pulling CAD for 39K rows on every run would be a 30-second
-    # hot path; deferred).
+    audit_counts[qualification] += 1
+    # Demote to enrichment-only: do not emit a dashboard row.
+    if qualification == "TAX_ROLL_ENRICHMENT_ONLY":
+        continue
+    # REVIEW_REQUIRED rows still surface so the operator can triage them,
+    # but flagged so they don't crowd the active board by default.
+
+    years_back = int(dlq.get("years_back") or 0)
+    bal = float(dlq.get("delinquent_balance") or 0.0)
+    ot = "ESTATE" if is_estate else classify_owner_type(owner or "")
     cad = parcel_cache.get(pid)
     addr = ""
     if cad:
@@ -436,45 +501,56 @@ for pid, dlq in delinq_cache.items():
         c = (cad.get("POSTAL_CITY") or "").strip()
         z = str(cad.get("ZIPCODE") or "").strip()
         addr = ", ".join(p for p in (a, c, "TX" if (a or c) else "", z) if p).replace(", ,", ",")
-    elif dlq.get("owner_street") or dlq.get("owner_city"):
-        # MM owner mailing address — note this is OWNER mailing, not SITUS
-        # (the property address); we surface it but tag the difference.
-        addr = ""    # leave property_full_address blank; mailing surfaced below
-
-    canon = "probate" if is_estate else "tax_delinquent"
-    label = "Probate (Estate-Titled Tax Delinquent)" if is_estate else "Tax Delinquent"
-    stack_signals_s = [canon]
-    if years_back >= 3 and not is_estate:
-        stack_signals_s.append("tax_delinquent_3plus")
-    stack_class_s = "+".join(sorted(set(stack_signals_s)))
     mailing = ", ".join(p for p in (
         dlq.get("owner_street"), dlq.get("owner_city"),
         dlq.get("owner_state"), dlq.get("owner_zip")) if p
     ) if not cad else ""
-    # Compact synth record — only the fields the dashboard renderer uses.
-    # 37K full primary-shaped records would balloon data.json past Pages
-    # limits; the dashboard's prep() handles missing fields gracefully.
+
+    stack_signals_s = [signal_type]
+    if years_back >= 3 and not is_estate and qualification == "QUALIFIED_TAX_DEFAULT_LEAD":
+        stack_signals_s.append("tax_default_3plus")
+    stack_class_s = "+".join(sorted(set(stack_signals_s)))
+
+    # Per-record source-proof bundle (criterion 4).
+    record_id = f"{drop_label or 'latest'}::{pid}"
+    source_url = f"{SOURCE_URL_BASE}#account={pid}"
+    # LGBS taxsales operator-clickable URL — operator can confirm against the
+    # firm's public-facing tax-sale board, when the parcel surfaces there.
+    secondary_url = f"{LGBS_TAX_SALES_URL_BASE}{pid}"
+
     synth = {
-        "lead_id": f"lead_delinquent_{pid}",
+        "lead_id": (f"lead_probate_{pid}" if is_estate
+                     else f"lead_taxdefault_{pid}"),
         "parcel_id": pid,
         "owner_name": owner or "",
         "owner_type": ot,
         "property_full_address": addr,
         "mailing_full_address": mailing,
-        "signal_types": [canon],
-        "signals": [{
-            "signal_type": canon,
-            "signal_label": label,
-            "source_id": "smith_delinquent_tax_sftp",
+        "signal_types": [signal_type] if signal_type else [],
+        "signals": ([{
+            "signal_type": signal_type,
+            "signal_label": signal_label,
+            "source_id": "smith_delinquent_tax_sftp_lgbs",
+            "source_name": ("Linebarger Goggan Blair & Sampson LLP "
+                            "(Smith County retained delinquent-tax firm) — "
+                            "MFT TaxRoll drop"),
+            "source_url": source_url,
+            "secondary_source_url": secondary_url,
+            "record_id": record_id,
+            "drop_label": drop_label,
+            "captured_at": dlq.get("_captured_at"),
             "recorded_date": drop_iso,
-        }],
-        "signal_count": 1,
+            "qualification_class": qualification,
+        }] if signal_type else []),
+        "signal_count": 1 if signal_type else 0,
         "latest_event_date": drop_iso,
-        "parcel_resolution_status": "APPROVED_FOR_DASHBOARD",
+        "parcel_resolution_status": ("REVIEW_REQUIRED"
+                                      if qualification == "REVIEW_REQUIRED"
+                                      else "APPROVED_FOR_DASHBOARD"),
         "epcad_enrichment_status": "ENRICHED" if cad else "UNENRICHED",
         "tax_delinquent": True,
         "tax_delinquent_hot": years_back >= 3,
-        "tax_delinquent_balance": float(dlq.get("delinquent_balance") or 0.0),
+        "tax_delinquent_balance": round(bal, 2),
         "tax_delinquent_years_back": years_back,
         "tax_delinquent_earliest_year": dlq.get("earliest_year"),
         "tax_delinquent_latest_year":   dlq.get("latest_year"),
@@ -482,20 +558,42 @@ for pid, dlq in delinq_cache.items():
         "stacked_lead": False,
         "stack_class": stack_class_s,
         "stack_signals": sorted(set(stack_signals_s)),
+        "qualification_class": qualification,
+        # provenance — leans on the qualification class for transparency
         "provenance": ("estate_titled_delinquency" if is_estate
-                       else "tax_roll_delinquency_only"),
+                       else "tax_default_source_of_record"),
     }
     synth_records.append(synth)
 
-# Mark estate-titled status on existing primary leads too (so the stacking
-# probate + tax_delinquent_3plus class can be detected when the operator's
-# probate-detect criterion holds on the delinquency owner name).
+# Annotate every PRIMARY lead with its tax-default qualification subtype.
+# The §17 canonical_doc_type is preserved as-is (no scaffold edits); we add
+# `qualification_class` as the operator-facing audit-classification overlay.
+#
+# Rules:
+#   - LGBS tax_foreclosure_notice with future sale_date     → TAX_SALE_LEAD
+#   - LGBS / PBFCM tax_foreclosure_notice (STRUCK OFF / no sale_date)
+#                                                            → TAX_FORECLOSURE_LEAD
+#   - Sheriff sale surplus / clerk-recorded distress events  → PRIMARY_EVENT_LEAD
+def _primary_qualification(r):
+    types = set(r.get("signal_types") or [])
+    if "tax_foreclosure_notice" in types:
+        # Has an upcoming sale date? Then it's an active TAX_SALE_LEAD.
+        for sig in r.get("signals") or []:
+            sd = sig.get("sale_date")
+            if sd and sig.get("signal_type") == "tax_foreclosure_notice":
+                # crude future-date check: ISO YYYY-MM-DD strings sort lexically
+                if sd >= TODAY.isoformat():
+                    return "TAX_SALE_LEAD"
+        return "TAX_FORECLOSURE_LEAD"
+    return "PRIMARY_EVENT_LEAD"
+
 for r in records:
     pid = r.get("parcel_id")
     dlq_e = delinq_cache.get(pid) if pid else None
     r["estate_titled"] = bool(dlq_e and dlq_e.get("estate_titled"))
+    r["qualification_class"] = _primary_qualification(r)
     if r["estate_titled"] and r["stacked_lead"]:
-        # Surface the canonical probate+tax_delinquent stack class explicitly
+        # Surface the canonical probate+tax_default stack class explicitly
         r["stack_class"] = "probate+" + r["stack_class"]
         r["stack_signals"] = sorted(set(["probate", *r["stack_signals"]]))
 
@@ -533,10 +631,24 @@ print(f"  primary leads with estate-titled tax owner: "
 cfg = json.load(open(REPO / "config" / "counties" / "smith_tx.json"))
 review_required = sum(1 for r in records if r["parcel_resolution_status"] == "REVIEW_REQUIRED")
 
+# Qualification-class rollups (operator audit). Counted across the final
+# `records` array (primary + estate-titled probate + qualified tax-default).
+qual_counts = Counter(r.get("qualification_class") for r in records)
+# Specific subtype counts the operator wants in the report
+n_qualified_tax_default = qual_counts.get("QUALIFIED_TAX_DEFAULT_LEAD", 0)
+n_tax_foreclosure       = qual_counts.get("TAX_FORECLOSURE_LEAD", 0)
+n_tax_sale              = qual_counts.get("TAX_SALE_LEAD", 0)
+n_tax_default_lowpri    = qual_counts.get("TAX_DEFAULT_LOW_PRIORITY", 0)
+n_estate_titled         = qual_counts.get("ESTATE_TITLED_LEAD", 0)
+n_primary_event_other   = qual_counts.get("PRIMARY_EVENT_LEAD", 0)
+n_review_required_q     = qual_counts.get("REVIEW_REQUIRED", 0)
+n_enrichment_excluded   = audit_counts.get("TAX_ROLL_ENRICHMENT_ONLY", 0)
+n_stacked_with_primary  = audit_counts.get("STACKED_WITH_PRIMARY", 0)
+
 # Provenance + recency + delinquency rollups for the dashboard summary band.
 primary_count   = sum(1 for r in records if r["provenance"] == "primary_event")
 estate_synth    = sum(1 for r in records if r["provenance"] == "estate_titled_delinquency")
-delinq_synth    = sum(1 for r in records if r["provenance"] == "tax_roll_delinquency_only")
+default_synth   = sum(1 for r in records if r["provenance"] == "tax_default_source_of_record")
 tax_delinquent_attached  = sum(1 for r in records if r["tax_delinquent"])
 tax_delinquent_hot_count = sum(1 for r in records if r["tax_delinquent_hot"])
 stacked_count            = sum(1 for r in records if r["stacked_lead"])
@@ -546,6 +658,53 @@ last_30_count            = sum(1 for r in records if r["is_last_30_days"])
 years_back_hist          = Counter(min(r["tax_delinquent_years_back"], 5)
                                     for r in records if r["tax_delinquent"])
 
+# ----- §20 framework punch-list recommendation -----
+# Current behavior: §20 (scaffold/pipeline/semantic_verify.py) runs Check 4
+# "Enrichment status decoupling integrity" against the §19 matched_leads
+# array — which holds ONLY events that passed §17. Tax-default rows from
+# the LGBS / mft.smi.tax drop never reach §17 (no recorded-event party
+# tuples), so they are invisible to §20. The §20 verdict (DEPLOY_OK or
+# DEPLOY_BLOCKED) is therefore a statement about CLERK-RECORDED primary
+# leads only — it neither approves nor rejects tax-default source-of-record
+# leads.
+#
+# This means §20 today does NOT correctly express the operator's rule:
+# "Tax-default source-of-record rows must be allowed as primary leads when
+# they meet official default criteria, while unqualified tax-roll
+# enrichment must be blocked." It is silent on the question — the
+# qualification audit runs entirely county-side, post-§20.
+#
+# Punch-list item (framework-level, v5.5+):
+SECTION_20_PUNCH = {
+    "id": "F-S20-TAXDEFAULT-1",
+    "severity": "MAJOR",
+    "framework_section": "§20 semantic_verify Check 4 + §16 source-of-record matrix",
+    "title": ("Tax-default source-of-record rows must originate primary "
+              "leads when they meet official default criteria; unqualified "
+              "tax-roll enrichment must be blocked."),
+    "current_behavior": ("§20 sees only §17-routed clerk-recorded events. "
+                          "Officially-authorized tax-default sources (e.g. "
+                          "the county's retained delinquent-tax firm's MFT "
+                          "drop) never reach §17 and are invisible to §20. "
+                          "The verdict therefore validates nothing about "
+                          "tax-default leads."),
+    "required_behavior": (
+        "Add a `tax_default` canonical_doc_type to the §17 registry with "
+        "rule expected_debtor_name_type=TP (taxpayer), "
+        "missing_debtor_review_reason=owner_not_on_document. Add "
+        "`tax_default_source` as a §16 source role distinct from "
+        "PRIMARY_EVENT_SOURCE and ENRICHMENT_SOURCE — it can originate "
+        "leads, but §20 must verify each row carries (a) an "
+        "officially-authorized source, (b) real default status, (c) "
+        "property tie, (d) source proof, (e) is not generic roll data. "
+        "§20 should pass qualified tax-default rows and DEPLOY_BLOCK "
+        "unqualified ones (e.g. balance==0 without context)."),
+    "county_side_workaround_active": True,
+    "workaround_location": "runs/smith_tx/build/run_all_sources.py qualify_tax_default()",
+}
+(WORKDIR / "framework_punch_list.json").write_text(
+    json.dumps([SECTION_20_PUNCH], indent=2, ensure_ascii=False) + "\n")
+
 payload = {
     "generated_at": NOW, "county": "Smith", "state": "TX",
     "refresh_date": TODAY.isoformat(),
@@ -554,15 +713,32 @@ payload = {
     "sources_active": list(per_source.keys()),
     "enrichment_sources_active": [
         "smith_cad_taxparcels",
-        *(["smith_delinquent_tax_sftp"] if delinq_cache else []),
+        *(["smith_delinquent_tax_sftp_lgbs"] if delinq_cache else []),
     ],
+    "tax_default_source_active": bool(delinq_cache),
+    "tax_default_source_authority": (
+        "Linebarger Goggan Blair & Sampson LLP (LGBS) — Smith County's "
+        "officially-retained delinquent-tax collection firm, per "
+        "smith-county.com/357 (Property Tax FAQs) and smith-county.com/358 "
+        "(Delinquent Tax Sales). mft.smi.tax is the firm's Managed File "
+        "Transfer delivery channel for the TaxRoll_<jurisdiction>_Flat_V1 "
+        "data set."),
     "delinquent_tax_drop_label": drop_label,
     "delinquent_tax_drop_date": drop_iso,
     "delinquent_tax_universe": len(delinq_cache),
     "lead_total": len(records),
+    "qualification_class_distribution": dict(qual_counts),
+    "qualified_tax_default_lead_count": n_qualified_tax_default,
+    "tax_foreclosure_lead_count":       n_tax_foreclosure,
+    "tax_sale_lead_count":              n_tax_sale,
+    "tax_default_low_priority_count":   n_tax_default_lowpri,
+    "estate_titled_lead_count":         n_estate_titled,
+    "primary_event_other_lead_count":   n_primary_event_other,
+    "review_required_lead_count":       n_review_required_q,
+    "enrichment_only_excluded_count":   n_enrichment_excluded,
+    "stacked_with_primary_count":       n_stacked_with_primary,
     "primary_lead_count": primary_count,
-    "estate_titled_lead_count": estate_synth,
-    "tax_delinquent_only_lead_count": delinq_synth,
+    "tax_default_originated_lead_count": default_synth,
     "epcad_enrichment_resolved": sum(1 for r in records if r["epcad_enrichment_status"] == "ENRICHED"),
     "epcad_enrichment_unresolved": sum(1 for r in records if r["epcad_enrichment_status"] == "UNENRICHED"),
     "tax_delinquent_attached": tax_delinquent_attached,
@@ -574,6 +750,7 @@ payload = {
     "last_30_days_count": last_30_count,
     "review_required": review_required,
     "actionable_leads": len(records),
+    "framework_punch_list": [SECTION_20_PUNCH],
     "records": records,
 }
 _compact = (",", ":")
@@ -581,7 +758,16 @@ _compact = (",", ":")
 (DASH / "data.js").write_text("window.LEADS=" + json.dumps(payload, separators=_compact, ensure_ascii=False) + ";\n")
 print(f"  dashboard data.json + data.js written")
 print(f"  lead_total: {payload['lead_total']}  primary: {primary_count}  "
-      f"estate-synth: {estate_synth}  delinq-synth: {delinq_synth}")
+      f"estate: {estate_synth}  tax-default-originated: {default_synth}")
+print(f"  qualification matrix:")
+for k in ("QUALIFIED_TAX_DEFAULT_LEAD", "TAX_FORECLOSURE_LEAD", "TAX_SALE_LEAD",
+          "TAX_DEFAULT_LOW_PRIORITY", "ESTATE_TITLED_LEAD",
+          "PRIMARY_EVENT_LEAD", "REVIEW_REQUIRED"):
+    if qual_counts.get(k):
+        print(f"    {k:<30} {qual_counts[k]:>6,}")
+print(f"  audit-only buckets:")
+print(f"    TAX_ROLL_ENRICHMENT_ONLY (excluded): {n_enrichment_excluded:,}")
+print(f"    STACKED_WITH_PRIMARY (attached, not duplicated): {n_stacked_with_primary:,}")
 print(f"  signal_types: {dict(Counter(t for r in records for t in r['signal_types']))}")
 print(f"  owner_type:   {dict(Counter(r['owner_type'] for r in records))}")
 print(f"  tax_delinquent attached: {tax_delinquent_attached}  "

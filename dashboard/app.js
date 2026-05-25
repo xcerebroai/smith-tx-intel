@@ -55,6 +55,7 @@
     multiOnly: false, stackedOnly: false, estateOnly: false,
     newOnly: false, last30Only: false,
     yearsRange: { 0: true, 1: false, 2: false, 3: true, 4: true, 5: true },
+    qualFilter: null,             // optional qualification_class filter
     sort: "urgency", shown: 0, preset: "all"
   };
   var PAGE = 60;
@@ -109,8 +110,11 @@
     r._tier = urgencyTier(r);
     var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
       r.signal_types.indexOf("federal_tax_lien") >= 0 ||
-      r.signal_types.indexOf("tax_delinquent") >= 0;
+      r.signal_types.indexOf("tax_default") >= 0 ||
+      r.signal_types.indexOf("tax_default_low_priority") >= 0 ||
+      r.signal_types.indexOf("tax_delinquent") >= 0;  // legacy
     r._taxDelinquent = taxd;
+    r._qualClass = r.qualification_class || "";
     r._blob = [r.owner_name, r.property_full_address, r.mailing_full_address,
       r.legal_description, r.filer_entity, r.parcel_id,
       (r.signals || []).map(function (s) {
@@ -184,10 +188,12 @@
     { id: "new",     label: "NEW today" },
     { id: "last30",  label: "Last 30 days" },
     { id: "fcl21",   label: "Foreclosures — next 21 days" },
+    { id: "taxsale", label: "Tax sale leads (active sale date)" },
+    { id: "taxfcl",  label: "Tax foreclosure leads" },
     { id: "estates", label: "Estate-titled (probate)" },
     { id: "stacked", label: "Stacked leads (multi-signal)" },
-    { id: "tax5",    label: "Tax delinquent 5+ years" },
-    { id: "tax3",    label: "Tax delinquent 3+ years" },
+    { id: "tax5",    label: "Tax default 5+ years" },
+    { id: "tax3",    label: "Tax default 3+ years" },
     { id: "oos",     label: "Out-of-state absentees" },
     { id: "all",     label: "Show all" }
   ];
@@ -362,7 +368,16 @@
     } else if (id === "tax3") {
       state.yearsRange = { 0: false, 1: false, 2: false, 3: true, 4: true, 5: true };
       syncYearsCheckboxes();
+    } else if (id === "taxsale") {
+      onlyChecks("signalFilter", "sig", state.signals,
+        ["tax_foreclosure_notice"]);
+      state.qualFilter = "TAX_SALE_LEAD";
+    } else if (id === "taxfcl") {
+      onlyChecks("signalFilter", "sig", state.signals,
+        ["tax_foreclosure_notice"]);
+      state.qualFilter = "TAX_FORECLOSURE_LEAD";
     }
+    if (id !== "taxsale" && id !== "taxfcl") state.qualFilter = null;
     markPresetActive(id);
     render();
   }
@@ -401,6 +416,7 @@
       if (state.last30Only && !r._isL30) return false;
       if (state.yearsRange && state.yearsRange[r._yrsBucket] === false)
         return false;
+      if (state.qualFilter && r._qualClass !== state.qualFilter) return false;
       if (!allSig) {
         var hit = (r.signal_types || []).some(function (t) {
           return state.signals[t];
@@ -572,21 +588,33 @@
     });
     return el;
   }
+  var QUAL_BADGE = {
+    "TAX_SALE_LEAD":              { cls: "qsale",  txt: "Tax Sale Lead" },
+    "TAX_FORECLOSURE_LEAD":       { cls: "qfcl",   txt: "Tax Foreclosure Lead" },
+    "QUALIFIED_TAX_DEFAULT_LEAD": { cls: "qdef",   txt: "Tax Default Lead" },
+    "TAX_DEFAULT_LOW_PRIORITY":   { cls: "qlow",   txt: "Tax Default (low priority)" },
+    "ESTATE_TITLED_LEAD":         { cls: "estate", txt: "Estate-titled" },
+    "REVIEW_REQUIRED":            { cls: "warn",   txt: "Review required" },
+    "PRIMARY_EVENT_LEAD":         { cls: "prim",   txt: "Primary event" }
+  };
   function badgeHtml(r) {
     var b = [];
+    var q = QUAL_BADGE[r._qualClass];
+    if (q && r._qualClass !== "PRIMARY_EVENT_LEAD")
+      b.push('<span class="badge ' + q.cls + '">' + q.txt + '</span>');
     if (r._isNew)
       b.push('<span class="badge new">NEW</span>');
     if (r._stacked)
       b.push('<span class="badge stack">STACKED · ' +
              esc(r.stack_class || "multi") + '</span>');
-    if (r._estate)
+    if (r._estate && r._qualClass !== "ESTATE_TITLED_LEAD")
       b.push('<span class="badge estate">Estate-titled</span>');
-    if (r._taxHot)
-      b.push('<span class="badge hot">Tax delinq ' +
+    if (r._taxHot && r._qualClass !== "TAX_DEFAULT_LOW_PRIORITY")
+      b.push('<span class="badge hot">' +
              (r.tax_delinquent_years_back || 0) + 'yr · ' +
              money(r.tax_delinquent_balance) + '</span>');
-    else if (r.tax_delinquent)
-      b.push('<span class="badge warm">Tax delinq ' +
+    else if (r.tax_delinquent && r._qualClass !== "TAX_DEFAULT_LOW_PRIORITY")
+      b.push('<span class="badge warm">' +
              (r.tax_delinquent_years_back || 0) + 'yr</span>');
     if (r._isL30 && !r._isNew)
       b.push('<span class="badge l30">≤30d</span>');
