@@ -1,0 +1,4 @@
+# Runtime dependencies for the Smith County, TX intelligence pipeline.
+# The scrapers are stdlib-only (urllib/json/re); the staged pipeline
+# (§17-§20) validates every stage payload with jsonschema.
+jsonschema>=4.20,<5
