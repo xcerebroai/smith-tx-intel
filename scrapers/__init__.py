@@ -15,4 +15,14 @@ Adapters:
 
 Phase 3+ primary-event-source adapters (clerk recordings, district
 court) are added here as Build Mode progresses.
+
+Translators:
+  - raw_event_translator.py — registers the "custom" translator that
+    bridges scraper rows already in canonical raw_event_record shape
+    (e.g. lgbs_smith_tax_sales) into pipeline signals. Imported here so
+    the registration runs on `import scrapers`.
 """
+
+# Register county-side translators on package import so build_leads can
+# resolve `translator: "custom"` sources.
+from scrapers import raw_event_translator  # noqa: E402,F401
