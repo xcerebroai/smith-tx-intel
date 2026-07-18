@@ -820,8 +820,8 @@
       "scraper_module": "scrapers/lgbs_smith_tax_sales.py",
       "fields": {},
       "doc_type_synonyms": {
-        "SALE": "TAX_FORECLOSURE_SALE",
-        "STRUCK OFF": "TAX_FORECLOSURE_SALE"
+        "SALE": "TAX_DEED",
+        "STRUCK OFF": "TAX_DEED"
       },
       "refresh_cadence": "weekly",
       "ttl_days": 365,

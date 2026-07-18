@@ -520,6 +520,17 @@ def main() -> int:
         bcad_records: list = []
         translated_sources: list = []
 
+        # Load county-side scraper adapters so any translators they register
+        # (e.g. the "custom" raw_event passthrough) are available before the
+        # lookup below. The `scrapers` package is a per-county convention; its
+        # absence is not an error (a county may use only built-in translators).
+        try:
+            import importlib
+            importlib.import_module("scrapers")
+        except Exception as exc:  # pragma: no cover - defensive
+            print(f"[production] no county scrapers package loaded: {exc}",
+                  file=sys.stderr)
+
         for source_id, source_cfg in county_config.get("sources", {}).items():
             if not source_cfg.get("enabled", True):
                 continue
