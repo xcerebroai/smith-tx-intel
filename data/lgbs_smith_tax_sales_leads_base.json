@@ -1,0 +1,1423 @@
+[
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_12d8ce0145294325",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_12d8ce0145294325"
+    ],
+    "filer_entity": null,
+    "instrument_number": "25,796-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "25,796-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-2C57F7225896",
+      "situs_address": "4805 C R 313 E"
+    },
+    "raw_event_id": "raw_12d8ce0145294325",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007493400/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_17458857eaf651ab",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_17458857eaf651ab"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,413-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,413-C",
+      "legal_description": "SUBD 100013",
+      "parcel_id": "100000001303036010",
+      "situs_address": "19743 C R 2152"
+    },
+    "raw_event_id": "raw_17458857eaf651ab",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009344794/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_1d0ad9d1ef479428",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_1d0ad9d1ef479428"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,217-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,217-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-C970BE5E1F25",
+      "situs_address": "15001 HWY 135"
+    },
+    "raw_event_id": "raw_1d0ad9d1ef479428",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008999357/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_1d250b943bfb7027",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_1d250b943bfb7027"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,638-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,638-C",
+      "legal_description": "SUBD 100729",
+      "parcel_id": "100000072900009001",
+      "situs_address": "18505 C R 32"
+    },
+    "raw_event_id": "raw_1d250b943bfb7027",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008667541/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_1dbac58ba663b042",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_1dbac58ba663b042"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,164-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,164-C",
+      "legal_description": "SUBD 120500 BLK 2 LOT 3B",
+      "parcel_id": "105030000200001020",
+      "situs_address": "100 DEE ST"
+    },
+    "raw_event_id": "raw_1dbac58ba663b042",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007373896/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_3c74424efc7cf22c",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_3c74424efc7cf22c"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,019-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,019-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-BED7180DC7AB",
+      "situs_address": "14969 HWY 135 S"
+    },
+    "raw_event_id": "raw_3c74424efc7cf22c",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007500778/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_4633082e92050c6b",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_4633082e92050c6b"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,785-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,785-B",
+      "legal_description": "SUBD 138400 LOT 220",
+      "parcel_id": "180510000000022000",
+      "situs_address": "23459 LIVE OAK DR"
+    },
+    "raw_event_id": "raw_4633082e92050c6b",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008650414/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_497b576e0f7f538f",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_497b576e0f7f538f"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,009-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,009-B",
+      "legal_description": "SUBD 138300 LOT 132",
+      "parcel_id": "180500000000132000",
+      "situs_address": "5132 COUNTRY ESTATES DR"
+    },
+    "raw_event_id": "raw_497b576e0f7f538f",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009365438/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_573570c689bb6e01",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_573570c689bb6e01"
+    ],
+    "filer_entity": null,
+    "instrument_number": "28,007-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "28,007-C",
+      "legal_description": "SUBD 100701 LOT 8D",
+      "parcel_id": "100000070100008040",
+      "situs_address": "14850 HWY 135"
+    },
+    "raw_event_id": "raw_573570c689bb6e01",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007705203/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_5c8067a1605b2669",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_5c8067a1605b2669"
+    ],
+    "filer_entity": null,
+    "instrument_number": "28,097-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "28,097-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-DDBCB85350CF",
+      "situs_address": "BRENTWOOD"
+    },
+    "raw_event_id": "raw_5c8067a1605b2669",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009559808/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_5f2b7bcb96251965",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_5f2b7bcb96251965"
+    ],
+    "filer_entity": null,
+    "instrument_number": "24,171-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "24,171-B",
+      "legal_description": "SUBD 138400 LOT 777-7*",
+      "parcel_id": "180510000000077700",
+      "situs_address": "23541 DOGWOOD TRL"
+    },
+    "raw_event_id": "raw_5f2b7bcb96251965",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007477760/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_637affb479611aca",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_637affb479611aca"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,189-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,189-A",
+      "legal_description": "SUBD 145900 LOT 134",
+      "parcel_id": "180705000200133000",
+      "situs_address": "16861 LAKEWAY CIR"
+    },
+    "raw_event_id": "raw_637affb479611aca",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008402883/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_70bae61140ee0c46",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_70bae61140ee0c46"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,755-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,755-B",
+      "legal_description": "SUBD 100012 LOT 172",
+      "parcel_id": "100000001201172000",
+      "situs_address": "17501 FM 2089"
+    },
+    "raw_event_id": "raw_70bae61140ee0c46",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009260693/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_738a9b8461e3d889",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_738a9b8461e3d889"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,071-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,071-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-0C2498611CDE",
+      "situs_address": "I 20 W SERVICE ROAD"
+    },
+    "raw_event_id": "raw_738a9b8461e3d889",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007716612/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_76da397c8c230a6c",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_76da397c8c230a6c"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,895-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,895-C",
+      "legal_description": "SUBD 145900 LOT 13",
+      "parcel_id": "180705000200013000",
+      "situs_address": "16846 C R 1170"
+    },
+    "raw_event_id": "raw_76da397c8c230a6c",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008351342/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_7b90a9b5a46ec050",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_7b90a9b5a46ec050"
+    ],
+    "filer_entity": null,
+    "instrument_number": "25,356-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "25,356-B",
+      "legal_description": null,
+      "parcel_id": "PARCEL-94591AB3D487",
+      "situs_address": "21121 F M 1805"
+    },
+    "raw_event_id": "raw_7b90a9b5a46ec050",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007224607/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_7d163cc62c57252b",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_7d163cc62c57252b"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,052-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,052-C",
+      "legal_description": "SUBD 100158 LOT 4",
+      "parcel_id": "100000015800004000",
+      "situs_address": "C R 244"
+    },
+    "raw_event_id": "raw_7d163cc62c57252b",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007293772/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "tax_foreclosure_notice"
+    },
+    "base_record_id": "base_raw_85914ed607062375",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_85914ed607062375"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,726-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "27,726-A",
+      "legal_description": null,
+      "parcel_id": "PARCEL-38E9DF249003",
+      "situs_address": "S. RAILROAD ST"
+    },
+    "raw_event_id": "raw_85914ed607062375",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_foreclosure_notice",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009281372/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_a51c89739c30e767",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_a51c89739c30e767"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,635-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,635-C",
+      "legal_description": "SUBD 100387 LOT 13",
+      "parcel_id": "100000039300013000",
+      "situs_address": "13947 C R 426"
+    },
+    "raw_event_id": "raw_a51c89739c30e767",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007360142/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "tax_foreclosure_notice"
+    },
+    "base_record_id": "base_raw_afc18c5e413f7410",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_afc18c5e413f7410"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,750-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "26,750-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-32525CE307E4",
+      "situs_address": "FM 2089"
+    },
+    "raw_event_id": "raw_afc18c5e413f7410",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_foreclosure_notice",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008621336/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_bb080469097147cd",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_bb080469097147cd"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,216-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,216-B",
+      "legal_description": "SUBD 100657",
+      "parcel_id": "100000065700010022",
+      "situs_address": "15866 LENA MAE ROBERTS RD (PR)"
+    },
+    "raw_event_id": "raw_bb080469097147cd",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008597711/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "tax_foreclosure_notice"
+    },
+    "base_record_id": "base_raw_c2940a8da18cdf06",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_c2940a8da18cdf06"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,242-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "27,242-C",
+      "legal_description": "SUBD 100240 LOT 2",
+      "parcel_id": "100000024000002000",
+      "situs_address": "16703 FM 16 E"
+    },
+    "raw_event_id": "raw_c2940a8da18cdf06",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_foreclosure_notice",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009398168/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_cbea878903a77010",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_cbea878903a77010"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,323-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,323-C",
+      "legal_description": null,
+      "parcel_id": "PARCEL-9DF82DF1D938",
+      "situs_address": "C R 15"
+    },
+    "raw_event_id": "raw_cbea878903a77010",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008377512/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_ceb7ccc5aeb72bf9",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_ceb7ccc5aeb72bf9"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,318-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,318-A",
+      "legal_description": "SUBD 100266 LOT 58A",
+      "parcel_id": "100000026600058010",
+      "situs_address": "3394 C R 398"
+    },
+    "raw_event_id": "raw_ceb7ccc5aeb72bf9",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1007669090/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_d281954aebaa1f9d",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_d281954aebaa1f9d"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,785-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,785-C",
+      "legal_description": "SUBD 182750 BLK 1445D LOT 2B",
+      "parcel_id": "150000144504002020",
+      "situs_address": "3962 MCDONALD RD"
+    },
+    "raw_event_id": "raw_d281954aebaa1f9d",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1016815842/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_d9a79e636fc2bd5d",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_d9a79e636fc2bd5d"
+    ],
+    "filer_entity": null,
+    "instrument_number": "26,976-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "26,976-C",
+      "legal_description": "SUBD 101117 LOT 7.1",
+      "parcel_id": "100000111700007001",
+      "situs_address": "223 LADO DE LOMA"
+    },
+    "raw_event_id": "raw_d9a79e636fc2bd5d",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008628017/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_e1d7c22d576d42f7",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_e1d7c22d576d42f7"
+    ],
+    "filer_entity": null,
+    "instrument_number": "25,925-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "25,925-B",
+      "legal_description": null,
+      "parcel_id": "PARCEL-F47F2817D6F1",
+      "situs_address": "20914 C R 444"
+    },
+    "raw_event_id": "raw_e1d7c22d576d42f7",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1008667686/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_foreclosure_notice",
+      "parcel_id": null,
+      "signal_type": "tax_foreclosure_notice"
+    },
+    "base_record_id": "base_raw_e9cdef1dcaa1921c",
+    "canonical_doc_type": "tax_foreclosure_notice",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_e9cdef1dcaa1921c"
+    ],
+    "filer_entity": null,
+    "instrument_number": "25,478-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "property_refs": {
+      "case_number": "25,478-A",
+      "legal_description": "SUBD 138400 LOT 65",
+      "parcel_id": "180510000000006500",
+      "situs_address": "23157 SASSAFRAS DR"
+    },
+    "raw_event_id": "raw_e9cdef1dcaa1921c",
+    "recorded_date": "2026-08-04",
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_foreclosure_notice",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009557015/"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "tax_deed",
+      "parcel_id": null,
+      "signal_type": "tax_deed"
+    },
+    "base_record_id": "base_raw_f6674cee559e8681",
+    "canonical_doc_type": "tax_deed",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_f6674cee559e8681"
+    ],
+    "filer_entity": null,
+    "instrument_number": "27,407-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "property_refs": {
+      "case_number": "27,407-C",
+      "legal_description": "SUBD 145900 LOT 125",
+      "parcel_id": "180705000100125000",
+      "situs_address": "23100 PINEY WOODS"
+    },
+    "raw_event_id": "raw_f6674cee559e8681",
+    "recorded_date": null,
+    "review_reason": "owner_not_on_document",
+    "signal_type": "tax_deed",
+    "source_id": "lgbs_smith_tax_sales",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "https://taxsales.lgbs.com/api/property_sales/1009024394/"
+  }
+]

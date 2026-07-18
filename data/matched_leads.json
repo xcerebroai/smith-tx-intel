@@ -1,0 +1,2234 @@
+[
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_5f2b7bcb96251965"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_24,171-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_5f2b7bcb96251965"
+        ],
+        "instrument_numbers": [
+          "24,171-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007477760/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7b90a9b5a46ec050"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,356-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_7b90a9b5a46ec050"
+        ],
+        "instrument_numbers": [
+          "25,356-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007224607/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e9cdef1dcaa1921c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,478-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_e9cdef1dcaa1921c"
+        ],
+        "instrument_numbers": [
+          "25,478-A"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009557015/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_12d8ce0145294325"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,796-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_12d8ce0145294325"
+        ],
+        "instrument_numbers": [
+          "25,796-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007493400/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e1d7c22d576d42f7"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_25,925-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_e1d7c22d576d42f7"
+        ],
+        "instrument_numbers": [
+          "25,925-B"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008667686/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_497b576e0f7f538f"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,009-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_497b576e0f7f538f"
+        ],
+        "instrument_numbers": [
+          "26,009-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009365438/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_3c74424efc7cf22c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,019-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_3c74424efc7cf22c"
+        ],
+        "instrument_numbers": [
+          "26,019-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007500778/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7d163cc62c57252b"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,052-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_7d163cc62c57252b"
+        ],
+        "instrument_numbers": [
+          "26,052-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007293772/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_bb080469097147cd"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,216-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_bb080469097147cd"
+        ],
+        "instrument_numbers": [
+          "26,216-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008597711/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1d0ad9d1ef479428"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,217-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_1d0ad9d1ef479428"
+        ],
+        "instrument_numbers": [
+          "26,217-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008999357/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_ceb7ccc5aeb72bf9"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,318-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_ceb7ccc5aeb72bf9"
+        ],
+        "instrument_numbers": [
+          "26,318-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007669090/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_afc18c5e413f7410"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,750-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_afc18c5e413f7410"
+        ],
+        "instrument_numbers": [
+          "26,750-C"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008621336/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_70bae61140ee0c46"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,755-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_70bae61140ee0c46"
+        ],
+        "instrument_numbers": [
+          "26,755-B"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009260693/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_4633082e92050c6b"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,785-B",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_4633082e92050c6b"
+        ],
+        "instrument_numbers": [
+          "26,785-B"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008650414/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_76da397c8c230a6c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,895-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_76da397c8c230a6c"
+        ],
+        "instrument_numbers": [
+          "26,895-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008351342/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_d9a79e636fc2bd5d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_26,976-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_d9a79e636fc2bd5d"
+        ],
+        "instrument_numbers": [
+          "26,976-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008628017/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_738a9b8461e3d889"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,071-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_738a9b8461e3d889"
+        ],
+        "instrument_numbers": [
+          "27,071-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007716612/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1dbac58ba663b042"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,164-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_1dbac58ba663b042"
+        ],
+        "instrument_numbers": [
+          "27,164-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007373896/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_637affb479611aca"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,189-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_637affb479611aca"
+        ],
+        "instrument_numbers": [
+          "27,189-A"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008402883/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_c2940a8da18cdf06"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,242-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_c2940a8da18cdf06"
+        ],
+        "instrument_numbers": [
+          "27,242-C"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009398168/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_cbea878903a77010"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,323-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_cbea878903a77010"
+        ],
+        "instrument_numbers": [
+          "27,323-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008377512/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_f6674cee559e8681"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,407-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_f6674cee559e8681"
+        ],
+        "instrument_numbers": [
+          "27,407-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009024394/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_17458857eaf651ab"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,413-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_17458857eaf651ab"
+        ],
+        "instrument_numbers": [
+          "27,413-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009344794/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_a51c89739c30e767"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,635-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_a51c89739c30e767"
+        ],
+        "instrument_numbers": [
+          "27,635-C"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007360142/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1d250b943bfb7027"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,638-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_1d250b943bfb7027"
+        ],
+        "instrument_numbers": [
+          "27,638-C"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1008667541/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_85914ed607062375"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,726-A",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_85914ed607062375"
+        ],
+        "instrument_numbers": [
+          "27,726-A"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009281372/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_d281954aebaa1f9d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_27,785-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_d281954aebaa1f9d"
+        ],
+        "instrument_numbers": [
+          "27,785-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1016815842/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_573570c689bb6e01"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_28,007-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_573570c689bb6e01"
+        ],
+        "instrument_numbers": [
+          "28,007-C"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1007705203/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_5c8067a1605b2669"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_28,097-C",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_deed against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_deed against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_deed",
+          "parcel_id": null,
+          "signal_type": "tax_deed"
+        },
+        "canonical_doc_type": "tax_deed",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-04",
+        "evidence_ids": [
+          "ev_5c8067a1605b2669"
+        ],
+        "instrument_numbers": [
+          "28,097-C"
+        ],
+        "latest_recorded_date": "2026-08-04",
+        "recorded_date_range": [
+          "2026-08-04",
+          "2026-08-04"
+        ],
+        "signal_type": "tax_deed",
+        "source_ids": [
+          "lgbs_smith_tax_sales"
+        ],
+        "source_urls": [
+          "https://taxsales.lgbs.com/api/property_sales/1009559808/"
+        ]
+      }
+    ],
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_f294b059ec24e586"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-100000024000002000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "estate_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "estate_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "estate_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "estate_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "estate_owner_name_pattern"
+        },
+        "canonical_doc_type": "estate_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_f294b059ec24e586"
+        ],
+        "instrument_numbers": [
+          "OWNER-100000024000002000"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "estate_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/100000024000002000#estate"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_00614d2db8792475"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-100000111700007001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_00614d2db8792475"
+        ],
+        "instrument_numbers": [
+          "OWNER-100000111700007001"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/100000111700007001#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1fb27b5bd37d840f"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-105030000200001020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_1fb27b5bd37d840f"
+        ],
+        "instrument_numbers": [
+          "OWNER-105030000200001020"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/105030000200001020#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_be1daae07bf9682b"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-180500000000132000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_be1daae07bf9682b"
+        ],
+        "instrument_numbers": [
+          "OWNER-180500000000132000"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/180500000000132000#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_bc1f4b061dff4197"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-180510000000006500",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_bc1f4b061dff4197"
+        ],
+        "instrument_numbers": [
+          "OWNER-180510000000006500"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/180510000000006500#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_afb151051841529f"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-180510000000022000",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_afb151051841529f"
+        ],
+        "instrument_numbers": [
+          "OWNER-180510000000022000"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/180510000000022000#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b7da4f42a76a3090"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_OWNER-180510000000077700",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "living_trust_owner_name_pattern",
+          "parcel_id": null,
+          "signal_type": "living_trust_owner_name_pattern"
+        },
+        "canonical_doc_type": "living_trust_owner_name_pattern",
+        "count": 1,
+        "earliest_recorded_date": null,
+        "evidence_ids": [
+          "ev_b7da4f42a76a3090"
+        ],
+        "instrument_numbers": [
+          "OWNER-180510000000077700"
+        ],
+        "latest_recorded_date": null,
+        "recorded_date_range": [
+          null,
+          null
+        ],
+        "signal_type": "living_trust_owner_name_pattern",
+        "source_ids": [
+          "parcel_master"
+        ],
+        "source_urls": [
+          "about:owner-name/parcel_master/180510000000077700#trust"
+        ]
+      }
+    ],
+    "source_ids": [
+      "parcel_master"
+    ]
+  }
+]

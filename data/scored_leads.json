@@ -1,0 +1,2486 @@
+[
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_5f2b7bcb96251965"
+    ],
+    "lead_id": "lead_unresolved_24,171-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_d29110ff87d93e39",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7b90a9b5a46ec050"
+    ],
+    "lead_id": "lead_unresolved_25,356-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_bffc0c4c2c79f777",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e9cdef1dcaa1921c"
+    ],
+    "lead_id": "lead_unresolved_25,478-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_e9ace91362a060dd",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_12d8ce0145294325"
+    ],
+    "lead_id": "lead_unresolved_25,796-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_4c03e3b809b5a62e",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e1d7c22d576d42f7"
+    ],
+    "lead_id": "lead_unresolved_25,925-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_04c833178e49c86b",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_497b576e0f7f538f"
+    ],
+    "lead_id": "lead_unresolved_26,009-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_d6d219c080841403",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_3c74424efc7cf22c"
+    ],
+    "lead_id": "lead_unresolved_26,019-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_5e9e2cc049b54b81",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7d163cc62c57252b"
+    ],
+    "lead_id": "lead_unresolved_26,052-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_0cbd9132f2bf1f18",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_bb080469097147cd"
+    ],
+    "lead_id": "lead_unresolved_26,216-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_84ff8e9a2bc5313f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1d0ad9d1ef479428"
+    ],
+    "lead_id": "lead_unresolved_26,217-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_db1f51badca7d137",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_ceb7ccc5aeb72bf9"
+    ],
+    "lead_id": "lead_unresolved_26,318-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_4d232753ec72dd43",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_afc18c5e413f7410"
+    ],
+    "lead_id": "lead_unresolved_26,750-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_63a18548c4baa7e4",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_70bae61140ee0c46"
+    ],
+    "lead_id": "lead_unresolved_26,755-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_2841cf741368df63",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_4633082e92050c6b"
+    ],
+    "lead_id": "lead_unresolved_26,785-B",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_9bbb1d648d3d9a05",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_76da397c8c230a6c"
+    ],
+    "lead_id": "lead_unresolved_26,895-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_b4a7defd604edac2",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_d9a79e636fc2bd5d"
+    ],
+    "lead_id": "lead_unresolved_26,976-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_340f506503e4e0a0",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_738a9b8461e3d889"
+    ],
+    "lead_id": "lead_unresolved_27,071-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_0462b69d184d4093",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1dbac58ba663b042"
+    ],
+    "lead_id": "lead_unresolved_27,164-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_311a8a97d4b8263a",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_637affb479611aca"
+    ],
+    "lead_id": "lead_unresolved_27,189-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_1f0d0556fc7235c0",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_c2940a8da18cdf06"
+    ],
+    "lead_id": "lead_unresolved_27,242-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_cde690884b40800f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_cbea878903a77010"
+    ],
+    "lead_id": "lead_unresolved_27,323-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_ebfcc722ba45a829",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_f6674cee559e8681"
+    ],
+    "lead_id": "lead_unresolved_27,407-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_1e8bfc2f2021969b",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_17458857eaf651ab"
+    ],
+    "lead_id": "lead_unresolved_27,413-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_03465a355ad23a01",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_a51c89739c30e767"
+    ],
+    "lead_id": "lead_unresolved_27,635-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_bd475328850182e6",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1d250b943bfb7027"
+    ],
+    "lead_id": "lead_unresolved_27,638-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_e0384c076ddbbbb6",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_FORECLOSURE_NOTICE"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_85914ed607062375"
+    ],
+    "lead_id": "lead_unresolved_27,726-A",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_FORECLOSURE_NOTICE"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_72cb2a608aff1626",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_d281954aebaa1f9d"
+    ],
+    "lead_id": "lead_unresolved_27,785-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_08884f932aa41388",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_573570c689bb6e01"
+    ],
+    "lead_id": "lead_unresolved_28,007-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 55,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      }
+    ],
+    "scored_lead_id": "scored_c539b03361f675a0",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "tax"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "tax_deed"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "TAX_DEED"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_5c8067a1605b2669"
+    ],
+    "lead_id": "lead_unresolved_28,097-C",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "tax_deed against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "tax"
+    ],
+    "patterns": [
+      "tax"
+    ],
+    "primary_event_date": "2026-08-04",
+    "primary_parcel_id": null,
+    "recent_flag": true,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:owner_not_on_document"
+    ],
+    "score": 60,
+    "score_reasons": [
+      {
+        "delta": 55,
+        "factor": "base_TAX_DEED"
+      },
+      {
+        "delta": 5,
+        "factor": "recent_filing_within_30_days"
+      }
+    ],
+    "scored_lead_id": "scored_d062c5c69b47e35f",
+    "source_ids": [
+      "lgbs_smith_tax_sales"
+    ],
+    "stack_depth": 1,
+    "tier": "Workable",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "moderate",
+        "path": "wholesale",
+        "rationale": "Single-signal distress; lower-conviction wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "estate"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "estate_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "ESTATE_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_f294b059ec24e586"
+    ],
+    "lead_id": "lead_unresolved_OWNER-100000024000002000",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "estate_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "estate"
+    ],
+    "patterns": [
+      "estate"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 30,
+    "score_reasons": [
+      {
+        "delta": 30,
+        "factor": "base_ESTATE_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_869a8fc47d153d7c",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_00614d2db8792475"
+    ],
+    "lead_id": "lead_unresolved_OWNER-100000111700007001",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_37d312655d1ac07b",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1fb27b5bd37d840f"
+    ],
+    "lead_id": "lead_unresolved_OWNER-105030000200001020",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_6c3a20421ffaec8f",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_be1daae07bf9682b"
+    ],
+    "lead_id": "lead_unresolved_OWNER-180500000000132000",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_72dc2b7a1ac5e699",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_bc1f4b061dff4197"
+    ],
+    "lead_id": "lead_unresolved_OWNER-180510000000006500",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_27d6d9f28e5f7392",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_afb151051841529f"
+    ],
+    "lead_id": "lead_unresolved_OWNER-180510000000022000",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_35c3e3a6875f898d",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  },
+  {
+    "attributes": [],
+    "deal_paths": [
+      {
+        "confidence": "low",
+        "path": "wholesale",
+        "rationale": "Single-pattern transfer signal; weak wholesale candidate."
+      }
+    ],
+    "display_patterns": [
+      "transfer"
+    ],
+    "doc_type_normalization": {
+      "canonical_doc_types": [
+        "living_trust_owner_name_pattern"
+      ],
+      "doc_type_review_required": false,
+      "normalized_doc_types": [
+        "LIVING_TRUST_OWNER_NAME_PATTERN"
+      ]
+    },
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b7da4f42a76a3090"
+    ],
+    "lead_id": "lead_unresolved_OWNER-180510000000077700",
+    "lead_status": "REVIEW_REQUIRED",
+    "lead_status_history": [
+      {
+        "reason": "parcel_resolution_review_required; matched_lead_review_reason:no_debtor_rule_for_doc_type",
+        "status": "REVIEW_REQUIRED",
+        "transitioned_at": "2026-07-18T02:43:50Z"
+      }
+    ],
+    "match_confidence": null,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "parcel_display": null,
+    "pattern_set": [
+      "transfer"
+    ],
+    "patterns": [
+      "transfer"
+    ],
+    "primary_event_date": null,
+    "primary_parcel_id": null,
+    "recent_flag": false,
+    "review_flags": [
+      "parcel_resolution_review_required",
+      "matched_lead_review_reason:no_debtor_rule_for_doc_type"
+    ],
+    "score": 25,
+    "score_reasons": [
+      {
+        "delta": 25,
+        "factor": "base_LIVING_TRUST_OWNER_NAME_PATTERN"
+      }
+    ],
+    "scored_lead_id": "scored_09582c1712d7a375",
+    "source_ids": [
+      "parcel_master"
+    ],
+    "stack_depth": 1,
+    "tier": "Archive",
+    "title_complexity_contributors": [],
+    "title_complexity_score": 0,
+    "title_complexity_tier": "None"
+  }
+]
