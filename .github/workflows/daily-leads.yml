@@ -1,0 +1,74 @@
+name: Daily fresh leads
+
+# Pulls fresh source data, rebuilds leads through the staged §17-§20
+# pipeline, and commits the refreshed data/ artifacts back to main.
+# The push to main triggers the existing Pages deploy, so the live
+# dashboard (https://xcerebroai.github.io/smith-tx-intel/dashboard/)
+# updates automatically.
+
+on:
+  schedule:
+    # 11:00 UTC daily = 06:00 CST / 05:00 CDT. Adjust as needed.
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}      # allow manual "Run workflow" from the Actions tab
+
+# Let this job commit the refreshed data back to the repo.
+permissions:
+  contents: write
+
+# Never let two refreshes race on the same branch.
+concurrency:
+  group: daily-leads
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # --- Source pulls (write to data/raw/, which is gitignored) ---
+
+      - name: Pull parcel enrichment (Smith County ArcGIS)
+        run: python scrapers/parcel_master.py
+
+      - name: Pull LGBS tax-sale leads (PRIMARY EVENT SOURCE)
+        run: python scrapers/lgbs_smith_tax_sales.py
+
+      # --- Build: staged pipeline + §20 semantic-verify gate ---
+      # No --approve-needs-review: if §20 returns NEEDS_OPERATOR_REVIEW the
+      # build exits non-zero, this job FAILS, and nothing is deployed. That
+      # is the safe default — bad data never reaches the dashboard silently.
+      # Remove the guard (add --approve-needs-review) only if you want the
+      # daily run to auto-publish through review verdicts.
+      - name: Build leads
+        run: python -m scaffold.pipeline.build_leads
+
+      # The pipeline writes its payload to data/dashboard.json, but the live
+      # dashboard (dashboard/dashboard.js) fetches data/leads.json. Bridge the
+      # two so the rebuilt payload is what the site actually serves.
+      - name: Publish payload to the dashboard's data file
+        run: cp data/dashboard.json data/leads.json
+
+      # --- Commit refreshed artifacts back to main ---
+      - name: Commit refreshed leads
+        run: |
+          git config user.name  "xcerebro-leads-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/          # data/raw/ is gitignored; only artifacts are staged
+          if git diff --cached --quiet; then
+            echo "No lead changes today — nothing to commit."
+          else
+            git commit -m "chore(data): daily lead refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi
