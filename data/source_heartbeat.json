@@ -8,8 +8,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-07-20T11:58:22Z",
-    "last_successful_at": "2026-07-20T11:58:22Z",
+    "last_attempted_at": "2026-07-21T11:39:06Z",
+    "last_successful_at": "2026-07-21T11:39:06Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 29,
@@ -29,7 +29,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from lgbs_smith_tax_sales",
-        "timestamp": "2026-07-20T11:58:22Z"
+        "timestamp": "2026-07-21T11:39:06Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
@@ -44,8 +44,8 @@
     "build_priority": "high_value",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-07-20T11:58:22Z",
-    "last_successful_at": "2026-07-20T11:58:22Z",
+    "last_attempted_at": "2026-07-21T11:39:06Z",
+    "last_successful_at": "2026-07-21T11:39:06Z",
     "last_failed_at": null,
     "last_failure_reason": null,
     "records_seen_current_run": 7,
@@ -65,7 +65,7 @@
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
         "reason": "Phase 3 production pull from parcel_master",
-        "timestamp": "2026-07-20T11:58:22Z"
+        "timestamp": "2026-07-21T11:39:06Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",
