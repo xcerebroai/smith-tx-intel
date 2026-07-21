@@ -6,111 +6,13 @@
       "parcel_id": null,
       "signal_type": "living_trust_owner_name_pattern"
     },
-    "base_record_id": "base_raw_00614d2db8792475",
+    "base_record_id": "base_raw_09667e6d4a019f67",
     "canonical_doc_type": "living_trust_owner_name_pattern",
     "confidence_status": "Confirmed",
     "enrichment_status": "UNENRICHED",
     "event_date": null,
     "evidence_ids": [
-      "ev_00614d2db8792475"
-    ],
-    "filer_entity": null,
-    "instrument_number": "OWNER-100000111700007001",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "living_trust_owner_name_pattern against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "living_trust_owner_name_pattern against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
-    "property_refs": {
-      "case_number": "OWNER-100000111700007001",
-      "legal_description": "SUBD 101117 LOT 7.1",
-      "parcel_id": "100000111700007001",
-      "situs_address": null
-    },
-    "raw_event_id": "raw_00614d2db8792475",
-    "recorded_date": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
-    "signal_type": "living_trust_owner_name_pattern",
-    "source_id": "parcel_master",
-    "source_role": "PRIMARY_EVENT_SOURCE",
-    "source_url": "about:owner-name/parcel_master/100000111700007001#trust"
-  },
-  {
-    "additional_owner_names": [],
-    "aggregation_key": {
-      "canonical_doc_type": "living_trust_owner_name_pattern",
-      "parcel_id": null,
-      "signal_type": "living_trust_owner_name_pattern"
-    },
-    "base_record_id": "base_raw_1fb27b5bd37d840f",
-    "canonical_doc_type": "living_trust_owner_name_pattern",
-    "confidence_status": "Confirmed",
-    "enrichment_status": "UNENRICHED",
-    "event_date": null,
-    "evidence_ids": [
-      "ev_1fb27b5bd37d840f"
-    ],
-    "filer_entity": null,
-    "instrument_number": "OWNER-105030000200001020",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "living_trust_owner_name_pattern against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "living_trust_owner_name_pattern against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
-    "property_refs": {
-      "case_number": "OWNER-105030000200001020",
-      "legal_description": "SUBD 120500 BLK 2 LOT 3B",
-      "parcel_id": "105030000200001020",
-      "situs_address": null
-    },
-    "raw_event_id": "raw_1fb27b5bd37d840f",
-    "recorded_date": null,
-    "review_reason": "no_debtor_rule_for_doc_type",
-    "signal_type": "living_trust_owner_name_pattern",
-    "source_id": "parcel_master",
-    "source_role": "PRIMARY_EVENT_SOURCE",
-    "source_url": "about:owner-name/parcel_master/105030000200001020#trust"
-  },
-  {
-    "additional_owner_names": [],
-    "aggregation_key": {
-      "canonical_doc_type": "living_trust_owner_name_pattern",
-      "parcel_id": null,
-      "signal_type": "living_trust_owner_name_pattern"
-    },
-    "base_record_id": "base_raw_afb151051841529f",
-    "canonical_doc_type": "living_trust_owner_name_pattern",
-    "confidence_status": "Confirmed",
-    "enrichment_status": "UNENRICHED",
-    "event_date": null,
-    "evidence_ids": [
-      "ev_afb151051841529f"
+      "ev_09667e6d4a019f67"
     ],
     "filer_entity": null,
     "instrument_number": "OWNER-180510000000022000",
@@ -138,7 +40,7 @@
       "parcel_id": "180510000000022000",
       "situs_address": null
     },
-    "raw_event_id": "raw_afb151051841529f",
+    "raw_event_id": "raw_09667e6d4a019f67",
     "recorded_date": null,
     "review_reason": "no_debtor_rule_for_doc_type",
     "signal_type": "living_trust_owner_name_pattern",
@@ -153,13 +55,62 @@
       "parcel_id": null,
       "signal_type": "living_trust_owner_name_pattern"
     },
-    "base_record_id": "base_raw_b7da4f42a76a3090",
+    "base_record_id": "base_raw_103b605e9fadcc58",
     "canonical_doc_type": "living_trust_owner_name_pattern",
     "confidence_status": "Confirmed",
     "enrichment_status": "UNENRICHED",
     "event_date": null,
     "evidence_ids": [
-      "ev_b7da4f42a76a3090"
+      "ev_103b605e9fadcc58"
+    ],
+    "filer_entity": null,
+    "instrument_number": "OWNER-105030000200001020",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "property_refs": {
+      "case_number": "OWNER-105030000200001020",
+      "legal_description": "SUBD 120500 BLK 2 LOT 3B",
+      "parcel_id": "105030000200001020",
+      "situs_address": null
+    },
+    "raw_event_id": "raw_103b605e9fadcc58",
+    "recorded_date": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signal_type": "living_trust_owner_name_pattern",
+    "source_id": "parcel_master",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "about:owner-name/parcel_master/105030000200001020#trust"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
+      "canonical_doc_type": "living_trust_owner_name_pattern",
+      "parcel_id": null,
+      "signal_type": "living_trust_owner_name_pattern"
+    },
+    "base_record_id": "base_raw_3ecfd9e1e09a3895",
+    "canonical_doc_type": "living_trust_owner_name_pattern",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_3ecfd9e1e09a3895"
     ],
     "filer_entity": null,
     "instrument_number": "OWNER-180510000000077700",
@@ -187,7 +138,7 @@
       "parcel_id": "180510000000077700",
       "situs_address": null
     },
-    "raw_event_id": "raw_b7da4f42a76a3090",
+    "raw_event_id": "raw_3ecfd9e1e09a3895",
     "recorded_date": null,
     "review_reason": "no_debtor_rule_for_doc_type",
     "signal_type": "living_trust_owner_name_pattern",
@@ -202,13 +153,13 @@
       "parcel_id": null,
       "signal_type": "living_trust_owner_name_pattern"
     },
-    "base_record_id": "base_raw_bc1f4b061dff4197",
+    "base_record_id": "base_raw_5554574eb657eba5",
     "canonical_doc_type": "living_trust_owner_name_pattern",
     "confidence_status": "Confirmed",
     "enrichment_status": "UNENRICHED",
     "event_date": null,
     "evidence_ids": [
-      "ev_bc1f4b061dff4197"
+      "ev_5554574eb657eba5"
     ],
     "filer_entity": null,
     "instrument_number": "OWNER-180510000000006500",
@@ -236,7 +187,7 @@
       "parcel_id": "180510000000006500",
       "situs_address": null
     },
-    "raw_event_id": "raw_bc1f4b061dff4197",
+    "raw_event_id": "raw_5554574eb657eba5",
     "recorded_date": null,
     "review_reason": "no_debtor_rule_for_doc_type",
     "signal_type": "living_trust_owner_name_pattern",
@@ -251,13 +202,13 @@
       "parcel_id": null,
       "signal_type": "living_trust_owner_name_pattern"
     },
-    "base_record_id": "base_raw_be1daae07bf9682b",
+    "base_record_id": "base_raw_62ba8252c3d606c7",
     "canonical_doc_type": "living_trust_owner_name_pattern",
     "confidence_status": "Confirmed",
     "enrichment_status": "UNENRICHED",
     "event_date": null,
     "evidence_ids": [
-      "ev_be1daae07bf9682b"
+      "ev_62ba8252c3d606c7"
     ],
     "filer_entity": null,
     "instrument_number": "OWNER-180500000000132000",
@@ -285,7 +236,7 @@
       "parcel_id": "180500000000132000",
       "situs_address": null
     },
-    "raw_event_id": "raw_be1daae07bf9682b",
+    "raw_event_id": "raw_62ba8252c3d606c7",
     "recorded_date": null,
     "review_reason": "no_debtor_rule_for_doc_type",
     "signal_type": "living_trust_owner_name_pattern",
@@ -296,17 +247,66 @@
   {
     "additional_owner_names": [],
     "aggregation_key": {
+      "canonical_doc_type": "living_trust_owner_name_pattern",
+      "parcel_id": null,
+      "signal_type": "living_trust_owner_name_pattern"
+    },
+    "base_record_id": "base_raw_83b71b49bb3e4f12",
+    "canonical_doc_type": "living_trust_owner_name_pattern",
+    "confidence_status": "Confirmed",
+    "enrichment_status": "UNENRICHED",
+    "event_date": null,
+    "evidence_ids": [
+      "ev_83b71b49bb3e4f12"
+    ],
+    "filer_entity": null,
+    "instrument_number": "OWNER-100000111700007001",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "living_trust_owner_name_pattern against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "living_trust_owner_name_pattern against unidentified party",
+    "property_refs": {
+      "case_number": "OWNER-100000111700007001",
+      "legal_description": "SUBD 101117 LOT 7.1",
+      "parcel_id": "100000111700007001",
+      "situs_address": null
+    },
+    "raw_event_id": "raw_83b71b49bb3e4f12",
+    "recorded_date": null,
+    "review_reason": "no_debtor_rule_for_doc_type",
+    "signal_type": "living_trust_owner_name_pattern",
+    "source_id": "parcel_master",
+    "source_role": "PRIMARY_EVENT_SOURCE",
+    "source_url": "about:owner-name/parcel_master/100000111700007001#trust"
+  },
+  {
+    "additional_owner_names": [],
+    "aggregation_key": {
       "canonical_doc_type": "estate_owner_name_pattern",
       "parcel_id": null,
       "signal_type": "estate_owner_name_pattern"
     },
-    "base_record_id": "base_raw_f294b059ec24e586",
+    "base_record_id": "base_raw_a7fd34e27b918ed5",
     "canonical_doc_type": "estate_owner_name_pattern",
     "confidence_status": "Confirmed",
     "enrichment_status": "UNENRICHED",
     "event_date": null,
     "evidence_ids": [
-      "ev_f294b059ec24e586"
+      "ev_a7fd34e27b918ed5"
     ],
     "filer_entity": null,
     "instrument_number": "OWNER-100000024000002000",
@@ -334,7 +334,7 @@
       "parcel_id": "100000024000002000",
       "situs_address": null
     },
-    "raw_event_id": "raw_f294b059ec24e586",
+    "raw_event_id": "raw_a7fd34e27b918ed5",
     "recorded_date": null,
     "review_reason": "no_debtor_rule_for_doc_type",
     "signal_type": "estate_owner_name_pattern",
