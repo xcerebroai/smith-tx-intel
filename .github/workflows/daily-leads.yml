@@ -74,10 +74,11 @@ jobs:
         run: |
           git config user.name  "xcerebro-leads-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Only the dashboard payload is committed. Raw source pulls and the
-          # SFTP tax-roll cache live under the gitignored data/raw/; per-run
-          # build intermediates stay in runs/ and are never committed.
-          git add dashboard/data.js dashboard/data.json
+          # Only dashboard/data.js is committed — that's the file the live
+          # dashboard loads (index.html: <script src="data.js">). data.json is
+          # a gitignored local copy; raw pulls and the SFTP tax-roll cache live
+          # under the gitignored data/raw/; build intermediates stay in runs/.
+          git add dashboard/data.js
           if git diff --cached --quiet; then
             echo "No data changes today — nothing to commit."
           else
