@@ -1,4 +1,6 @@
 # Runtime dependencies for the county-intelligence pipeline.
-# The scrapers are stdlib-only (urllib/json/re); the staged pipeline
+# Most scrapers are stdlib-only (urllib/json/re); the staged pipeline
 # (§17-§20) validates every stage payload with jsonschema.
 jsonschema>=4.20,<5
+# The delinquent-tax-roll adapter pulls the weekly MFT drop over SFTP.
+paramiko>=3.4,<4

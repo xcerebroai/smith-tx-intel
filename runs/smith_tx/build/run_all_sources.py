@@ -21,7 +21,7 @@ from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-REPO = Path("/Users/quentinflores/Dev/xcerebro/counties/smith-tx")
+REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO))
 from scaffold.pipeline import (
     aggregator, debtor_party_engine,
